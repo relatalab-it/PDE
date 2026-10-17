@@ -16,10 +16,10 @@ Run `/sj.check` after completing Phase 3 and before starting Phase 4.
 ### Step 1 — Load artefacts
 
 Load in order:
-1. `reports/NN_slug/story-brief.md`
-2. `reports/NN_slug/data-design.md`
-3. `reports/NN_slug/notes.md` (Phase 3 entries: inspection and transformations)
-4. List all files in `reports/NN_slug/output/`
+1. `report/NN_slug/story-brief.md`
+2. `report/NN_slug/data-design.md`
+3. `report/NN_slug/notes.md` (Phase 3 entries: inspection and transformations)
+4. List all files in `report/NN_slug/output/`
 
 ### Step 2 — Run consistency checks
 

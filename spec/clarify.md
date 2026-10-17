@@ -14,7 +14,7 @@ Do not proceed to Phase SJ-3 until all mandatory questions are answered.
 
 ### Step 1 — Read the Story Brief
 
-Load `reports/NN_slug/story-brief.md`. Identify:
+Load `report/NN_slug/story-brief.md`. Identify:
 - Scope boundaries that are approximate or ambiguous
 - Claims of comparison that lack a stated baseline
 - Time references that are relative ("last decade", "recent years")

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Produce `reports/NN_slug/data-design.md`: the methodological plan for the analysis.
+Produce `report/NN_slug/data-design.md`: the methodological plan for the analysis.
 This is the bridge between the journalistic intent (`story-brief.md`) and the
 technical execution pipeline.
 
@@ -17,7 +17,7 @@ It must be complete before any data is acquired.
 
 Load in order:
 1. `spec/constitution.md` — verify rules are active
-2. `reports/NN_slug/story-brief.md` — read angle, scope, clarifications, null hypothesis
+2. `report/NN_slug/story-brief.md` — read angle, scope, clarifications, null hypothesis
 
 ### Step 2 — Propose candidate sources and datasets
 
@@ -173,7 +173,7 @@ Once `data-design.md` is complete and approved, hand off to the execution pipeli
 
 ## Output check before entering Phase 1
 
-- [ ] `data-design.md` exists in `reports/NN_slug/`
+- [ ] `data-design.md` exists in `report/NN_slug/`
 - [ ] Every dataset section has provider, dataflow ID, filters, time range, output file name
 - [ ] Visualisation plan covers every dataset section (no dataset without a planned chart)
 - [ ] Library choice is Chart.js for each chart, or D3 with documented justification

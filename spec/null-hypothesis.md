@@ -18,7 +18,7 @@ Record the output in the `Null Hypothesis` section of `story-brief.md`.
 
 ### Step 1 — Read the Story Brief and Clarifications
 
-Load `reports/NN_slug/story-brief.md`. Read the `Journalistic angle` and `Clarifications`
+Load `report/NN_slug/story-brief.md`. Read the `Journalistic angle` and `Clarifications`
 sections carefully. The null hypothesis must be directly derived from the stated angle —
 not from what the data is expected to show.
 

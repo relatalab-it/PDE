@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Produce `story-brief.md` inside the analysis folder (`reports/NN_slug/story-brief.md`).
+Produce `story-brief.md` inside the analysis folder (`report/NN_slug/story-brief.md`).
 The Story Brief captures the journalistic intent of the analysis: what is being investigated
 and why it matters. It deliberately excludes data sources, statistical methods, chart types
 and tools — those decisions belong to `data-design.md` (Phase SJ-4).
@@ -50,7 +50,7 @@ This determines the narrative register for Phase 7 (executive summary).
 
 ### Step 4 — Write the Story Brief
 
-Produce `reports/NN_slug/story-brief.md` using the template below.
+Produce `report/NN_slug/story-brief.md` using the template below.
 Fill every field. Do not leave placeholders. If a field cannot be filled, explain why.
 
 ---
@@ -120,7 +120,7 @@ This section prevents scope creep during data-design.]
 
 Before running `/sj.clarify`, verify:
 
-- [ ] `story-brief.md` exists in `reports/NN_slug/`
+- [ ] `story-brief.md` exists in `report/NN_slug/`
 - [ ] `journalistic_angle` contains no dataset names, provider names, or method names
 - [ ] `editorial_hook` is filled (not "TBD" or empty)
 - [ ] `scope` section has both In scope and Out of scope filled

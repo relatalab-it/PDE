@@ -127,7 +127,7 @@
           <li class="tag plain">italiano / inglese</li>
         </ul>
         <p>Report statistici generati da un’AI su dati Eurostat, ISTAT, BCE, OCSE e Banca mondiale. Ogni report conserva le query riproducibili e il log delle operazioni.</p>
-        <ul class="links"><li><a href="reports/">Catalogo dei report</a></li></ul>
+        <ul class="links"><li><a href="report/">Catalogo dei report</a></li></ul>
       </li>
 
       <li class="case">
@@ -137,7 +137,7 @@
           <li class="tag plain">italiano / inglese</li>
         </ul>
         <p>Demo sui portali open data in produzione di sei comuni clienti di Maggioli: estrae e confronta i dati sugli incidenti stradali (Sassuolo, Maranello, Formigine, Fiorano Modenese, Piacenza, Seriate).</p>
-        <ul class="links"><li><a href="ckandemo.html">Apri la demo</a></li></ul>
+        <ul class="links"><li><a href="open-data/maggioli/">Apri la demo</a></li></ul>
       </li>
 
       <li class="case">
@@ -148,8 +148,8 @@
         </ul>
         <p>Dati geografici trovati nel Repertorio Nazionale dei Dati Territoriali: caldo, verde, aria, mobilità, e come è cresciuta la città dal 1954 al 2024.</p>
         <ul class="links">
-          <li><a href="planet-intelligence-poc/">Dati RNDT per Milano</a></li>
-          <li><a href="milano-evoluzione/">Milano dall’alto, 1954–2024</a></li>
+          <li><a href="territorio/planet-intelligence/">Dati RNDT per Milano</a></li>
+          <li><a href="territorio/milano-evoluzione/">Milano dall’alto, 1954–2024</a></li>
         </ul>
       </li>
 
@@ -160,7 +160,7 @@
           <li class="tag plain">sperimentale</li>
         </ul>
         <p>Audizioni della Camera dei deputati, soggetti auditi e atti collegati. Demo sperimentale: l’elaborazione dei dati contiene errori noti.</p>
-        <ul class="links"><li><a href="exp-audizioni/">Apri la demo</a></li></ul>
+        <ul class="links"><li><a href="parlamento/exp-audizioni/">Apri la demo</a></li></ul>
       </li>
 
     </ul>
@@ -196,7 +196,7 @@
       .catch(function () {});
   }
   chip('chip-reports', 'reports.json', function (d) { return d.length; }, 'report');
-  chip('chip-strati', 'planet-intelligence-poc/strati.json', function (d) { return d.strati && d.strati.length; }, 'strati geografici');
+  chip('chip-strati', 'territorio/planet-intelligence/strati.json', function (d) { return d.strati && d.strati.length; }, 'strati geografici');
 </script>
 </body>
 </html>

@@ -80,7 +80,7 @@ SJ-6  Pre-publication checklist — pipeline checklist + JournAI additions (→ 
 ## Artefacts produced per analysis
 
 ```
-reports/NN_slug/
+report/NN_slug/
 ├── story-brief.md        ← output of SJ-1 + SJ-2 + SJ-3
 ├── data-design.md        ← output of SJ-4
 ├── notes.md              ← chronological operations log

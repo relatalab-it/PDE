@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Produce `reports/NN_slug/index.html`: a self-contained, reproducible HTML page that
+Produce `report/NN_slug/index.html`: a self-contained, reproducible HTML page that
 documents the analysis, visualisations, methodology and raw data.
 
 Do not write CSS, nav, header, footer, intro section, raw data or methodology sections
@@ -177,7 +177,7 @@ initShell({
 
   // ── METHODOLOGY ──────────────────────────────────────────────────────────
   methodology: {
-    githubUrl: "https://github.com/[org]/[repo]/tree/main/reports/NN_slug",
+    githubUrl: "https://github.com/[org]/[repo]/tree/main/report/NN_slug",
     classifications: [
       { code: "GF0201", system: "COFOG",  meaning: "Defence",   meaning_en: "Defence"   },
       { code: "S13",    system: "ESA2010",meaning: "General government", meaning_en: "General government" }
@@ -245,7 +245,7 @@ After each new report, add an entry:
 ```json
 {
   "order": 2,
-  "path": "reports/02_slug/",
+  "path": "report/02_slug/",
   "date": "2026-05-18",
   "title": "Report title",
   "desc": "One-sentence description",

@@ -1,87 +1,65 @@
-# JournAI — Spec Driven Data Journalism
+# PDE — Public Data Explorer
 
-A research and prototyping project applying Spec Driven Development principles to
-AI-assisted statistical journalism using SDMX data sources (Eurostat, ISTAT, ECB, OECD, World Bank).
+Demo di **PDE**, il progetto di RELATA Lab che traduce una domanda in linguaggio naturale in interrogazioni ai dati pubblici e restituisce risposte verificabili, tracciabili fino alla fonte.
 
-## What it does
+Sito: <https://relatalab-it.github.io/PDE/>
 
-- Applies a journalistic brief and null hypothesis before touching any data
-- Fetches structured statistical data via SDMX providers using the `opensdmx` CLI
-- Presents data as editorial reports in a newspaper-style web interface
-- Default language: English (Italian/English bilingual toggle available per report)
+Le demo sono **proof of concept su singole fonti**, costruiti con connettori open source. L'orchestrazione tra fonti diverse è l'obiettivo del progetto in corso e non è ancora in queste pagine.
 
-## Methodology
+## Cosa c'è
 
-The `spec/` folder contains the full JournAI methodology:
-
-```
-spec/
-├── specjournalism.md    — orchestrator, workflow, trigger commands
-├── constitution.md      — immutable rules (visual honesty, reproducibility, language)
-├── brief.md             — SJ-1: Story Brief
-├── clarify.md           — SJ-2: structured clarifications
-├── null-hypothesis.md   — SJ-3: falsifiability
-├── data-design.md       — SJ-4: methodological plan
-├── cross-check.md       — SJ-5: cross-artifact consistency gate
-├── sdmx-pipeline.md     — Phases 1–3: opensdmx acquisition and inspection
-├── charts.md            — Phase 4: Chart.js and D3 visualisation rules
-├── html-page.md         — Phase 5: HTML page structure and initShell() config
-├── accountability.md    — Phase 6: accountability standards and pre-publication checklist
-├── executive-summary.md — Phase 7: narrative executive summary
-└── tasks.md             — dependency-ordered execution checklist
-```
-
-## Project structure
-
-```
-spec/            — JournAI methodology (source of truth)
-index.html       — report catalogue
-reports/         — individual HTML report pages
-reports.json     — report metadata
-assets/          — CSS, JS, fonts (shell.js, lang.js, style.css)
-```
-
-## Stack
-
-- Static HTML + Bootstrap 5.3 + Chart.js 4 (+ D3 when needed)
-- `assets/shell.js` — shared header/nav/footer renderer (`initShell(cfg)`)
-- `assets/lang.js` — EN/IT toggle (opt-in per report)
-- `assets/style.css` — shared styles
-- No build step, no bundler
-
-## Session entry point
-
-Start from `status.md` — it contains the session bootstrap with the four output tracks and the correct methodology file to load for each. Cross-reference: `@status.md`.
-
-## How to start a new analysis
-
-Tag the relevant spec file in the chat to trigger each phase:
-
-| Command | Tag | What it produces |
+| Percorso | Demo | Fonte |
 |---|---|---|
-| Start a new analysis | `@spec/brief.md` | `story-brief.md` |
-| Clarify scope | `@spec/clarify.md` | Clarifications in `story-brief.md` |
-| Pre-register hypothesis | `@spec/null-hypothesis.md` | Null hypothesis in `story-brief.md` |
-| Plan the data | `@spec/data-design.md` | `data-design.md` |
-| Check consistency | `@spec/cross-check.md` | Cross-check report in `notes.md` |
-| Acquire data | `@spec/sdmx-pipeline.md` | `output/*.csv`, `queries/*.yaml`, `metadata/` |
-| Build charts | `@spec/charts.md` | Chart.js sections in `index.html` |
-| Build the page | `@spec/html-page.md` | `reports/NN_slug/index.html` |
-| Accountability check | `@spec/accountability.md` | Pre-publication checklist |
-| Write summary | `@spec/executive-summary.md` | `introExtra` in `initShell()` |
+| `report/` | 14 report statistici generati da un'AI su dati ufficiali, con query riproducibili e log delle operazioni (italiano e inglese) | SDMX: Eurostat, ISTAT, BCE, OCSE, Banca mondiale |
+| `open-data/maggioli/` | Estrazione e confronto di dati sugli incidenti stradali da portali open data in produzione di sei comuni (italiano e inglese) | CKAN |
+| `territorio/planet-intelligence/` | Dati geografici di Milano trovati nel catalogo nazionale: caldo, verde, aria, mobilità | RNDT |
+| `territorio/milano-evoluzione/` | Come è cresciuta Milano dal 1954 al 2024 | RNDT |
+| `parlamento/exp-audizioni/` | Audizioni della Camera dei deputati e soggetti auditi. Sperimentale: l'elaborazione contiene errori noti | Linked Open Data |
 
-Full pre-phase sequence: tag `@spec/brief.md` → `@spec/clarify.md` → `@spec/null-hypothesis.md` → `@spec/data-design.md`
+La pagina iniziale (`index.html`) elenca le demo. I connettori per il registro territoriale ISTAT (SITUAS) e per gli appalti pubblici (ANAC) non hanno ancora una demo pubblica.
 
-Load constitution first in any session: `@spec/constitution.md`
+## Struttura del repository
 
-## Requirements
-
-- [`opensdmx`](https://github.com/ondata/opensdmx) CLI available in PATH
-- A static HTTP server (e.g. `python3 -m http.server`)
-
-## Run locally
-
-```bash
-python3 -m http.server 8000
-# open http://localhost:8000
 ```
+index.html        pagina iniziale
+report/           catalogo e singoli report (report/NN_slug/)
+open-data/        demo sui portali CKAN
+territorio/       demo geografiche
+parlamento/       demo parlamentare
+assets/           stile e script condivisi dai report
+spec/             metodologia con cui si producono i report
+reports.json      elenco dei report, letto dal catalogo e dalla pagina iniziale
+```
+
+Ogni report in `report/NN_slug/` contiene la pagina (`index.html`), le query (`queries/`), i dati scaricati (`output/`), i metadati (`metadata/`) e il registro delle operazioni (`notes.md`).
+
+## Metodologia dei report
+
+La cartella `spec/` descrive il flusso con cui si produce un report: brief della storia, ipotesi nulla, piano dei dati, controllo di coerenza prima dei grafici, pagina HTML e verifica finale. L'orchestratore AI usa [opensdmx](https://github.com/ondata/opensdmx) per acquisire i dati dagli endpoint SDMX; il punto di partenza è `spec/specjournalism.md`.
+
+## Provarlo in locale
+
+Il sito è statico, senza build:
+
+```
+python3 -m http.server 8000
+```
+
+Poi apri <http://localhost:8000/>. Aprire i file direttamente dal disco (`file://`) non funziona, perché le pagine caricano dati con `fetch`.
+
+## Componenti open source
+
+| Componente | Fonte |
+|---|---|
+| [opensdmx](https://github.com/ondata/opensdmx) | SDMX |
+| [ckan-mcp-server](https://github.com/ondata/ckan-mcp-server) | portali CKAN |
+| [italianparliament-mcp](https://github.com/ondata/italianparliament-mcp) | Parlamento |
+| [opensituas](https://github.com/ondata/opensituas) | SITUAS (ISTAT) |
+| [openrndt](https://github.com/ondata/openrndt) | RNDT |
+| [anac-pl-pp-cli](https://github.com/aborruso/anac-pl-pp-cli) | ANAC |
+
+## Note
+
+- Alcune pagine caricano librerie e caratteri da servizi esterni (jsDelivr, unpkg, cdnjs, Google Fonts). La demo `open-data/maggioli/` interroga anche portali e servizi in produzione: il loro contenuto può cambiare.
+- I dati hanno le licenze delle fonti da cui provengono; ogni report indica le proprie.
+- **Licenza**: per questo repository non è ancora definita. La demo `parlamento/exp-audizioni/` è distribuita con licenza MIT (vedi il suo `README.md`).

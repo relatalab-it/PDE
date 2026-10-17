@@ -2,7 +2,7 @@
 
 ## How to use
 
-At the start of each analysis, copy this file into `reports/NN_slug/tasks.md`.
+At the start of each analysis, copy this file into `report/NN_slug/tasks.md`.
 Replace `[DATASET_A]`, `[DATASET_B]` etc. with the actual dataset IDs from `data-design.md`.
 Add rows for each additional dataset. Mark tasks `[x]` as you complete them.
 Do not mark a checkpoint complete unless all tasks in its block are checked.
