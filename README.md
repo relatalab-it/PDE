@@ -12,6 +12,7 @@ Le demo sono **proof of concept su singole fonti**, costruiti con connettori ope
 |---|---|---|
 | `report/` | 14 report statistici generati da un'AI su dati ufficiali, con query riproducibili e log delle operazioni (italiano e inglese) | SDMX: Eurostat, ISTAT, BCE, OCSE, Banca mondiale |
 | `open-data/maggioli/` | Estrazione e confronto di dati sugli incidenti stradali da portali open data in produzione di sei comuni (italiano e inglese) | CKAN |
+| `open-data/comune-di-milano/` | Sei domande in italiano al portale Dati Milano del Comune di Milano: domande, passaggi dell'AI, query e risultati | CKAN |
 | `territorio/planet-intelligence/` | Dati geografici di Milano trovati nel catalogo nazionale: caldo, verde, aria, mobilità | RNDT |
 | `territorio/milano-evoluzione/` | Come è cresciuta Milano dal 1954 al 2024 | RNDT |
 | `parlamento/exp-audizioni/` | Audizioni della Camera dei deputati e soggetti auditi. Sperimentale: l'elaborazione contiene errori noti | Linked Open Data |

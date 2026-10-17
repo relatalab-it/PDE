@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dati Milano in linguaggio naturale — PDE</title>
+<meta name="description" content="Sei domande in italiano a un assistente AI collegato al portale open data del Comune di Milano: le domande, i passaggi, le query e i risultati.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231a3a5c'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='16' font-weight='700' text-anchor='middle' fill='%23fff'%3EP%3C/text%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #f5f3ee; --surface: #ffffff; --text: #1d2430; --muted: #5b6573; --line: #dcd8cf;
+    --accent: #1a3a5c; --accent-soft: #e8eef5; --focus: #1a6fd1; --code-bg: #eef0f3; --bar: #2e85d1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14181f; --surface: #1b212b; --text: #e8ebf0; --muted: #a0a9b6; --line: #2e3745;
+      --accent: #8fb4de; --accent-soft: #232d3b; --focus: #7db3ff; --code-bg: #10141a; --bar: #5aa2e6;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  .wrap { max-width: 46rem; margin: 0 auto; padding: 0 16px; }
+
+  header { padding: 56px 0 8px; }
+  @media (max-width: 640px) { header { padding-top: 76px; } }
+  .eyebrow { margin: 0 0 12px; font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  h1 { margin: 0 0 16px; font-size: clamp(1.8rem, 5.5vw, 2.5rem); line-height: 1.15; letter-spacing: -.01em; color: var(--accent); }
+  .lead { margin: 0; font-size: 1.08rem; }
+  .note { margin: 24px 0 0; padding: 14px 16px; background: var(--accent-soft); border-left: 3px solid var(--accent); border-radius: 0 6px 6px 0; font-size: .93rem; }
+  .note p { margin: 0 0 6px; } .note p:last-child { margin: 0; }
+
+  ul.toc { margin: 28px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
+  ul.toc a { display: inline-block; padding: 4px 12px; border: 1px solid var(--line); border-radius: 99px; background: var(--surface); color: var(--accent); text-decoration: none; font-size: .9rem; font-weight: 600; }
+  ul.toc a:hover { border-color: var(--accent); }
+
+  h2 { margin: 44px 0 10px; font-size: 1.45rem; line-height: 1.25; color: var(--accent); scroll-margin-top: 16px; }
+  h3 { margin: 24px 0 6px; font-size: .8rem; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+  p { margin: 0 0 12px; }
+  a { color: var(--accent); }
+  a:focus-visible, summary:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 3px; }
+
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr)); gap: 10px; margin: 16px 0; padding: 0; list-style: none; }
+  .stats li { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; }
+  .stats strong { display: block; font-size: 1.5rem; line-height: 1.2; color: var(--accent); }
+  .stats span { font-size: .85rem; color: var(--muted); }
+
+  .flow { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; margin: 12px 0 14px; padding: 0; list-style: none; font-size: .9rem; }
+  .flow li { padding: 4px 10px; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; }
+  .flow li + li::before { content: "→"; margin-right: 8px; color: var(--muted); }
+  .flow li + li { border: 0; background: none; padding-left: 0; }
+  .flow li + li span { padding: 4px 10px; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; }
+
+  .themes { margin: 12px 0 0; padding: 0; list-style: none; font-size: .9rem; }
+  .themes li { display: grid; grid-template-columns: 11rem 1fr 3rem; gap: 10px; align-items: center; margin: 4px 0; }
+  .themes .bar { height: 10px; background: var(--line); border-radius: 5px; overflow: hidden; }
+  .themes .bar i { display: block; height: 100%; background: var(--bar); }
+  .themes .n { text-align: right; font-variant-numeric: tabular-nums; color: var(--muted); }
+  @media (max-width: 520px) { .themes li { grid-template-columns: 8.2rem 1fr 2.6rem; font-size: .84rem; } }
+
+  article.case { margin-top: 12px; padding-top: 4px; border-top: 1px solid var(--line); }
+  .tag { display: inline-block; font-size: .75rem; font-weight: 600; letter-spacing: .03em; padding: 2px 9px; border-radius: 99px; background: var(--accent-soft); color: var(--accent); margin: 0 6px 6px 0; }
+  .tag.plain { background: transparent; border: 1px solid var(--line); color: var(--muted); font-weight: 500; }
+  blockquote { margin: 6px 0 12px; padding: 12px 16px; background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; font-size: 1rem; }
+  pre { margin: 8px 0 12px; padding: 12px 14px; background: var(--code-bg); border: 1px solid var(--line); border-radius: 8px; overflow-x: auto; font: .85rem/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: pre-wrap; word-break: break-word; }
+  code { font: .88em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background: var(--code-bg); padding: 1px 5px; border-radius: 4px; }
+  ul.plain { margin: 0 0 12px; padding-left: 1.2rem; }
+  ul.plain li { margin: 3px 0; }
+
+  table { border-collapse: collapse; width: 100%; margin: 8px 0 14px; font-size: .92rem; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+  caption { text-align: left; padding: 8px 12px; font-size: .85rem; color: var(--muted); caption-side: top; }
+  th, td { padding: 7px 12px; text-align: left; border-top: 1px solid var(--line); vertical-align: top; }
+  th { font-size: .78rem; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .scroll { overflow-x: auto; }
+
+  figure { margin: 10px 0 14px; }
+  figure img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  figcaption { margin-top: 6px; font-size: .84rem; color: var(--muted); }
+  details { margin: 10px 0; }
+  summary { cursor: pointer; font-weight: 600; color: var(--accent); }
+
+  .warn { margin: 12px 0; padding: 10px 14px; border: 1px solid var(--line); border-left: 3px solid #c9822b; border-radius: 0 8px 8px 0; background: var(--surface); font-size: .93rem; }
+
+  footer { margin: 56px 0 40px; padding-top: 18px; border-top: 1px solid var(--line); font-size: .88rem; color: var(--muted); }
+  footer a { color: inherit; }
+</style>
+</head>
+<body>
+<a href="../../" class="pde-back" aria-label="Torna a PDE" title="Torna a PDE" style="position:fixed;top:20px;left:20px;z-index:1000;display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.94);color:#1a3a5c;border:1px solid rgba(0,0,0,.18);box-shadow:0 1px 4px rgba(0,0,0,.25);font:600 20px/1 system-ui,sans-serif;text-decoration:none">&larr;</a>
+<div class="wrap">
+
+<header>
+  <p class="eyebrow">PDE · Open data</p>
+  <h1>Dati Milano, in linguaggio naturale</h1>
+  <p class="lead">Sei domande in italiano, poste a un assistente AI collegato al portale open data del Comune di Milano (<a href="https://dati.comune.milano.it">dati.comune.milano.it</a>). Qui trovi le domande esattamente come sono state scritte, i passaggi svolti dall’AI, la query SQL dove è visibile e i risultati.</p>
+  <div class="note">
+    <p><strong>Come leggere questa pagina.</strong> Sono i risultati ottenuti il 30 settembre 2026 e mostrati alla Milano Digital Week il 1° ottobre. Le tabelle riportano i numeri letti negli screenshot delle chat; i dati del portale possono nel frattempo essere stati aggiornati.</p>
+    <p>L’AI può sbagliare: per i numeri che contano si verifica sul dataset indicato.</p>
+  </div>
+  <nav aria-label="Casi"><ul class="toc">
+    <li><a href="#cinesi">Cinesi a Milano</a></li>
+    <li><a href="#ristorante">Ristoranti</a></li>
+    <li><a href="#turismo">Turismo</a></li>
+    <li><a href="#scuole">Scuole e caldo</a></li>
+    <li><a href="#incidenti">Incidenti</a></li>
+    <li><a href="#casa">Prezzi delle case</a></li>
+    <li><a href="#provalo">Provalo</a></li>
+  </ul></nav>
+</header>
+
+<main>
+
+<h2 id="portale">Il portale e lo strumento</h2>
+<p>Dati Milano è il portale open data del Comune, costruito su CKAN. Il 30 settembre 2026 conteneva 2.605 dataset, tutti pubblicati da un’unica organizzazione, raggruppati in 13 temi del vocabolario europeo DCAT-AP. L’AI lo interroga tramite il <a href="https://github.com/ondata/ckan-mcp-server">CKAN MCP Server</a>, un server open source (licenza MIT) che le mette a disposizione una ventina di strumenti, tutti di sola lettura.</p>
+
+<ul class="stats">
+  <li><strong>2.605</strong><span>dataset</span></li>
+  <li><strong>13</strong><span>temi</span></li>
+  <li><strong>2.492</strong><span>dataset con file CSV</span></li>
+  <li><strong>20</strong><span>strumenti, solo lettura</span></li>
+</ul>
+
+<h3>Come arriva alla risposta</h3>
+<ul class="flow" aria-label="Passaggi">
+  <li>domanda in italiano</li>
+  <li><span>cerca il dataset</span></li>
+  <li><span>ne legge la struttura</span></li>
+  <li><span>scrive ed esegue la query SQL</span></li>
+  <li><span>calcola e risponde con la fonte</span></li>
+</ul>
+
+<h3>Dataset per tema</h3>
+<ul class="themes" aria-label="Dataset per tema">
+  <li><span>Istruzione, cultura e sport</span><span class="bar"><i style="width:100%"></i></span><span class="n">692</span></li>
+  <li><span>Economia e finanze</span><span class="bar"><i style="width:81%"></i></span><span class="n">562</span></li>
+  <li><span>Governo e settore pubblico</span><span class="bar"><i style="width:65%"></i></span><span class="n">452</span></li>
+  <li><span>Popolazione e società</span><span class="bar"><i style="width:45%"></i></span><span class="n">309</span></li>
+  <li><span>Trasporti</span><span class="bar"><i style="width:37%"></i></span><span class="n">256</span></li>
+  <li><span>Ambiente</span><span class="bar"><i style="width:23%"></i></span><span class="n">158</span></li>
+  <li><span>Scienza e tecnologia</span><span class="bar"><i style="width:7%"></i></span><span class="n">48</span></li>
+  <li><span>Temi internazionali</span><span class="bar"><i style="width:5%"></i></span><span class="n">33</span></li>
+  <li><span>Energia</span><span class="bar"><i style="width:4%"></i></span><span class="n">25</span></li>
+  <li><span>Agricoltura</span><span class="bar"><i style="width:3.5%"></i></span><span class="n">24</span></li>
+  <li><span>Salute</span><span class="bar"><i style="width:3.5%"></i></span><span class="n">24</span></li>
+  <li><span>Giustizia</span><span class="bar"><i style="width:3%"></i></span><span class="n">22</span></li>
+  <li><span>Regioni e città</span><span class="bar"><i style="width:0"></i></span><span class="n">0</span></li>
+</ul>
+<p style="margin-top:10px;font-size:.88rem;color:var(--muted)">I numeri per tema contano i file, non la quantità di informazione: la classificazione è sbilanciata (per esempio, 171 dataset riguardano la sola Area C).</p>
+
+<!-- ============ 1. CINESI ============ -->
+<article class="case" id="cinesi">
+  <h2>1 · Quanti cinesi ci sono a Milano?</h2>
+  <span class="tag">Domanda da bar</span><span class="tag plain">popolazione</span>
+
+  <h3>La domanda</h3>
+  <blockquote>Ieri sera al bar un amico chiedeva, scherzando, “ma quanti cinesi ci sono a Milano?”. Cosa dicono davvero i dati del Comune? E in quali quartieri vivono?</blockquote>
+
+  <h3>Dati usati</h3>
+  <ul class="plain">
+    <li><code>ds74</code> — Stranieri per cittadinanza, dal 1979 al 2025</li>
+    <li><code>ds27</code> — Residenti per cittadinanza e quartiere, dal 1999 al 2025 (oltre 3 milioni di righe, interrogato via DataStore)</li>
+  </ul>
+
+  <h3>Query scritta dall’AI</h3>
+  <p>L’AI scrive l’SQL e chiede il permesso prima di eseguirlo. Questa è la richiesta così come compare in chat:</p>
+  <pre>SELECT "Anno", SUM("Residenti") AS cinesi
+FROM "6fd7172e-4c9a-48ee-b866-2c74c401c214"
+WHERE "Cittadinanza" = 'Cinese, Rep. Popolare'
+  AND "Anno" IN (1999,2005,2010,2015,2020,2023,2024,2025)
+GROUP BY "Anno" ORDER BY "Anno"</pre>
+  <p>Una ricerca per “Cina” non trovava nulla: nei dati il valore è <em>“Cinese, Rep. Popolare”</em>. L’AI se n’è accorta e ha corretto la ricerca.</p>
+  <figure>
+    <img src="img/cinesi-sql.webp" width="700" height="167" loading="lazy" alt="Richiesta di permesso in chat: Claude vuole usare Search CKAN DataStore with SQL e mostra la query SELECT sulla risorsa dei residenti per cittadinanza.">
+    <figcaption>La richiesta di permesso, con la query visibile prima dell’esecuzione.</figcaption>
+  </figure>
+
+  <h3>Risultato</h3>
+  <ul class="plain">
+    <li>A fine 2025 i residenti con cittadinanza cinese sono <strong>37.641</strong>, il <strong>2,7%</strong> di 1.399.079 abitanti. Tra gli stranieri residenti (295.805) sono circa uno su otto.</li>
+    <li>Sono la seconda comunità straniera, dopo gli egiziani (41.957) e appena davanti ai filippini (35.638).</li>
+    <li>Erano circa 7.500 nel 1999, 19.000 nel 2010, 32.800 nel 2020. Poi la crescita si è fermata: 37.737 nel 2024 e 37.641 nel 2025.</li>
+    <li>La “Chinatown” di via Paolo Sarpi è solo <strong>terza</strong> per numero di residenti. A <strong>Comasina</strong> il 23,6% dei residenti ha cittadinanza cinese.</li>
+  </ul>
+  <div class="scroll">
+  <table>
+    <caption>Quartieri con più residenti con cittadinanza cinese, 2025</caption>
+    <thead><tr><th>Quartiere</th><th class="num">Residenti cinesi</th><th class="num">Quota sul quartiere</th></tr></thead>
+    <tbody>
+      <tr><td>Villapizzone – Cagnola – Boldinasco</td><td class="num">3.134</td><td class="num">7,5%</td></tr>
+      <tr><td>Quarto Oggiaro – Vialba – Musocco</td><td class="num">2.889</td><td class="num">8,8%</td></tr>
+      <tr><td>Sarpi</td><td class="num">2.437</td><td class="num">8,0%</td></tr>
+      <tr><td>Comasina</td><td class="num">2.390</td><td class="num">23,6%</td></tr>
+      <tr><td>Affori</td><td class="num">2.312</td><td class="num">8,9%</td></tr>
+      <tr><td>Dergano</td><td class="num">1.690</td><td class="num">7,1%</td></tr>
+      <tr><td>Loreto – Casoretto – NoLo</td><td class="num">1.644</td><td class="num">3,9%</td></tr>
+      <tr><td>Padova – Turro – Crescenzago</td><td class="num">1.516</td><td class="num">4,0%</td></tr>
+      <tr><td>Q.re Gallaratese – Q.re San Leonardo – Lampugnano</td><td class="num">1.041</td><td class="num">3,1%</td></tr>
+      <tr><td>Niguarda – Ca’ Granda – Prato Centenario – Q.re Fulvio Testi</td><td class="num">1.034</td><td class="num">2,9%</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <figure>
+    <img src="img/cinesi-risposta.webp" width="1235" height="903" loading="lazy" alt="Chat con la risposta: circa 37.600 persone, 37.641 su 1.399.079 abitanti, il 2,7%, seconda comunità straniera dopo gli egiziani, con la tabella dei quartieri.">
+    <figcaption>La domanda e la risposta in chat.</figcaption>
+  </figure>
+  <details>
+    <summary>Grafici prodotti dall’AI</summary>
+    <figure><img src="img/cinesi-quartieri.webp" width="895" height="660" loading="lazy" alt="Barre orizzontali: residenti con cittadinanza cinese nel 2025 per quartiere, da Villapizzone con 3.134 a Niguarda con 1.034."><figcaption>Residenti per quartiere.</figcaption></figure>
+    <figure><img src="img/cinesi-quote.webp" width="895" height="660" loading="lazy" alt="Barre orizzontali: quota di residenti cinesi sul totale del quartiere, con Comasina al 23,6%."><figcaption>Quota sul totale del quartiere.</figcaption></figure>
+    <figure><img src="img/cinesi-andamento.webp" width="674" height="308" loading="lazy" alt="Linea: residenti con cittadinanza cinese a Milano dal 1979 al 2025, in crescita fino a circa 37.700."><figcaption>Andamento 1979–2025.</figcaption></figure>
+  </details>
+
+  <div class="warn"><strong>Limite dichiarato dall’AI.</strong> Il dato conta la <em>cittadinanza</em>, non l’origine: chi è nato in Cina ed è diventato cittadino italiano non è incluso.</div>
+</article>
+
+<!-- ============ 2. RISTORANTE ============ -->
+<article class="case" id="ristorante">
+  <h2>2 · Dove aprire un ristorante?</h2>
+  <span class="tag">Chi vuole aprire un’attività</span><span class="tag plain">economia</span>
+
+  <h3>La domanda</h3>
+  <blockquote>Voglio aprire un ristorante a Milano e vorrei capire in quali quartieri c’è più o meno concorrenza. Usando i dati del Comune, dimmi quanti ristoranti e pizzerie ci sono per quartiere, anche in rapporto al numero di abitanti. Fammi un grafico a barre orizzontali.</blockquote>
+
+  <h3>Dati usati e passaggi</h3>
+  <ul class="plain">
+    <li><code>ds58</code> — Pubblici esercizi in piano (aggiornato al 31/08/2026, 9.269 esercizi georeferenziati, con quartiere e tipologia)</li>
+    <li><code>ds27</code> — popolazione residente per quartiere, per il rapporto con gli abitanti</li>
+    <li>Passaggi: cerca “pubblici esercizi”, legge il dataset, conta i locali per quartiere con una query SQL, cerca la popolazione per quartiere, la interroga e unisce i due conteggi.</li>
+  </ul>
+
+  <h3>Risultato</h3>
+  <ul class="plain">
+    <li>I ristoranti e le pizzerie censiti sono <strong>3.649</strong>. Per numero assoluto vincono Buenos Aires – Porta Venezia (724) e Duomo (677).</li>
+    <li>In rapporto agli abitanti la media della città è di 2,6 locali ogni 1.000 residenti.</li>
+  </ul>
+  <div class="scroll">
+  <table>
+    <caption>Ristoranti e pizzerie ogni 1.000 abitanti</caption>
+    <thead><tr><th>Quartiere</th><th class="num">Ogni 1.000 ab.</th></tr></thead>
+    <tbody>
+      <tr><td>Duomo</td><td class="num">18,7</td></tr>
+      <tr><td>Porta Garibaldi – Porta Nuova</td><td class="num">16,2</td></tr>
+      <tr><td>Brera</td><td class="num">11,7</td></tr>
+      <tr><td>Porta Ticinese – Conchetta</td><td class="num">8,9</td></tr>
+      <tr><td>Isola</td><td class="num">7,2</td></tr>
+      <tr><td colspan="2" style="text-align:center;color:var(--muted)">…</td></tr>
+      <tr><td>Barona</td><td class="num">0,2</td></tr>
+      <tr><td>Comasina</td><td class="num">0,2</td></tr>
+      <tr><td>Bruzzano</td><td class="num">0,2</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <figure>
+    <img src="img/ristorante-risultato.webp" width="805" height="705" loading="lazy" alt="Grafico a barre: ristoranti e pizzerie ogni 1.000 abitanti per quartiere, con Duomo a 18,7 e Porta Garibaldi – Porta Nuova a 16,2; linea tratteggiata sulla media della città, 2,6.">
+    <figcaption>Il grafico prodotto dall’AI, con la media della città tratteggiata.</figcaption>
+  </figure>
+  <details>
+    <summary>I passaggi dell’AI, come compaiono in chat</summary>
+    <figure><img src="img/ristorante-passaggi.webp" width="995" height="851" loading="lazy" alt="Elenco dei passaggi: ricerca di pubblici esercizi, dataset ds58, query SQL, ricerca della popolazione per quartiere, dataset ds27, seconda query SQL."><figcaption>La sequenza di chiamate agli strumenti del connettore.</figcaption></figure>
+  </details>
+  <div class="warn"><strong>Da sistemare, se si riusa il lavoro.</strong> Tre quartieri non si abbinano tra i due dataset per differenze nei nomi (per esempio Niguarda).</div>
+</article>
+
+<!-- ============ 3. TURISMO ============ -->
+<article class="case" id="turismo">
+  <h2>3 · Quando arrivano i turisti?</h2>
+  <span class="tag">Chi lavora nel turismo</span><span class="tag plain">economia</span>
+
+  <h3>La domanda</h3>
+  <blockquote>Lavoro per un’azienda di servizi turistici a Milano. Secondo i dati del Comune, come sono andati gli arrivi di turisti dal 2019 al 2025 e quali sono i mesi di punta? Fammi un grafico.</blockquote>
+
+  <h3>Dati usati e passaggi</h3>
+  <ul class="plain">
+    <li><code>ds2957</code> — Arrivi turistici totali per mese, serie storica 2019–2025</li>
+    <li>Passaggi: cerca “turismo arrivi”, trova il dataset giusto, ne legge la risorsa, calcola i totali annui e i mesi di punta.</li>
+  </ul>
+
+  <h3>Risultato</h3>
+  <ul class="plain">
+    <li>7,46 milioni di arrivi nel 2019, 1,92 milioni nel 2020 e <strong>9,66 milioni nel 2025</strong>, il valore più alto della serie.</li>
+    <li>I mesi di punta nel 2025 sono ottobre e luglio.</li>
+  </ul>
+  <figure>
+    <img src="img/turismo-risultato.webp" width="770" height="710" loading="lazy" alt="Due grafici: arrivi turistici a Milano per anno dal 2019 al 2025 e arrivi mensili in migliaia per gli anni 2019, 2023, 2024 e 2025, con picchi a luglio e ottobre.">
+    <figcaption>Arrivi per anno e per mese, come li ha disegnati l’AI.</figcaption>
+  </figure>
+  <details>
+    <summary>I passaggi dell’AI, come compaiono in chat</summary>
+    <figure><img src="img/turismo-passaggi.webp" width="995" height="851" loading="lazy" alt="Elenco dei passaggi: ricerca turismo arrivi, dataset ds2957, lettura della risorsa e calcolo dei totali annui."><figcaption>La sequenza di chiamate agli strumenti del connettore.</figcaption></figure>
+  </details>
+</article>
+
+<!-- ============ 4. SCUOLE ============ -->
+<article class="case" id="scuole">
+  <h2>4 · Quali scuole soffrono di più il caldo?</h2>
+  <span class="tag">Giornalismo</span><span class="tag plain">ambiente</span>
+
+  <h3>La domanda</h3>
+  <blockquote>Sono un giornalista e voglio scrivere del caldo nelle scuole di Milano. Ci sono dati del Comune su quanto le scuole primarie sono esposte al calore urbano? Quali sono le più esposte? Fammi un grafico a barre orizzontali delle prime 10.</blockquote>
+
+  <h3>Dati usati e passaggi</h3>
+  <ul class="plain">
+    <li><code>ds2818</code> — Esposizione al calore urbano delle scuole primarie (luglio 2024): indice medio in un raggio di 20 m dalla scuola, calcolato dal progetto europeo SPOTTED. Esistono dataset analoghi (<code>ds2817</code>, <code>ds2819</code>).</li>
+    <li>Passaggi: cerca “scuole calore”, apre il dataset, interroga il DataStore con SQL, ricava la distribuzione per inquadrare la storia e disegna il grafico.</li>
+  </ul>
+
+  <h3>Risultato</h3>
+  <div class="scroll">
+  <table>
+    <caption>Scuole primarie con l’indice di esposizione più alto (mediana delle 218 primarie: 0,559)</caption>
+    <thead><tr><th>Scuola</th><th>Indirizzo</th><th class="num">Indice</th></tr></thead>
+    <tbody>
+      <tr><td>Carlo Pisacane – Carlo Poerio</td><td>Via Pisacane 9</td><td class="num">0,723</td></tr>
+      <tr><td>San Vincenzo Regina Mundi</td><td>Via Boncompagni 18</td><td class="num">0,706</td></tr>
+      <tr><td>Maria Consolatrice</td><td>Via Melchiorre Gioia 51</td><td class="num">0,698</td></tr>
+      <tr><td>Nuova Educazione</td><td>Via Pace 10</td><td class="num">0,694</td></tr>
+      <tr><td>Giusti – Santa Chiara d’Assisi</td><td>Via Giusti 15</td><td class="num">0,694</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <figure>
+    <img src="img/scuole-risultato.webp" width="750" height="610" loading="lazy" alt="Barre orizzontali con le 10 scuole primarie con l'indice di esposizione al calore più alto, da 0,723 a 0,682, e una linea tratteggiata sulla mediana cittadina di 0,559.">
+    <figcaption>Le prime 10 scuole, con la mediana cittadina tratteggiata. Fonte indicata dall’AI: Comune di Milano, open data ds2818 (progetto SPOTTED).</figcaption>
+  </figure>
+  <details>
+    <summary>I passaggi dell’AI, come compaiono in chat</summary>
+    <figure><img src="img/scuole-passaggi.webp" width="995" height="851" loading="lazy" alt="Elenco dei passaggi: ricerca scuole calore, dataset ds2818, interrogazioni SQL sulla risorsa, verifica dei conteggi e scelta del grafico."><figcaption>La sequenza di chiamate agli strumenti del connettore.</figcaption></figure>
+  </details>
+</article>
+
+<!-- ============ 5. INCIDENTI ============ -->
+<article class="case" id="incidenti">
+  <h2>5 · Gli incidenti stradali sono aumentati o diminuiti?</h2>
+  <span class="tag">Giornalismo</span><span class="tag plain">trasporti</span>
+
+  <h3>La domanda</h3>
+  <blockquote>Sono un giornalista: gli incidenti stradali a Milano sono aumentati o diminuiti negli ultimi vent’anni? Usa i dati del Comune e fammi un grafico con incidenti e morti per anno.</blockquote>
+
+  <h3>Dati usati e passaggi</h3>
+  <ul class="plain">
+    <li><code>ds175</code> — Incidenti stradali, serie 2001–2024 (dati mensili, aggregati dall’AI in totali annui)</li>
+    <li>Passaggi: cerca “incidenti stradali”, apre il dataset, legge la risorsa, aggrega i mesi in anni e produce un CSV (<code>incidenti_milano_2001_2024.csv</code>) insieme ai grafici.</li>
+  </ul>
+
+  <h3>Risultato</h3>
+  <ul class="plain">
+    <li>Gli incidenti stradali con lesioni sono scesi da <strong>17.458</strong> nel 2001 a <strong>7.602</strong> nel 2024.</li>
+    <li>I morti (entro 30 giorni) sono scesi da <strong>86</strong> a <strong>38</strong>.</li>
+  </ul>
+  <figure>
+    <img src="img/incidenti-risultato.webp" width="770" height="693" loading="lazy" alt="Due grafici: incidenti stradali con lesioni per anno dal 2001 al 2024, in calo da circa 17.500 a circa 7.600, e morti per anno nello stesso periodo, in calo da 86 a 38.">
+    <figcaption>Incidenti con lesioni e morti per anno, 2001–2024.</figcaption>
+  </figure>
+  <details>
+    <summary>I passaggi dell’AI, come compaiono in chat</summary>
+    <figure><img src="img/incidenti-passaggi.webp" width="995" height="851" loading="lazy" alt="Elenco dei passaggi: ricerca incidenti stradali, dataset ds175, lettura della risorsa, aggregazione mensile in totali annui e produzione del CSV."><figcaption>La sequenza di chiamate agli strumenti del connettore.</figcaption></figure>
+  </details>
+</article>
+
+<!-- ============ 6. CASA ============ -->
+<article class="case" id="casa">
+  <h2>6 · Quanto costa comprare casa, zona per zona?</h2>
+  <span class="tag">Chi lavora nell’immobiliare</span><span class="tag plain">economia</span>
+
+  <h3>La domanda</h3>
+  <blockquote>Lavoro in un’agenzia immobiliare. Con i dati del Comune di Milano, quali sono le zone con i prezzi di compravendita delle abitazioni più alti e più bassi nell’ultimo semestre disponibile? Fammi un grafico a barre orizzontali.</blockquote>
+
+  <h3>Dati usati e passaggi</h3>
+  <ul class="plain">
+    <li><code>ds2940</code> — Quotazioni immobiliari dell’Osservatorio del Mercato Immobiliare (OMI), compravendita, per semestre e zona</li>
+    <li>Passaggi: cerca i prezzi di compravendita, verifica se esistono semestri più recenti, trova che l’ultimo pubblicato è il 2024/2, interroga la risorsa con SQL e verifica quali zone del centro mancano.</li>
+  </ul>
+
+  <h3>Risultato</h3>
+  <div class="scroll">
+  <table>
+    <caption>Valori in €/m², punto medio della forchetta minima–massima, ultimo semestre pubblicato (2024/2)</caption>
+    <thead><tr><th>Zona OMI</th><th class="num">€/m²</th></tr></thead>
+    <tbody>
+      <tr><td>B12 Duomo, San Babila, Montenapoleone</td><td class="num">9.550</td></tr>
+      <tr><td>B15 Brera</td><td class="num">9.200</td></tr>
+      <tr><td>B16 Sant’Ambrogio, Cadorna, via Dante</td><td class="num">7.850</td></tr>
+      <tr><td colspan="2" style="text-align:center;color:var(--muted)">…</td></tr>
+      <tr><td>E5 Baggio, Q.re Romano, Muggiano</td><td class="num">2.650</td></tr>
+      <tr><td>E8 Quarto Oggiaro, Sacco</td><td class="num">2.200</td></tr>
+      <tr><td>E7 Missaglia, Gratosoglio</td><td class="num">2.175</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <figure>
+    <img src="img/omi-risultato.webp" width="750" height="832" loading="lazy" alt="Grafico con le 10 zone più care e le 10 più economiche di Milano: barre con la forchetta minima–massima in euro al metro quadro e il valore medio, da 9.550 per Duomo a 2.175 per Missaglia–Gratosoglio.">
+    <figcaption>Le 10 zone più care e le 10 più economiche. La barra è la forchetta minima–massima, il numero è il punto medio.</figcaption>
+  </figure>
+  <details>
+    <summary>I passaggi dell’AI, come compaiono in chat</summary>
+    <figure><img src="img/omi-passaggi.webp" width="995" height="851" loading="lazy" alt="Elenco dei passaggi: ricerche di prezzi di compravendita, verifica del semestre più recente, dataset ds2940, query SQL sulla risorsa."><figcaption>La sequenza di chiamate agli strumenti del connettore.</figcaption></figure>
+  </details>
+</article>
+
+<h2 id="provalo">Provalo</h2>
+<p>Il connettore ha un indirizzo pubblico e gratuito, senza autenticazione, da aggiungere come “connettore” a un assistente AI che supporta i server MCP. La quota di 100.000 richieste al giorno è condivisa tra tutti gli utenti: va bene per provare, non per un uso intensivo.</p>
+<pre>https://ckan-mcp-server.andy-pr.workers.dev/mcp</pre>
+<p>Una prima domanda per verificare che funzioni: <em>“Quanti dataset ci sono su dati.comune.milano.it e quali sono i temi principali?”</em>. La risposta giusta è un numero intorno a 2.600 e l’elenco dei temi; se l’assistente risponde “a memoria” o cercando sul web, il connettore non è attivo nella chat. Le guide per ChatGPT, Claude, Le Chat, Perplexity e gli assistenti da terminale sono nel <a href="https://github.com/ondata/ckan-mcp-server">repository del progetto</a>.</p>
+
+</main>
+
+<footer>
+  <p>Screenshot di chat su claude.ai con il connettore “Opendata Explorer”, 30 settembre 2026. Dati: <a href="https://dati.comune.milano.it">Comune di Milano, Dati Milano</a>, con le licenze indicate sul portale. · <a href="../../">PDE</a> · <a href="https://github.com/relatalab-it/PDE">Codice sorgente di questo sito</a></p>
+</footer>
+
+</div>
+</body>
+</html>
