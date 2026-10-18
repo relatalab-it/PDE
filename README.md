@@ -15,9 +15,10 @@ Le demo sono **proof of concept su singole fonti**, costruiti con connettori ope
 | `open-data/comune-di-milano/` | Sei domande in italiano al portale Dati Milano del Comune di Milano: domande, passaggi dell'AI, query e risultati | CKAN |
 | `territorio/planet-intelligence/` | Dati geografici di Milano trovati nel catalogo nazionale: caldo, verde, aria, mobilità | RNDT |
 | `territorio/milano-evoluzione/` | Come è cresciuta Milano dal 1954 al 2024 | RNDT |
+| `territorio/situas/` | Anagrafe dei comuni italiani dal 1861 a oggi: codici ISTAT, variazioni territoriali, dati demografici; caso d'uso sul Comune di Messina | SITUAS (ISTAT) |
 | `parlamento/exp-audizioni/` | Audizioni della Camera dei deputati e soggetti auditi. Sperimentale: l'elaborazione contiene errori noti | Linked Open Data |
 
-La pagina iniziale (`index.html`) elenca le demo. I connettori per il registro territoriale ISTAT (SITUAS) e per gli appalti pubblici (ANAC) non hanno ancora una demo pubblica.
+La pagina iniziale (`index.html`) elenca le demo. Il connettore per gli appalti pubblici (ANAC) non ha ancora una demo pubblica.
 
 ## Struttura del repository
 
@@ -25,7 +26,7 @@ La pagina iniziale (`index.html`) elenca le demo. I connettori per il registro t
 index.html        pagina iniziale
 report/           catalogo e singoli report (report/NN_slug/)
 open-data/        demo sui portali CKAN
-territorio/       demo geografiche
+territorio/       demo geografiche e SITUAS
 parlamento/       demo parlamentare
 assets/           stile e script condivisi dai report
 spec/             metodologia con cui si producono i report
