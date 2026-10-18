@@ -16,9 +16,10 @@ Le demo sono **proof of concept su singole fonti**, costruiti con connettori ope
 | `territorio/planet-intelligence/` | Dati geografici di Milano trovati nel catalogo nazionale: caldo, verde, aria, mobilità | RNDT |
 | `territorio/milano-evoluzione/` | Come è cresciuta Milano dal 1954 al 2024 | RNDT |
 | `territorio/situas/` | Anagrafe dei comuni italiani dal 1861 a oggi: codici ISTAT, variazioni territoriali, dati demografici; caso d'uso sul Comune di Messina | SITUAS (ISTAT) |
+| `appalti/anac/` | Appalti pubblici: pagina segnaposto, demo in preparazione | ANAC |
 | `parlamento/exp-audizioni/` | Audizioni della Camera dei deputati e soggetti auditi. Sperimentale: l'elaborazione contiene errori noti | Linked Open Data |
 
-La pagina iniziale (`index.html`) elenca le demo. Il connettore per gli appalti pubblici (ANAC) non ha ancora una demo pubblica.
+La pagina iniziale (`index.html`) elenca le demo. La demo sugli appalti pubblici (ANAC) è in preparazione: per ora c’è solo la pagina segnaposto.
 
 ## Struttura del repository
 
@@ -27,6 +28,7 @@ index.html        pagina iniziale
 report/           catalogo e singoli report (report/NN_slug/)
 open-data/        demo sui portali CKAN
 territorio/       demo geografiche e SITUAS
+appalti/          demo sugli appalti pubblici (in preparazione)
 parlamento/       demo parlamentare
 assets/           stile e script condivisi dai report
 spec/             metodologia con cui si producono i report

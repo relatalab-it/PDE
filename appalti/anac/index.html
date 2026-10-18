@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Appalti pubblici (ANAC) — PDE</title>
+<meta name="description" content="Demo di PDE sugli appalti pubblici, con il connettore sulla Piattaforma di Pubblicità a Valore Legale di ANAC. In preparazione.">
+<meta name="robots" content="noindex">
+<style>
+  :root {
+    --bg: #f5f3ee;
+    --surface: #ffffff;
+    --text: #1d2430;
+    --muted: #5b6573;
+    --line: #dcd8cf;
+    --accent: #1a3a5c;
+    --accent-soft: #e8eef5;
+    --focus: #1a6fd1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14181f;
+      --surface: #1b212b;
+      --text: #e8ebf0;
+      --muted: #a0a9b6;
+      --line: #2e3745;
+      --accent: #8fb4de;
+      --accent-soft: #232d3b;
+      --focus: #7db3ff;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14181f; --surface: #1b212b; --text: #e8ebf0; --muted: #a0a9b6;
+    --line: #2e3745; --accent: #8fb4de; --accent-soft: #232d3b; --focus: #7db3ff;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 0 16px; }
+
+  header { padding: 48px 0 24px; }
+  .eyebrow {
+    margin: 0 0 12px;
+    font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted);
+  }
+  h1 { margin: 0 0 16px; font-size: clamp(1.9rem, 5.5vw, 2.6rem); line-height: 1.15; letter-spacing: -.01em; color: var(--accent); }
+  .lead { margin: 0; font-size: 1.1rem; color: var(--text); }
+
+  .note {
+    margin: 28px 0 8px;
+    padding: 14px 16px;
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    font-size: .95rem;
+  }
+  .note p { margin: 0; }
+
+  h2.section { margin: 36px 0 12px; font-size: .85rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+
+  .cases { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+  .case {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 18px 18px 16px;
+  }
+  .case h3 { margin: 0 0 4px; font-size: 1.15rem; line-height: 1.3; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 10px; padding: 0; list-style: none; }
+  .tag {
+    font-size: .75rem; font-weight: 600; letter-spacing: .03em;
+    padding: 2px 8px; border-radius: 99px;
+    background: var(--accent-soft); color: var(--accent);
+  }
+  .tag.plain { background: transparent; border: 1px solid var(--line); color: var(--muted); font-weight: 500; }
+  .case p { margin: 0 0 12px; color: var(--text); font-size: .98rem; }
+  .links { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 18px; }
+  .links a {
+    color: var(--accent); font-weight: 600; text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+  .links a::after { content: " →"; }
+  .links a:hover { border-bottom-color: currentColor; }
+  a:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 3px; }
+
+  .more { margin: 14px 2px 0; font-size: .92rem; color: var(--muted); }
+
+  .oss { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr)); gap: 6px 16px; font-size: .95rem; }
+  .oss a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--line); }
+  .oss a:hover { border-bottom-color: var(--accent); }
+
+  footer { margin: 48px 0 40px; padding-top: 18px; border-top: 1px solid var(--line); font-size: .88rem; color: var(--muted); }
+  footer a { color: inherit; }
+</style>
+</head>
+<body>
+<a href="../../" class="pde-back" aria-label="Torna a PDE" title="Torna a PDE" style="position:fixed;top:20px;left:20px;z-index:1000;display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.94);color:#1a3a5c;border:1px solid rgba(0,0,0,.18);box-shadow:0 1px 4px rgba(0,0,0,.25);font:600 20px/1 system-ui,sans-serif;text-decoration:none">&larr;</a>
+<div class="wrap">
+
+  <header>
+    <p class="eyebrow">PDE · Appalti pubblici</p>
+    <h1>Appalti pubblici (ANAC)</h1>
+    <p class="lead">Bandi, esiti e avvisi di gara delle stazioni appaltanti italiane, interrogati in linguaggio naturale tramite il connettore sulla Piattaforma di Pubblicità a Valore Legale di ANAC.</p>
+    <div class="note">
+      <p><strong>Demo in preparazione.</strong> Questa pagina è un segnaposto: i casi d’uso, le domande e i risultati verranno pubblicati qui.</p>
+    </div>
+  </header>
+
+  <main>
+    <h2 class="section">Componente open source</h2>
+    <ul class="oss">
+      <li><a href="https://github.com/aborruso/anac-pl-pp-cli">anac-pl-pp-cli</a> · ANAC</li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>RELATA Lab · <a href="../../">PDE</a> · <a href="https://github.com/relatalab-it/PDE">Codice sorgente di questo sito</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
