@@ -1,0 +1,1390 @@
+{
+  "content": [
+    {
+      "ambiente": null,
+      "attivo": false,
+      "categorie": null,
+      "codiceEform": "16",
+      "codiceScheda": "P1_16",
+      "count": 5,
+      "dataCreazione": "2026-08-05T02:15:48.301+00:00",
+      "dataPCP": "2026-08-04T22:00:00.000+00:00",
+      "dataPubblicazione": "2026-08-06T06:00:00.300+00:00",
+      "dataPubblicazioneNuovoAvviso": "2026-08-10T06:00:00.605+00:00",
+      "dataScadenza": "2026-08-27T21:59:00.000+00:00",
+      "idAppalto": "a79f934e-523d-41cf-a64c-121fc9d35605",
+      "idAvviso": "4c746741-2c98-4893-a50c-2e0a07e1e97f",
+      "noteOscuramento": null,
+      "nuovoAvviso": "4f94ad32-f8ee-44b8-bd0e-f00e4311f956",
+      "oscurato": false,
+      "paginationToken": "CO23NBoCYAEaBhCQ3JGTCCIOWgxqcpzU7hnXjpzafK4=",
+      "score": 11.138435363769531,
+      "scoreDetails": {
+        "description": "sum of:",
+        "details": [
+          {
+            "description": "match on required clause, product of:",
+            "details": [
+              {
+                "description": "# clause",
+                "details": [],
+                "value": 0
+              },
+              {
+                "description": "IndexOrDocValuesQuery(indexQuery=ConstantScore($type:token/tipologia:BANDI), dvQuery=$type:token/tipologia:[[42 41 4e 44 49] TO [42 41 4e 44 49]])",
+                "details": [],
+                "value": 1
+              }
+            ],
+            "value": 0
+          },
+          {
+            "description": "match on required clause, product of:",
+            "details": [
+              {
+                "description": "# clause",
+                "details": [],
+                "value": 0
+              },
+              {
+                "description": "IndexOrDocValuesQuery(indexQuery=$type:dateV2/dataPubblicazione:[1785542400000 TO 1792346960162], dvQuery=$type:dateV2/dataPubblicazione:[1785542400000 TO 1792346960162])",
+                "details": [],
+                "value": 1
+              }
+            ],
+            "value": 0
+          },
+          {
+            "description": "sum of:",
+            "details": [
+              {
+                "description": "$type:string/templates.template.metadata.descrizione:\"intelligenza artificiale\" [BM25Similarity], result of:",
+                "details": [
+                  {
+                    "description": "score(freq=1.0), computed as boost * idf * tf from:",
+                    "details": [
+                      {
+                        "description": "idf, sum of:",
+                        "details": [
+                          {
+                            "description": "idf, computed as log(1 + (N - n + 0.5) / (n + 0.5)) from:",
+                            "details": [
+                              {
+                                "description": "n, number of documents containing term",
+                                "details": [],
+                                "value": 648
+                              },
+                              {
+                                "description": "N, total number of documents with field",
+                                "details": [],
+                                "value": 1218949
+                              }
+                            ],
+                            "value": 7.5388383865356445
+                          },
+                          {
+                            "description": "idf, computed as log(1 + (N - n + 0.5) / (n + 0.5)) from:",
+                            "details": [
+                              {
+                                "description": "n, number of documents containing term",
+                                "details": [],
+                                "value": 1287
+                              },
+                              {
+                                "description": "N, total number of documents with field",
+                                "details": [],
+                                "value": 1218949
+                              }
+                            ],
+                            "value": 6.8530426025390625
+                          }
+                        ],
+                        "value": 14.391880989074707
+                      },
+                      {
+                        "description": "tf, computed as freq / (freq + k1 * (1 - b + b * dl / avgdl)) from:",
+                        "details": [
+                          {
+                            "description": "phraseFreq=1.0",
+                            "details": [],
+                            "value": 1
+                          },
+                          {
+                            "description": "k1, term saturation parameter",
+                            "details": [],
+                            "value": 1.2000000476837158
+                          },
+                          {
+                            "description": "b, length normalization parameter",
+                            "details": [],
+                            "value": 0.75
+                          },
+                          {
+                            "description": "dl, length of field",
+                            "details": [],
+                            "value": 31
+                          },
+                          {
+                            "description": "avgdl, average length of field",
+                            "details": [],
+                            "value": 18.11918830871582
+                          }
+                        ],
+                        "value": 0.3521369695663452
+                      }
+                    ],
+                    "value": 5.067914009094238
+                  }
+                ],
+                "value": 5.067914009094238
+              },
+              {
+                "description": "$type:string/templates.template.metadata.titolo:\"intelligenza artificiale\" [BM25Similarity], result of:",
+                "details": [
+                  {
+                    "description": "score(freq=1.0), computed as boost * idf * tf from:",
+                    "details": [
+                      {
+                        "description": "idf, sum of:",
+                        "details": [
+                          {
+                            "description": "idf, computed as log(1 + (N - n + 0.5) / (n + 0.5)) from:",
+                            "details": [
+                              {
+                                "description": "n, number of documents containing term",
+                                "details": [],
+                                "value": 20
+                              },
+                              {
+                                "description": "N, total number of documents with field",
+                                "details": [],
+                                "value": 42559
+                              }
+                            ],
+                            "value": 7.638245105743408
+                          },
+                          {
+                            "description": "idf, computed as log(1 + (N - n + 0.5) / (n + 0.5)) from:",
+                            "details": [
+                              {
+                                "description": "n, number of documents containing term",
+                                "details": [],
+                                "value": 33
+                              },
+                              {
+                                "description": "N, total number of documents with field",
+                                "details": [],
+                                "value": 42559
+                              }
+                            ],
+                            "value": 7.147124767303467
+                          }
+                        ],
+                        "value": 14.785369873046875
+                      },
+                      {
+                        "description": "tf, computed as freq / (freq + k1 * (1 - b + b * dl / avgdl)) from:",
+                        "details": [
+                          {
+                            "description": "phraseFreq=1.0",
+                            "details": [],
+                            "value": 1
+                          },
+                          {
+                            "description": "k1, term saturation parameter",
+                            "details": [],
+                            "value": 1.2000000476837158
+                          },
+                          {
+                            "description": "b, length normalization parameter",
+                            "details": [],
+                            "value": 0.75
+                          },
+                          {
+                            "description": "dl, length of field",
+                            "details": [],
+                            "value": 31
+                          },
+                          {
+                            "description": "avgdl, average length of field",
+                            "details": [],
+                            "value": 24.5684814453125
+                          }
+                        ],
+                        "value": 0.4105762839317322
+                      }
+                    ],
+                    "value": 6.070521354675293
+                  }
+                ],
+                "value": 6.070521354675293
+              }
+            ],
+            "value": 11.138435363769531
+          }
+        ],
+        "value": 11.138435363769531
+      },
+      "stato": "NON_VERIFICATO",
+      "templates": [
+        {
+          "lingua": "it",
+          "template": {
+            "metadata": {
+              "descrizione": "FORNITURA, INSTALLAZIONE, CONFIGURAZIONE E MESSA IN ESERCIZIO DI UN ECOSISTEMA DIGITALE DI RICERCA BASATO SU TECNOLOGIE DI INTELLIGENZA ARTIFICIALE PER LA GESTIONE E DISSEMINAZIONE DEL PATRIMONIO SCIENTIFICO E AMBIENTALE  PADIGLIONE BUOZZI",
+              "link_eform_ted": "https://ted.europa.eu/udl?uri=TED:NOTICE:542457-2026:TEXT:IT:HTML",
+              "titolo": "FORNITURA, INSTALLAZIONE, CONFIGURAZIONE E MESSA IN ESERCIZIO DI UN ECOSISTEMA DIGITALE DI RICERCA BASATO SU TECNOLOGIE DI INTELLIGENZA ARTIFICIALE PER LA GESTIONE E DISSEMINAZIONE DEL PATRIMONIO SCIENTIFICO E AMBIENTALE  PADIGLIONE BUOZZI"
+            },
+            "sections": [
+              {
+                "fields": {
+                  "soggetti_sa": [
+                    {
+                      "codice_fiscale": "97169170822",
+                      "denominazione_amministrazione": "AGENZIA REGIONALE PER LA PROTEZIONE DELL'AMBIENTE"
+                    }
+                  ]
+                },
+                "name": "SEZ. A - Committente"
+              },
+              {
+                "fields": {
+                  "accordo_quadro": "Nulla",
+                  "asta_elettronica": "false",
+                  "documenti_di_gara_link": "https://portaleappalti.arpa.sicilia.it/PortaleAppalti/it/procedure/codice/G01411",
+                  "sistema_dinamico_acquisizione": "Nessun sistema dinamico di acquisizione",
+                  "tipo_procedura_aggiudicazione": "Aperta"
+                },
+                "name": "SEZ. B - Dati Generali"
+              },
+              {
+                "items": [
+                  {
+                    "accordo_quadro": "Nulla",
+                    "asta_elettronica": "false",
+                    "categorie": [
+                      {
+                        "codice": "FS",
+                        "descrizione": "FORNITURA DI SERVIZI"
+                      }
+                    ],
+                    "cig": "BCA0E41C8A",
+                    "cpv": "Servizi informatici: consulenza, sviluppo di software, Internet e supporto",
+                    "criteri_aggiudicazione": "Qualità",
+                    "descrizione": "FORNITURA, INSTALLAZIONE, CONFIGURAZIONE E MESSA IN ESERCIZIO DI UN ECOSISTEMA DIGITALE DI RICERCA BASATO SU TECNOLOGIE DI INTELLIGENZA ARTIFICIALE PER LA GESTIONE E DISSEMINAZIONE DEL PATRIMONIO SCIENTIFICO E AMBIENTALE  PADIGLIONE BUOZZI",
+                    "documenti_di_gara_link": "https://portaleappalti.arpa.sicilia.it/PortaleAppalti/it/procedure/codice/G01411",
+                    "luogo_istat": "PALERMO",
+                    "luogo_nuts": "Palermo",
+                    "natura_principale": "Servizi",
+                    "sistema_dinamico_acquisizione": "Nessun sistema dinamico di acquisizione",
+                    "termine_ricezione": "2026-08-27+02:00",
+                    "tipo_oggetto": "lotto",
+                    "valore_complessivo_stimato": 1000000
+                  }
+                ],
+                "name": "SEZ. C - Oggetto"
+              }
+            ]
+          }
+        }
+      ],
+      "tipo": "avviso",
+      "tipoNuovoAvviso": "rettifica",
+      "tipologia": "BANDI"
+    },
+    {
+      "ambiente": null,
+      "attivo": true,
+      "categorie": null,
+      "codiceEform": "16",
+      "codiceScheda": "P1_16",
+      "count": 5,
+      "dataCreazione": "2026-08-07T02:15:23.605+00:00",
+      "dataPCP": "2026-08-06T22:00:00.000+00:00",
+      "dataPubblicazione": "2026-08-10T06:00:00.605+00:00",
+      "dataPubblicazioneNuovoAvviso": null,
+      "dataScadenza": "2026-09-07T21:59:00.000+00:00",
+      "idAppalto": "a79f934e-523d-41cf-a64c-121fc9d35605",
+      "idAvviso": "4f94ad32-f8ee-44b8-bd0e-f00e4311f956",
+      "noteOscuramento": null,
+      "nuovoAvviso": null,
+      "oscurato": false,
+      "paginationToken": "CJfcPRoCYAEaBhCQ3JGTCCIOWgxqdT+7TqZA2c4V4wc=",
+      "score": 11.138435363769531,
+      "scoreDetails": {
+        "description": "sum of:",
+        "details": [
+          {
+            "description": "match on required clause, product of:",
+            "details": [
+              {
+                "description": "# clause",
+                "details": [],
+                "value": 0
+              },
+              {
+                "description": "IndexOrDocValuesQuery(indexQuery=ConstantScore($type:token/tipologia:BANDI), dvQuery=$type:token/tipologia:[[42 41 4e 44 49] TO [42 41 4e 44 49]])",
+                "details": [],
+                "value": 1
+              }
+            ],
+            "value": 0
+          },
+          {
+            "description": "match on required clause, product of:",
+            "details": [
+              {
+                "description": "# clause",
+                "details": [],
+                "value": 0
+              },
+              {
+                "description": "IndexOrDocValuesQuery(indexQuery=$type:dateV2/dataPubblicazione:[1785542400000 TO 1792346960162], dvQuery=$type:dateV2/dataPubblicazione:[1785542400000 TO 1792346960162])",
+                "details": [],
+                "value": 1
+              }
+            ],
+            "value": 0
+          },
+          {
+            "description": "sum of:",
+            "details": [
+              {
+                "description": "$type:string/templates.template.metadata.descrizione:\"intelligenza artificiale\" [BM25Similarity], result of:",
+                "details": [
+                  {
+                    "description": "score(freq=1.0), computed as boost * idf * tf from:",
+                    "details": [
+                      {
+                        "description": "idf, sum of:",
+                        "details": [
+                          {
+                            "description": "idf, computed as log(1 + (N - n + 0.5) / (n + 0.5)) from:",
+                            "details": [
+                              {
+                                "description": "n, number of documents containing term",
+                                "details": [],
+                                "value": 648
+                              },
+                              {
+                                "description": "N, total number of documents with field",
+                                "details": [],
+                                "value": 1218949
+                              }
+                            ],
+                            "value": 7.5388383865356445
+                          },
+                          {
+                            "description": "idf, computed as log(1 + (N - n + 0.5) / (n + 0.5)) from:",
+                            "details": [
+                              {
+                                "description": "n, number of documents containing term",
+                                "details": [],
+                                "value": 1287
+                              },
+                              {
+                                "description": "N, total number of documents with field",
+                                "details": [],
+                                "value": 1218949
+                              }
+                            ],
+                            "value": 6.8530426025390625
+                          }
+                        ],
+                        "value": 14.391880989074707
+                      },
+                      {
+                        "description": "tf, computed as freq / (freq + k1 * (1 - b + b * dl / avgdl)) from:",
+                        "details": [
+                          {
+                            "description": "phraseFreq=1.0",
+                            "details": [],
+                            "value": 1
+                          },
+                          {
+                            "description": "k1, term saturation parameter",
+                            "details": [],
+                            "value": 1.2000000476837158
+                          },
+                          {
+                            "description": "b, length normalization parameter",
+                            "details": [],
+                            "value": 0.75
+                          },
+                          {
+                            "description": "dl, length of field",
+                            "details": [],
+                            "value": 31
+                          },
+                          {
+                            "description": "avgdl, average length of field",
+                            "details": [],
+                            "value": 18.11918830871582
+                          }
+                        ],
+                        "value": 0.3521369695663452
+                      }
+                    ],
+                    "value": 5.067914009094238
+                  }
+                ],
+                "value": 5.067914009094238
+              },
+              {
+                "description": "$type:string/templates.template.metadata.titolo:\"intelligenza artificiale\" [BM25Similarity], result of:",
+                "details": [
+                  {
+                    "description": "score(freq=1.0), computed as boost * idf * tf from:",
+                    "details": [
+                      {
+                        "description": "idf, sum of:",
+                        "details": [
+                          {
+                            "description": "idf, computed as log(1 + (N - n + 0.5) / (n + 0.5)) from:",
+                            "details": [
+                              {
+                                "description": "n, number of documents containing term",
+                                "details": [],
+                                "value": 20
+                              },
+                              {
+                                "description": "N, total number of documents with field",
+                                "details": [],
+                                "value": 42559
+                              }
+                            ],
+                            "value": 7.638245105743408
+                          },
+                          {
+                            "description": "idf, computed as log(1 + (N - n + 0.5) / (n + 0.5)) from:",
+                            "details": [
+                              {
+                                "description": "n, number of documents containing term",
+                                "details": [],
+                                "value": 33
+                              },
+                              {
+                                "description": "N, total number of documents with field",
+                                "details": [],
+                                "value": 42559
+                              }
+                            ],
+                            "value": 7.147124767303467
+                          }
+                        ],
+                        "value": 14.785369873046875
+                      },
+                      {
+                        "description": "tf, computed as freq / (freq + k1 * (1 - b + b * dl / avgdl)) from:",
+                        "details": [
+                          {
+                            "description": "phraseFreq=1.0",
+                            "details": [],
+                            "value": 1
+                          },
+                          {
+                            "description": "k1, term saturation parameter",
+                            "details": [],
+                            "value": 1.2000000476837158
+                          },
+                          {
+                            "description": "b, length normalization parameter",
+                            "details": [],
+                            "value": 0.75
+                          },
+                          {
+                            "description": "dl, length of field",
+                            "details": [],
+                            "value": 31
+                          },
+                          {
+                            "description": "avgdl, average length of field",
+                            "details": [],
+                            "value": 24.5684814453125
+                          }
+                        ],
+                        "value": 0.4105762839317322
+                      }
+                    ],
+                    "value": 6.070521354675293
+                  }
+                ],
+                "value": 6.070521354675293
+              }
+            ],
+            "value": 11.138435363769531
+          }
+        ],
+        "value": 11.138435363769531
+      },
+      "stato": "NON_VERIFICATO",
+      "templates": [
+        {
+          "lingua": "it",
+          "template": {
+            "metadata": {
+              "descrizione": "FORNITURA, INSTALLAZIONE, CONFIGURAZIONE E MESSA IN ESERCIZIO DI UN ECOSISTEMA DIGITALE DI RICERCA BASATO SU TECNOLOGIE DI INTELLIGENZA ARTIFICIALE PER LA GESTIONE E DISSEMINAZIONE DEL PATRIMONIO SCIENTIFICO E AMBIENTALE  PADIGLIONE BUOZZI",
+              "link_eform_ted": "https://ted.europa.eu/udl?uri=TED:NOTICE:547083-2026:TEXT:IT:HTML",
+              "titolo": "FORNITURA, INSTALLAZIONE, CONFIGURAZIONE E MESSA IN ESERCIZIO DI UN ECOSISTEMA DIGITALE DI RICERCA BASATO SU TECNOLOGIE DI INTELLIGENZA ARTIFICIALE PER LA GESTIONE E DISSEMINAZIONE DEL PATRIMONIO SCIENTIFICO E AMBIENTALE  PADIGLIONE BUOZZI"
+            },
+            "sections": [
+              {
+                "fields": {
+                  "soggetti_sa": [
+                    {
+                      "codice_fiscale": "97169170822",
+                      "denominazione_amministrazione": "AGENZIA REGIONALE PER LA PROTEZIONE DELL'AMBIENTE"
+                    }
+                  ]
+                },
+                "name": "SEZ. A - Committente"
+              },
+              {
+                "fields": {
+                  "accordo_quadro": "Nulla",
+                  "asta_elettronica": "false",
+                  "documenti_di_gara_link": "https://portaleappalti.arpa.sicilia.it/PortaleAppalti/it/procedure/codice/G01411",
+                  "sistema_dinamico_acquisizione": "Nessun sistema dinamico di acquisizione",
+                  "tipo_procedura_aggiudicazione": "Aperta"
+                },
+                "name": "SEZ. B - Dati Generali"
+              },
+              {
+                "items": [
+                  {
+                    "accordo_quadro": "Nulla",
+                    "asta_elettronica": "false",
+                    "categorie": [
+                      {
+                        "codice": "FS",
+                        "descrizione": "FORNITURA DI SERVIZI"
+                      }
+                    ],
+                    "cig": "BCA0E41C8A",
+                    "cpv": "Servizi informatici: consulenza, sviluppo di software, Internet e supporto",
+                    "criteri_aggiudicazione": "Qualità",
+                    "descrizione": "FORNITURA, INSTALLAZIONE, CONFIGURAZIONE E MESSA IN ESERCIZIO DI UN ECOSISTEMA DIGITALE DI RICERCA BASATO SU TECNOLOGIE DI INTELLIGENZA ARTIFICIALE PER LA GESTIONE E DISSEMINAZIONE DEL PATRIMONIO SCIENTIFICO E AMBIENTALE  PADIGLIONE BUOZZI",
+                    "documenti_di_gara_link": "https://portaleappalti.arpa.sicilia.it/PortaleAppalti/it/procedure/codice/G01411",
+                    "luogo_istat": "PALERMO",
+                    "luogo_nuts": "Palermo",
+                    "natura_principale": "Servizi",
+                    "sistema_dinamico_acquisizione": "Nessun sistema dinamico di acquisizione",
+                    "termine_ricezione": "2026-09-07+02:00",
+                    "tipo_oggetto": "lotto",
+                    "valore_complessivo_stimato": 1000000
+                  }
+                ],
+                "name": "SEZ. C - Oggetto"
+              }
+            ]
+          }
+        }
+      ],
+      "tipo": "rettifica",
+      "tipoNuovoAvviso": null,
+      "tipologia": "BANDI"
+    },
+    {
+      "ambiente": null,
+      "attivo": true,
+      "categorie": null,
+      "codiceEform": "16",
+      "codiceScheda": "P1_16",
+      "count": 5,
+      "dataCreazione": "2026-09-27T15:30:44.858+00:00",
+      "dataPCP": "2026-09-27T17:30:44.000+00:00",
+      "dataPubblicazione": "2026-09-29T06:00:00.857+00:00",
+      "dataPubblicazioneNuovoAvviso": null,
+      "dataScadenza": "2026-11-07T10:00:00.000+00:00",
+      "idAppalto": "7eb6e5c3-ede9-403c-bf1f-d3a1721665f5",
+      "idAvviso": "a9c99655-cf18-4f73-ac72-079de9f14117",
+      "noteOscuramento": null,
+      "nuovoAvviso": null,
+      "oscurato": false,
+      "paginationToken": "CIWpRRoCYAEaBhCQ3JGTCCIOWgxquTakNXNhDSEZ+8c=",
+      "score": 11.138435363769531,
+      "scoreDetails": {
+        "description": "sum of:",
+        "details": [
+          {
+            "description": "match on required clause, product of:",
+            "details": [
+              {
+                "description": "# clause",
+                "details": [],
+                "value": 0
+              },
+              {
+                "description": "IndexOrDocValuesQuery(indexQuery=ConstantScore($type:token/tipologia:BANDI), dvQuery=$type:token/tipologia:[[42 41 4e 44 49] TO [42 41 4e 44 49]])",
+                "details": [],
+                "value": 1
+              }
+            ],
+            "value": 0
+          },
+          {
+            "description": "match on required clause, product of:",
+            "details": [
+              {
+                "description": "# clause",
+                "details": [],
+                "value": 0
+              },
+              {
+                "description": "IndexOrDocValuesQuery(indexQuery=$type:dateV2/dataPubblicazione:[1785542400000 TO 1792346960162], dvQuery=$type:dateV2/dataPubblicazione:[1785542400000 TO 1792346960162])",
+                "details": [],
+                "value": 1
+              }
+            ],
+            "value": 0
+          },
+          {
+            "description": "sum of:",
+            "details": [
+              {
+                "description": "$type:string/templates.template.metadata.descrizione:\"intelligenza artificiale\" [BM25Similarity], result of:",
+                "details": [
+                  {
+                    "description": "score(freq=1.0), computed as boost * idf * tf from:",
+                    "details": [
+                      {
+                        "description": "idf, sum of:",
+                        "details": [
+                          {
+                            "description": "idf, computed as log(1 + (N - n + 0.5) / (n + 0.5)) from:",
+                            "details": [
+                              {
+                                "description": "n, number of documents containing term",
+                                "details": [],
+                                "value": 648
+                              },
+                              {
+                                "description": "N, total number of documents with field",
+                                "details": [],
+                                "value": 1218949
+                              }
+                            ],
+                            "value": 7.5388383865356445
+                          },
+                          {
+                            "description": "idf, computed as log(1 + (N - n + 0.5) / (n + 0.5)) from:",
+                            "details": [
+                              {
+                                "description": "n, number of documents containing term",
+                                "details": [],
+                                "value": 1287
+                              },
+                              {
+                                "description": "N, total number of documents with field",
+                                "details": [],
+                                "value": 1218949
+                              }
+                            ],
+                            "value": 6.8530426025390625
+                          }
+                        ],
+                        "value": 14.391880989074707
+                      },
+                      {
+                        "description": "tf, computed as freq / (freq + k1 * (1 - b + b * dl / avgdl)) from:",
+                        "details": [
+                          {
+                            "description": "phraseFreq=1.0",
+                            "details": [],
+                            "value": 1
+                          },
+                          {
+                            "description": "k1, term saturation parameter",
+                            "details": [],
+                            "value": 1.2000000476837158
+                          },
+                          {
+                            "description": "b, length normalization parameter",
+                            "details": [],
+                            "value": 0.75
+                          },
+                          {
+                            "description": "dl, length of field",
+                            "details": [],
+                            "value": 31
+                          },
+                          {
+                            "description": "avgdl, average length of field",
+                            "details": [],
+                            "value": 18.11918830871582
+                          }
+                        ],
+                        "value": 0.3521369695663452
+                      }
+                    ],
+                    "value": 5.067914009094238
+                  }
+                ],
+                "value": 5.067914009094238
+              },
+              {
+                "description": "$type:string/templates.template.metadata.titolo:\"intelligenza artificiale\" [BM25Similarity], result of:",
+                "details": [
+                  {
+                    "description": "score(freq=1.0), computed as boost * idf * tf from:",
+                    "details": [
+                      {
+                        "description": "idf, sum of:",
+                        "details": [
+                          {
+                            "description": "idf, computed as log(1 + (N - n + 0.5) / (n + 0.5)) from:",
+                            "details": [
+                              {
+                                "description": "n, number of documents containing term",
+                                "details": [],
+                                "value": 20
+                              },
+                              {
+                                "description": "N, total number of documents with field",
+                                "details": [],
+                                "value": 42559
+                              }
+                            ],
+                            "value": 7.638245105743408
+                          },
+                          {
+                            "description": "idf, computed as log(1 + (N - n + 0.5) / (n + 0.5)) from:",
+                            "details": [
+                              {
+                                "description": "n, number of documents containing term",
+                                "details": [],
+                                "value": 33
+                              },
+                              {
+                                "description": "N, total number of documents with field",
+                                "details": [],
+                                "value": 42559
+                              }
+                            ],
+                            "value": 7.147124767303467
+                          }
+                        ],
+                        "value": 14.785369873046875
+                      },
+                      {
+                        "description": "tf, computed as freq / (freq + k1 * (1 - b + b * dl / avgdl)) from:",
+                        "details": [
+                          {
+                            "description": "phraseFreq=1.0",
+                            "details": [],
+                            "value": 1
+                          },
+                          {
+                            "description": "k1, term saturation parameter",
+                            "details": [],
+                            "value": 1.2000000476837158
+                          },
+                          {
+                            "description": "b, length normalization parameter",
+                            "details": [],
+                            "value": 0.75
+                          },
+                          {
+                            "description": "dl, length of field",
+                            "details": [],
+                            "value": 31
+                          },
+                          {
+                            "description": "avgdl, average length of field",
+                            "details": [],
+                            "value": 24.5684814453125
+                          }
+                        ],
+                        "value": 0.4105762839317322
+                      }
+                    ],
+                    "value": 6.070521354675293
+                  }
+                ],
+                "value": 6.070521354675293
+              }
+            ],
+            "value": 11.138435363769531
+          }
+        ],
+        "value": 11.138435363769531
+      },
+      "stato": "NON_VERIFICATO",
+      "templates": [
+        {
+          "lingua": "it",
+          "template": {
+            "metadata": {
+              "descrizione": "Procedura aperta per la realizzazione del progetto di rinnovo dei servizi della piattaforma Google, della GCP e sviluppo del sistema di Intelligenza Artificiale Generativa per n. 36 mesi per Fondazione CNAO",
+              "link_eform_ted": "https://ted.europa.eu/udl?uri=TED:NOTICE:664497-2026:TEXT:IT:HTML",
+              "titolo": "Procedura aperta per la realizzazione del progetto di rinnovo dei servizi della piattaforma Google, della GCP e sviluppo del sistema di Intelligenza Artificiale Generativa per n. 36 mesi per Fondazione CNAO"
+            },
+            "sections": [
+              {
+                "fields": {
+                  "soggetti_sa": [
+                    {
+                      "codice_fiscale": "97301200156",
+                      "denominazione_amministrazione": "FONDAZIONE CENTRO NAZIONALE DI ADROTERAPIA ONCOLOGICA"
+                    }
+                  ]
+                },
+                "name": "SEZ. A - Committente"
+              },
+              {
+                "fields": {
+                  "accordo_quadro": "Nulla",
+                  "asta_elettronica": "false",
+                  "documenti_di_gara_link": "https://fondazionecnao.traspare.com/",
+                  "sistema_dinamico_acquisizione": "Nessun sistema dinamico di acquisizione",
+                  "tipo_procedura_aggiudicazione": "Aperta"
+                },
+                "name": "SEZ. B - Dati Generali"
+              },
+              {
+                "items": [
+                  {
+                    "accordo_quadro": "Nulla",
+                    "asta_elettronica": "false",
+                    "categorie": [
+                      {
+                        "codice": "FS",
+                        "descrizione": "FORNITURA DI SERVIZI"
+                      }
+                    ],
+                    "cig": "BD1E062211",
+                    "cpv": "Servizi di fornitura di software",
+                    "criteri_aggiudicazione": "Prezzo",
+                    "descrizione": "Procedura aperta per la realizzazione del progetto di rinnovo dei servizi della piattaforma Google, della GCP e sviluppo del sistema di Intelligenza Artificiale Generativa per n. 36 mesi per Fondazione CNAO",
+                    "documenti_di_gara_link": "https://fondazionecnao.traspare.com/",
+                    "durata": "1095",
+                    "durata_contratto": "1095",
+                    "luogo_istat": "PAVIA",
+                    "luogo_nuts": "Pavia",
+                    "natura_principale": "Servizi",
+                    "sistema_dinamico_acquisizione": "Nessun sistema dinamico di acquisizione",
+                    "termine_ricezione": "2026-11-07+02:00",
+                    "tipo_oggetto": "lotto",
+                    "valore_complessivo_stimato": 1560600
+                  }
+                ],
+                "name": "SEZ. C - Oggetto"
+              }
+            ]
+          }
+        }
+      ],
+      "tipo": "avviso",
+      "tipoNuovoAvviso": null,
+      "tipologia": "BANDI"
+    },
+    {
+      "ambiente": null,
+      "attivo": true,
+      "categorie": null,
+      "codiceEform": "16",
+      "codiceScheda": "P1_16",
+      "count": 5,
+      "dataCreazione": "2026-10-13T02:30:42.568+00:00",
+      "dataPCP": "2026-10-12T22:00:00.000+00:00",
+      "dataPubblicazione": "2026-10-14T06:00:00.567+00:00",
+      "dataPubblicazioneNuovoAvviso": null,
+      "dataScadenza": "2026-11-13T08:00:00.000+00:00",
+      "idAppalto": "67f0fc9d-be9b-440c-a2a4-fecab233c20f",
+      "idAvviso": "631398f0-9961-424f-84de-6f39526c257b",
+      "noteOscuramento": null,
+      "nuovoAvviso": null,
+      "oscurato": false,
+      "paginationToken": "CPqBShoCYAEaBhCWxdiQCCIOWgxqzZfS4a5Q1mu/drA=",
+      "score": 8.69172191619873,
+      "scoreDetails": {
+        "description": "sum of:",
+        "details": [
+          {
+            "description": "match on required clause, product of:",
+            "details": [
+              {
+                "description": "# clause",
+                "details": [],
+                "value": 0
+              },
+              {
+                "description": "IndexOrDocValuesQuery(indexQuery=ConstantScore($type:token/tipologia:BANDI), dvQuery=$type:token/tipologia:[[42 41 4e 44 49] TO [42 41 4e 44 49]])",
+                "details": [],
+                "value": 1
+              }
+            ],
+            "value": 0
+          },
+          {
+            "description": "match on required clause, product of:",
+            "details": [
+              {
+                "description": "# clause",
+                "details": [],
+                "value": 0
+              },
+              {
+                "description": "IndexOrDocValuesQuery(indexQuery=$type:dateV2/dataPubblicazione:[1785542400000 TO 1792346960162], dvQuery=$type:dateV2/dataPubblicazione:[1785542400000 TO 1792346960162])",
+                "details": [],
+                "value": 1
+              }
+            ],
+            "value": 0
+          },
+          {
+            "description": "sum of:",
+            "details": [
+              {
+                "description": "$type:string/templates.template.metadata.descrizione:\"intelligenza artificiale\" [BM25Similarity], result of:",
+                "details": [
+                  {
+                    "description": "score(freq=1.0), computed as boost * idf * tf from:",
+                    "details": [
+                      {
+                        "description": "idf, sum of:",
+                        "details": [
+                          {
+                            "description": "idf, computed as log(1 + (N - n + 0.5) / (n + 0.5)) from:",
+                            "details": [
+                              {
+                                "description": "n, number of documents containing term",
+                                "details": [],
+                                "value": 648
+                              },
+                              {
+                                "description": "N, total number of documents with field",
+                                "details": [],
+                                "value": 1218949
+                              }
+                            ],
+                            "value": 7.5388383865356445
+                          },
+                          {
+                            "description": "idf, computed as log(1 + (N - n + 0.5) / (n + 0.5)) from:",
+                            "details": [
+                              {
+                                "description": "n, number of documents containing term",
+                                "details": [],
+                                "value": 1287
+                              },
+                              {
+                                "description": "N, total number of documents with field",
+                                "details": [],
+                                "value": 1218949
+                              }
+                            ],
+                            "value": 6.8530426025390625
+                          }
+                        ],
+                        "value": 14.391880989074707
+                      },
+                      {
+                        "description": "tf, computed as freq / (freq + k1 * (1 - b + b * dl / avgdl)) from:",
+                        "details": [
+                          {
+                            "description": "phraseFreq=1.0",
+                            "details": [],
+                            "value": 1
+                          },
+                          {
+                            "description": "k1, term saturation parameter",
+                            "details": [],
+                            "value": 1.2000000476837158
+                          },
+                          {
+                            "description": "b, length normalization parameter",
+                            "details": [],
+                            "value": 0.75
+                          },
+                          {
+                            "description": "dl, length of field (approximate)",
+                            "details": [],
+                            "value": 54
+                          },
+                          {
+                            "description": "avgdl, average length of field",
+                            "details": [],
+                            "value": 18.11918830871582
+                          }
+                        ],
+                        "value": 0.25111496448516846
+                      }
+                    ],
+                    "value": 3.614016532897949
+                  }
+                ],
+                "value": 3.614016532897949
+              },
+              {
+                "description": "$type:string/templates.template.metadata.titolo:\"intelligenza artificiale\" [BM25Similarity], result of:",
+                "details": [
+                  {
+                    "description": "score(freq=1.0), computed as boost * idf * tf from:",
+                    "details": [
+                      {
+                        "description": "idf, sum of:",
+                        "details": [
+                          {
+                            "description": "idf, computed as log(1 + (N - n + 0.5) / (n + 0.5)) from:",
+                            "details": [
+                              {
+                                "description": "n, number of documents containing term",
+                                "details": [],
+                                "value": 20
+                              },
+                              {
+                                "description": "N, total number of documents with field",
+                                "details": [],
+                                "value": 42559
+                              }
+                            ],
+                            "value": 7.638245105743408
+                          },
+                          {
+                            "description": "idf, computed as log(1 + (N - n + 0.5) / (n + 0.5)) from:",
+                            "details": [
+                              {
+                                "description": "n, number of documents containing term",
+                                "details": [],
+                                "value": 33
+                              },
+                              {
+                                "description": "N, total number of documents with field",
+                                "details": [],
+                                "value": 42559
+                              }
+                            ],
+                            "value": 7.147124767303467
+                          }
+                        ],
+                        "value": 14.785369873046875
+                      },
+                      {
+                        "description": "tf, computed as freq / (freq + k1 * (1 - b + b * dl / avgdl)) from:",
+                        "details": [
+                          {
+                            "description": "phraseFreq=1.0",
+                            "details": [],
+                            "value": 1
+                          },
+                          {
+                            "description": "k1, term saturation parameter",
+                            "details": [],
+                            "value": 1.2000000476837158
+                          },
+                          {
+                            "description": "b, length normalization parameter",
+                            "details": [],
+                            "value": 0.75
+                          },
+                          {
+                            "description": "dl, length of field (approximate)",
+                            "details": [],
+                            "value": 44
+                          },
+                          {
+                            "description": "avgdl, average length of field",
+                            "details": [],
+                            "value": 24.5684814453125
+                          }
+                        ],
+                        "value": 0.34342771768569946
+                      }
+                    ],
+                    "value": 5.077705383300781
+                  }
+                ],
+                "value": 5.077705383300781
+              }
+            ],
+            "value": 8.69172191619873
+          }
+        ],
+        "value": 8.69172191619873
+      },
+      "stato": "NON_VERIFICATO",
+      "templates": [
+        {
+          "lingua": "it",
+          "template": {
+            "metadata": {
+              "descrizione": "Fornitura di attrezzature scientifiche ad alto contenuto tecnologico per la realizzazione di un’infrastruttura integrata di calcolo ad alte prestazioni per intelligenza artificiale e simulazioni di calcolo quantistico, comprensiva di sistema principale GPU, apparati di rete, server rack di supporto, componenti accessori, licenze software, servizi di installazione, configurazione, integrazione, collaudo, formazione, garanzia, assistenza tecnica e manutenzione",
+              "link_eform_ted": "https://ted.europa.eu/udl?uri=TED:NOTICE:705264-2026:TEXT:IT:HTML",
+              "titolo": "PROCEDURA APERTA AVENTE AD OGGETTO LA FORNITURA DI ATTREZZATURE SCIENTIFICHE AD ALTO CONTENUTO TECNOLOGICO PER LA REALIZZAZIONE DI UNA ARCHITETTURA DI CALCOLO AD ALTE PRESTAZIONI PER INTELLIGENZA ARTIFICIALE E E SIMULAZIONI DI CALCOLO QUANTISTICO, NELL’AMBITO DEL PROGETTO FIS 3 - QARECA CUP E53C25002450001- CUI F00876220633202600012"
+            },
+            "sections": [
+              {
+                "fields": {
+                  "soggetti_sa": [
+                    {
+                      "codice_fiscale": "00876220633",
+                      "denominazione_amministrazione": "UNIVERSITA' DEGLI STUDI DI NAPOLI FEDERICO II"
+                    }
+                  ]
+                },
+                "name": "SEZ. A - Committente"
+              },
+              {
+                "fields": {
+                  "accordo_quadro": "Nulla",
+                  "asta_elettronica": "false",
+                  "documenti_di_gara_link": "https://www.acquistinretepa.it/bandi/aperta/gara-asp/5b2e138d4d1f71bc",
+                  "sistema_dinamico_acquisizione": "Nessun sistema dinamico di acquisizione",
+                  "tipo_procedura_aggiudicazione": "Aperta"
+                },
+                "name": "SEZ. B - Dati Generali"
+              },
+              {
+                "items": [
+                  {
+                    "accordo_quadro": "Nulla",
+                    "asta_elettronica": "false",
+                    "categorie": [
+                      {
+                        "codice": "FB",
+                        "descrizione": "FORNITURA DI BENI"
+                      }
+                    ],
+                    "cig": "BD52EA1A37",
+                    "cpv": "Server",
+                    "criteri_aggiudicazione": "Qualità",
+                    "descrizione": "Fornitura di attrezzature scientifiche ad alto contenuto tecnologico per la realizzazione di un’infrastruttura integrata di calcolo ad alte prestazioni per intelligenza artificiale e simulazioni di calcolo quantistico, comprensiva di sistema principale GPU, apparati di rete, server rack di supporto, componenti accessori, licenze software, servizi di installazione, configurazione, integrazione, collaudo, formazione, garanzia, assistenza tecnica e manutenzione",
+                    "documenti_di_gara_link": "https://www.acquistinretepa.it/bandi/aperta/gara-asp/5b2e138d4d1f71bc",
+                    "durata": "6",
+                    "durata_contratto": "6",
+                    "luogo_istat": "NAPOLI",
+                    "luogo_nuts": "Napoli",
+                    "natura_principale": "Forniture",
+                    "sistema_dinamico_acquisizione": "Nessun sistema dinamico di acquisizione",
+                    "termine_ricezione": "2026-11-13+02:00",
+                    "tipo_oggetto": "lotto",
+                    "valore_complessivo_stimato": 505920
+                  }
+                ],
+                "name": "SEZ. C - Oggetto"
+              }
+            ]
+          }
+        }
+      ],
+      "tipo": "avviso",
+      "tipoNuovoAvviso": null,
+      "tipologia": "BANDI"
+    },
+    {
+      "ambiente": null,
+      "attivo": true,
+      "categorie": null,
+      "codiceEform": "16",
+      "codiceScheda": "P1_16",
+      "count": 5,
+      "dataCreazione": "2026-08-04T02:30:05.946+00:00",
+      "dataPCP": "2026-08-03T22:00:00.000+00:00",
+      "dataPubblicazione": "2026-08-05T06:00:00.945+00:00",
+      "dataPubblicazioneNuovoAvviso": null,
+      "dataScadenza": "2026-09-07T10:00:00.000+00:00",
+      "idAppalto": "6633d6d4-99f9-4afb-98ba-629539590c59",
+      "idAvviso": "1b337c28-e03b-4003-8f98-846756bdff8f",
+      "noteOscuramento": null,
+      "nuovoAvviso": null,
+      "oscurato": false,
+      "paginationToken": "CJufNBoCYAEaBhCAlu2ECCIOWgxqcU6tVRiXdv+VlsU=",
+      "score": 3.213226318359375,
+      "scoreDetails": {
+        "description": "sum of:",
+        "details": [
+          {
+            "description": "match on required clause, product of:",
+            "details": [
+              {
+                "description": "# clause",
+                "details": [],
+                "value": 0
+              },
+              {
+                "description": "IndexOrDocValuesQuery(indexQuery=ConstantScore($type:token/tipologia:BANDI), dvQuery=$type:token/tipologia:[[42 41 4e 44 49] TO [42 41 4e 44 49]])",
+                "details": [],
+                "value": 1
+              }
+            ],
+            "value": 0
+          },
+          {
+            "description": "match on required clause, product of:",
+            "details": [
+              {
+                "description": "# clause",
+                "details": [],
+                "value": 0
+              },
+              {
+                "description": "IndexOrDocValuesQuery(indexQuery=$type:dateV2/dataPubblicazione:[1785542400000 TO 1792346960162], dvQuery=$type:dateV2/dataPubblicazione:[1785542400000 TO 1792346960162])",
+                "details": [],
+                "value": 1
+              }
+            ],
+            "value": 0
+          },
+          {
+            "description": "sum of:",
+            "details": [
+              {
+                "description": "$type:string/templates.template.metadata.descrizione:\"intelligenza artificiale\" [BM25Similarity], result of:",
+                "details": [
+                  {
+                    "description": "score(freq=1.0), computed as boost * idf * tf from:",
+                    "details": [
+                      {
+                        "description": "idf, sum of:",
+                        "details": [
+                          {
+                            "description": "idf, computed as log(1 + (N - n + 0.5) / (n + 0.5)) from:",
+                            "details": [
+                              {
+                                "description": "n, number of documents containing term",
+                                "details": [],
+                                "value": 648
+                              },
+                              {
+                                "description": "N, total number of documents with field",
+                                "details": [],
+                                "value": 1218949
+                              }
+                            ],
+                            "value": 7.5388383865356445
+                          },
+                          {
+                            "description": "idf, computed as log(1 + (N - n + 0.5) / (n + 0.5)) from:",
+                            "details": [
+                              {
+                                "description": "n, number of documents containing term",
+                                "details": [],
+                                "value": 1287
+                              },
+                              {
+                                "description": "N, total number of documents with field",
+                                "details": [],
+                                "value": 1218949
+                              }
+                            ],
+                            "value": 6.8530426025390625
+                          }
+                        ],
+                        "value": 14.391880989074707
+                      },
+                      {
+                        "description": "tf, computed as freq / (freq + k1 * (1 - b + b * dl / avgdl)) from:",
+                        "details": [
+                          {
+                            "description": "phraseFreq=1.0",
+                            "details": [],
+                            "value": 1
+                          },
+                          {
+                            "description": "k1, term saturation parameter",
+                            "details": [],
+                            "value": 1.2000000476837158
+                          },
+                          {
+                            "description": "b, length normalization parameter",
+                            "details": [],
+                            "value": 0.75
+                          },
+                          {
+                            "description": "dl, length of field (approximate)",
+                            "details": [],
+                            "value": 64
+                          },
+                          {
+                            "description": "avgdl, average length of field",
+                            "details": [],
+                            "value": 18.11918830871582
+                          }
+                        ],
+                        "value": 0.2232666015625
+                      }
+                    ],
+                    "value": 3.213226318359375
+                  }
+                ],
+                "value": 3.213226318359375
+              }
+            ],
+            "value": 3.213226318359375
+          }
+        ],
+        "value": 3.213226318359375
+      },
+      "stato": "NON_VERIFICATO",
+      "templates": [
+        {
+          "lingua": "it",
+          "template": {
+            "metadata": {
+              "descrizione": "ATTIVITÀ DI RICERCA VOLTA ALLA PROGETTAZIONE E ALLO SVILUPPO DI ‘THEION’, UN SOFTWARE BASATO SULL’APPLICAZIONE DI MODELLI DI INTELLIGENZA ARTIFICIALE ALLA RICOSTRUZIONE TESTUALE DEI PAPIRI ERCOLANESI CAPACE DI 1) FARE PREDIZIONI LINGUISTICHE PER SUGGERIRE INTEGRAZIONI DI LACUNA NEI TESTI DI FILODEMO SULLA BASE DEL CONTESTO E DELLO STILE DELL’AUTORE E 2) REALIZZARE TEXT MINING AUTOMATIZZATO PER SUGGERIRE PARALLELI TESTUALI PERTINENTI” nell’ambito del progetto LACUNA",
+              "link_eform_ted": "https://ted.europa.eu/udl?uri=TED:NOTICE:538528-2026:TEXT:IT:HTML",
+              "titolo": "ATTIVITA' DI RICERCA VOLTA ALLA PROGETTAZIONE E ALLO SVILUPPO DI THEION"
+            },
+            "sections": [
+              {
+                "fields": {
+                  "soggetti_sa": [
+                    {
+                      "codice_fiscale": "00876220633",
+                      "denominazione_amministrazione": "UNIVERSITA' DEGLI STUDI DI NAPOLI FEDERICO II"
+                    }
+                  ]
+                },
+                "name": "SEZ. A - Committente"
+              },
+              {
+                "fields": {
+                  "accordo_quadro": "Nulla",
+                  "asta_elettronica": "false",
+                  "documenti_di_gara_link": "https://www.unina.it/it/ateneo/gare-e-contratti",
+                  "sistema_dinamico_acquisizione": "Nessun sistema dinamico di acquisizione",
+                  "tipo_procedura_aggiudicazione": "Aperta"
+                },
+                "name": "SEZ. B - Dati Generali"
+              },
+              {
+                "items": [
+                  {
+                    "accordo_quadro": "Nulla",
+                    "asta_elettronica": "false",
+                    "categorie": [
+                      {
+                        "codice": "FS",
+                        "descrizione": "FORNITURA DI SERVIZI"
+                      }
+                    ],
+                    "cig": "BC9995B4D5",
+                    "cpv": "Servizi di ricerca",
+                    "criteri_aggiudicazione": "Qualità",
+                    "descrizione": "6504736 - lotto 1",
+                    "documenti_di_gara_link": "https://www.unina.it/it/ateneo/gare-e-contratti",
+                    "durata": "24",
+                    "durata_contratto": "24",
+                    "luogo_istat": "NAPOLI",
+                    "luogo_nuts": "Napoli",
+                    "natura_principale": "Servizi",
+                    "sistema_dinamico_acquisizione": "Nessun sistema dinamico di acquisizione",
+                    "termine_ricezione": "2026-09-07+02:00",
+                    "tipo_oggetto": "lotto",
+                    "valore_complessivo_stimato": 300000
+                  }
+                ],
+                "name": "SEZ. C - Oggetto"
+              }
+            ]
+          }
+        }
+      ],
+      "tipo": "avviso",
+      "tipoNuovoAvviso": null,
+      "tipologia": "BANDI"
+    }
+  ],
+  "count": 5
+}

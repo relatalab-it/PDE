@@ -4,99 +4,76 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Appalti pubblici (ANAC) — PDE</title>
-<meta name="description" content="Demo di PDE sugli appalti pubblici, con il connettore sulla Piattaforma di Pubblicità a Valore Legale di ANAC. In preparazione.">
+<meta name="description" content="Gli appalti pubblici italiani in linguaggio naturale: un assistente AI collegato alla Piattaforma di Pubblicità a Valore Legale di ANAC risponde a domande in italiano, con la fonte indicata. Cosa fa, come lo fa, dove sbaglia.">
 <meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231a3a5c'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='16' font-weight='700' text-anchor='middle' fill='%23fff'%3EP%3C/text%3E%3C/svg%3E">
 <style>
   :root {
-    --bg: #f5f3ee;
-    --surface: #ffffff;
-    --text: #1d2430;
-    --muted: #5b6573;
-    --line: #dcd8cf;
-    --accent: #1a3a5c;
-    --accent-soft: #e8eef5;
-    --focus: #1a6fd1;
+    --bg: #f5f3ee; --surface: #ffffff; --text: #1d2430; --muted: #5b6573; --line: #dcd8cf;
+    --accent: #1a3a5c; --accent-soft: #e8eef5; --focus: #1a6fd1;
+    --c1: #1a3a5c; --c2: #d9822b; --warn-bg: #fbf1e1; --warn-line: #d9822b;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --bg: #14181f;
-      --surface: #1b212b;
-      --text: #e8ebf0;
-      --muted: #a0a9b6;
-      --line: #2e3745;
-      --accent: #8fb4de;
-      --accent-soft: #232d3b;
-      --focus: #7db3ff;
+      --bg: #14181f; --surface: #1b212b; --text: #e8ebf0; --muted: #a0a9b6; --line: #2e3745;
+      --accent: #8fb4de; --accent-soft: #232d3b; --focus: #7db3ff;
+      --c1: #8fb4de; --c2: #f0a254; --warn-bg: #2c2418; --warn-line: #f0a254;
     }
   }
-  :root[data-theme="dark"] {
-    --bg: #14181f; --surface: #1b212b; --text: #e8ebf0; --muted: #a0a9b6;
-    --line: #2e3745; --accent: #8fb4de; --accent-soft: #232d3b; --focus: #7db3ff;
-  }
-
   * { box-sizing: border-box; }
   html { -webkit-text-size-adjust: 100%; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  }
-  .wrap { max-width: 44rem; margin: 0 auto; padding: 0 16px; }
-
-  header { padding: 48px 0 24px; }
-  .eyebrow {
-    margin: 0 0 12px;
-    font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted);
-  }
-  h1 { margin: 0 0 16px; font-size: clamp(1.9rem, 5.5vw, 2.6rem); line-height: 1.15; letter-spacing: -.01em; color: var(--accent); }
-  .lead { margin: 0; font-size: 1.1rem; color: var(--text); }
-
-  .note {
-    margin: 28px 0 8px;
-    padding: 14px 16px;
-    background: var(--accent-soft);
-    border-left: 3px solid var(--accent);
-    border-radius: 0 6px 6px 0;
-    font-size: .95rem;
-  }
+  body { margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  .wrap { max-width: 52rem; margin: 0 auto; padding: 0 16px; }
+  header { padding: 56px 0 20px; }
+  .eyebrow { margin: 0 0 12px; font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  h1 { margin: 0 0 16px; font-size: clamp(1.8rem, 5.5vw, 2.5rem); line-height: 1.15; letter-spacing: -.01em; color: var(--accent); }
+  .lead { margin: 0; font-size: 1.1rem; }
+  .note { margin: 24px 0 8px; padding: 14px 16px; background: var(--accent-soft); border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0; font-size: .95rem; }
   .note p { margin: 0; }
-
-  h2.section { margin: 36px 0 12px; font-size: .85rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
-
-  .cases { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
-  .case {
-    background: var(--surface);
-    border: 1px solid var(--line);
-    border-radius: 8px;
-    padding: 18px 18px 16px;
-  }
-  .case h3 { margin: 0 0 4px; font-size: 1.15rem; line-height: 1.3; }
+  .note.warn { background: var(--warn-bg); border-left-color: var(--warn-line); }
+  h2.section { margin: 40px 0 12px; font-size: .85rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+  h3 { margin: 28px 0 8px; font-size: 1.15rem; line-height: 1.3; }
+  p { margin: 0 0 12px; }
+  a { color: var(--accent); }
+  a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 3px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 18px; margin: 0 0 14px; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr)); gap: 10px; margin: 14px 0; }
+  .stat { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; }
+  .stat b { display: block; font-size: 1.6rem; line-height: 1.15; color: var(--accent); }
+  .stat span { font-size: .85rem; color: var(--muted); }
+  .steps { margin: 0 0 14px; padding-left: 1.2rem; }
+  .steps li { margin: 0 0 8px; }
+  pre, code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .85rem; }
+  pre { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 12px 14px; overflow-x: auto; margin: 6px 0 14px; white-space: pre-wrap; word-break: break-word; }
+  .q { font-size: 1.1rem; padding: 14px 16px; background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0; margin: 10px 0 16px; }
   .tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 10px; padding: 0; list-style: none; }
-  .tag {
-    font-size: .75rem; font-weight: 600; letter-spacing: .03em;
-    padding: 2px 8px; border-radius: 99px;
-    background: var(--accent-soft); color: var(--accent);
-  }
+  .tag { font-size: .75rem; font-weight: 600; letter-spacing: .03em; padding: 2px 8px; border-radius: 99px; background: var(--accent-soft); color: var(--accent); }
   .tag.plain { background: transparent; border: 1px solid var(--line); color: var(--muted); font-weight: 500; }
-  .case p { margin: 0 0 12px; color: var(--text); font-size: .98rem; }
-  .links { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 18px; }
-  .links a {
-    color: var(--accent); font-weight: 600; text-decoration: none;
-    border-bottom: 1px solid transparent;
-  }
-  .links a::after { content: " →"; }
-  .links a:hover { border-bottom-color: currentColor; }
-  a:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 3px; }
-
-  .more { margin: 14px 2px 0; font-size: .92rem; color: var(--muted); }
-
-  .oss { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr)); gap: 6px 16px; font-size: .95rem; }
-  .oss a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--line); }
-  .oss a:hover { border-bottom-color: var(--accent); }
-
+  .tbl-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); margin: 8px 0 16px; }
+  table { border-collapse: collapse; width: 100%; font-size: .9rem; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-size: .78rem; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); font-weight: 600; white-space: nowrap; }
+  tr:last-child td { border-bottom: 0; }
+  td.num, th.num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .bar { display: grid; grid-template-columns: minmax(8rem, 15rem) 1fr auto; gap: 8px 10px; align-items: center; font-size: .9rem; margin: 6px 0; }
+  .bar .lab { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .bar .trk { background: var(--accent-soft); border-radius: 4px; height: 14px; overflow: hidden; }
+  .bar .fill { height: 100%; background: var(--c1); border-radius: 4px; }
+  .bar .fill.alt { background: var(--c2); }
+  .bar .val { font-variant-numeric: tabular-nums; color: var(--muted); }
+  .src { display: inline-block; font-size: .72rem; font-weight: 600; padding: 1px 7px; border-radius: 99px; margin-right: 4px; }
+  .src.cpv { background: var(--accent-soft); color: var(--accent); }
+  .src.fr { background: var(--warn-bg); color: var(--c2); border: 1px solid var(--warn-line); }
+  input[type=search] { width: 100%; padding: 9px 12px; font: inherit; background: var(--surface); color: var(--text); border: 1px solid var(--line); border-radius: 6px; }
+  .small { font-size: .88rem; color: var(--muted); }
+  ul.limits { margin: 0 0 14px; padding-left: 1.2rem; }
+  ul.limits li { margin: 0 0 8px; }
   footer { margin: 48px 0 40px; padding-top: 18px; border-top: 1px solid var(--line); font-size: .88rem; color: var(--muted); }
   footer a { color: inherit; }
+  @media (max-width: 560px) { .bar { grid-template-columns: 1fr auto; } .bar .trk { grid-column: 1 / -1; order: 3; } }
 </style>
 </head>
 <body>
@@ -105,24 +82,230 @@
 
   <header>
     <p class="eyebrow">PDE · Appalti pubblici</p>
-    <h1>Appalti pubblici (ANAC)</h1>
-    <p class="lead">Bandi, esiti e avvisi di gara delle stazioni appaltanti italiane, interrogati in linguaggio naturale tramite il connettore sulla Piattaforma di Pubblicità a Valore Legale di ANAC.</p>
+    <h1>Gli appalti pubblici italiani, in linguaggio naturale</h1>
+    <p class="lead">Dall’inizio del 2026 la piattaforma ANAC ha pubblicato oltre <strong id="n-totale">760.000</strong> avvisi di gara. Trovare quelli che interessano richiede di conoscere codici, formule e limiti del servizio. Qui un assistente AI, collegato direttamente alla fonte ufficiale, risponde a domande in italiano e indica da dove viene ogni dato.</p>
     <div class="note">
-      <p><strong>Demo in preparazione.</strong> Questa pagina è un segnaposto: i casi d’uso, le domande e i risultati verranno pubblicati qui.</p>
+      <p><strong>Cosa vedi qui.</strong> Una demo su una sola fonte, con un campione di avvisi del 2026 e le risposte esattamente come sono state ottenute: comandi, risultati e limiti. L’orchestrazione di più fonti insieme è l’obiettivo del progetto PDE e non è ancora in questa pagina. Dati e script sono nel <a href="https://github.com/relatalab-it/PDE/tree/main/appalti/anac">repository</a> e si possono rifare da zero.</p>
     </div>
   </header>
 
   <main>
-    <h2 class="section">Componente open source</h2>
-    <ul class="oss">
-      <li><a href="https://github.com/aborruso/anac-pl-pp-cli">anac-pl-pp-cli</a> · ANAC</li>
+    <h2 class="section">Il problema</h2>
+    <p>I dati sugli appalti sono pubblici per legge, ma chi li cerca deve già sapere come funzionano. È un ostacolo per chi ne ha più bisogno: le piccole imprese che cercano gare a cui partecipare, i giornalisti e i ricercatori che verificano come si spende il denaro pubblico, gli uffici studi, le stesse amministrazioni.</p>
+    <div class="stats" id="stats-fonte"></div>
+    <ul class="limits">
+      <li><strong>Codici da conoscere.</strong> I settori sono descritti da un vocabolario europeo di 9.454 codici (CPV) e il tipo di avviso da 150 codici di scheda. Un tema come «comunicazione scientifica» non ha un codice.</li>
+      <li><strong>Un servizio con regole proprie.</strong> Le parole di una ricerca sono messe in alternativa tra loro e i risultati sono ordinati per rilevanza e non per data; le pagine si scorrono con un gettone, non con un numero; un CIG scritto male non dà errore, restituisce avvisi che non c’entrano.</li>
+      <li><strong>Un avviso può non comparire.</strong> ANAC può oscurare quelli che non superano i suoi controlli.</li>
     </ul>
+
+    <h2 class="section">Cosa fa il connettore</h2>
+    <p>Il connettore (<a href="https://github.com/aborruso/anac-pl-pp-cli">anac-pl-pp-cli</a>, con server MCP, open source) interroga l’API pubblica di ANAC, di sola lettura e senza chiavi. L’assistente AI lo usa per tradurre una domanda in italiano in chiamate al servizio ufficiale e per rendere esplicito ciò che il servizio non dice. Quattro esempi, con profili diversi, risultati reali e limiti dichiarati.</p>
+
+    <div class="card">
+      <ul class="tags"><li class="tag">bid manager</li><li class="tag plain">ricerca per frase</li></ul>
+      <h3 style="margin-top:0">1 · «Quali bandi sull’intelligenza artificiale sono ancora aperti?»</h3>
+      <p id="ex-ia"></p>
+      <div id="ex-ia-aperti"></div>
+    </div>
+
+    <div class="card">
+      <ul class="tags"><li class="tag">due diligence</li><li class="tag plain">controllo senza chiamare il servizio</li></ul>
+      <h3 style="margin-top:0">2 · «Questo CIG è scritto bene?»</h3>
+      <p id="ex-cig"></p>
+    </div>
+
+    <div class="card">
+      <ul class="tags"><li class="tag">giornalismo e cittadinanza</li><li class="tag plain">spiegare un codice</li></ul>
+      <h3 style="margin-top:0">3 · «Che cos’è un avviso di tipo AD3?»</h3>
+      <p id="ex-ad3"></p>
+    </div>
+
+    <div class="card">
+      <ul class="tags"><li class="tag">ricerca e analisi di mercato</li><li class="tag plain">due reti di ricerca</li></ul>
+      <h3 style="margin-top:0">4 · «Chi compra comunicazione scientifica in Italia, a quanto e chi vince?»</h3>
+      <p>Il caso più completo, perché il tema non ha un codice: <a href="#profondita">lo trovi qui sotto, passo per passo</a>.</p>
+    </div>
+
+    <h2 class="section" id="profondita">Un esempio in profondità</h2>
+    <div class="q">«Chi compra comunicazione scientifica in Italia, a quanto e chi vince?»</div>
+    <p>È la domanda che si pone chi fa divulgazione prima di candidarsi a un incarico. Non ha un codice CPV, quindi l’assistente usa <strong>due reti</strong> e poi un filtro.</p>
+
+    <h3>Come arriva alla risposta</h3>
+    <ol class="steps">
+      <li><strong>Sceglie i codici.</strong> Cerca nel vocabolario CPV i codici vicini al tema (pubbliche relazioni, pubblicità e marketing, eventi, produzione video, formazione, ricerca): 23 codici.</li>
+      <li><strong>Rete 1, per codice.</strong> Scarica gli avvisi del 2026 che portano uno di quei codici.</li>
+      <li><strong>Rete 2, per frase esatta.</strong> Cerca cinque frasi («comunicazione scientifica», «divulgazione scientifica», «ufficio stampa», «comunicazione istituzionale», «formazione in comunicazione») su bandi, esiti e affidamenti diretti. Trova gli avvisi catalogati sotto un altro codice.</li>
+      <li><strong>Filtra per tema, con una regola dichiarata.</strong> Tiene gli avvisi il cui oggetto parla di comunicazione (comunicazione, divulgazione, ufficio stampa, pubbliche relazioni, social media, campagne, giornalisti…) <em>e</em> ha un riferimento scientifico (scientifico, scienza, ricerca, ricercatori); esclude gli appalti di lavori.</li>
+      <li><strong>Aggancia importi e aggiudicatari</strong> con il comando che estrae una riga per lotto.</li>
+      <li><strong>Aggrega</strong> per committente, importo e aggiudicatario.</li>
+    </ol>
+
+    <h3>I comandi, esattamente come sono stati lanciati</h3>
+<pre>anac-pl-pp-cli cpv search "relazioni pubbliche"        # esempio di scelta dei codici
+
+# Rete 1: 23 codici CPV, avvisi dal 01/01/2026
+anac-pl-pp-cli cerca-avanzata --cpv 79416000,79416100,79416200,79340000,79341000,79341100,79341200,79341400,79342000,79952000,79952100,79950000,92111000,92111100,92111200,92111260,92400000,80530000,79300000,79320000,73110000,73210000,79411000 \
+  --from 01/01/2026 --size 100 --pages 40 --agent
+
+# Rete 2: ogni frase, su bandi, esiti e affidamenti diretti
+anac-pl-pp-cli cerca --query "divulgazione scientifica" --mode esatta -t affidamenti-diretti \
+  --published-from 01/01/2026 --size 100 --pages 5 --agent
+
+# Importi e aggiudicatari per lotto
+anac-pl-pp-cli affidamenti -q "divulgazione scientifica" --mode esatta -t affidamenti-diretti \
+  --published-from 01/01/2026 --size 100 --pages 6 --agent</pre>
+    <p class="small">I file grezzi sono in <a href="https://github.com/relatalab-it/PDE/tree/main/appalti/anac/data/raw">data/raw</a>; lo script che li trasforma nei numeri di questa pagina è <a href="https://github.com/relatalab-it/PDE/blob/main/appalti/anac/scripts/build_dataset.py">scripts/build_dataset.py</a>.</p>
+
+    <h3>Il risultato</h3>
+    <div class="stats" id="stats-risultato"></div>
+    <p id="sintesi-testo"></p>
+
+    <h3>Le due reti a confronto</h3>
+    <p>Degli avvisi che rispondono alla domanda, quanti ne ha trovati ciascuna rete:</p>
+    <div id="reti"></div>
+    <p class="small">La rete per codice trova pochissimo perché gli affidamenti diretti piccoli sono catalogati con codici CPV molto vari, o senza codice. La frase esatta li trova perché legge l’oggetto dell’avviso.</p>
+
+    <h3>Alcuni avvisi che il solo filtro per codice non vedeva</h3>
+    <div class="tbl-wrap"><table><thead><tr><th>Oggetto</th><th>Committente</th><th>Scheda</th><th class="num">Importo</th></tr></thead><tbody id="tab-recuperati"></tbody></table></div>
+
+    <h3>Chi compra</h3>
+    <p>Enti che hanno speso di più in questo campione (somma degli importi aggiudicati):</p>
+    <div id="bar-committenti"></div>
+
+    <h3>Chi vince</h3>
+    <p>Aggiudicatari con gli importi più alti:</p>
+    <div id="bar-aggiudicatari"></div>
+
+    <h3>Tutti gli avvisi del campione</h3>
+    <p><input type="search" id="filtro" placeholder="Filtra per oggetto, committente o aggiudicatario" aria-label="Filtra gli avvisi"></p>
+    <div class="tbl-wrap"><table><thead><tr><th>Data</th><th>Oggetto</th><th>Committente</th><th>Aggiudicatario</th><th class="num">Importo</th><th>Rete</th></tr></thead><tbody id="tab-tutti"></tbody></table></div>
+    <p class="small" id="conta-tutti"></p>
+
+    <h2 class="section">Limiti noti</h2>
+    <div class="note warn">
+      <ul class="limits" id="limiti">
+        <li>È un <strong>campione</strong>: avvisi del 2026, con un numero limitato di pagine per ricerca. Non va letto come il totale della spesa italiana in comunicazione scientifica.</li>
+        <li>La <strong>regola del tema</strong> è un’euristica sul testo dell’oggetto: tiene anche avvisi marginali (per esempio la fornitura di tovaglie per un evento di divulgazione) e può perderne altri. È scritta qui sopra perché si possa discutere.</li>
+        <li>La rete per codice usa <strong>solo i 23 codici scelti</strong>; la rete per frase usa <strong>solo cinque frasi</strong>. Altre formulazioni darebbero altri avvisi.</li>
+        <li>Con il testo libero il servizio ordina per <strong>rilevanza</strong>, non per data, e il numero di risultati dichiarato è una stima.</li>
+        <li>Gli importi vengono dal comando che estrae una riga per lotto: per gli avvisi trovati solo dalla rete per codice possono mancare.</li>
+        <li>ANAC può <strong>oscurare</strong> un avviso che non supera i suoi controlli, e un avviso oscurato può non comparire in ricerca. Nel campione non risulta nessun avviso oscurato.</li>
+        <li>Non ci sono bandi ancora aperti nel campione.</li>
+        <li>L’AI può sbagliare: per le cifre che contano si verifica l’avviso sul portale ANAC, indicato dall’identificativo.</li>
+      </ul>
+    </div>
+
+    <h2 class="section">Il passo successivo</h2>
+    <p>Questa demo risponde a domande su una sola fonte. Il valore di PDE sta nel combinare fonti diverse con lo stesso metodo: per esempio, la spesa in appalti di una provincia per settore, rapportata alla popolazione residente, unirebbe questi dati al registro territoriale ISTAT (<a href="../../territorio/situas/">SITUAS</a>) e alle statistiche demografiche SDMX. L’orchestrazione tra fonti è l’obiettivo del progetto in corso e non è ancora in queste pagine.</p>
+
+    <h2 class="section">Provalo</h2>
+    <p>La CLI è open source, senza chiavi. Installazione e aggiornamento nel <a href="https://github.com/aborruso/anac-pl-pp-cli">repository</a>. Dopo l’installazione:</p>
+<pre>anac-pl-pp-cli cerca --query "divulgazione scientifica" --mode esatta -t affidamenti-diretti --published-from 01/01/2026 --size 20 --agent</pre>
+    <p>Per usarla da un assistente AI con il protocollo MCP, il repository include il server <code>anac-pl-pp-mcp</code>.</p>
+
   </main>
 
   <footer>
+    <p id="foot-data"></p>
     <p>RELATA Lab · <a href="../../">PDE</a> · <a href="https://github.com/relatalab-it/PDE">Codice sorgente di questo sito</a></p>
   </footer>
 
 </div>
+
+<script>
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  function eur(n) { return n ? Math.round(n).toLocaleString('it-IT') + ' €' : '—'; }
+  function it(n) { return Number(n).toLocaleString('it-IT'); }
+  function dataIt(s) { return s ? s.split('-').reverse().join('/') : ''; }
+  function stat(n, label) { return '<div class="stat"><b>' + esc(n) + '</b><span>' + esc(label) + '</span></div>'; }
+  function bars(el, rows, key, fmt, alt) {
+    var max = Math.max.apply(null, rows.map(function (r) { return r[key]; }).concat([1]));
+    el.innerHTML = rows.map(function (r) {
+      return '<div class="bar"><span class="lab" title="' + esc(r.nome) + '">' + esc(r.nome) + '</span><span class="trk"><span class="fill' + (alt ? ' alt' : '') +
+             '" style="display:block;width:' + (100 * r[key] / max).toFixed(1) + '%"></span></span><span class="val">' + fmt(r[key]) + '</span></div>';
+    }).join('');
+  }
+
+  Promise.all([fetch('data/sintesi.json').then(function (r) { return r.json(); }),
+               fetch('data/avvisi_tema.json').then(function (r) { return r.json(); })]).then(function (res) {
+    var s = res[0], tutti = res[1];
+    var core = tutti;
+    var conImp = core.filter(function (r) { return r.importo_aggiudicato; });
+    var tot = s.tema_scientifico.avvisi, soloFrasi = s.tema_scientifico.trovati_solo_dalle_frasi, viaCpv = s.tema_scientifico.trovati_dalla_rete_cpv;
+
+    var x = s.extra || {};
+    if (x.scala) {
+      document.getElementById('n-totale').textContent = it(Math.floor(x.scala.totale / 1000) * 1000);
+      document.getElementById('stats-fonte').innerHTML = stat(it(x.scala.totale), 'avvisi dal 01/01/2026 (stima del servizio)') +
+        stat(Math.round(100 * x.scala.affidamenti_diretti / x.scala.totale) + '%', 'sono affidamenti diretti') +
+        stat('9.454', 'codici CPV') + stat('150', 'codici scheda');
+    }
+    var ia = x.intelligenza_artificiale;
+    if (ia) {
+      document.getElementById('ex-ia').innerHTML =
+        'Cercando per parole («intelligenza artificiale») il servizio restituisce <strong>' + it(ia.parole.avvisi) + ' avvisi</strong> dal 1° agosto, perché mette le due parole in alternativa; solo <strong>' + it(ia.parole.con_la_frase_nell_oggetto) + '</strong> hanno davvero la frase nell’oggetto. Gli altri parlano, per esempio, di «' + esc(ia.parole.esempi_senza_la_frase[0].toLowerCase()) + '». ' +
+        'Con la ricerca per frase esatta ne tornano <strong>' + it(ia.frase_esatta.avvisi) + '</strong>, tutti pertinenti, ma ne manca uno che aveva la frase nell’oggetto e la ricerca per parole aveva trovato' +
+        (ia.persi_dalla_frase_esatta.length ? ' (scadenza ' + dataIt(ia.persi_dalla_frase_esatta[0].scadenza) + ', ' + esc(ia.persi_dalla_frase_esatta[0].committente) + ')' : '') +
+        ': la ricerca esatta non sostituisce quella per parole, e il motivo dell’assenza non è chiaro. Per questo l’assistente le usa entrambe e lo dichiara. Bandi aperti oggi con la frase esatta:';
+      document.getElementById('ex-ia-aperti').innerHTML = '<div class="tbl-wrap"><table><thead><tr><th>Scadenza</th><th>Committente</th><th>Oggetto</th></tr></thead><tbody>' +
+        ia.frase_esatta.elenco_aperti.map(function (r) { return '<tr><td>' + dataIt(r.scadenza) + '</td><td>' + esc(r.committente) + '</td><td>' + esc(r.oggetto) + '…</td></tr>'; }).join('') + '</tbody></table></div>';
+    }
+    if (x.cig) {
+      document.getElementById('ex-cig').innerHTML = x.cig.map(function (c) {
+        return '<code>' + esc(c.cig) + '</code>: ' + (c.valido ? '<strong>valido</strong> (' + esc(c.tipo) + ')' : '<strong>non valido</strong> — ' + esc(c.motivo));
+      }).join('<br>') + '<br><span class="small">Il controllo usa l’algoritmo pubblicato da ANAC e non chiama il servizio: un CIG scritto male nella ricerca non darebbe errore, darebbe avvisi che non c’entrano.</span>';
+    }
+    if (x.scheda_AD3) {
+      document.getElementById('ex-ad3').innerHTML = '<code>' + esc(x.scheda_AD3.codice) + '</code> → «' + esc(x.scheda_AD3.descrizione) + '»<br><span class="small">I 150 codici di scheda sono tradotti dall’elenco ufficiale di ANAC, con la norma di riferimento.</span>';
+    }
+    document.getElementById('stats-risultato').innerHTML =
+      stat(it(s.totale_avvisi_distinti), 'avvisi letti (dalle due reti)') +
+      stat(it(tot), 'avvisi sul tema') +
+      stat(it(soloFrasi), 'trovati solo dalle frasi') +
+      stat(eur(s.importo_aggiudicato_totale), 'importo aggiudicato (' + conImp.length + ' avvisi)');
+    document.getElementById('sintesi-testo').innerHTML =
+      'L’assistente ha letto <strong>' + it(s.totale_avvisi_distinti) + ' avvisi</strong> del 2026: ' + it(s.rete_cpv.avvisi) + ' dalla rete per codice e ' +
+      it(s.rete_frasi.avvisi_distinti) + ' dalla rete per frase. Dopo il filtro per tema ne restano <strong>' + it(tot) + '</strong>, quasi tutti affidamenti diretti (' +
+      it(s.tema_scientifico.per_tipo['affidamento diretto'] || 0) + '). Di questi, <strong>' + it(soloFrasi) + '</strong> li ha trovati solo la rete per frase. ' +
+      'Per ' + it(conImp.length) + ' avvisi è disponibile l’importo aggiudicato, per un totale di <strong>' + eur(s.importo_aggiudicato_totale) + '</strong>. ' +
+      'Il campione include università, musei, enti di ricerca e fondazioni.';
+
+    var viaFrasi = s.tema_scientifico.trovati_dalle_frasi;
+    document.getElementById('reti').innerHTML =
+      '<div class="bar"><span class="lab">Rete per frase esatta</span><span class="trk"><span class="fill alt" style="display:block;width:' + (100 * viaFrasi / tot).toFixed(1) + '%"></span></span><span class="val">' + it(viaFrasi) + ' su ' + it(tot) + '</span></div>' +
+      '<div class="bar"><span class="lab">Rete per codice CPV</span><span class="trk"><span class="fill" style="display:block;width:' + (100 * viaCpv / tot).toFixed(1) + '%"></span></span><span class="val">' + it(viaCpv) + ' su ' + it(tot) + '</span></div>';
+
+    var ric = core.filter(function (r) { return r.fuori_rete_cpv; })
+                  .sort(function (a, b) { return (b.importo_aggiudicato || 0) - (a.importo_aggiudicato || 0); }).slice(0, 8);
+    document.getElementById('tab-recuperati').innerHTML = ric.map(function (r) {
+      return '<tr><td>' + esc(r.descrizione.slice(0, 150)) + (r.descrizione.length > 150 ? '…' : '') + '</td><td>' + esc(r.committente) + '</td><td>' + esc(r.scheda) + '</td><td class="num">' + eur(r.importo_aggiudicato) + '</td></tr>';
+    }).join('');
+
+    bars(document.getElementById('bar-committenti'), s.committenti_per_importo.slice(0, 8), 'importo', eur, false);
+    bars(document.getElementById('bar-aggiudicatari'), s.aggiudicatari_per_importo.slice(0, 8), 'importo', eur, true);
+
+    var tb = document.getElementById('tab-tutti'), filtro = document.getElementById('filtro');
+    function disegna() {
+      var q = filtro.value.trim().toLowerCase();
+      var righe = core.filter(function (r) {
+        var h = (r.descrizione + ' ' + (r.committente || '') + ' ' + r.aggiudicatari.map(function (a) { return a.denominazione; }).join(' ')).toLowerCase();
+        return !q || h.indexOf(q) !== -1;
+      });
+      tb.innerHTML = righe.map(function (r) {
+        var ag = r.aggiudicatari.map(function (a) { return a.denominazione; }).filter(Boolean).join(', ');
+        var rete = r.reti.map(function (x) { return x === 'cpv' ? '<span class="src cpv">codice</span>' : '<span class="src fr">frase</span>'; })
+                    .filter(function (v, i, a) { return a.indexOf(v) === i; }).join('');
+        return '<tr><td>' + dataIt(r.pubblicazione) + '</td><td>' + esc(r.descrizione.slice(0, 170)) + (r.descrizione.length > 170 ? '…' : '') + '</td><td>' + esc(r.committente) + '</td><td>' + esc(ag) + '</td><td class="num">' + eur(r.importo_aggiudicato) + '</td><td>' + rete + '</td></tr>';
+      }).join('');
+      document.getElementById('conta-tutti').textContent = righe.length + ' avvisi su ' + core.length + '.';
+    }
+    filtro.addEventListener('input', disegna); disegna();
+
+    document.getElementById('foot-data').textContent = 'Dati estratti il ' + dataIt(s.estratto_il) + ' dalla Piattaforma di Pubblicità a Valore Legale di ANAC. Avvisi pubblicati dal ' + dataIt(s.periodo_da) + '.';
+  }).catch(function () {
+    document.getElementById('sintesi-testo').textContent = 'Non riesco a caricare i dati: apri la pagina da un server web (per esempio python3 -m http.server) e non direttamente dal disco.';
+  });
+</script>
 </body>
 </html>

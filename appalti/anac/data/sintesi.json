@@ -1,0 +1,279 @@
+{
+ "estratto_il": "2026-10-18",
+ "periodo_da": "2026-01-01",
+ "rete_cpv": {
+  "codici": 23,
+  "avvisi": 1873,
+  "appalti": 1655
+ },
+ "rete_frasi": {
+  "frasi": [
+   {
+    "frase": "comunicazione istituzionale",
+    "per_tipologia": {
+     "affidamenti-diretti": 476,
+     "bandi": 8,
+     "esiti": 30
+    },
+    "avvisi_distinti": 514
+   },
+   {
+    "frase": "comunicazione scientifica",
+    "per_tipologia": {
+     "affidamenti-diretti": 5,
+     "bandi": 0,
+     "esiti": 1
+    },
+    "avvisi_distinti": 6
+   },
+   {
+    "frase": "divulgazione scientifica",
+    "per_tipologia": {
+     "affidamenti-diretti": 29,
+     "bandi": 1,
+     "esiti": 1
+    },
+    "avvisi_distinti": 31
+   },
+   {
+    "frase": "formazione in comunicazione",
+    "per_tipologia": {
+     "affidamenti-diretti": 1,
+     "bandi": 0,
+     "esiti": 0
+    },
+    "avvisi_distinti": 1
+   },
+   {
+    "frase": "ufficio stampa",
+    "per_tipologia": {
+     "affidamenti-diretti": 342,
+     "bandi": 2,
+     "esiti": 10
+    },
+    "avvisi_distinti": 354
+   }
+  ],
+  "avvisi_distinti": 894,
+  "fuori_dalla_rete_cpv": 866
+ },
+ "totale_avvisi_distinti": 2739,
+ "tema_comunicazione_ampio": {
+  "avvisi": 1205
+ },
+ "tema_scientifico": {
+  "avvisi": 44,
+  "per_tipo": {
+   "affidamento diretto": 40,
+   "esito": 2,
+   "modifica": 1,
+   "bando": 1
+  },
+  "trovati_dalla_rete_cpv": 3,
+  "trovati_solo_dalle_frasi": 41,
+  "trovati_dalle_frasi": 41
+ },
+ "committenti_per_avvisi": [
+  {
+   "nome": "FONDAZIONE MONT'E PRAMA",
+   "n": 3
+  },
+  {
+   "nome": "CONSIGLIO NAZIONALE DELLE RICERCHE",
+   "n": 3
+  },
+  {
+   "nome": "UNIVERSITA' DEGLI STUDI DI PADOVA",
+   "n": 2
+  },
+  {
+   "nome": "ROMA CAPITALE",
+   "n": 2
+  },
+  {
+   "nome": "UNIVERSITA' DEGLI STUDI DI CAGLIARI",
+   "n": 2
+  },
+  {
+   "nome": "ISTITUTO SUPERIORE DI SANITA'",
+   "n": 2
+  },
+  {
+   "nome": "UNIVERSITA' DEGLI STUDI DI ROMA 'LA SAPIENZA'",
+   "n": 2
+  },
+  {
+   "nome": "COMUNITA' MONTANA BUSSENTO-LAMBRO E MINGARDO",
+   "n": 2
+  },
+  {
+   "nome": "UNIVERSITA' DEGLI STUDI DI VERONA",
+   "n": 2
+  },
+  {
+   "nome": "CENTRO NAZIONALE DI RICERCA PER LE TECNOLOGIE DELL'AGRICOLTURA AGRITECH",
+   "n": 2
+  },
+  {
+   "nome": "FONDAZIONE BIOTECNOPOLO DI SIENA",
+   "n": 1
+  },
+  {
+   "nome": "POLITECNICO DI MILANO",
+   "n": 1
+  }
+ ],
+ "committenti_per_importo": [
+  {
+   "nome": "ISTITUTO SUPERIORE DI SANITA'",
+   "importo": 462438
+  },
+  {
+   "nome": "CENTRO NAZIONALE DI RICERCA PER LE TECNOLOGIE DELL'AGRICOLTURA AGRITECH",
+   "importo": 172630
+  },
+  {
+   "nome": "FONDAZIONE BIOTECNOPOLO DI SIENA",
+   "importo": 139000
+  },
+  {
+   "nome": "COMUNE DI RAPONE",
+   "importo": 122501
+  },
+  {
+   "nome": "COMUNITA' MONTANA BUSSENTO-LAMBRO E MINGARDO",
+   "importo": 110095
+  },
+  {
+   "nome": "UNIVERSITA' DEGLI STUDI DI ROMA 'LA SAPIENZA'",
+   "importo": 62960
+  },
+  {
+   "nome": "UNIVERSITA' DEGLI STUDI DI PADOVA",
+   "importo": 48825
+  },
+  {
+   "nome": "ROMA CAPITALE",
+   "importo": 40089
+  },
+  {
+   "nome": "UNIVERSITA' DEGLI STUDI DI NAPOLI FEDERICO II",
+   "importo": 39850
+  },
+  {
+   "nome": "UNIVERSITA' DEGLI STUDI DI PAVIA",
+   "importo": 35000
+  }
+ ],
+ "aggiudicatari_per_importo": [
+  {
+   "nome": "CELDES SRL",
+   "importo": 412938
+  },
+  {
+   "nome": "FIDOGROUP SRL",
+   "importo": 139000
+  },
+  {
+   "nome": "PHR S.R.L.",
+   "importo": 136000
+  },
+  {
+   "nome": "CRICKET PRODUCTIONS soc. coop.",
+   "importo": 122501
+  },
+  {
+   "nome": "TEATRO SEGRETO S.R.L",
+   "importo": 110095
+  },
+  {
+   "nome": "HOMNYA S.R.L.",
+   "importo": 49500
+  },
+  {
+   "nome": "COSVITEC SOCIETA' A RESPONSABILITA' LIMITATA",
+   "importo": 39850
+  },
+  {
+   "nome": "Consulservice srl",
+   "importo": 36630
+  },
+  {
+   "nome": "MiRo Comunicazione Srl",
+   "importo": 35000
+  },
+  {
+   "nome": "FABRIZIO EFFICACE S.R.L.",
+   "importo": 33960
+  }
+ ],
+ "importo_aggiudicato_totale": 1477041,
+ "avvisi_con_importo": 39,
+ "bandi_aperti": 0,
+ "oscurati": 0,
+ "extra": {
+  "scala": {
+   "bandi": 23554,
+   "esiti": 72058,
+   "affidamenti_diretti": 665228,
+   "totale": 760840
+  },
+  "intelligenza_artificiale": {
+   "parole": {
+    "avvisi": 17,
+    "con_la_frase_nell_oggetto": 6,
+    "aperti": 7,
+    "aperti_con_la_frase": 3,
+    "esempi_senza_la_frase": [
+     "SERVIZI LOGISTICI PER LA DISTRIBUZIONE DOMICILIARE DI PRODOTTI PER NUTRIZIONE ARTIFICIALE",
+     "FORNITURA CON POSA DI ISOLE ECOLOGICHE E CASSONETTI INTELLIGENTI PADOVA",
+     "FORNITURA CON POSA DI ISOLE ECOLOGICHE E CASSONETTI INTELLIGENTI PADOVA",
+     "fornitura di n. 1000 m2 prato sintetico 35 mm"
+    ]
+   },
+   "frase_esatta": {
+    "avvisi": 5,
+    "con_la_frase_nell_oggetto": 5,
+    "aperti": 2,
+    "aperti_con_la_frase": 2,
+    "esempi_senza_la_frase": [],
+    "elenco_aperti": [
+     {
+      "scadenza": "2026-11-07",
+      "committente": "FONDAZIONE CENTRO NAZIONALE DI ADROTERAPIA ONCOLOGICA",
+      "oggetto": "Procedura aperta per la realizzazione del progetto di rinnovo dei servizi della piattaforma Google, della GCP e sviluppo del sistema di Inte"
+     },
+     {
+      "scadenza": "2026-11-13",
+      "committente": "UNIVERSITA' DEGLI STUDI DI NAPOLI FEDERICO II",
+      "oggetto": "Fornitura di attrezzature scientifiche ad alto contenuto tecnologico per la realizzazione di un’infrastruttura integrata di calcolo ad alte "
+     }
+    ]
+   },
+   "persi_dalla_frase_esatta": [
+    {
+     "scadenza": "2026-11-02",
+     "committente": "COMUNE DI MARTINA FRANCA",
+     "oggetto": "Procedura aperta ai sensi dell'art. 71 del D.Lgs. n. 36/2023, con facoltà di inversione procedimentale art. 107, co. 3 del D. Lgs. n. 36/2023 con applicazione del criterio dell'offerta economicamente più vantaggiosa individuata sulla base del miglior rapporto qualità/prezzo, per l'affidamento del servizio integrato di sviluppo software di Intelligenza Artificiale, orchestrazione dei processi (BPM), integrazione banche dati comunali e erogazione di infrastruttura Cloud IaaS qualificata ACN - CUP J91J25001740002."
+    }
+   ]
+  },
+  "cig": [
+   {
+    "cig": "B7E26B1DC7",
+    "tipo": "SIMOG_PCP",
+    "valido": true
+   },
+   {
+    "cig": "B7E26B1DC8",
+    "motivo": "cifra di controllo errata: attesa DC7, trovata DC8",
+    "tipo": "SIMOG_PCP",
+    "valido": false
+   }
+  ],
+  "scheda_AD3": {
+   "codice": "AD3",
+   "descrizione": "Affidamento diretto >= 5k € e entro i valori ammessi. Articolo 50 comma 9 decreto legislativo 36/2023."
+  }
+ }
+}

@@ -1,0 +1,602 @@
+[
+  {
+    "codice": "A1_29",
+    "descrizione": "Avviso aggiudicazione direttiva generale, regime ordinario. Articolo 50 della direttiva 2014/24/UE; Articolo 111 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "A1_30",
+    "descrizione": "Avviso aggiudicazione direttiva settoriale, regime ordinario. Articolo 70 della direttiva 2014/25/UE; Articolo 163 comma 2 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "A1_31",
+    "descrizione": "Avviso aggiudicazione direttiva difesa. Articolo 30, paragrafo 3, della direttiva 2009/81/CE; Articolo 23 decretoegislativo 208/2011."
+  },
+  {
+    "codice": "A1_32",
+    "descrizione": "Avviso di aggiudicazione di una concessione, direttiva concessioni, regime ordinario. Articolo 32, paragrafo 2 (riferimento all’allegato VII), della direttiva 2014/23/UE; Articolo 182 comma 11 secondo periodo e comma 12 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "A1_33",
+    "descrizione": "Avviso di aggiudicazione di un appalto, direttiva generale, regime allegerito. Articolo 75, paragrafo 2, della direttiva 2014/24/UE; Articolo 127 comma 3 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "A1_34",
+    "descrizione": "Avviso di aggiudicazione di un appalto, direttiva settoriale, regime allegerito. Articolo 92, paragrafo 2, della direttiva 2014/25/UE; Articolo 173 decreto legislativo 36/2023; Articoo 127 comma 3 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "A1_35",
+    "descrizione": "Avviso di aggiudicazione di una concessione, direttiva concessioni, regime allegerito. Articolo 32, paragrafo 2 (riferimento all’allegato; Articolo 182 comma 11 secondo periodo e comma 12 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "A1_36",
+    "descrizione": "Avviso sui risultati di un concorso di progettazione, direttiva generale, progettazione. Articolo 79, paragrafo 2, della direttiva 2014/24/UE; Articolo 46 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "A1_37",
+    "descrizione": "Avviso sui risultati di un concorso di progettazione, direttiva settoriale, progettazione. Articolo 96, paragrafo 1, secondo comma, della direttiva 2014/25/UE; Articolo 46 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "A2_29",
+    "descrizione": "Avviso aggiudicazione direttiva generale, regime ordinario. Articolo 50 comma 9 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "A2_30",
+    "descrizione": "Avviso aggiudicazione direttiva settoriale, regime ordinario. Articolo 50 comma 9 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "A2_31",
+    "descrizione": "Avviso aggiudicazione, direttiva settore difesa. Articolo 31, decreto legislativo 208/2011; Articolo 50 comma 9 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "A2_32",
+    "descrizione": "Avviso di aggiudicazione di una concessione, direttiva concessioni, regime ordinario. Articolo 187 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "A2_33",
+    "descrizione": "Avviso di aggiudicazione di un appalto, direttiva generale, regime allegerito. Articolo 50 comma 9 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "A2_34",
+    "descrizione": "Avviso di aggiudicazione di un appalto, direttiva settoriale, regime allegerito. Articolo 50 comma 9 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "A2_35",
+    "descrizione": "Avviso di aggiudicazione di una concessione, direttiva concessioni, regime allegerito. Art. 187 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "A2_36",
+    "descrizione": "Avviso sui risultati di un concorso di progettazione, direttiva generale, progettazione. Articolo 46 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "A2_37",
+    "descrizione": "Avviso sui risultati di un concorso di progettazione, direttiva settoriale, progettazione. Articolo 46 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "A3_1",
+    "descrizione": "Contratti esclusi (generale o di tipo accordo quadro). Articolo 10 direttiva 2014/24/UE e articolo 21 direttiva 2014/25/UE."
+  },
+  {
+    "codice": "A3_2",
+    "descrizione": "Contratti esclusi in Concessione o Contratti esclusi in Concessione con la tecnica dell'AQ. Articolo 10 direttiva 2014/23/UE."
+  },
+  {
+    "codice": "A3_3",
+    "descrizione": "Contratti esclusi - adesione con confronto competitivo."
+  },
+  {
+    "codice": "A3_4",
+    "descrizione": "Contraente generale. Artt. 204 e 205 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "A3_5",
+    "descrizione": "Scelta del socio privato nella società mista. Articolo 13 c. 3 decreto legislativo 36/2023; Articolo 17 decretolegislativo 175/2016."
+  },
+  {
+    "codice": "A3_6",
+    "descrizione": "Affidamento a società in house. Articolo 7 decreto legislativo 36/2023; Articolo 120 comma 3 decreto legislativo 104/2010."
+  },
+  {
+    "codice": "A4_1",
+    "descrizione": "PPP - Finanza di progetto. Articolo 182 comma 11 secondo periodo e comma 12 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "A4_2",
+    "descrizione": "PPP - Locazione finanziaria. Articolo 182 comma 11 secondo periodo e comma 12 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "A4_3",
+    "descrizione": "PPP - Contratto di disponibilità. Articolo 182 comma 11 secondo periodo e comma 12 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "A4_4",
+    "descrizione": "PPP - Contratto EPC. Articolo 182 comma 11 secondo periodo e comma 12 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "A4_5",
+    "descrizione": "PPP - Concessione di servizi e costruzione e gestione. Articolo 182 comma 11 secondo periodo e comma 12 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "A4_6",
+    "descrizione": "PPP - Contratti di partenariato sociale. Articolo 182 comma 11 secondo periodo e comma 12 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "A7_1_1",
+    "descrizione": "Aggiudicazione procedura negoziata senza bando pari o sopra soglia. Articolo 76 decreto legislativo 36/2023; Articolo 158 decreto legislativo 36/2023; Articolo 18 decreto legislativo 208/2011; Articolo 127 decreto legislativo 36/2023; Articolo 128 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "A7_1_2",
+    "descrizione": "Aggiudicazione procedura negoziata senza bando pari o sopra soglia. Articolo 76 decreto legislativo 36/2023; Articolo 158 decreto legislativo 36/2023; Articolo 18 decreto legislativo 208/2011; Articolo 127 decreto legislativo 36/2023; Articolo 128 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "ABI",
+    "descrizione": "Scheda relativa a procedure negoziate per l'acquisizione di beni e servizi infungibili a imprese estere o acquisizione di beni e servizi in modalità e-commerce, senza invio al TED."
+  },
+  {
+    "codice": "AC1",
+    "descrizione": "Accordo bonario. Articoli 210 e 211 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "AD1_25",
+    "descrizione": "Avviso per la trasparenza volontaria ex ante, direttiva generale. Articolo 3 bis della direttiva 89/665/CEE; Articolo 86 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "AD1_26",
+    "descrizione": "Avviso per la trasparenza volontaria ex ante, direttiva settoriale. Articolo 3 bis della direttiva 89/665/CEE; Articolo 86 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "AD1_27",
+    "descrizione": "Avviso per la trasparenza volontaria ex ante, direttiva difesa. Articolo 64 della direttiva 2009/81/CE."
+  },
+  {
+    "codice": "AD1_28",
+    "descrizione": "Avviso per la trasparenza volontaria ex ante, direttiva concessioni. Articolo 3 bis delle direttive 89/665/CEE e 92/13/CEE; Articolo 86 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "AD2_25",
+    "descrizione": "Settori Ordinari - Affidamento di lavori o servizi consistenti nella ripetizione di lavori o servizi analoghi (solo per procedure il cui bando è stato pubblicato entro il 31/12/2023 e che prevedono l'opzione della ripetizione di lavori/ servizi analoghi). Articolo 76 comma 6 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "AD2_26",
+    "descrizione": "Settori Speciali - Affidamento di lavori o servizi consistenti nella ripetizione di lavori o servizi analoghi (solo per procedure il cui bando è stato pubblicato entro il 31/12/2023 e che prevedono l'opzione della ripetizione di lavori/ servizi analoghi). Articolo 158 comma 2 lettera f) decreto legislativo 36/2023."
+  },
+  {
+    "codice": "AD2_27",
+    "descrizione": "Affidamento diretto sopra la soglia minima e sotto la soglia comunitaria, difesa. Articolo 31 decreto legislativo 208/2011; Articolo 50 comma 1 lettere c) d) e) decreto legislativo 36/2023; Articolo 50 comma 9 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "AD2_28",
+    "descrizione": "Affidamento diretto. Articolo 182 comma 7 decreto legislativo 36/2023; Articolo 187 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "AD3",
+    "descrizione": "Affidamento diretto \u003e= 5k € e entro i valori ammessi. Articolo 50 comma 9 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "AD4",
+    "descrizione": "Appalti e concessioni - Acquisizione del CIG figlio per adesione ad accordo quadro/convenzione senza successivo confronto competitivo (solo per appalti o concessioni affidate con accordi quadro/convenzioni il cui bando è stato pubblicato entro il 31/12/2023). Articolo 59 comma 4 lettera a) decreto legislativo 36/2023;Articolo 154 decreto legislativo 36/2023 Articolo 127 decreto legislativo 36/2023, Articolo 128 comma 6 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "AD5",
+    "descrizione": "Affidamento diretto di appalti di importo inferiore a 5.000 euro. Articolo 49 c. 6; Articolo 50 c.1 lett. a) e b) decreto legislativo 36/2023."
+  },
+  {
+    "codice": "ANN",
+    "descrizione": "Annullamento affidamento."
+  },
+  {
+    "codice": "AOC",
+    "descrizione": "Procedura di affidamento riservata agli Organi Costituzionali. Articolo 224 comma 7 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "AVR",
+    "descrizione": "Introduzione comunicazione anagrafica per avvio verifiche requisiti."
+  },
+  {
+    "codice": "C7_3",
+    "descrizione": "Chiusura elenco fornitori."
+  },
+  {
+    "codice": "CBI",
+    "descrizione": "Scheda di conclusione relativa a procedure negoziate per l'acquisizione di beni e servizi infungibili a imprese estere o acquisizione di beni e servizi in modalità e-commerce."
+  },
+  {
+    "codice": "CL1",
+    "descrizione": "Collaudo. Articolo 116 decreto legislativo 36/2023 e allegato II.14."
+  },
+  {
+    "codice": "CM1",
+    "descrizione": "Scheda di comunicazione modifica dati della procedura per appalti sopra o pari a 5K euro."
+  },
+  {
+    "codice": "CM2",
+    "descrizione": "Scheda di comunicazione modifica dati della procedura per appalti sotto i 5K euro."
+  },
+  {
+    "codice": "CM3",
+    "descrizione": "Comunicazione modifica dati della procedura negoziata senza bando."
+  },
+  {
+    "codice": "CO1",
+    "descrizione": "Conclusione."
+  },
+  {
+    "codice": "CO2",
+    "descrizione": "Conclusione."
+  },
+  {
+    "codice": "COC",
+    "descrizione": "Scheda di conclusione per gli Organi Costituzionali."
+  },
+  {
+    "codice": "CS1",
+    "descrizione": "Conclusione subappalto. Articolo 119 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "CSDA1",
+    "descrizione": "Conclusione Sistema Dinamico di Acquisizione Sopra soglia."
+  },
+  {
+    "codice": "CSDA2",
+    "descrizione": "Conclusione Sistema Dinamico di Acquisizione Sotto soglia."
+  },
+  {
+    "codice": "ES1",
+    "descrizione": "Esito Richiesta subappalto; Autorizzazione/diniego subappalto. Articolo119 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "I1",
+    "descrizione": "Avvio dell'esecuzione."
+  },
+  {
+    "codice": "ID",
+    "descrizione": "Scheda per l'integrazione dei dati non essenziali ai fini della pubblicità legale e del flusso della procedura."
+  },
+  {
+    "codice": "IR1",
+    "descrizione": "Istanza di recesso."
+  },
+  {
+    "codice": "ISDA1",
+    "descrizione": "Istituzione Sistema Dinamico di Acquisizione Sopra soglia. Articolo 32 comma 2, 6 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "ISDA2",
+    "descrizione": "Istituzione Sistema Dinamico di Acquisizione Sotto soglia. Articolo 32 comma 2, 6 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "M1",
+    "descrizione": "Modifica contrattuale, direttiva generale e direttiva settoriale. Articolo 72, paragrafo 1, della direttiva 2014/24/UE; Articolo 89, paragrafo 1, della direttiva 2014/25/UE; Articolo 141 comma 3 lettera i) decreto legislativo 36/2023; Articolo 120 comma 14 e comma 15 decreto legislativo 36/2023; Articolo 5 comma 11 e comma 12 Allegato II.14."
+  },
+  {
+    "codice": "M1_40",
+    "descrizione": "Modifica contrattuale, direttiva concessioni. Articolo 43, paragrafo 1, della direttiva 2014/23/UE; Articolo 189 comma 5 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "M2",
+    "descrizione": "Modifica contrattuale sottosoglia, generale e settoriale. Articolo 72, paragrafo 1, della direttiva 2014/24/UE; Articolo 141 comma 3 lettera i) decreto o legislativo 36/2023; Articolo 120 comma 14 e comma 15 decreto legislativo 36/2023; Articolo 5 comma 11 e comma 12 Allegato II.14."
+  },
+  {
+    "codice": "M2_40",
+    "descrizione": "Modifica contrattuale sottosoglia, concessioni. Articolo 187 comma 2 decreto legislativo 36/2023; Articolo 189 comma 5 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "NAG",
+    "descrizione": "Mancata aggiudicazione di procedura sotto soglia europea."
+  },
+  {
+    "codice": "P1_10",
+    "descrizione": "Avviso di preinformazione utilizzato come avviso di indizione di gara — direttiva generale, regime ordinario. Articolo 48, paragrafo 2, della direttiva 2014/24/UE; Articolo 81 comma 2 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P1_11",
+    "descrizione": "Avviso periodico indicativo utilizzato come avviso di indizione di gara — direttiva settoriale, regime ordinario. Articolo 67, paragrafo 2, della direttiva 2014/25/UE; Articolo 155 comma 3 decreto legislativo 36/2023; Articolo 161 comma 2 decreto legislativo 36/2023; Articolo 164 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P1_12",
+    "descrizione": "Avviso di preinformazione utilizzato come avviso di indizione di gara — direttiva generale, regime alleggerito. Articolo 75, paragrafo 1, lettera b), della direttiva 2014/24/UE ; Articolo 127 comma 1 lettera b) decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P1_13",
+    "descrizione": "Bando periodico indicativo utilizzato come avviso di indizione di gara — direttiva settoriale, regime alleggerito. Articolo 92, paragrafo 1, lettera b), della direttiva 2014/25/UE; Articolo 173 decreto legislativo 36/2023; Articolo 127 comma 4 deceto legislativo 36/2023."
+  },
+  {
+    "codice": "P1_14",
+    "descrizione": "Avviso di preinformazione utilizzato come avviso di indizione di gara — direttiva sulle concessioni, regime alleggerito. Articolo 31, paragrafo 3, della direttiva 2014/23/UE ; Articolo 182.comma 6 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P1_15_1",
+    "descrizione": "Avviso sull'esistenza di un sistema di qualificazione. Articolo 68 della direttiva 2014/25/UE; Articolo 92, paragrafo 1, lettera c), della direttiva 2014/25/UE; Articolo 162 comma 1 decreto legislativo 36/2023; Articolo 164 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P1_15_2",
+    "descrizione": "Avviso sull'esistenza di un sistema di qualificazione con indizione di procedura di scelta del contraente. Articolo 68 della direttiva 2014/25/UE; Articolo 92, paragrafo 1, lettera c), della direttiva 2014/25/UE; Articolo 155 comma 3 lettera b) decreto legislativo 36/2023; Articolo 162 comma 2 decreto legislativo 36/2023; Articolo 164 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P1_16",
+    "descrizione": "Bando di gara — direttiva generale, regime ordinario. Articolo 49 della direttiva 2014/24/UE; Articolo 84 decreto legislativo 36/2023; Articolo 85 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P1_17",
+    "descrizione": "Bando di gara — direttiva settoriale, regime ordinario. Articolo 69 della direttiva 2014/25/UE ; Articolo 155 comma 3 lettera c) decreto legislativo 36/2023; Articolo 163 decreto legislativo 36/2023; Articolo 164 decreto legislativo 36/2023"
+  },
+  {
+    "codice": "P1_18",
+    "descrizione": "Bando di gara — direttiva per il settore della difesa, regime ordinario. Articolo 30, paragrafo 2, della direttiva 2009/81/CE; Articolo 22 decreto legislativo 208/2011; Articolo 84 decreto legislativo 36/2023; Articolo 85 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P1_19",
+    "descrizione": "Bando di concessione - direttiva sulle concessioni, regime ordinario, PPP. Articolo 31, paragrafo 1, della direttiva 2014/23/UE; Articolo 182 comma 11 primo periodo e comma 12 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P1_20",
+    "descrizione": "Bando di gara — direttiva generale, regime alleggerito. Articolo 75, paragrafo 1, lettera a), della direttiva 2014/24/UE; Articolo 127 comma 1 lettera a) decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P1_21",
+    "descrizione": "Avviso di gara — direttiva settoriale, regime alleggerito. Articolo 92, paragrafo 1, lettera a),della direttiva 2014/25/UE; Articolo 173 decreto legislativo 36/2023; Articolo 127 comma 4 deceto legislativo 36/2023."
+  },
+  {
+    "codice": "P1_23",
+    "descrizione": "Avviso o bando di concorso di progettazione — direttiva generale, progettazione. Articolo 79, paragrafo 1, della direttiva 2014/24/UE; Articolo 46 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P1_24",
+    "descrizione": "Avviso di concorso di progettazione — direttiva settoriale, progettazione. Articolo 96, paragrafo 1, primo comma, della direttiva 2014/25/UE; Articolo 46 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P2_10",
+    "descrizione": "Avviso di preinformazione utilizzato come avviso di indizione di gara — settori ordinari. Articolo 50, decreto legislativo 36/2023; Articolo 81 comma 2 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P2_11",
+    "descrizione": "Avviso periodico indicativo utilizzato come avviso di indizione di gara — settori speciali. Articolo 50 decreto legislativo 36/2023; Articolo 50 comma 5 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P2_12",
+    "descrizione": "Avviso di preinformazione utilizzato come avviso di indizione di gara — settori ordinari, regime alleggerito. Articolo 50 decreto legislativo 36/2023; Articolo 127 decreto legislativo 36/2023; Articolo 128 comma 8 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P2_13",
+    "descrizione": "Bando periodico indicativo utilizzato come avviso di indizione di gara — settori speciali, regime alleggerito. Articolo 50 comma 5 decreto legislativo 36/2023; Libro III decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P2_14",
+    "descrizione": "Avviso di preinformazione utilizzato come avviso di indizione di gara — concessioni, regime alleggerito. Articolo 187 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P2_16",
+    "descrizione": "Bando di gara — settori ordinari. Articolo 50 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P2_17",
+    "descrizione": "Bando di gara — settori speciali. Articolo 50 decreto legislativo 36/2023; Articolo 50 comma 5 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P2_18",
+    "descrizione": "Bando di gara — settore della difesa. Articolo 31 decreto legislativo 208/2011; Articolo 50 comma 1 lettera d) decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P2_19",
+    "descrizione": "Bando di concessione - concessioni. Articolo 187 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P2_20",
+    "descrizione": "Bando di gara — settori ordinari, regime alleggerito. Articolo 50 decreto legislativo 36/2023; Articolo 127 decreto legislativo 36/2023; Articolo 128 comma 8 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P2_21",
+    "descrizione": "Avviso di gara - settori speciali, regime alleggerito. Articolo 50 comma 5 decreto legislativo 36/2023; Libro III decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P2_23",
+    "descrizione": "Avviso o bando di concorso di progettazione - settori ordinari. Articolo 46 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P2_24",
+    "descrizione": "Avviso di concorso di progettazione - settori speciali. Articolo 46 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P3_1",
+    "descrizione": "Appalti e concorsi di progettazione esclusi. Delibera ANAC n. 584 del 19 dicembre 2023 (solo per i contratti esclusi soggetti a contributo ANAC)."
+  },
+  {
+    "codice": "P3_2",
+    "descrizione": "Concessioni escluse. Delibera ANAC n. 584 del 19 dicembre 2023 (solo per i contratti esclusi soggetti a contributo ANAC)."
+  },
+  {
+    "codice": "P3_3",
+    "descrizione": "Contratti esclusi - Acquisizione del CIG figlio per adesione AQ/convenzione con successivo confronto competitivo (solo per procedure il cui bando è stato pubblicato entro il 31/12/2023). Delibera ANAC n. 584 del 19 dicembre 2023"
+  },
+  {
+    "codice": "P3_4",
+    "descrizione": "Affidamento a contraente generale. Artt. 204 decreto legislativo 36/2023; Articolo 205 comma 6 e comma 7 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P3_5",
+    "descrizione": "Scelta del socio privato nella società mista."
+  },
+  {
+    "codice": "P4_1",
+    "descrizione": "PPP - Finanza di progetto. Articolo 31, paragrafo 1, della direttiva 2014/23/UE; Articolo 174 comma 3 decreto legislativo 36/2023; Articolo 182 comma 11 primo periodo e comma 12 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P4_2",
+    "descrizione": "PPP - Locazione finanziaria. Articolo 31, paragrafo 1, della direttiva 2014/23/UE; Articolo 174 comma 3 decreto legislativo 36/2023; Articolo 182 comma 11 primo periodo e comma 12 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P4_3",
+    "descrizione": "PPP - Contratto di disponibilità. Articolo 31, paragrafo 1, della direttiva 2014/23/UE; Articolo 174 comma 3 decreto legislativo 36/2023; Articolo 182 comma 11 primo periodo e comma 12 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P4_4",
+    "descrizione": "PPP - Contratto EPC. Articolo 31, paragrafo 1, della direttiva 2014/23/UE; Articolo 174 comma 3 decreto legislativo 36/2023; Articolo 182 comma 11 primo periodo e comma 12 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P4_5",
+    "descrizione": "PPP - Concessione di servizi e costruzione e gestione. Articolo 31, paragrafo 1, della direttiva 2014/23/UE; Articolo 174 comma 3 decreto legislativo 36/2023; Articolo 182 comma 11 primo periodo e comma 12 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P4_6",
+    "descrizione": "PPP - Contratti di partenariato sociale. Articolo 31, paragrafo 1, della direttiva 2014/23/UE; Articolo 174 comma 3 decreto legislativo 36/2023; Articolo 182 comma 11 primo periodo e comma 12 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P5",
+    "descrizione": "Contratti esclusi o estranei, soggetti a sola tracciabilità. L. 136/2010 e determina n.4/201 aggiornata con delibera n. 585 del 19 dicembre 2023 ( solo per i contratti estranei al Codice e che acquisiscono il CIG solo a fini della tracciabilità) delibera ANAC n. 584 del 19 dicembre 2023 (solo per contratti e concorsi di progettazione esclusi non soggetti a contributo ANAC)."
+  },
+  {
+    "codice": "P6_1",
+    "descrizione": "Concessioni - Acquisizione del CIG figlio per adesione AQ/convenzione, con successivo confronto competitivo (solo per concessioni affidate con accordi quadro/convenzioni il cui bando è stato pubblicato entro il 31/12/2023."
+  },
+  {
+    "codice": "P6_2",
+    "descrizione": "Appalti - Acquisizione del CIG figlio per adesione AQ/convenzione con successivo confronto competitivo (solo per appalti affidati con accordi quadro/convenzioni il cui bando è stato pubblicato entro il 31/12/2023). Articolo 59 comma 4 lettere b) e c) decreto legislativo 36/2023; Articolo 154 decreto legislativo 36/2023 Articolo 127 decreto legislativo 36/2023, Articolo 128 comma 6 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P7_1_1",
+    "descrizione": "Procedura negoziata senza bando pari o sopra soglia. Articolo 76 decreto legislativo 36/2023; Articolo 158 decreto legislativo 36/2023; Articolo 18 decreto legislativo 208/2011; Articolo 127 decreto legislativo 36/2023; Articolo 128 decreto legislativo 36/2023; Artcolo 182 commi 7,8,9 decreto legislativo 36//2023."
+  },
+  {
+    "codice": "P7_1_2",
+    "descrizione": "Procedura negoziata senza bando pari o sopra soglia. Articolo 76 decreto legislativo 36/2023; Articolo 158 decreto legislativo 36/2023; Articolo 18 decreto legislativo 208/2011; Articolo 127 decreto legislativo 36/2023; Articolo 128 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P7_1_3",
+    "descrizione": "Procedura negoziata senza bando sottosoglia. Articolo 50 comma 1 lettere c) d) e) decreto legislativo 36/2023; Articolo 2 Allegato II.1; Articolo 50 comma 5 decreto legislativo 36/2023 e Libro III decreto legislativo 36/2023; Articolo 31 decreto legislativo 208/2011; Articolo 187 decreto legislativo 36/2023; Articolo 127 decreto legislativo 36/2023; Articolo 128 comma 8 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P7_2",
+    "descrizione": "Procedura negoziata senza bando; Procedura per appalti specifici in uno SDA. Articolo 76 decreto legislativo 36/2023; Articolo 32 comma 2 decreto legislativo 36/2023; Articolo 50 comma 1 lettere c) d) e) decreto legislativo 36/2023; Articolo 2 Allegato II.1; Articolo 50 comma 5 decreto legislativo 36/2023 e Libro III decreto legislativo 36/2023; Articolo 31 decreto legislativo 208/2011; Articolo 127 decreto legislativo 36/2023; Articolo 128 comma 8 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "P7_3",
+    "descrizione": "Avviso per la costituzione elenco. Articolo 50 comma 1 lettere c) d) e) decreto legislativo 36/2023; Articolo 3 Allegato II.1; Articolo 31 decreto legislativo 208/2011."
+  },
+  {
+    "codice": "P8",
+    "descrizione": "Procedure negoziate senza bando o adesioni ad AQ soprasoglia."
+  },
+  {
+    "codice": "PL1_1",
+    "descrizione": "Avviso di pubblicazione di un avviso di preinformazione relativo al profilo di committente — direttiva generale. Articolo 48, paragrafo 1, della direttiva 2014/24/UE; Articolo 81 comma 1 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "PL1_2",
+    "descrizione": "Avviso di pubblicazione di un avviso periodico indicativo relativo al profilo di committente — direttiva settoriale. Articolo 67, paragrafo 1, della direttiva 2014/25/UE; Articolo 161 comma 1 decreto legislativo 36/2023; Articolo 164 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "PL1_3",
+    "descrizione": "Avviso di pubblicazione di un avviso di preinformazione relativo al profilo di committente — direttiva per il settore della difesa. Articolo 30, paragrafo 1, terzo comma, della direttiva 2009/81/CE; Articolo 21 decreto legislativo 208/2011; Articolo 81 comma 1 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "PL1_4",
+    "descrizione": "Avviso di preinformazione a fini unicamente informativi — direttiva generale. Articolo 48, paragrafo 1, della direttiva 2014/24/UE; Articolo 81 comma 1 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "PL1_5",
+    "descrizione": "Avviso periodico indicativo a fini unicamente informativi — direttiva settoriale. Articolo 67, paragrafo 1, della direttiva 2014/25/UE; Articolo 161 comma 1 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "PL1_6",
+    "descrizione": "Avviso di preinformazione a fini unicamente informativi — direttiva per il settore della difesa. Articolo 30, paragrafo 1, della direttiva 2009/81/CE escluso/difesa; Articolo 21 decreto legislativo 208/2011; Articolo 81 comma 1 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "PL1_7",
+    "descrizione": "Avviso di preinformazione utilizzato per abbreviare i termini per la ricezione delle offerte — direttiva generale. Articolo 27, paragrafo 2, della direttiva 2014/24/UE; Articolo 28, paragrafo 3, della direttiva 2014/24/UE; Articolo 81 comma 1 decretolegislativo 36/2023."
+  },
+  {
+    "codice": "PL1_8",
+    "descrizione": "Avviso di preinformazione utilizzato per abbreviare i termini per la ricezione delle offerte — direttiva settoriale. Articolo 45, paragrafo 2, della direttiva 2014/25/UE; Articolo 153 decreto legislativo 36/2023; Articolo 161 comma 2 decreto legislativo 36/2023; Articolo 164 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "PL1_9",
+    "descrizione": "Avviso di preinformazione utilizzato per abbreviare i termini per la ricezione delle offerte — direttiva per il settore della difesa. Articolo 33, paragrafo 3, della direttiva 2009/81/CE; Articolo 21 comma 4 decretolegislativo 208/2011; Articolo 81 comma 1 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "PL2_1",
+    "descrizione": "Avviso di pubblicazione di un avviso di preinformazione relativo al profilo di committente — settori ordinari. Articolo 50 decreto legislativo 36/2023; Articolo 81 comma 1 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "PL2_2",
+    "descrizione": "Avviso di pubblicazione di un avviso periodico indicativo relativo al profilo di committente — settori speciali. Articolo 50 decreto legislativo 36/2023; Articolo 50 comma 5 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "PL2_3",
+    "descrizione": "Avviso di pubblicazione di un avviso di preinformazione relativo al profilo di committente — direttiva per il settore della difesa. Articolo 31 decreto legislativo 208/2011; Articolo 50 decreto legislativo 36/2023; Articolo 81 comma 1 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "PL2_7",
+    "descrizione": "Avviso di preinformazione utilizzato per abbreviare i termini per la ricezione delle offerte — settori ordinari. Articolo 50 comma 1 lett. d) decreto legislativo 36/2023; Articolo 81 comma 1 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "PL2_8",
+    "descrizione": "Avviso di preinformazione utilizzato per abbreviare i termini per la ricezione delle offerte — settori speciali. Articolo 50 decreto legislativo 36/2023; Articolo 50 comma 5 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "PL2_9",
+    "descrizione": "Avviso di preinformazione utilizzato per abbreviare i termini per la ricezione delle offerte — settore della difesa. Articolo 31 decreto legislativo 208/2011; Articolo 50 comma 1 lett. d) decreto legislativo 36/2023; Articolo 81 comma 1 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "RI1",
+    "descrizione": "Ripresa Prestazione. Articolo 121 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "RSU1",
+    "descrizione": "Comunicazione richiesta di subappalto per qualunque procedura. Articolo 119 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "S0",
+    "descrizione": "Elenco richieste di adesione SDA. Articolo 32 comma 7 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "S1",
+    "descrizione": "Elenco dei soggetti che hanno manifestato interesse nelle procedure a due fasi."
+  },
+  {
+    "codice": "S1_2",
+    "descrizione": "Elenco dei soggetti invitati."
+  },
+  {
+    "codice": "S2",
+    "descrizione": "Elenco offerte ricevute/OE invitati."
+  },
+  {
+    "codice": "S2R",
+    "descrizione": "Rettifica/Integrazione scheda S2."
+  },
+  {
+    "codice": "S3",
+    "descrizione": "Elenco dei soggetti incaricati della progettazione."
+  },
+  {
+    "codice": "S4",
+    "descrizione": "Variazione Aggiudicatari/Costituzione della società di scopo."
+  },
+  {
+    "codice": "SA1",
+    "descrizione": "Stato Avanzamento lavori per qualunque procedura."
+  },
+  {
+    "codice": "SC1",
+    "descrizione": "Sottoscrizione del contratto."
+  },
+  {
+    "codice": "SE",
+    "descrizione": "Elenco richieste di adesione all'elenco fornitori."
+  },
+  {
+    "codice": "SO1",
+    "descrizione": "Sospensione in fase di esecuzione per qualunque procedura. Articolo 121 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "SOC",
+    "descrizione": "Scheda di richiesta subappalto per gli Organi Costituzionali."
+  },
+  {
+    "codice": "SQ1",
+    "descrizione": "Superamento del quarto del tempo contrattuale. Articolo 121 decreto legislativo 36/2023."
+  },
+  {
+    "codice": "TVR",
+    "descrizione": "Comunicazione di Termine Verifiche Requisiti FVOE."
+  }
+]

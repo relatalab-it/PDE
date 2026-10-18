@@ -1,0 +1,1294 @@
+[
+ {
+  "idAvviso": "7896be6a-1876-42f1-98d8-d0ab6b32c09e",
+  "idAppalto": "00cb2386-a94a-4d6c-805b-a8ae8dd62b50",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-09-29",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "Servizio di comunicazione scientifica",
+  "committente": "FONDAZIONE BIOTECNOPOLO DI SIENA",
+  "cf_committente": "92078010524",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "FIDOGROUP SRL",
+    "cf": "07790821008",
+    "importo": 139000.0,
+    "cig": "BD21702606"
+   }
+  ],
+  "importo_aggiudicato": 139000.0,
+  "reti": [
+   "frase: comunicazione scientifica"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "9f3c7b6e-9918-4361-aba4-19a8ff36e311",
+  "idAppalto": "8cb76e37-a502-4e77-b255-3acd0a5064f7",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-09-25",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "Servizio di divulgazione scientifica",
+  "committente": "UNIVERSITA' DEGLI STUDI DI PADOVA",
+  "cf_committente": "80006480281",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "MED.LAV.ECM SRL",
+    "cf": "05119680287",
+    "importo": 29000.0,
+    "cig": "BD1A80815B"
+   }
+  ],
+  "importo_aggiudicato": 29000.0,
+  "reti": [
+   "frase: divulgazione scientifica"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "f22077cd-a6df-41c5-942c-2a63765c98f9",
+  "idAppalto": "bcc3414f-e3ac-47bf-b0ef-7e3349ff77e2",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-09-25",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "Supporto progetti speciali e attività di divulgazione scientifica",
+  "committente": "FONDAZIONE MONT'E PRAMA",
+  "cf_committente": "90059630955",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "GIORGIO FRANCO MURRU",
+    "cf": "MRRGGF59P11A681O",
+    "importo": 5303.33,
+    "cig": "BD1B66AFD2"
+   }
+  ],
+  "importo_aggiudicato": 5303.33,
+  "reti": [
+   "frase: divulgazione scientifica"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "baa6f938-e7e2-4f52-9c34-c96b180bdd8b",
+  "idAppalto": "d181354f-405e-4174-b172-68b7238a1492",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-09-24",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "Incarico professionale di divulgazione scientifica sulla biodiversità ambientale e paesaggistica dei Parchi Fluviali Oasi di Ponte Milvio, Foro Italico e Passeggiata delle Navi",
+  "committente": "ROMA CAPITALE",
+  "cf_committente": "02438750586",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "ASSOCIAZIONE CULTURALE G.ECO",
+    "cf": "97575190588",
+    "importo": 11400.0,
+    "cig": "BD12987C65"
+   }
+  ],
+  "importo_aggiudicato": 11400.0,
+  "reti": [
+   "frase: divulgazione scientifica"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "c034e78a-9db7-4fe0-8a40-90fea7ea01c8",
+  "idAppalto": "311705fa-9dff-438a-b8fb-dfe334133432",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-09-23",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "Festival dell'Ingegneria: Organizzazione Incontro di divulgazione scientifica con ADRIAN FARTADE",
+  "committente": "POLITECNICO DI MILANO",
+  "cf_committente": "80057930150",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "FLATMATES S.R.L.",
+    "cf": "04267420984",
+    "importo": 5500.0,
+    "cig": "BD100A4EC0"
+   }
+  ],
+  "importo_aggiudicato": 5500.0,
+  "reti": [
+   "frase: divulgazione scientifica"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "03c0bcec-90d4-4de9-89f5-f2e8020173ef",
+  "idAppalto": "f1463831-010c-4af6-a70e-eb6d9d53185d",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-09-22",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "Servizio di divulgazione scientifica",
+  "committente": "UNIVERSITA' DEGLI STUDI DI CAGLIARI",
+  "cf_committente": "80019600925",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "ADDV.IT SOCIETA' COOPERATIVA",
+    "cf": "03421260922",
+    "importo": 5000.0,
+    "cig": "BD0BB56D97"
+   }
+  ],
+  "importo_aggiudicato": 5000.0,
+  "reti": [
+   "frase: divulgazione scientifica"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "12f29b40-15ac-471d-bbcb-99938cfec825",
+  "idAppalto": "48b202de-c209-475f-9e22-c90f48090ada",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-09-16",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "Servizio di pubblicazione di un volume dal titolo \"Habitat a tempo\", autrice: Dott.ssa Silvia Mocci, editore: Recolectores Urbanos, per divulgazione scientifica",
+  "committente": "UNIVERSITA' DEGLI STUDI DI CAGLIARI",
+  "cf_committente": "80019600925",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "Recolectores Urbanos",
+    "cf": "ES25739128N",
+    "importo": 5440.0,
+    "cig": "BCFB88261E"
+   }
+  ],
+  "importo_aggiudicato": 5440.0,
+  "reti": [
+   "frase: divulgazione scientifica"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "53870d27-dc83-4aad-9e90-768dabc7e856",
+  "idAppalto": "f0abb1fa-7a5a-4156-ac47-e62f9fd63858",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-09-10",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "Servizio di supporto tecnico-specialistico per attività di ricerca e analisi territoriale, comunicazione istituzionale e partecipazione, assistenza tecnica e capacity building",
+  "committente": "ANCI TOSCANA",
+  "cf_committente": "84033260484",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [],
+  "importo_aggiudicato": null,
+  "reti": [
+   "frase: comunicazione istituzionale"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "7894face-4007-445c-b9ef-57ec14c4c1ca",
+  "idAppalto": "dcb8b61c-bc04-48e8-9f45-f6a4659b070b",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-08-14",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "Servizio di redazione di un progetto di comunicazione e divulgazione scientifica sull’impianto in costruzione del termovalorizzatore di Roma Capitale e sulle innovazioni per la chiusura del ciclo dei rifiuti",
+  "committente": "ROMA CAPITALE",
+  "cf_committente": "02438750586",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "CIAO PEOPLE S.R.L.",
+    "cf": "05864231211",
+    "importo": 28688.52,
+    "cig": "BCB5685141"
+   }
+  ],
+  "importo_aggiudicato": 28688.52,
+  "reti": [
+   "frase: divulgazione scientifica"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "75ec6781-1294-4bb9-b5f0-150d795fdb2c",
+  "idAppalto": "39e769d2-d0db-4083-8399-35cc72d5b86a",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-08-04",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "Incarico per attività di supporto per progetti speciali e attività di divulgazione scientifica",
+  "committente": "FONDAZIONE MONT'E PRAMA",
+  "cf_committente": "90059630955",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "GIORGIO FRANCO MURRU",
+    "cf": "MRRGGF59P11A681O",
+    "importo": 5500.0,
+    "cig": "BC9BD5FD68"
+   }
+  ],
+  "importo_aggiudicato": 5500.0,
+  "reti": [
+   "frase: divulgazione scientifica"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "6bccfc9b-b7f0-4261-972e-ed239a4b8ed9",
+  "idAppalto": "162f140b-1e8a-4570-85ac-606d5a0132d8",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-08-03",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "Servizio di Comunicazione, promozione e divulgazione scientifica a supporto della visibilità nazionale del progetto JACARDI - MACA",
+  "committente": "ISTITUTO SUPERIORE DI SANITA'",
+  "cf_committente": "80211730587",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "HOMNYA S.R.L.",
+    "cf": "13026241003",
+    "importo": 49500.0,
+    "cig": "BC998983EA"
+   }
+  ],
+  "importo_aggiudicato": 49500.0,
+  "reti": [
+   "frase: divulgazione scientifica"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "b705df3f-16dc-41c1-a2f2-e57302c2d5dc",
+  "idAppalto": "f523d089-5b61-43de-bda9-b3180e0297ad",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-07-31",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "Fornitura di polo e tovaglie per l’evento Notte dei Ricercatori 2026 ed ulteriori eventi di divulgazione scientifica presso il CNR -Area territoriale di Ricerca di Bologna",
+  "committente": "CONSIGLIO NAZIONALE DELLE RICERCHE",
+  "cf_committente": "80054330586",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "TALIA SOCIETA' A RESPONSABILITA' LIMITATA",
+    "cf": "07527110725",
+    "importo": 10694.5,
+    "cig": "BC924A54BA"
+   }
+  ],
+  "importo_aggiudicato": 10694.5,
+  "reti": [
+   "frase: divulgazione scientifica"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "326f84ba-af78-4d73-9dae-c723ed4ff407",
+  "idAppalto": "63752860-3c8d-4d64-9e22-14ab3e58b344",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-07-29",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "Copia di Servizio di divulgazione scientifica online",
+  "committente": "UNIVERSITA' DEGLI STUDI DI ROMA 'LA SAPIENZA'",
+  "cf_committente": "80209930587",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "FABRIZIO EFFICACE S.R.L.",
+    "cf": "14464271007",
+    "importo": 33960.0,
+    "cig": "BC8A3A614A"
+   }
+  ],
+  "importo_aggiudicato": 33960.0,
+  "reti": [
+   "frase: divulgazione scientifica"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "1d806037-1698-4c2e-9e14-a09a60c7422d",
+  "idAppalto": "6140b4d0-1aa4-4b27-8546-a2487a6aaaeb",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-07-29",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "SERVIZIO DI PROGETTAZIONE, COORDINAMENTO ORGANIZZATIVO E GESTIONE EVENTI DI DIVULGAZIONE SCIENTIFICA E CULTURALE",
+  "committente": "CONSIGLIO NAZIONALE DELLE RICERCHE",
+  "cf_committente": "80054330586",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "IL DADO GIRA - SOCIETÀ COOPERATIVA SOCIALE",
+    "cf": "04420600753",
+    "importo": 5904.76,
+    "cig": "BC8D31ED6C"
+   }
+  ],
+  "importo_aggiudicato": 5904.76,
+  "reti": [
+   "frase: divulgazione scientifica"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "81f55c76-eb45-4fcf-ba52-b18d4eb3ac85",
+  "idAppalto": "6f0a60a7-f5eb-4584-9f4c-32b07fe156f5",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-07-22",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "Servizio di realizzazione servizio televisivo, radiofonico e digitale per programma di divulgazione scientifica CAMPUS e sua diffusione (Programma FESR 2021 2027 Codice Progetto EFRE1018)",
+  "committente": "ECO RESEARCH",
+  "cf_committente": "02387520212",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "NICS MEDIA DI NICOLINI STEFAN JOHANN",
+    "cf": "NCLSFN66A31Z102V",
+    "importo": 5500.0,
+    "cig": "BC769E23D3"
+   }
+  ],
+  "importo_aggiudicato": 5500.0,
+  "reti": [
+   "frase: divulgazione scientifica"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "a692e803-90d4-45c7-b334-116ea8127ee9",
+  "idAppalto": "f82edf75-0e7c-480d-8c0f-222ec4f4a436",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-07-10",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "IMPLEMENTAZIONE DIGITALE SERVIZIO DI DIVULGAZIONE SCIENTIFICA  - BIBLIOTECA COMUNALE",
+  "committente": "COMUNE DI TREVIOLO",
+  "cf_committente": "00330220161",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "S.C.L. SERVICE S.R.L.",
+    "cf": "02180610137",
+    "importo": 10084.2,
+    "cig": "BC58D59404"
+   }
+  ],
+  "importo_aggiudicato": 10084.2,
+  "reti": [
+   "frase: divulgazione scientifica"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "3f7a474b-517d-4a4a-b8f2-ef61df69ff25",
+  "idAppalto": "f255ab4f-9e14-462a-b360-903fe518ea25",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-07-03",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "Fornitura di libri di divulgazione scientifica per bambini e ragazzi per i Bookshop dell’Orto botanico e del Museo della Natura e dell’Uomo dell’Università di Padova",
+  "committente": "UNIVERSITA' DEGLI STUDI DI PADOVA",
+  "cf_committente": "80006480281",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "GIUNTI EDITORE",
+    "cf": "80009810484",
+    "importo": 19824.86,
+    "cig": "BC451EB701"
+   }
+  ],
+  "importo_aggiudicato": 19824.86,
+  "reti": [
+   "frase: divulgazione scientifica"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "fc005244-9578-4478-91fa-050bf17b1899",
+  "idAppalto": "c7547d11-5d43-4144-87de-b55cb6c3499a",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-06-25",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "servizio di comunicazione scientifica divulgazione e valorizzazione ricerche del lab psicologia sperimentale applicata prof.ssa Giannini",
+  "committente": "UNIVERSITA' DEGLI STUDI DI ROMA 'LA SAPIENZA'",
+  "cf_committente": "80209930587",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "LEELOO SRL",
+    "cf": "10921421003",
+    "importo": 29000.0,
+    "cig": "BC275F82FC"
+   }
+  ],
+  "importo_aggiudicato": 29000.0,
+  "reti": [
+   "frase: comunicazione scientifica"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "346deeac-ca8a-4080-b6d9-a51dd50570af",
+  "idAppalto": "770fddcd-5d1d-4ba1-bee3-46d2f88f941d",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-06-23",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "Incarico per attività di supporto per progetti speciali e attività di divulgazione scientifica",
+  "committente": "FONDAZIONE MONT'E PRAMA",
+  "cf_committente": "90059630955",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "GIORGIO FRANCO MURRU",
+    "cf": "MRRGGF59P11A681O",
+    "importo": 5673.32,
+    "cig": "BC1F0B0644"
+   }
+  ],
+  "importo_aggiudicato": 5673.32,
+  "reti": [
+   "frase: divulgazione scientifica"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "058f5fcd-8242-45e0-9382-14e73cbc80e9",
+  "idAppalto": "6baac1a0-23d6-450c-815b-dcb022c9b5bb",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-06-18",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "Servizio di organizzazione evento, comunicazione, divulgazione scientifica e produzione audio- video nell'ambito del Bioeconomy Day 2026 e del progetto Sustainable Factory Tour 2026 per le esigenze del CEIC.",
+  "committente": "UNIVERSITA' DEGLI STUDI DI BARI ALDO MORO",
+  "cf_committente": "80002170720",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "LOFINO & PARTNERS SRLS",
+    "cf": "07868960720",
+    "importo": 9200.0,
+    "cig": "BC1241E52D"
+   }
+  ],
+  "importo_aggiudicato": 9200.0,
+  "reti": [
+   "frase: divulgazione scientifica"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "a245f22e-2df3-4aaf-a8ea-14d0d558729c",
+  "idAppalto": "cde7c241-d22b-48c5-9b0a-a9eace28aea7",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-06-01",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "SERVIZI DISSEMINAZIONE E COMUNICAZIONE SCIENTIFICA PN FEAMPA 2021-2027 - Intervento codice 116101 - \"PROTEZIONE DELLE RISORSE BIOLOGICHE MARINE ATTRAVERSO UN MONITORAGGIO DELLA POPOLAZIONE DEL GRANCHIO BLU\" - DD 85 del 15/10/2025",
+  "committente": "UNIVERSITA' DEGLI STUDI DI NAPOLI FEDERICO II",
+  "cf_committente": "00876220633",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "COSVITEC SOCIETA' A RESPONSABILITA' LIMITATA",
+    "cf": "07838020639",
+    "importo": 39850.0,
+    "cig": "BBDF5C5FCD"
+   }
+  ],
+  "importo_aggiudicato": 39850.0,
+  "reti": [
+   "frase: comunicazione scientifica"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "afcf7b07-9037-4134-b5d7-1d78df26ddf0",
+  "idAppalto": "46979a79-7f8e-43da-b1d0-ac89abebec5a",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-05-28",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "ID.2026_81 SERVIZIO DI GESTIONE DEL PATRIMONIO BOTANICO E ANFIBI, APERTURA AI VISITATORI, VISITE GUIDATE, DIDATTICA, COMUNICAZIONE E DIVULGAZIONE SCIENTIFICA DELL’AREA NATURALE PROTETTA DENOMINATE “GIARDINO BOTANICO DI PRATORONDANINO” SITA NEL COMUNE DI CAMPO LIGURE.",
+  "committente": "CITTA' METROPOLITANA DI GENOVA",
+  "cf_committente": "80007350103",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "Il Piviere S.r.l.",
+    "cf": "02203290065",
+    "importo": 16000.0,
+    "cig": "BBD3628001"
+   }
+  ],
+  "importo_aggiudicato": 16000.0,
+  "reti": [
+   "frase: divulgazione scientifica"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "d9306773-3a49-4b4b-8b3c-e3d7e2644920",
+  "idAppalto": "18181f37-311b-4b2c-a234-70b76f6cd6c4",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-05-18",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "Servizio di ufficio stampa di direzione medica e scientifica",
+  "committente": "FONDAZIONE CENTRO NAZIONALE DI ADROTERAPIA ONCOLOGICA",
+  "cf_committente": "97301200156",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "Intermedia S.rl. Per la comunicazione integrata",
+    "cf": "03275150179",
+    "importo": 15000.0,
+    "cig": "BBAEE5BB79"
+   }
+  ],
+  "importo_aggiudicato": 15000.0,
+  "reti": [
+   "frase: ufficio stampa"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "5a84f72a-f983-43a9-b1fc-b216a0790726",
+  "idAppalto": "5b7d6e0b-f5c6-47e7-aac2-c8596738d95a",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-05-11",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "Servizi riguardanti la realizzazione dell’ Archivio Digitale e Produzione di Schede Scientifiche relative all’Intervento 1 - “Istituzione del Centro di Documentazione del Patrimonio Immateriale” – 2.1_RAPONE_CENTRODOCUMENTAZIONE e servizi di Coordinamento attività, ideazione, la pianificazione e la gestione integrata delle attività di comunicazione e ufficio stampa relative all’ Intervento 10 “Realizzazione della Sezione Lucana “Le Strade della Fiaba”, connessione con la Deutsche Märchenstraße (strada tedesca delle fiabe) e gemellaggio con Giugliano in Campania (paese natio di Giambattista Basile) e con Odense (paese natio di Andersen) in Danimarca” – 2.1_RAPONE_STRADADELLAFIABA finanziato nell’ambito del PNRR - Progetto RaponePaesedelleFiabe#BasilicataCulladiFiabe – CUP H59G22000030006 –- Missione 1 - Digitalizzazione, innovazione, competitività, cultura e turismo - Componente 3 -Turismo e Cultura 4.0 - Investimento 2.1 – Attrattività dei borghi - Linea di azione B.",
+  "committente": "COMUNE DI RAPONE",
+  "cf_committente": "80002430769",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "CRICKET PRODUCTIONS soc. coop.",
+    "cf": "06148580720",
+    "importo": 122500.62,
+    "cig": "BB92FA5845"
+   }
+  ],
+  "importo_aggiudicato": 122500.62,
+  "reti": [
+   "frase: ufficio stampa"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "f2fa515b-7122-4582-8be3-cdb697b85d1d",
+  "idAppalto": "543fa2a7-4cb3-4c3c-8779-465f3aaa1bec",
+  "scheda": "A1_29",
+  "tipo": "esito",
+  "pubblicazione": "2026-05-07",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "FORNITURA IN ABBONAMENTO DI PERIODICI A CARATTERE TECNICO - SCIENTIFICO PER IL SERVIZIO COMUNICAZIONE SCIENTIFICA - BIBLIOTECA DELLISTITUTO SUPERIORE DI SANITA'",
+  "committente": "ISTITUTO SUPERIORE DI SANITA'",
+  "cf_committente": "80211730587",
+  "cpv": [
+   "Periodic"
+  ],
+  "valore_stimato": 442000.0,
+  "aggiudicatari": [
+   {
+    "denominazione": "CELDES SRL",
+    "cf": "02938930589",
+    "importo": 412938.5,
+    "cig": "B99815834D"
+   }
+  ],
+  "importo_aggiudicato": 412938.5,
+  "reti": [
+   "frase: comunicazione scientifica"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "f038aece-9f50-481d-86d5-379a18fcd064",
+  "idAppalto": "2c931ae5-b01d-4c5b-bdd8-fde552350306",
+  "scheda": "A2_29",
+  "tipo": "esito",
+  "pubblicazione": "2026-05-05",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "Affidamento dei servizi per la realizzazione del programma unitario di attivita culturali e formative Progetto PNRR M1C3 I21 Finanziato Unione Europe NextGenerationEU VALORIZZAZIONE DELLA VALLE DEI MULINI E DEL PATRIMONIO CULTURALE E AGROALIMENTARE DELLA TRADIZIONE CONTADINA POLO DI DIVULGAZIONE E FORMAZIONE PER AMBIENTE LE SCIENZE LE ARTI E LA LEGALITA CUP E37B22000060006",
+  "committente": "COMUNITA' MONTANA BUSSENTO-LAMBRO E MINGARDO",
+  "cf_committente": "04672600659",
+  "cpv": [
+   "Servizi "
+  ],
+  "valore_stimato": 115889.79,
+  "aggiudicatari": [
+   {
+    "denominazione": "TEATRO SEGRETO S.R.L",
+    "cf": "05651491218",
+    "importo": 110095.3
+   }
+  ],
+  "importo_aggiudicato": 110095.3,
+  "reti": [
+   "cpv"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": false,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "e9b6279b-f8c6-4604-b92b-d4e97521460d",
+  "idAppalto": "8c6d4c44-b602-41c0-a11d-44863794cb90",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-05-04",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "Affidamento di servizio biennale di monitoraggio e comunicazione scientifica digitale del progetto STEM Pari Opportunità",
+  "committente": "UNIVERSITA' DEGLI STUDI DI TRENTO",
+  "cf_committente": "00340520220",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "PASQUALINI VERDIANA",
+    "cf": "PSQVDN97C42B006X",
+    "importo": 15000.0,
+    "cig": "BB796FCB96"
+   }
+  ],
+  "importo_aggiudicato": 15000.0,
+  "reti": [
+   "frase: comunicazione scientifica"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "9c43be35-75ba-469e-985b-4f237e95ea26",
+  "idAppalto": "80db830f-4af8-4819-989f-219707c5b069",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-04-28",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "RdA n. 142/2026 - Dip. Medicina - Nefrologia - Servizi di divulgazione scientifica",
+  "committente": "UNIVERSITA' DEGLI STUDI DI VERONA",
+  "cf_committente": "93009870234",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "EUREKA SRL",
+    "cf": "01841430463",
+    "importo": 13360.0,
+    "cig": "BB6A4CE13B"
+   }
+  ],
+  "importo_aggiudicato": 13360.0,
+  "reti": [
+   "frase: divulgazione scientifica"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "2aa20596-9be0-4dfc-8712-7c7e31f8a40e",
+  "idAppalto": "7420add4-5ebc-4bc8-a4c3-f92eb31e1a9a",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-04-17",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "RdA n. 135/2026 - Dip. Medicina - Nefrologia - Servizi di divulgazione scientifica",
+  "committente": "UNIVERSITA' DEGLI STUDI DI VERONA",
+  "cf_committente": "93009870234",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "EUREKA SRL",
+    "cf": "01841430463",
+    "importo": 8100.0,
+    "cig": "BB4AC27D6E"
+   }
+  ],
+  "importo_aggiudicato": 8100.0,
+  "reti": [
+   "frase: divulgazione scientifica"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "4e5dfa04-9cb4-4e2f-adb6-32ab0f0c267e",
+  "idAppalto": "da3a8cc5-8d43-40c7-b0e0-259e3eb49a28",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-04-14",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "Affidamento del servizio di diffusione e divulgazione scientifica per il Centro Nazionale di Ricerca per le Tecnologie dell'Agricoltura (CN Agritech)",
+  "committente": "CENTRO NAZIONALE DI RICERCA PER LE TECNOLOGIE DELL'AGRICOLTURA AGRITECH",
+  "cf_committente": "10069531217",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "Consulservice srl",
+    "cf": "02757950643",
+    "importo": 36630.0,
+    "cig": "BB38CEC5BD"
+   }
+  ],
+  "importo_aggiudicato": 36630.0,
+  "reti": [
+   "frase: divulgazione scientifica"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "d2bbba74-b139-4a50-93f9-39f546790367",
+  "idAppalto": "0e85ea48-43cf-4538-b3d2-196b920933d2",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-04-09",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "Affidamento, ai sensi dell’art. 50, comma 1, lett. b) del D. Lgs. n. 36/2023, del servizio di organizzazione delle attività di Dissemination scientifica, comunicazione istituzionale e valorizzazione dei risultati del “Progetto Neurochirurgia sull’Idrocefalo Normoteso”. PNRR-MCNT2-2023-12377469 - CUP: D63C24000230006",
+  "committente": "A.O.R.N.A.S. GARIBALDI",
+  "cf_committente": "04721270876",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [],
+  "importo_aggiudicato": null,
+  "reti": [
+   "frase: comunicazione istituzionale"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "2dae201d-9b24-4f9c-9b7e-2465119d1fe5",
+  "idAppalto": "958e799d-4c55-4582-8900-93b037b95f44",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-04-08",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "INFORMATICA DEPOT 708 SERVIZIO PER IL SUPPORTO ALLA COMUNICAZIONE E ALLA DIVULGAZIONE SCIENTIFICA",
+  "committente": "UNIVERSITA' DEGLI STUDI DI MILANO - BICOCCA",
+  "cf_committente": "12621570154",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "DATAPIZZA SRL",
+    "cf": "12629020962",
+    "importo": 20000.0,
+    "cig": "BB25C13445"
+   }
+  ],
+  "importo_aggiudicato": 20000.0,
+  "reti": [
+   "frase: divulgazione scientifica"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "ca9c1406-911a-432c-9703-a8f180838175",
+  "idAppalto": "1a129207-bd38-41b9-ba43-416c45f31724",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-04-08",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "FORNITURA E PRODUZIONE DI UN ALBO A FUMETTI NELL’AMBITO DELLA COLLANA DI DIVULGAZIONE SCIENTIFICA COMICS & SCIENCE (CNR EDIZIONI), IN EDIZIONE SPECIALE FUORI COMMERCIO NELL’AMBITO DEL PROGETTO DFM.AD005.432.001 - COFINANZIAMENTO - POTENZIAMENTO DELLE LINEE STRATEGICHE DI ISTITUTO",
+  "committente": "CONSIGLIO NAZIONALE DELLE RICERCHE",
+  "cf_committente": "80054330586",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "SYMMACEO COMMUNICATIONS",
+    "cf": "07451750967",
+    "importo": 8000.0,
+    "cig": "BB25349383"
+   }
+  ],
+  "importo_aggiudicato": 8000.0,
+  "reti": [
+   "frase: divulgazione scientifica"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "10b6915b-8b67-42e9-a779-f28c800f50c9",
+  "idAppalto": "ec840af4-7576-4989-8e2f-b219637d2eb8",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-04-03",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "Servizi per Progetto di Divulgazione Scientifica \"Te lo racconto io l'amianto\"",
+  "committente": "CONSORZIO CULTURALE DEL MONFALCONESE",
+  "cf_committente": "00168550317",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "Benkadì APS",
+    "cf": "01103680318",
+    "importo": 16721.94,
+    "cig": "BB1DF531DA"
+   }
+  ],
+  "importo_aggiudicato": 16721.94,
+  "reti": [
+   "frase: divulgazione scientifica"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "583329ed-cf0f-49c9-a105-6c45bc17edca",
+  "idAppalto": "39c2a064-564d-450e-bab6-1eeb63e3555d",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-04-03",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "n. 2 gazebo 4x4 a supporto delle attività di divulgazione scientifica del Centro per la Protezione Civile",
+  "committente": "UNIVERSITA' DEGLI STUDI DI FIRENZE",
+  "cf_committente": "01279680480",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "FUTURA SOLUTIONS SRL",
+    "cf": "02883970218",
+    "importo": 5018.35,
+    "cig": "BB1F1ECABE"
+   }
+  ],
+  "importo_aggiudicato": 5018.35,
+  "reti": [
+   "frase: divulgazione scientifica"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "9f51eb01-926f-40e6-81a9-69940a6a3ad3",
+  "idAppalto": "fb9cc439-ab7e-4aad-a8c7-2b2c2a2328a1",
+  "scheda": "M2",
+  "tipo": "modifica",
+  "pubblicazione": "2026-03-30",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "Servizio di redazione, coordinamento editoriale, pubblicazione e divulgazione di pubblicazioni scientifiche internazionali sul Programma Age-It",
+  "committente": "ITALIAN AGEING SOCIETY - AGE-IT SOC.CONS.RESP.LIMITATA",
+  "cf_committente": "07217730485",
+  "cpv": [
+   "Servizi "
+  ],
+  "valore_stimato": null,
+  "aggiudicatari": [],
+  "importo_aggiudicato": null,
+  "reti": [
+   "cpv"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": false,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "5f0f19c8-2e57-458d-a136-7edb556f4676",
+  "idAppalto": "2c931ae5-b01d-4c5b-bdd8-fde552350306",
+  "scheda": "P7_1_3",
+  "tipo": "bando",
+  "pubblicazione": "2026-03-27",
+  "scadenza": "2026-04-09",
+  "oscurato": false,
+  "descrizione": "Affidamento dei servizi per la realizzazione del programma unitario di attivita culturali e formative Progetto PNRR M1C3 I21 Finanziato Unione Europe NextGenerationEU VALORIZZAZIONE DELLA VALLE DEI MULINI E DEL PATRIMONIO CULTURALE E AGROALIMENTARE DELLA TRADIZIONE CONTADINA POLO DI DIVULGAZIONE E FORMAZIONE PER AMBIENTE LE SCIENZE LE ARTI E LA LEGALITA CUP E37B22000060006",
+  "committente": "COMUNITA' MONTANA BUSSENTO-LAMBRO E MINGARDO",
+  "cf_committente": "04672600659",
+  "cpv": [
+   "Servizi "
+  ],
+  "valore_stimato": 115889.79,
+  "aggiudicatari": [],
+  "importo_aggiudicato": null,
+  "reti": [
+   "cpv"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": false,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "a23535be-4601-4136-b8a4-90add8cfc64a",
+  "idAppalto": "bd64a062-b54c-4ea5-a257-30edd94f52ff",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-03-11",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "servizi di comunicazione inerenti all’attività di disseminazione e divulgazione scientifica per evento finale presso il Polo Universitario Federico II di San Giovanni a Teduccio (NA)",
+  "committente": "CENTRO NAZIONALE DI RICERCA PER LE TECNOLOGIE DELL'AGRICOLTURA AGRITECH",
+  "cf_committente": "10069531217",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "PHR S.R.L.",
+    "cf": "09520881211",
+    "importo": 136000.0,
+    "cig": "BAC64B3642"
+   }
+  ],
+  "importo_aggiudicato": 136000.0,
+  "reti": [
+   "frase: divulgazione scientifica"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "26d2f419-6e5e-40a8-b5d2-5738df403b05",
+  "idAppalto": "bddf71d5-267b-408f-b04d-dc1770354199",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-03-03",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "PROGETTO ESCAPE - REALIZZAZIONE RIVISTA E MAPPATURA LUOGHI E RISORSE PER LA DIVULGAZIONE SCIENTIFICA",
+  "committente": "UNCEM DELEGAZIONE PIEMONTESE",
+  "cf_committente": "80100090010",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "SPAZI INCLUSI SRL",
+    "cf": "10981440018",
+    "importo": 16000.0,
+    "cig": "BAA66D43F9"
+   }
+  ],
+  "importo_aggiudicato": 16000.0,
+  "reti": [
+   "frase: divulgazione scientifica"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "b810e2d9-2a13-4dd5-b16b-65528932ab7c",
+  "idAppalto": "c9dd7fe1-fbdc-46bc-b4cd-6f1545056a38",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-02-18",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "avvio procedura da effettuarsi ai sensi dell’art. 50  comma 1 lett. b) del D.Lgs 36/2023 mediante confronto di preventivi sulla PAD Acquisti in Rete Pa per la fornitura di servizi di comunicazione istituzionale e social per attività del progetto DIGITAL EDUCATION HUB ADVANCED LEARNING MULTIMEDIA ALLIANCE FOR INCLUSIVE ACADEMIC INNOVATION  ALMA, PIANO NAZIONALE DI RIPRESA E RESILIENZA, MISSIONE 4 ISTRUZIONE E RICERCA, COMPONENTE 1 POTENZIAMENTO DELL’OFFERTA DEI SERVIZI ALL’ISTRUZIONE DAGLI ASILI NIDO ALL’UNIVERSITÀ, INVESTIMENTO 3.4 DIDATTICA E COMPETENZE UNIVERSITARIE AVANZATE, SUB INVESTIMENTO 3 DIGITAL EDUCATION HUBS (DEH), FINANZIATO DALL’UNIONE EUROPEA  NEXT GENERATION EU CUP E68H24000430006",
+  "committente": "UNIVERSITA' DEGLI STUDI DI SASSARI",
+  "cf_committente": "00196350904",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [],
+  "importo_aggiudicato": null,
+  "reti": [
+   "frase: comunicazione istituzionale"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "5b1b2faa-0541-450e-90f2-d570f46770e2",
+  "idAppalto": "6b70b7b3-0524-4080-a0ac-f472dae70293",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-02-05",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "Affidamento diretto del servizio di ideazione e realizzazione di n. 2 eventi di divulgazione scientifica nei quali i contenuti della ricerca dialogano con la musica in relazione alla rassegna “Il suono della Ricerca”",
+  "committente": "UNIVERSITA' DEGLI STUDI DI PERUGIA",
+  "cf_committente": "00448820548",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "Associazione culturale",
+    "cf": "03196540540",
+    "importo": 10909.0,
+    "cig": "B2958CED11"
+   }
+  ],
+  "importo_aggiudicato": 10909.0,
+  "reti": [
+   "frase: divulgazione scientifica"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "796bd1fe-2bd8-44ea-b5e2-946e6954591e",
+  "idAppalto": "54abc704-0d09-4425-bee9-9dc1df84fb36",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-01-26",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "LDNC-Attività di divulgazione e comunicazione scientifica dedicate alle ricerche sulla biodiversità e sostenibilità dei modelli alimentari- H. CENA - PE10 S6",
+  "committente": "UNIVERSITA' DEGLI STUDI DI PAVIA",
+  "cf_committente": "80007270186",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "MiRo Comunicazione Srl",
+    "cf": "07352400969",
+    "importo": 35000.0,
+    "cig": "BA17641C9E"
+   }
+  ],
+  "importo_aggiudicato": 35000.0,
+  "reti": [
+   "frase: comunicazione scientifica"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "3f114ab6-a9d6-4379-abca-2afe634421dd",
+  "idAppalto": "4299a220-3c3c-4909-b330-ff3dfe08278b",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-01-26",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "AFFIDAMENTO SERVIZIO DI UFFICIO STAMPA NAZIONALE E CONSULENZA  STRATEGICA E RELAZIONALE PER IL FESTIVAL DELL’INNOVAZIONE E DELLA SCIENZA 2026",
+  "committente": "FONDAZIONE ESPERIENZE DI CULTURA METROPOLITANA",
+  "cf_committente": "97679160016",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "Babel Agency srl",
+    "cf": "03648750044,",
+    "importo": 20000.0,
+    "cig": "BA19CA9E3D"
+   }
+  ],
+  "importo_aggiudicato": 20000.0,
+  "reti": [
+   "frase: ufficio stampa"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ },
+ {
+  "idAvviso": "1e0ce73a-7274-48d4-bea9-ddaaf7f68b49",
+  "idAppalto": "4da188fd-e6b5-4dae-aae0-1860c4837d2e",
+  "scheda": "AD3",
+  "tipo": "affidamento diretto",
+  "pubblicazione": "2026-01-21",
+  "scadenza": null,
+  "oscurato": false,
+  "descrizione": "realizzazione uscite didattiche di divulgazione scientifica per le classi primaria a.s. 2025/2026",
+  "committente": "ISTITUTO COMPRENSIVO PIETRO M. CORRADINI",
+  "cf_committente": "97198160588",
+  "cpv": [],
+  "valore_stimato": null,
+  "aggiudicatari": [
+   {
+    "denominazione": "Associazione ScienzImpresa",
+    "cf": "10417271003",
+    "importo": 5744.27,
+    "cig": "BA0AD91FCC"
+   }
+  ],
+  "importo_aggiudicato": 5744.27,
+  "reti": [
+   "frase: divulgazione scientifica"
+  ],
+  "tema_comunicazione": true,
+  "tema_scientifico": true,
+  "fuori_rete_cpv": true,
+  "cpv_in_rete1": []
+ }
+]

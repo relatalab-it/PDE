@@ -1,0 +1,13 @@
+[
+  {
+    "cig": "B7E26B1DC7",
+    "tipo": "SIMOG_PCP",
+    "valido": true
+  },
+  {
+    "cig": "B7E26B1DC8",
+    "motivo": "cifra di controllo errata: attesa DC7, trovata DC8",
+    "tipo": "SIMOG_PCP",
+    "valido": false
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "aggiudicatario": "AR.CO. LAVORI SOCIETA' COOPERATIVA CONSORTILE",
+    "cf_aggiudicatario": "01468160393",
+    "cf_committente": "84001850589",
+    "cig": "BA10AAD5E6",
+    "committente": "ISTITUTO NAZIONALE DI FISICA NUCLEARE (I.N.F.N.)",
+    "cpv": "45000000",
+    "cpv_desc": "Lavori di costruzione",
+    "data": "2026-07-31",
+    "giurisdizione": "?",
+    "gruppo": "",
+    "id_appalto": "bf2abca8-7e0e-47f2-ae08-db83cb5c193b",
+    "id_avviso": "8a29c287-52d5-41e3-a59e-4e67cb9b958d",
+    "importo": 8604471.832
+  },
+  {
+    "aggiudicatario": "SELI MANUTENZIONI GENERALI S.R.L.",
+    "cf_aggiudicatario": "07610090156",
+    "cf_committente": "84001850589",
+    "cig": "BA10AAD5E6",
+    "committente": "ISTITUTO NAZIONALE DI FISICA NUCLEARE (I.N.F.N.)",
+    "cpv": "45000000",
+    "cpv_desc": "Lavori di costruzione",
+    "data": "2026-07-31",
+    "giurisdizione": "?",
+    "gruppo": "",
+    "id_appalto": "bf2abca8-7e0e-47f2-ae08-db83cb5c193b",
+    "id_avviso": "8a29c287-52d5-41e3-a59e-4e67cb9b958d",
+    "importo": 8604471.832
+  },
+  {
+    "aggiudicatario": "HANA S.R.L.",
+    "cf_aggiudicatario": "07616830969",
+    "cf_committente": "84001850589",
+    "cig": "BA10AAD5E6",
+    "committente": "ISTITUTO NAZIONALE DI FISICA NUCLEARE (I.N.F.N.)",
+    "cpv": "45000000",
+    "cpv_desc": "Lavori di costruzione",
+    "data": "2026-07-31",
+    "giurisdizione": "?",
+    "gruppo": "",
+    "id_appalto": "bf2abca8-7e0e-47f2-ae08-db83cb5c193b",
+    "id_avviso": "8a29c287-52d5-41e3-a59e-4e67cb9b958d",
+    "importo": 8604471.832
+  }
+]
