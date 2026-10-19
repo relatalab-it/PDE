@@ -1,5 +1,20 @@
 [
   {
+    "order": 15,
+    "path":  "report/15_incidenti-genova/",
+    "date":  "19 ottobre 2026",
+    "title": "Genova: −27% di incidenti con lesioni dal 2010, ma i dati aperti arrivano alle vie, non ai punti",
+    "title_en": "Genoa: Injury Accidents Down 27% Since 2010, but Open Data Reach Streets, Not Points",
+    "desc":  "Incidenti con lesioni a Genova da 4.955 (2010) a 3.637 (2025). Corso Europa è la prima via per sinistri (1.274) e per mortali (10) nel 2010–2016. I morti restano tra 13 e 32 l'anno tranne il 2018 (68), anno del crollo del ponte Morandi (coincidenza non verificata). ISTAT e Comune di Genova contano cose diverse (+20–24% nel file comunale) e la serie comunale si spezza nel 2017. Nei cataloghi consultati nessun dataset ha le coordinate: la mappa dei punti non si può disegnare. Primo report con più fonti (SDMX + CKAN).",
+    "desc_en": "Accidents with injuries in Genoa fell from 4,955 (2010) to 3,637 (2025). Corso Europa ranks first by accidents (1,274) and fatal ones (10) in 2010–2016. Deaths stay between 13 and 32 a year except 2018 (68), the year of the Morandi bridge collapse (coincidence not verified). ISTAT and the Municipality of Genoa count different things (+20–24% in the municipal file) and the municipal series breaks in 2017. In the catalogues consulted no dataset has coordinates: a map of points cannot be drawn. First report with several sources (SDMX + CKAN).",
+    "badges": [
+      { "label": "ISTAT",  "value": "41_983" },
+      { "label": "CKAN",   "value": "Comune di Genova · MIT" },
+      { "label": "Period", "value": "2004–2025", "label_it": "Periodo" },
+      { "label": "Area",   "value": "Genova", "label_it": "Area" }
+    ]
+  },
+  {
     "order": 14,
     "path":  "report/14_rotte-migratorie/",
     "date":  "31 luglio 2026",
