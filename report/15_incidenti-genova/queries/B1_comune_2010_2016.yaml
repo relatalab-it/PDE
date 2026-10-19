@@ -1,0 +1,11 @@
+provider: ckan
+provider_url: https://dati.gov.it/opendata
+publisher: Comune di Genova
+dataset: sinistri-per-via-e-gravita-dal-2010-al-2016
+dataset_id: 1564c824-4e8c-410f-9ae5-4ed2c894438a
+dataset_page: https://www.dati.gov.it/view-dataset/dataset?id=1564c824-4e8c-410f-9ae5-4ed2c894438a
+resource_id: 4724f679-1040-47e6-a4bd-9b7d08c190d1
+resource_url: https://opendatacomunegenova.s3.eu-south-1.amazonaws.com/risorse/QGravita.csv
+license: CC BY 4.0
+encoding: ISO-8859-1
+format: csv

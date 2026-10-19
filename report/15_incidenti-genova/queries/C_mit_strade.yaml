@@ -1,0 +1,12 @@
+provider: ckan
+provider_url: https://dati.gov.it/opendata
+publisher: Ministero delle Infrastrutture e dei Trasporti
+dataset: localizzazione-incidenti-stradali-anni-2004-2018
+dataset_id: 1fe7629d-ba6f-4942-a651-c354690c1070
+dataset_page: https://www.dati.gov.it/view-dataset/dataset?id=1fe7629d-ba6f-4942-a651-c354690c1070
+resource_id: 851010af-2eb4-4adb-a209-d7fc5fd265cc
+resource_url: https://dati.mit.gov.it/hfs/incidenti-per-strada---anni-2004-2018.csv
+license: da verificare
+encoding: UTF-8
+format: csv
+filter_in_page: PROVINCIA = Genova

@@ -1,0 +1,12 @@
+provider: ckan
+provider_url: https://dati.gov.it/opendata
+publisher: Comune di Genova
+dataset: sinistri-per-via-e-gravita-anno-2017
+dataset_id: 0b4cb9f4-a458-465b-9953-e40047e3eed9
+dataset_page: https://www.dati.gov.it/view-dataset/dataset?id=0b4cb9f4-a458-465b-9953-e40047e3eed9
+resource_id: 862e3051-2c11-4046-a7c0-c7c1614e245a
+resource_url: https://opendatacomunegenova.s3.eu-south-1.amazonaws.com/risorse/Lesioni%20gravita%20incidente.csv
+license: CC BY 4.0
+encoding: ASCII
+format: csv
+note: etichette di colonna diverse dal file 2010-2016 (illesi, Feriti, P.Riservata, Mortali, Totale)

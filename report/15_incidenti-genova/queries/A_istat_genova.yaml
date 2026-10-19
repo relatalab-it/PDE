@@ -1,0 +1,23 @@
+provider: istat
+provider_url: https://esploradati.istat.it/SDMXWS/rest
+agency_id: IT1
+dataset: 41_983_DF_DCIS_INCIDMORFER_COM_1
+description: Road accidents, killed and injured - municipalities
+filters:
+  FREQ:
+    value: A
+    description: Annual
+  REF_AREA:
+    value: '010025'
+    description: Comune di Genova (codice ISTAT)
+  DATA_TYPE:
+    value: ''
+    description: tutti (ROADACC, KILLINJ)
+  RESULT:
+    value: ''
+    description: tutti (9, F, M)
+start_period: '2010'
+end_period: '2025'
+request_url: https://esploradati.istat.it/SDMXWS/rest/data/41_983_DF_DCIS_INCIDMORFER_COM_1/.010025..?startPeriod=2010&endPeriod=2025&format=csv
+format: csv
+note: richiesta HTTP diretta unica (il CLI opensdmx farebbe almeno 3 richieste a ISTAT, che ha limiti severi sull'API)

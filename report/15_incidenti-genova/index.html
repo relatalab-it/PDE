@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Incidenti stradali a Genova: dati aperti per via, non per punto — JournAI</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+<div id="shell-top"></div>
+
+<div class="container">
+<div id="shell-intro"></div>
+</div>
+
+<main class="container py-2">
+
+  <!-- ═══ SEZIONE A — ANDAMENTO COMUNALE (ISTAT) ═══ -->
+  <section class="section py-5" id="andamento">
+    <p class="section-label mb-1">
+      <span class="en">ISTAT 41_983 · Municipality of Genoa (010025) · Annual 2010–2025</span>
+      <span class="it">ISTAT 41_983 · Comune di Genova (010025) · Annuale 2010–2025</span>
+    </p>
+    <h2 class="mb-2">
+      <span class="en">Injury accidents fell by 27% since 2010; deaths do not follow the same trend</span>
+      <span class="it">Gli incidenti con lesioni sono scesi del 27% dal 2010; i morti non seguono lo stesso andamento</span>
+    </h2>
+    <p class="subtitle mb-4">
+      <span class="en">Accidents with injuries to persons, persons injured and persons killed · Genoa · 16 years</span>
+      <span class="it">Incidenti con lesioni a persone, feriti e morti · Genova · 16 anni</span>
+    </p>
+
+    <div class="callout mb-4">
+      <p>
+        <span class="en"><strong>Key finding</strong> — Accidents with injuries went from 4,955 (2010) to 3,637 (2025). The lowest point is 2020 (2,840); since then the series has partly recovered but has not returned to pre-2020 levels (3,921 in 2019).</span>
+        <span class="it"><strong>Dato chiave</strong> — Gli incidenti con lesioni passano da 4.955 (2010) a 3.637 (2025). Il minimo è nel 2020 (2.840); da allora la serie risale in parte ma non torna ai livelli precedenti al 2020 (3.921 nel 2019).</span>
+      </p>
+    </div>
+
+    <div class="chart-wrap mb-4" style="height:380px">
+      <canvas id="chart-incidenti"></canvas>
+    </div>
+
+    <h3 class="subsection-title mt-5 mb-2">
+      <span class="en">Deaths: one outlier year</span>
+      <span class="it">Morti: un anno anomalo</span>
+    </h3>
+    <p class="mb-3">
+      <span class="en">Deaths range between 13 and 32 in every year except 2018, when the series reaches 68. In the same year accidents (4,154) and injured persons (5,185) show no peak. The year coincides with the collapse of the Polcevera viaduct (Ponte Morandi) in Genoa on 14 August 2018, which
+        <a href="https://it.wikipedia.org/wiki/Crollo_del_viadotto_Polcevera" target="_blank">Wikipedia</a> reports as 43 deaths, among people in vehicles and workers on the ground, and classifies as a structural failure, not as a road accident. If all 43 were counted in the ISTAT figure, the remainder (68 − 43 = 25) would fall within the range of the other years: consistent, but <strong>not verified</strong> — the ISTAT series carries no note on this, and we have not found the ISTAT methodology for how such an event is counted.</span>
+      <span class="it">I morti oscillano tra 13 e 32 in tutti gli anni tranne il 2018, quando la serie arriva a 68. Nello stesso anno incidenti (4.154) e feriti (5.185) non mostrano picchi. L'anno coincide con il crollo del viadotto Polcevera (ponte Morandi) a Genova, il 14 agosto 2018, che
+        <a href="https://it.wikipedia.org/wiki/Crollo_del_viadotto_Polcevera" target="_blank">Wikipedia</a> riporta con 43 morti, tra persone a bordo dei mezzi e operai a terra, e classifica come cedimento strutturale, non come incidente stradale. Se tutte le 43 vittime fossero contate nel dato ISTAT, il resto (68 − 43 = 25) rientrerebbe nell'intervallo degli altri anni: coerente, ma <strong>non verificato</strong> — la serie ISTAT non riporta note in merito e non abbiamo trovato la metodologia ISTAT su come viene contato un evento di questo tipo.</span>
+    </p>
+
+    <div class="chart-wrap mb-4" style="height:320px">
+      <canvas id="chart-morti"></canvas>
+    </div>
+
+    <div class="transform p-3 mb-4">
+      <strong><span class="en">Data transformations</span><span class="it">Trasformazioni</span></strong><br>
+      <span class="en">Raw: 48 rows (3 series × 16 years) · no transformation, values read as published · variation 2010→2025: (3,637 − 4,955) / 4,955 = −26.6%, rounded to −27%</span>
+      <span class="it">Grezzo: 48 righe (3 serie × 16 anni) · nessuna trasformazione, valori letti come pubblicati · variazione 2010→2025: (3.637 − 4.955) / 4.955 = −26,6%, arrotondata a −27%</span>
+    </div>
+
+    <p class="note mb-2">
+      <span class="en">Source: <a href="https://esploradati.istat.it/SDMXWS/rest/data/41_983_DF_DCIS_INCIDMORFER_COM_1/.010025..?startPeriod=2010&amp;endPeriod=2025&amp;format=csv" target="_blank">ISTAT, Road accidents, killed and injured — municipalities (41_983), SDMX query</a> · Chart: <a href="https://www.chartjs.org/">Chart.js</a> · The Y-axis starts at zero (absolute counts). ISTAT counts only accidents with injuries to persons.</span>
+      <span class="it">Fonte: <a href="https://esploradati.istat.it/SDMXWS/rest/data/41_983_DF_DCIS_INCIDMORFER_COM_1/.010025..?startPeriod=2010&amp;endPeriod=2025&amp;format=csv" target="_blank">ISTAT, Incidenti stradali, morti e feriti — comuni (41_983), query SDMX</a> · Grafico: <a href="https://www.chartjs.org/">Chart.js</a> · L'asse Y parte da zero (conteggi assoluti). ISTAT conta solo gli incidenti con lesioni a persone.</span>
+    </p>
+  </section>
+
+  <!-- ═══ SEZIONE B — VIE (COMUNE DI GENOVA) ═══ -->
+  <section class="section py-5" id="vie">
+    <p class="section-label mb-1">
+      <span class="en">Municipality of Genoa · Accidents by street and severity · 2010–2016</span>
+      <span class="it">Comune di Genova · Sinistri per via e gravità · 2010–2016</span>
+    </p>
+    <h2 class="mb-2">
+      <span class="en">Corso Europa leads on accidents and on deaths; the data stop at the street, not the point</span>
+      <span class="it">Corso Europa è prima per sinistri e per morti; i dati si fermano alla via, non al punto</span>
+    </h2>
+    <p class="subtitle mb-4">
+      <span class="en">All accidents recorded, by severity · top 15 of 1,978 streets · 56,989 accidents</span>
+      <span class="it">Tutti i sinistri rilevati, per gravità · prime 15 su 1.978 vie · 56.989 sinistri</span>
+    </p>
+
+    <div class="callout mb-4">
+      <p>
+        <span class="en"><strong>Key finding</strong> — Corso Europa recorded 1,274 accidents in 2010–2016 and 10 fatal ones, ahead of Corso Sardegna (910) and Via Antonio Cantore (746). Strada Aldo Moro has fewer accidents (595) but 5 fatal ones, as many as Via Donato Somma.</span>
+        <span class="it"><strong>Dato chiave</strong> — Corso Europa registra 1.274 sinistri nel 2010–2016 e 10 mortali, davanti a Corso Sardegna (910) e Via Antonio Cantore (746). Strada Aldo Moro ha meno sinistri (595) ma 5 mortali, quanti Via Donato Somma.</span>
+      </p>
+    </div>
+
+    <div class="chart-wrap mb-4" style="height:620px">
+      <canvas id="chart-vie"></canvas>
+    </div>
+
+    <h3 class="subsection-title mt-5 mb-2">
+      <span class="en">Streets with the most fatal accidents, 2010–2016</span>
+      <span class="it">Vie con più sinistri mortali, 2010–2016</span>
+    </h3>
+    <div class="chart-wrap mb-4" style="height:340px">
+      <canvas id="chart-mortali-vie"></canvas>
+    </div>
+
+    <p class="mb-3">
+      <span class="en"><strong>Reading limits.</strong> The ranking counts accidents per street, not per kilometre or per vehicle: long, busy roads rank higher by construction. It says <em>which streets</em>, not <em>where on the street</em>. The 2017 file (published separately, with different column labels) gives a similar picture — 8 of its top 10 streets are also in the 2010–2016 top 10 — but it is not merged into this ranking, because the yearly totals of the two files are not comparable (see next section).</span>
+      <span class="it"><strong>Limiti di lettura.</strong> La classifica conta i sinistri per via, non per chilometro né per veicolo: le strade lunghe e trafficate stanno più in alto per costruzione. Dice <em>quali vie</em>, non <em>dove lungo la via</em>. Il file 2017 (pubblicato a parte, con etichette di colonna diverse) dà un quadro simile — 8 delle sue prime 10 vie sono anche tra le prime 10 del 2010–2016 — ma non è unito a questa classifica, perché i totali annui dei due file non sono confrontabili (vedi sezione successiva).</span>
+    </p>
+
+    <div class="transform p-3 mb-4">
+      <strong><span class="en">Data transformations</span><span class="it">Trasformazioni</span></strong><br>
+      <span class="en">Raw: 8,273 rows (street × year, 2010–2016) · whitespace in street names normalised · summed over years per street · ranked by total accidents (all severities) · top 15 shown · fatal-accident ranking by number of fatal accidents, ties broken by total · script: <code>queries/transform.py</code></span>
+      <span class="it">Grezzo: 8.273 righe (via × anno, 2010–2016) · spazi nei nomi delle vie normalizzati · somma sugli anni per via · classifica per sinistri totali (tutte le gravità) · mostrate le prime 15 · classifica dei mortali per numero di sinistri mortali, a parità per totale · script: <code>queries/transform.py</code></span>
+    </div>
+
+    <p class="note mb-2">
+      <span class="en">Source: <a href="https://www.dati.gov.it/view-dataset/dataset?id=1564c824-4e8c-410f-9ae5-4ed2c894438a" target="_blank">Comune di Genova, Accidents by street and severity 2010–2016</a> (CC BY 4.0, via dati.gov.it) · Chart: <a href="https://www.chartjs.org/">Chart.js</a> · The X-axis starts at zero. Stacked bars are parts of a total, not cumulative values.</span>
+      <span class="it">Fonte: <a href="https://www.dati.gov.it/view-dataset/dataset?id=1564c824-4e8c-410f-9ae5-4ed2c894438a" target="_blank">Comune di Genova, Sinistri per via e gravità dal 2010 al 2016</a> (CC BY 4.0, via dati.gov.it) · Grafico: <a href="https://www.chartjs.org/">Chart.js</a> · L'asse X parte da zero. Le barre impilate sono parti di un totale, non valori cumulati.</span>
+    </p>
+  </section>
+
+  <!-- ═══ SEZIONE C — CONFRONTO ISTAT / COMUNE ═══ -->
+  <section class="section py-5" id="confronto">
+    <p class="section-label mb-1">
+      <span class="en">ISTAT 41_983 vs Municipality of Genoa · Accidents with injuries · 2010–2017</span>
+      <span class="it">ISTAT 41_983 vs Comune di Genova · Incidenti con lesioni · 2010–2017</span>
+    </p>
+    <h2 class="mb-2">
+      <span class="en">The two sources do not count the same thing, and the municipal series breaks in 2017</span>
+      <span class="it">Le due fonti non contano la stessa cosa, e la serie del Comune si spezza nel 2017</span>
+    </h2>
+    <p class="subtitle mb-4">
+      <span class="en">Accidents with injuries (injured, serious, fatal) · same municipality · same years</span>
+      <span class="it">Incidenti con lesioni (feriti, prognosi riservata, mortali) · stesso comune · stessi anni</span>
+    </p>
+
+    <div class="callout mb-4">
+      <p>
+        <span class="en"><strong>Key finding</strong> — In 2010–2016 the municipal file counts 20% to 24% more accidents with injuries than ISTAT (6,045 vs 4,955 in 2010). In 2017 the municipal figure drops to 4,060 while ISTAT stays at 4,279: the 2017 file is not comparable with the previous years.</span>
+        <span class="it"><strong>Dato chiave</strong> — Nel 2010–2016 il file del Comune conta dal 20% al 24% in più di incidenti con lesioni rispetto a ISTAT (6.045 contro 4.955 nel 2010). Nel 2017 il dato del Comune scende a 4.060 mentre ISTAT resta a 4.279: il file 2017 non è confrontabile con gli anni precedenti.</span>
+      </p>
+    </div>
+
+    <div class="chart-wrap mb-4" style="height:360px">
+      <canvas id="chart-confronto"></canvas>
+    </div>
+
+    <p class="mb-3">
+      <span class="en">The sources have different definitions: the municipal files cover accidents surveyed with a breakdown by severity, ISTAT counts accidents with injuries recorded in its national survey. We have not found a document explaining the gap, so we do not interpret it: the two series are shown side by side and never summed. The 2017 file also uses different column labels (<em>illesi</em>, <em>Feriti</em>, <em>P.Riservata</em>, <em>Mortali</em>) than the 2010–2016 file (<em>Con feriti</em>, <em>Senza feriti</em>, …). Accidents with injuries for the municipal series are computed as injured + serious + fatal, assuming the label <em>illesi</em> of 2017 corresponds to <em>Senza feriti</em>: the break in 2017 suggests this assumption may not hold.</span>
+      <span class="it">Le fonti hanno definizioni diverse: i file del Comune coprono sinistri rilevati con suddivisione per gravità, ISTAT conta gli incidenti con lesioni registrati nella sua rilevazione nazionale. Non abbiamo trovato un documento che spieghi lo scarto, quindi non lo interpretiamo: le due serie sono mostrate affiancate e mai sommate. Il file 2017 usa inoltre etichette di colonna diverse (<em>illesi</em>, <em>Feriti</em>, <em>P.Riservata</em>, <em>Mortali</em>) da quello 2010–2016 (<em>Con feriti</em>, <em>Senza feriti</em>, …). Gli incidenti con lesioni della serie comunale sono calcolati come feriti + prognosi riservata + mortali, assumendo che l'etichetta <em>illesi</em> del 2017 corrisponda a <em>Senza feriti</em>: la rottura nel 2017 suggerisce che l'assunzione potrebbe non reggere.</span>
+    </p>
+
+    <div class="transform p-3 mb-4">
+      <strong><span class="en">Data transformations</span><span class="it">Trasformazioni</span></strong><br>
+      <span class="en">Municipal series: per year, sum over streets of (with injuries + serious + fatal) from the 2010–2016 file and (Feriti + P.Riservata + Mortali) from the 2017 file · ISTAT series: as published · no values added or interpolated</span>
+      <span class="it">Serie del Comune: per anno, somma sulle vie di (con feriti + prognosi riservata + mortali) dal file 2010–2016 e di (Feriti + P.Riservata + Mortali) dal file 2017 · serie ISTAT: come pubblicata · nessun valore aggiunto o interpolato</span>
+    </div>
+
+    <p class="note mb-2">
+      <span class="en">Sources: ISTAT 41_983 and Comune di Genova (2010–2016 and 2017 files, see Raw data) · The Y-axis starts at zero.</span>
+      <span class="it">Fonti: ISTAT 41_983 e Comune di Genova (file 2010–2016 e 2017, vedi Dati grezzi) · L'asse Y parte da zero.</span>
+    </p>
+  </section>
+
+  <!-- ═══ SEZIONE D — STRADE EXTRAURBANE (MIT) ═══ -->
+  <section class="section py-5" id="strade">
+    <p class="section-label mb-1">
+      <span class="en">MIT · Accidents by road · Province of Genoa · motorways and state roads · 2018</span>
+      <span class="it">MIT · Incidenti per strada · Provincia di Genova · autostrade e strade statali · 2018</span>
+    </p>
+    <h2 class="mb-2">
+      <span class="en">Context: the motorways and state roads of the province, not the city streets</span>
+      <span class="it">Contesto: le autostrade e le statali della provincia, non le strade urbane</span>
+    </h2>
+    <p class="subtitle mb-4">
+      <span class="en">Accidents in 2018 · 15 road sections · A12, SS1 Aurelia, A10 lead</span>
+      <span class="it">Incidenti nel 2018 · 15 tratti · A12, SS1 Aurelia, A10 in testa</span>
+    </p>
+
+    <div class="callout mb-4">
+      <p>
+        <span class="en"><strong>Key finding</strong> — In 2018 the A12 recorded 146 accidents on its Genoa section (59.1 km), the SS1 Aurelia 106, the A10 102. These are provincial road sections: they do not describe traffic inside the city of Genoa.</span>
+        <span class="it"><strong>Dato chiave</strong> — Nel 2018 l'A12 registra 146 incidenti sul tratto genovese (59,1 km), la SS1 Aurelia 106, l'A10 102. Sono tratti provinciali: non descrivono il traffico dentro la città di Genova.</span>
+      </p>
+    </div>
+
+    <div class="chart-wrap mb-4" style="height:520px">
+      <canvas id="chart-strade"></canvas>
+    </div>
+
+    <div class="transform p-3 mb-4">
+      <strong><span class="en">Data transformations</span><span class="it">Trasformazioni</span></strong><br>
+      <span class="en">Raw: 1,956 rows (roads, all Italy) · filter PROVINCIA = Genova → 15 rows · sorted by 2018 · SS 654 has no 2018 value in the source ("-"): shown as missing, not as zero</span>
+      <span class="it">Grezzo: 1.956 righe (strade, tutta Italia) · filtro PROVINCIA = Genova → 15 righe · ordinate per 2018 · la SS 654 non ha valore 2018 nella fonte ("-"): mostrata come dato mancante, non come zero</span>
+    </div>
+
+    <p class="note mb-2">
+      <span class="en">Source: <a href="https://www.dati.gov.it/view-dataset/dataset?id=1fe7629d-ba6f-4942-a651-c354690c1070" target="_blank">MIT, Localization of road accidents 2004–2018</a> (via dati.gov.it) · Chart: <a href="https://www.chartjs.org/">Chart.js</a> · The X-axis starts at zero. The dataset covers motorways and state roads only, up to 2018.</span>
+      <span class="it">Fonte: <a href="https://www.dati.gov.it/view-dataset/dataset?id=1fe7629d-ba6f-4942-a651-c354690c1070" target="_blank">MIT, Localizzazione incidenti stradali 2004–2018</a> (via dati.gov.it) · Grafico: <a href="https://www.chartjs.org/">Chart.js</a> · L'asse X parte da zero. Il dataset copre solo autostrade e strade statali, fino al 2018.</span>
+    </p>
+  </section>
+
+  <!-- ═══ SEZIONE E — COSA NON C'È ═══ -->
+  <section class="section py-5" id="mancanti">
+    <p class="section-label mb-1">
+      <span class="en">Negative results · catalogues consulted on 19 October 2026</span>
+      <span class="it">Risultati negativi · cataloghi consultati il 19 ottobre 2026</span>
+    </p>
+    <h2 class="mb-2">
+      <span class="en">What the open data do not contain: coordinates</span>
+      <span class="it">Cosa non contengono i dati aperti: le coordinate</span>
+    </h2>
+    <p class="subtitle mb-4">
+      <span class="en">No source consulted locates accidents on a map point</span>
+      <span class="it">Nessuna fonte consultata colloca gli incidenti su un punto della mappa</span>
+    </p>
+
+    <div class="callout mb-4">
+      <p>
+        <span class="en"><strong>Key finding</strong> — In the catalogues consulted (dati.gov.it, RNDT) we found no dataset of road accidents in Genoa with coordinates. A map of the points where accidents are most frequent cannot be drawn from these sources: only streets (2010–2016) and city totals (to 2025) are available.</span>
+        <span class="it"><strong>Dato chiave</strong> — Nei cataloghi consultati (dati.gov.it, RNDT) non abbiamo trovato nessun dataset di incidenti stradali a Genova con coordinate. Una mappa dei punti dove gli incidenti sono più frequenti non si può disegnare con queste fonti: ci sono solo le vie (2010–2016) e i totali comunali (fino al 2025).</span>
+      </p>
+    </div>
+
+    <div class="table-responsive mb-4">
+      <table class="data-table table table-bordered table-sm">
+        <thead><tr>
+          <th><span class="en">Source / connector</span><span class="it">Fonte / connettore</span></th>
+          <th><span class="en">Search</span><span class="it">Ricerca</span></th>
+          <th><span class="en">Result</span><span class="it">Esito</span></th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td>dati.gov.it (CKAN)</td>
+            <td><span class="en">Organisation Comune di Genova, terms accidents / sinistri / road police</span><span class="it">Organizzazione Comune di Genova, termini incidenti / sinistri / polizia locale</span></td>
+            <td><span class="en">9 datasets: 8 by street (2010–2016, 2017) and one with yearly city totals 1981–2016. None with coordinates.</span><span class="it">9 dataset: 8 per via (2010–2016, 2017) e uno con i totali annui comunali 1981–2016. Nessuno con coordinate.</span></td>
+          </tr>
+          <tr>
+            <td>dati.gov.it (CKAN)</td>
+            <td><span class="en">Same organisation, accidents AND (georeferenced OR coordinates OR localisation OR points)</span><span class="it">Stessa organizzazione, incidenti AND (georeferenziati OR coordinate OR localizzazione OR punti)</span></td>
+            <td><span class="en">0 results</span><span class="it">0 risultati</span></td>
+          </tr>
+          <tr>
+            <td>RNDT (openrndt)</td>
+            <td><span class="en">Bounding box around Genoa, terms "incidenti stradali", "sinistri", "incidentalità"</span><span class="it">Riquadro su Genova, termini «incidenti stradali», «sinistri», «incidentalità»</span></td>
+            <td><span class="en">1 result for the first term, unrelated (regional risk-mitigation programme of Regione Lombardia); 0 for the others</span><span class="it">1 risultato per il primo termine, non pertinente (programma regionale di mitigazione dei rischi di Regione Lombardia); 0 per gli altri</span></td>
+          </tr>
+          <tr>
+            <td>RNDT (openrndt)</td>
+            <td><span class="en">Publishers Comune di Genova and Regione Liguria, accident-related terms</span><span class="it">Enti Comune di Genova e Regione Liguria, termini sugli incidenti</span></td>
+            <td><span class="en">Only unrelated layers (base maps, road network, parking, geology)</span><span class="it">Solo livelli non pertinenti (basi cartografiche, rete viaria, parcheggi, geologia)</span></td>
+          </tr>
+          <tr>
+            <td>ISTAT 41_983 (SDMX)</td>
+            <td><span class="en">Dimensions of the dataflow</span><span class="it">Dimensioni del dataflow</span></td>
+            <td><span class="en">Municipality, type of data, result, year: no location inside the city</span><span class="it">Comune, tipo di dato, esito, anno: nessuna localizzazione dentro la città</span></td>
+          </tr>
+          <tr>
+            <td>MIT (CKAN)</td>
+            <td><span class="en">Localization of road accidents 2004–2018</span><span class="it">Localizzazione incidenti stradali 2004–2018</span></td>
+            <td><span class="en">By road, motorways and state roads only; no coordinates</span><span class="it">Per strada, solo autostrade e statali; senza coordinate</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="subsection-title mt-4 mb-2">
+      <span class="en">Not checked</span>
+      <span class="it">Non verificato</span>
+    </h3>
+    <ul class="mb-4">
+      <li>
+        <span class="en">The original portal of the Municipality (dati.comune.genova.it) returned an access error (HTTP 403) to the tool: we worked on the copy harvested by dati.gov.it, so more recent datasets published only on the original portal cannot be excluded.</span>
+        <span class="it">Il portale originale del Comune (dati.comune.genova.it) ha restituito un errore di accesso (HTTP 403) allo strumento: abbiamo lavorato sulla copia raccolta da dati.gov.it, quindi non si possono escludere dataset più recenti pubblicati solo sul portale originale.</span>
+      </li>
+      <li>
+        <span class="en">ISTAT dataflow 41_269 (accidents with injuries by type of intersection, hour, weekday, month): whether it is available at municipal level was not verified, because of the ISTAT API rate limits. It would say <em>what kind of place</em> (junction, roundabout, bend, tunnel), not <em>which</em> place.</span>
+        <span class="it">Dataflow ISTAT 41_269 (incidenti con lesioni per tipo di intersezione, ora, giorno, mese): non è stato verificato se sia disponibile a livello comunale, per i limiti di richieste dell'API ISTAT. Direbbe <em>che tipo di luogo</em> (incrocio, rotatoria, curva, galleria), non <em>quale</em> luogo.</span>
+      </li>
+      <li>
+        <span class="en">For point-level data the natural contact is the data owner: the municipal datasets list the Direzione Corpo Polizia Locale as contact (opendata@comune.genova.it).</span>
+        <span class="it">Per i dati puntuali l'interlocutore naturale è il titolare dei dati: i dataset del Comune indicano come referente la Direzione Corpo Polizia Locale (opendata@comune.genova.it).</span>
+      </li>
+    </ul>
+
+    <p class="note mb-2">
+      <span class="en">Statements here are about the catalogues and datasets consulted on the date above, not about what the publishers hold or could release.</span>
+      <span class="it">Le affermazioni di questa sezione riguardano i cataloghi e i dataset consultati alla data indicata, non ciò che gli enti detengono o potrebbero rilasciare.</span>
+    </p>
+  </section>
+
+</main>
+
+<div id="shell-bottom"></div>
+<div class="container"><div id="shell-footer"></div></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../../assets/shell.js"></script>
+<script src="../../assets/lang.js"></script>
+<script>
+Chart.defaults.font.family = "'IBM Plex Mono', monospace";
+Chart.defaults.font.size   = 14;
+Chart.defaults.color       = '#333';
+
+// ── DATI (da output/*.csv tramite queries/transform.py) ───────────────────────
+const A_YEARS     = [2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025];
+const A_INCIDENTI = [4955,4626,4283,4323,4184,4345,4205,4279,4154,3921,2840,3584,3910,3669,3872,3637];
+const A_FERITI    = [6178,5829,5376,5286,5194,5350,5136,5432,5185,4752,3327,4239,4662,4339,4594,4412];
+const A_MORTI     = [32,21,21,25,18,29,13,23,68,23,24,14,16,13,13,21];
+
+const B_VIE      = ['CORSO EUROPA','CORSO SARDEGNA','VIA ANTONIO CANTORE','LUNGOMARE GIUSEPPE CANEPA','VIA ANTONIO GRAMSCI','STRADA ALDO MORO','VIA PRA','VIA PIACENZA','CORSO TORINO','CORSO AURELIO SAFFI','VIA CANEVARI','VIALE BRIGATE PARTIGIANE','CORSO ALDO GASTALDI','VIA CORNIGLIANO','LUNGOBISAGNO ISTRIA'];
+const B_SENZA    = [406,240,245,321,263,252,136,112,106,115,139,131,95,119,139];
+const B_FERITI   = [835,653,491,382,392,329,416,332,324,302,281,289,310,271,250];
+const B_PROGNOSI = [23,14,7,7,3,9,15,12,8,7,5,1,4,4,1];
+const B_MORTALI  = [10,3,3,1,0,5,2,2,1,3,1,1,1,1,0];
+
+const BM_VIE    = ['CORSO EUROPA','STRADA ALDO MORO','VIA DONATO SOMMA','VIA RIVAROLO','CORSO SARDEGNA','VIA ANTONIO CANTORE','CORSO AURELIO SAFFI','CORSO ITALIA'];
+const BM_MORTALI = [10,5,5,4,3,3,3,3];
+
+const X_YEARS        = [2010,2011,2012,2013,2014,2015,2016,2017];
+const X_ISTAT        = [4955,4626,4283,4323,4184,4345,4205,4279];
+const X_COMUNE       = [6045,5593,5259,5216,5088,5224,5206,4060];
+
+const C_STRADE = ['A 12 · GENOVA-ROMA (TRATTO GENOVA-ROSIGNANO)','SS 001 · VIA AURELIA','A 10 · GENOVA-VENTIMIGLIA','A 07 · MILANO-GENOVA','A 26 · GENOVA VOLTRI-GRAVELLONA TOCE','SS 227 · DI PORTOFINO','SS 333 · DI USCIO','SS 035 · DEI GIOVI','SS 225 · DELLA FONTANABUONA','SS 045 · DI VAL TREBBIA','SS 523 · DEL COLLE DI CENTO CROCI','SS 226 · DI VALLE SCRIVIA','SS 456 · DEL TURCHINO','SS 586 · DELLA VALLE DELL\'AVETO','SS 654 · DI VAL NURE'];
+const C_2018   = [146,106,102,84,41,41,24,16,15,14,14,9,7,6,null];
+
+// ── LINGUA E GRAFICI ──────────────────────────────────────────────────────────
+const isIt = () => document.body.classList.contains('lang-it');
+const T    = (en, it) => isIt() ? it : en;
+const fmt  = v => v == null ? T('N/A', 'N/D') : v.toLocaleString(isIt() ? 'it-IT' : 'en-GB');
+const charts = [];
+
+function line(label, data, color) {
+  return { label, data, borderColor: color, backgroundColor: 'transparent', pointRadius: 4, pointHoverRadius: 6, borderWidth: 2 };
+}
+
+function buildCharts() {
+  charts.splice(0).forEach(c => c.destroy());
+  const tip = unit => ({ callbacks: { label: ctx => `${ctx.dataset.label}: ${fmt(ctx.chart.options.indexAxis === 'y' ? ctx.parsed.x : ctx.parsed.y)} ${unit}`.trim() } });
+
+  // A1 — incidenti e feriti (ISTAT)
+  charts.push(new Chart(document.getElementById('chart-incidenti'), {
+    type: 'line',
+    data: { labels: A_YEARS, datasets: [
+      line(T('ACCIDENTS WITH INJURIES', 'INCIDENTI CON LESIONI'), A_INCIDENTI, '#b02020'),
+      line(T('PERSONS INJURED', 'PERSONE FERITE'), A_FERITI, '#1a6fa8')
+    ]},
+    options: { responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { position: 'bottom' }, tooltip: tip(T('', '')) },
+      scales: { x: { title: { display: true, text: T('YEAR', 'ANNO') } },
+                y: { min: 0, title: { display: true, text: T('NUMBER', 'NUMERO') }, grid: { color: '#eee' } } } }
+  }));
+
+  // A2 — morti (ISTAT)
+  charts.push(new Chart(document.getElementById('chart-morti'), {
+    type: 'bar',
+    data: { labels: A_YEARS, datasets: [{
+      label: T('PERSONS KILLED', 'PERSONE DECEDUTE'), data: A_MORTI,
+      backgroundColor: A_YEARS.map(y => y === 2018 ? '#8e44ad' : '#b02020') }] },
+    options: { responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false }, tooltip: tip(T('PERSONS', 'PERSONE')) },
+      scales: { x: { title: { display: true, text: T('YEAR', 'ANNO') } },
+                y: { min: 0, title: { display: true, text: T('PERSONS KILLED', 'PERSONE DECEDUTE') }, grid: { color: '#eee' } } } }
+  }));
+
+  // B1 — vie per gravità (Comune), barre orizzontali impilate
+  charts.push(new Chart(document.getElementById('chart-vie'), {
+    type: 'bar',
+    data: { labels: B_VIE, datasets: [
+      { label: T('NO INJURIES', 'SENZA FERITI'),        data: B_SENZA,    backgroundColor: '#16a085' },
+      { label: T('INJURED', 'CON FERITI'),              data: B_FERITI,   backgroundColor: '#e67e22' },
+      { label: T('SERIOUS (RESERVED PROGNOSIS)', 'PROGNOSI RISERVATA'), data: B_PROGNOSI, backgroundColor: '#b02020' },
+      { label: T('FATAL', 'MORTALI'),                   data: B_MORTALI,  backgroundColor: '#8e44ad' }
+    ]},
+    options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { position: 'bottom' },
+        tooltip: { callbacks: {
+          label: ctx => `${ctx.dataset.label}: ${fmt(ctx.parsed.x)}`,
+          footer: items => `${T('TOTAL', 'TOTALE')}: ${fmt(items.reduce((s, i) => s + i.parsed.x, 0))}`
+        } } },
+      scales: { x: { stacked: true, min: 0, title: { display: true, text: T('ACCIDENTS 2010–2016', 'SINISTRI 2010–2016') }, grid: { color: '#eee' } },
+                y: { stacked: true, title: { display: true, text: T('STREET', 'VIA') } } } }
+  }));
+
+  // B2 — vie con più mortali
+  charts.push(new Chart(document.getElementById('chart-mortali-vie'), {
+    type: 'bar',
+    data: { labels: BM_VIE, datasets: [{ label: T('FATAL ACCIDENTS', 'SINISTRI MORTALI'), data: BM_MORTALI, backgroundColor: '#8e44ad' }] },
+    options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false }, tooltip: tip(T('FATAL ACCIDENTS', 'SINISTRI MORTALI')) },
+      scales: { x: { min: 0, title: { display: true, text: T('FATAL ACCIDENTS 2010–2016', 'SINISTRI MORTALI 2010–2016') }, grid: { color: '#eee' } },
+                y: { title: { display: true, text: T('STREET', 'VIA') } } } }
+  }));
+
+  // C — confronto ISTAT / Comune (serie affiancate, mai sommate)
+  charts.push(new Chart(document.getElementById('chart-confronto'), {
+    type: 'line',
+    data: { labels: X_YEARS, datasets: [
+      line('ISTAT', X_ISTAT, '#b02020'),
+      line(T('MUNICIPALITY OF GENOA', 'COMUNE DI GENOVA'), X_COMUNE, '#1a6fa8')
+    ]},
+    options: { responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { position: 'bottom' }, tooltip: tip(T('ACCIDENTS WITH INJURIES', 'INCIDENTI CON LESIONI')) },
+      scales: { x: { title: { display: true, text: T('YEAR', 'ANNO') } },
+                y: { min: 0, title: { display: true, text: T('ACCIDENTS WITH INJURIES', 'INCIDENTI CON LESIONI') }, grid: { color: '#eee' } } } }
+  }));
+
+  // D — MIT, strade della provincia, 2018
+  charts.push(new Chart(document.getElementById('chart-strade'), {
+    type: 'bar',
+    data: { labels: C_STRADE, datasets: [{ label: T('ACCIDENTS 2018', 'INCIDENTI 2018'), data: C_2018, backgroundColor: '#1a6fa8' }] },
+    options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false }, tooltip: tip(T('ACCIDENTS', 'INCIDENTI')) },
+      scales: { x: { min: 0, title: { display: true, text: T('ACCIDENTS 2018', 'INCIDENTI 2018') }, grid: { color: '#eee' } },
+                y: { title: { display: true, text: T('ROAD', 'STRADA') } } } }
+  }));
+}
+
+// lang.js richiama _reRenderReports a ogni cambio lingua: etichette e tooltip dei grafici seguono la lingua
+window._reRenderReports = buildCharts;
+
+// ── SHELL CONFIG ──────────────────────────────────────────────────────────────
+initShell({
+  researchQuestion:    "Dove si concentrano gli incidenti stradali a Genova e come sono cambiati nel tempo, secondo i dati aperti disponibili?",
+  researchQuestion_en: "Where are road accidents concentrated in Genoa, and how have they changed over time, according to the open data available?",
+  statisticalProxy:    "ISTAT 41_983 — incidenti stradali con lesioni a persone, feriti e morti, comune di Genova, annuale 2010–2025. Comune di Genova — sinistri per via e gravità, tutti i sinistri rilevati (anche senza feriti), 2010–2016 e 2017. MIT — incidenti per strada su autostrade e statali, provincia di Genova, fino al 2018. Nessuna delle tre fonti contiene coordinate.",
+  statisticalProxy_en: "ISTAT 41_983 — road accidents with injuries to persons, injured and killed, municipality of Genoa, annual 2010–2025. Municipality of Genoa — accidents by street and severity, all accidents recorded (also without injuries), 2010–2016 and 2017. MIT — accidents by road on motorways and state roads, province of Genoa, up to 2018. None of the three sources contains coordinates.",
+
+  title:    "Genova: −27% di incidenti con lesioni dal 2010, ma i dati aperti arrivano alle vie, non ai punti",
+  title_en: "Genoa: Injury Accidents Down 27% Since 2010, but Open Data Reach Streets, Not Points",
+  date:     "19 ottobre 2026",
+  date_en:  "19 October 2026",
+  intro:    "Dove si concentrano gli incidenti stradali a Genova e come sono cambiati nel tempo? Il report mette insieme tre fonti pubbliche — ISTAT (SDMX), il Comune di Genova e il Ministero delle Infrastrutture (CKAN) — e documenta con precisione ciò che i dati aperti non permettono di dire: la posizione dei singoli punti.",
+  intro_en: "Where are road accidents concentrated in Genoa, and how have they changed over time? The report combines three public sources — ISTAT (SDMX), the Municipality of Genoa and the Ministry of Infrastructure (CKAN) — and documents precisely what open data do not allow: the position of individual points.",
+
+  badges: [
+    { label: "ISTAT",  value: "41_983" },
+    { label: "Comune di Genova", value: "CKAN · dati.gov.it", label_en: "Municipality of Genoa" },
+    { label: "MIT",    value: "CKAN · dati.gov.it" },
+    { label: "Periodo", value: "2004–2025", label_en: "Period" }
+  ],
+
+  nav: [
+    { id: "andamento", label: "Andamento",       label_en: "Trend" },
+    { id: "vie",       label: "Vie",             label_en: "Streets" },
+    { id: "confronto", label: "ISTAT vs Comune", label_en: "ISTAT vs Municipality" },
+    { id: "strade",    label: "Strade MIT",      label_en: "MIT roads" },
+    { id: "mancanti",  label: "Cosa non c'è",    label_en: "What is missing" }
+  ],
+
+  introTitle:       "Contesto e risultati",
+  introTitle_en:    "Context and findings",
+  introSubtitle:    "Incidenti stradali a Genova: tre fonti, un limite comune (nessuna coordinata)",
+  introSubtitle_en: "Road accidents in Genoa: three sources, one common limit (no coordinates)",
+
+  scopeLimit:    "ISTAT 41_983 conta solo gli incidenti con lesioni a persone e solo il totale comunale. I file del Comune di Genova sono per via, non per punto, non normalizzati per lunghezza o traffico, e arrivano al 2017; il file 2017 ha etichette diverse e una rottura rispetto agli anni precedenti. Il dataset MIT copre solo autostrade e statali, fino al 2018. Nei cataloghi consultati (dati.gov.it, RNDT) nessun dataset ha coordinate; il portale originale del Comune non è stato raggiungibile dallo strumento.",
+  scopeLimit_en: "ISTAT 41_983 counts only accidents with injuries to persons and only the municipal total. The Municipality of Genoa files are by street, not by point, not normalised by length or traffic, and end in 2017; the 2017 file has different labels and a break with respect to earlier years. The MIT dataset covers only motorways and state roads, up to 2018. In the catalogues consulted (dati.gov.it, RNDT) no dataset has coordinates; the Municipality's original portal could not be reached by the tool.",
+
+  introExtra: `
+    <div class="summary mb-5">
+      <h3 class="mb-3">
+        <span class="en">What the data says</span>
+        <span class="it">Cosa dicono i dati</span>
+      </h3>
+      <p>
+        <span class="en"><strong>How accidents changed.</strong> Accidents with injuries in Genoa fell from 4,955 (2010) to 3,637 (2025), −27%, with a low in 2020 (2,840) and a partial recovery since. Deaths do not follow the trend: they stay between 13 and 32 a year except in 2018 (68), when accidents and injured persons show no peak. The year coincides with the collapse of the Polcevera viaduct; whether and how its victims are counted in the ISTAT figure is not documented in the sources we found. → <a href="#andamento">trend</a></span>
+        <span class="it"><strong>Come sono cambiati gli incidenti.</strong> Gli incidenti con lesioni a Genova scendono da 4.955 (2010) a 3.637 (2025), −27%, con un minimo nel 2020 (2.840) e una ripresa parziale. I morti non seguono l'andamento: restano tra 13 e 32 l'anno tranne nel 2018 (68), quando incidenti e feriti non mostrano picchi. L'anno coincide con il crollo del viadotto Polcevera; se e come le sue vittime siano contate nel dato ISTAT non è documentato nelle fonti che abbiamo trovato. → <a href="#andamento">andamento</a></span>
+      </p>
+      <p>
+        <span class="en"><strong>Where.</strong> By street, the municipal data for 2010–2016 point to Corso Europa (1,274 accidents, 10 fatal), Corso Sardegna (910) and Via Antonio Cantore (746). Strada Aldo Moro and Via Donato Somma each have 5 fatal accidents with far fewer accidents overall. The 2017 file confirms the picture (8 of the top 10 streets coincide). The ranking is per street, not per kilometre or vehicle. → <a href="#vie">streets</a></span>
+        <span class="it"><strong>Dove.</strong> Per via, i dati del Comune 2010–2016 indicano Corso Europa (1.274 sinistri, 10 mortali), Corso Sardegna (910) e Via Antonio Cantore (746). Strada Aldo Moro e Via Donato Somma hanno 5 sinistri mortali ciascuna con molti meno sinistri in totale. Il file 2017 conferma il quadro (8 delle prime 10 vie coincidono). La classifica è per via, non per chilometro né per veicolo. → <a href="#vie">vie</a></span>
+      </p>
+      <p>
+        <span class="en"><strong>Where exactly: not answerable.</strong> A map of the points with the most accidents cannot be drawn: in the catalogues consulted no dataset gives accidents with coordinates. The data owner (the municipal road police) is the natural contact for point-level data. → <a href="#mancanti">what is missing</a></span>
+        <span class="it"><strong>Dove esattamente: senza risposta.</strong> Una mappa dei punti con più incidenti non si può disegnare: nei cataloghi consultati nessun dataset riporta gli incidenti con coordinate. Il titolare dei dati (la Polizia Locale del Comune) è l'interlocutore naturale per i dati puntuali. → <a href="#mancanti">cosa non c'è</a></span>
+      </p>
+      <p>
+        <span class="en"><strong>Editorial note:</strong> the municipal and ISTAT series count different things (the municipal file is 20–24% higher in 2010–2016) and the municipal series breaks in 2017. We show them side by side, never summed. → <a href="#confronto">comparison</a></span>
+        <span class="it"><strong>Nota editoriale:</strong> le serie del Comune e di ISTAT contano cose diverse (il file del Comune è più alto del 20–24% nel 2010–2016) e la serie comunale si spezza nel 2017. Le mostriamo affiancate, mai sommate. → <a href="#confronto">confronto</a></span>
+      </p>
+    </div>
+  `,
+
+  findingCards: [
+    { value: "−27%",   label: "incidenti con lesioni a Genova, 2010 → 2025 (4.955 → 3.637)", label_en: "accidents with injuries in Genoa, 2010 → 2025 (4,955 → 3,637)", color: "accent" },
+    { value: "21",     label: "morti nel 2025 (13 nel 2024 e nel 2023)", label_en: "deaths in 2025 (13 in 2024 and 2023)", color: "default" },
+    { value: "68",     label: "morti nel 2018, anno del crollo del ponte Morandi: coincidenza non verificata", label_en: "deaths in 2018, the year of the Morandi bridge collapse: coincidence not verified", color: "blue" },
+    { value: "1.274",  label: "sinistri a Corso Europa nel 2010–2016, prima via anche per mortali (10)", label_en: "accidents on Corso Europa in 2010–2016, also first for fatal ones (10)", color: "accent" },
+    { value: "0",      label: "dataset con coordinate trovati nei cataloghi consultati", label_en: "datasets with coordinates found in the catalogues consulted", color: "green" }
+  ],
+
+  rawData: {
+    license:           "Comune di Genova: CC BY 4.0 (dichiarata nei metadati del dataset) · ISTAT e MIT: licenza non verificata, da controllare sulle pagine dei dataset",
+    license_en:        "Municipality of Genoa: CC BY 4.0 (declared in the dataset metadata) · ISTAT and MIT: licence not verified, to be checked on the dataset pages",
+    extractionDate:    "19 ottobre 2026",
+    extractionDate_en: "19 October 2026",
+    files: [
+      {
+        provider:  "ISTAT",
+        datasetId: "41_983_DF_DCIS_INCIDMORFER_COM_1",
+        desc:      "Incidenti stradali con lesioni, feriti e morti — Genova (010025) — annuale 2010–2025",
+        desc_en:   "Road accidents with injuries, injured and killed — Genoa (010025) — annual 2010–2025",
+        rows:      48,
+        period:    "2010 / 2025",
+        file:      "output/A_istat_genova.csv"
+      },
+      {
+        provider:  "Comune di Genova",
+        datasetId: "sinistri-per-via-e-gravita-dal-2010-al-2016",
+        desc:      "Sinistri per via e gravità — via × anno — 2010–2016 (ISO-8859-1)",
+        desc_en:   "Accidents by street and severity — street × year — 2010–2016 (ISO-8859-1)",
+        rows:      8273,
+        period:    "2010 / 2016",
+        file:      "output/B1_comune_sinistri_2010_2016.csv"
+      },
+      {
+        provider:  "Comune di Genova",
+        datasetId: "sinistri-per-via-e-gravita-anno-2017",
+        desc:      "Sinistri per via e gravità — anno 2017 (etichette diverse)",
+        desc_en:   "Accidents by street and severity — year 2017 (different labels)",
+        rows:      955,
+        period:    "2017",
+        file:      "output/B2_comune_sinistri_2017.csv"
+      },
+      {
+        provider:  "MIT",
+        datasetId: "localizzazione-incidenti-stradali-anni-2004-2018",
+        desc:      "Incidenti per strada — autostrade e statali, tutta Italia — 2004–2018",
+        desc_en:   "Accidents by road — motorways and state roads, all Italy — 2004–2018",
+        rows:      1956,
+        period:    "2004 / 2018",
+        file:      "output/C_mit_incidenti_per_strada.csv"
+      }
+    ]
+  },
+
+  methodology: {
+    githubUrl: "https://github.com/relatalab-it/PDE/tree/main/report/15_incidenti-genova",
+    classifications: [
+      { code: "41_983_DF_DCIS_INCIDMORFER_COM_1", system: "dataflow ISTAT", meaning: "Incidenti stradali, morti e feriti — comuni", meaning_en: "Road accidents, killed and injured — municipalities" },
+      { code: "010025", system: "REF_AREA", meaning: "Codice ISTAT del comune di Genova", meaning_en: "ISTAT code of the municipality of Genoa" },
+      { code: "CORSO EUROPA ecc.", system: "Strada", meaning: "Nome della via come scritto nel file del Comune, spazi normalizzati", meaning_en: "Street name as written in the Municipality file, whitespace normalised" }
+    ],
+    extra: `
+      <p class="note pt-2 mb-2">
+        <strong>Percorso metodologico</strong><br>
+        Percorso <em>quick</em> esteso a più fonti (SDMX + CKAN), senza ipotesi nulla né piano dati preregistrato: scelta dichiarata, che si discosta dagli Articoli 2 e 3 della constitution. Il primo caso del catalogo con più fonti. Dettagli in <code>notes.md</code>.
+      </p>
+      <p class="note pt-2 mb-2">
+        <strong>Double check</strong><br>
+        Controlli in corso di completamento: i tre file CKAN sono stati scaricati due volte in modo indipendente con hash identici (MATCH). Il secondo controllo dei dati ISTAT non è ancora stato eseguito, per i limiti di richieste dell'API ISTAT.
+      </p>
+    `,
+    extra_en: `
+      <p class="note pt-2 mb-2">
+        <strong>Methodological path</strong><br>
+        <em>Quick</em> path extended to several sources (SDMX + CKAN), without null hypothesis or pre-registered data plan: a declared choice that departs from Articles 2 and 3 of the constitution. The first case in the catalogue with several sources. Details in <code>notes.md</code>.
+      </p>
+      <p class="note pt-2 mb-2">
+        <strong>Double check</strong><br>
+        Checks being completed: the three CKAN files were downloaded twice independently with identical hashes (MATCH). The second check of the ISTAT data has not been run yet, because of the ISTAT API rate limits.
+      </p>
+    `,
+    apiUrls: [
+      {
+        datasetId: "41_983_DF_DCIS_INCIDMORFER_COM_1",
+        provider:  "ISTAT",
+        desc:      "Genova, annuale 2010–2025 — richiesta unica (formato CSV)",
+        desc_en:   "Genoa, annual 2010–2025 — single request (CSV format)",
+        url:       "https://esploradati.istat.it/SDMXWS/rest/data/41_983_DF_DCIS_INCIDMORFER_COM_1/.010025..?startPeriod=2010&endPeriod=2025&format=csv"
+      },
+      {
+        datasetId: "sinistri-per-via-e-gravita-dal-2010-al-2016",
+        provider:  "Comune di Genova",
+        desc:      "Risorsa CSV — pagina del dataset: https://www.dati.gov.it/view-dataset/dataset?id=1564c824-4e8c-410f-9ae5-4ed2c894438a",
+        desc_en:   "CSV resource — dataset page: https://www.dati.gov.it/view-dataset/dataset?id=1564c824-4e8c-410f-9ae5-4ed2c894438a",
+        url:       "https://opendatacomunegenova.s3.eu-south-1.amazonaws.com/risorse/QGravita.csv"
+      },
+      {
+        datasetId: "sinistri-per-via-e-gravita-anno-2017",
+        provider:  "Comune di Genova",
+        desc:      "Risorsa CSV — pagina del dataset: https://www.dati.gov.it/view-dataset/dataset?id=0b4cb9f4-a458-465b-9953-e40047e3eed9",
+        desc_en:   "CSV resource — dataset page: https://www.dati.gov.it/view-dataset/dataset?id=0b4cb9f4-a458-465b-9953-e40047e3eed9",
+        url:       "https://opendatacomunegenova.s3.eu-south-1.amazonaws.com/risorse/Lesioni%20gravita%20incidente.csv"
+      },
+      {
+        datasetId: "localizzazione-incidenti-stradali-anni-2004-2018",
+        provider:  "MIT",
+        desc:      "Risorsa CSV «Incidenti per strada» — pagina del dataset: https://www.dati.gov.it/view-dataset/dataset?id=1fe7629d-ba6f-4942-a651-c354690c1070",
+        desc_en:   "CSV resource “Accidents by road” — dataset page: https://www.dati.gov.it/view-dataset/dataset?id=1fe7629d-ba6f-4942-a651-c354690c1070",
+        url:       "https://dati.mit.gov.it/hfs/incidenti-per-strada---anni-2004-2018.csv"
+      }
+    ],
+    cliHeader: "Dato",
+    cliCommands: [
+      { dataset: "ISTAT 41_983",     command: "curl -sS 'https://esploradati.istat.it/SDMXWS/rest/data/41_983_DF_DCIS_INCIDMORFER_COM_1/.010025..?startPeriod=2010&endPeriod=2025&format=csv' -o output/A_istat_genova.csv" },
+      { dataset: "Comune 2010–2016", command: "curl -sfL 'https://opendatacomunegenova.s3.eu-south-1.amazonaws.com/risorse/QGravita.csv' -o output/B1_comune_sinistri_2010_2016.csv" },
+      { dataset: "Comune 2017",      command: "curl -sfL 'https://opendatacomunegenova.s3.eu-south-1.amazonaws.com/risorse/Lesioni%20gravita%20incidente.csv' -o output/B2_comune_sinistri_2017.csv" },
+      { dataset: "MIT",              command: "curl -sfL 'https://dati.mit.gov.it/hfs/incidenti-per-strada---anni-2004-2018.csv' -o output/C_mit_incidenti_per_strada.csv" },
+      { dataset: "Trasformazioni / Transformations", command: "python3 -I queries/transform.py" }
+    ],
+    files: [
+      { file: "output/A_istat_genova.csv",                desc: "48 righe · ISTAT 41_983 · Genova · 2010–2025", desc_en: "48 rows · ISTAT 41_983 · Genoa · 2010–2025" },
+      { file: "output/B1_comune_sinistri_2010_2016.csv",  desc: "8273 righe · Comune di Genova · via × anno", desc_en: "8273 rows · Municipality of Genoa · street × year" },
+      { file: "output/B2_comune_sinistri_2017.csv",       desc: "955 righe · Comune di Genova · 2017", desc_en: "955 rows · Municipality of Genoa · 2017" },
+      { file: "output/C_mit_incidenti_per_strada.csv",    desc: "1956 righe · MIT · autostrade e statali · 2004–2018", desc_en: "1956 rows · MIT · motorways and state roads · 2004–2018" },
+      { file: "queries/A_istat_genova.yaml",              desc: "Query riproducibile — ISTAT", desc_en: "Reproducible query — ISTAT" },
+      { file: "queries/B1_comune_2010_2016.yaml",         desc: "Query riproducibile — Comune 2010–2016", desc_en: "Reproducible query — Municipality 2010–2016" },
+      { file: "queries/B2_comune_2017.yaml",              desc: "Query riproducibile — Comune 2017", desc_en: "Reproducible query — Municipality 2017" },
+      { file: "queries/C_mit_strade.yaml",                desc: "Query riproducibile — MIT", desc_en: "Reproducible query — MIT" },
+      { file: "queries/transform.py",                     desc: "Script delle trasformazioni", desc_en: "Transformations script" },
+      { file: "notes.md",                                 desc: "Log cronologico delle operazioni", desc_en: "Chronological operations log" }
+    ]
+  },
+
+  providers:    "ISTAT, Comune di Genova, MIT",
+  providers_en: "ISTAT, Municipality of Genoa, MIT",
+  github:       "https://github.com/relatalab-it/PDE"
+});
+
+buildCharts();
+</script>
+</body>
+</html>
