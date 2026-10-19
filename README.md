@@ -4,13 +4,13 @@ Demo di **PDE**, il progetto di RELATA Lab che traduce una domanda in linguaggio
 
 Sito: <https://relatalab-it.github.io/PDE/>
 
-Le demo sono **proof of concept su singole fonti**, costruiti con connettori open source. L'orchestrazione tra fonti diverse è l'obiettivo del progetto in corso e non è ancora in queste pagine.
+I report sono **brief giornalistici cross fonte** e usano più connettori open source. Le altre demo sono proof of concept su singole fonti. L'orchestrazione tra fonti diverse è l'obiettivo del progetto in corso.
 
 ## Cosa c'è
 
 | Percorso | Demo | Fonte |
 |---|---|---|
-| `report/` | 14 report statistici generati da un'AI su dati ufficiali, con query riproducibili e log delle operazioni (italiano e inglese) | SDMX: Eurostat, ISTAT, BCE, OCSE, Banca mondiale |
+| `report/` | 15 brief giornalistici cross fonte generati da un'AI su dati pubblici, con query riproducibili e log delle operazioni (italiano e inglese) | SDMX: Eurostat, ISTAT, BCE, OCSE, Banca mondiale · CKAN: Comune di Genova, MIT |
 | `open-data/maggioli/` | Estrazione e confronto di dati sugli incidenti stradali da portali open data in produzione di sei comuni (italiano e inglese) | CKAN |
 | `open-data/comune-di-milano/` | Sei domande in italiano al portale Dati Milano del Comune di Milano: domande, passaggi dell'AI, query e risultati | CKAN |
 | `territorio/planet-intelligence/` | Dati geografici di Milano trovati nel catalogo nazionale: caldo, verde, aria, mobilità | RNDT |
