@@ -4,7 +4,7 @@ Demo di **PDE**, il progetto di RELATA Lab che traduce una domanda in linguaggio
 
 Sito: <https://relatalab-it.github.io/PDE/>
 
-I report sono **brief giornalistici cross fonte** e usano più connettori open source. Le altre demo sono proof of concept su singole fonti. L'orchestrazione tra fonti diverse è l'obiettivo del progetto in corso.
+I report sono **brief giornalistici cross fonte** e usano più connettori open source. Le altre demo sono dimostrazioni su una sola fonte ciascuna. L'orchestrazione tra fonti diverse è l'obiettivo del progetto in corso.
 
 ## Cosa c'è
 
@@ -20,6 +20,10 @@ I report sono **brief giornalistici cross fonte** e usano più connettori open s
 | `parlamento/exp-audizioni/` | Audizioni della Camera dei deputati e soggetti auditi. Sperimentale: l'elaborazione contiene errori noti | Linked Open Data |
 
 La pagina iniziale (`index.html`) elenca le demo. La demo sugli appalti pubblici (ANAC) è su una sola fonte.
+
+## Grafica
+
+La landing usa il tema Nexora (licenza MIT, © Harshad Mahadik, distribuito da ThemeWagon; file in `assets/landing/`). Le altre pagine condividono una cornice comune caricata da `assets/frame.js` (barra in alto e piè di pagina con il credito). Report e catalogo ricevono palette e font da `assets/style.css` e `assets/shell.js`; le demo territorio da `assets/territorio.css`.
 
 ## Struttura del repository
 
