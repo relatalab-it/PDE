@@ -9,19 +9,21 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <style>
 :root {
-  --bg: #0a0e1a;
-  --surface: #111827;
-  --surface2: #1a2235;
-  --border: rgba(99,179,237,0.15);
-  --accent: #63b3ed;
-  --accent2: #68d391;
-  --accent3: #f6ad55;
-  --text: #e2e8f0;
-  --muted: #718096;
+  --bg: #0B1020;
+  --surface: #131C3F;
+  --surface2: #1B2650;
+  --border: rgba(122,167,255,0.15);
+  --accent: #7AA7FF;
+  --accent2: #32D583;
+  --accent3: #FDB022;
+  --text: #E8ECF8;
+  --muted: #98A2B3;
   --mono: 'IBM Plex Mono', monospace;
   --body: 'Inter', sans-serif;
 }
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+h1, h2, h3, h4 { font-family: 'Sora', 'Inter', sans-serif; letter-spacing: -.02em; }
+@media (max-width: 640px) { .tool-table { display: block; overflow-x: auto; } code { overflow-wrap: anywhere; } html, body { overflow-x: hidden; } }
 html { scroll-behavior: smooth; }
 body {
   background: var(--bg);
@@ -36,7 +38,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(10,14,26,0.95);
+  background: rgba(11,16,32,0.95);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
   padding: 0 2rem;
@@ -139,7 +141,7 @@ nav .logo {
 }
 .lang-btn.active {
   background: var(--accent);
-  color: #0a0e1a;
+  color: #0B1020;
   font-weight: 600;
 }
 
@@ -153,8 +155,8 @@ nav .logo {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: rgba(99,179,237,0.1);
-  border: 1px solid rgba(99,179,237,0.3);
+  background: rgba(122,167,255,0.1);
+  border: 1px solid rgba(122,167,255,0.3);
   color: var(--accent);
   font-family: var(--mono);
   font-size: 11px;
@@ -328,7 +330,7 @@ h2 {
 }
 .tool-table td {
   padding: 10px 12px;
-  border-bottom: 1px solid rgba(99,179,237,0.07);
+  border-bottom: 1px solid rgba(122,167,255,0.07);
   vertical-align: top;
   color: var(--text);
 }
@@ -454,7 +456,7 @@ details[open] summary::before { transform: rotate(90deg); }
 .org-table th:hover { color: var(--accent); }
 .org-table td {
   padding: 9px 10px;
-  border-bottom: 1px solid rgba(99,179,237,0.06);
+  border-bottom: 1px solid rgba(122,167,255,0.06);
   vertical-align: middle;
 }
 .org-table tr:hover td { background: var(--surface2); }
@@ -468,7 +470,7 @@ details[open] summary::before { transform: rotate(90deg); }
   border-radius: 3px;
   white-space: nowrap;
 }
-.type-comune { background: rgba(99,179,237,0.1); color: var(--accent); border: 1px solid rgba(99,179,237,0.2); }
+.type-comune { background: rgba(122,167,255,0.1); color: var(--accent); border: 1px solid rgba(122,167,255,0.2); }
 .type-provincia { background: rgba(104,211,145,0.1); color: var(--accent2); border: 1px solid rgba(104,211,145,0.2); }
 .type-citta { background: rgba(246,173,85,0.1); color: var(--accent3); border: 1px solid rgba(246,173,85,0.2); }
 .type-altro { background: rgba(160,120,255,0.1); color: #b794f4; border: 1px solid rgba(160,120,255,0.2); }
@@ -546,7 +548,7 @@ details[open] summary::before { transform: rotate(90deg); }
   gap: 6px;
   margin-top: .75rem;
   padding-top: .75rem;
-  border-top: 1px solid rgba(99,179,237,0.1);
+  border-top: 1px solid rgba(122,167,255,0.1);
 }
 .inc-sub-item { font-size: 12px; }
 .inc-sub-item span { display: block; color: var(--muted); font-family: var(--mono); font-size: 10px; }
@@ -566,8 +568,8 @@ details[open] summary::before { transform: rotate(90deg); }
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  background: rgba(99,179,237,0.06);
-  border: 1px solid rgba(99,179,237,0.18);
+  background: rgba(122,167,255,0.06);
+  border: 1px solid rgba(122,167,255,0.18);
   border-radius: 4px;
   font-family: var(--mono);
   font-size: 11px;
@@ -594,7 +596,6 @@ footer {
 </style>
 </head>
 <body>
-<style>/* spazio per la freccia di ritorno a PDE */ nav .logo { margin-left: 44px; }</style>
 <a href="../../" class="pde-back" aria-label="Torna a PDE" title="Torna a PDE" style="position:fixed;top:20px;left:20px;z-index:1000;display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.94);color:#1a3a5c;border:1px solid rgba(0,0,0,.18);box-shadow:0 1px 4px rgba(0,0,0,.25);font:600 20px/1 system-ui,sans-serif;text-decoration:none">&larr;</a>
 
 
@@ -800,9 +801,9 @@ footer {
       <canvas id="chartTipo" role="img" aria-label="Donut chart distribution by entity type"></canvas>
     </div>
     <div style="font-size:13px;">
-      <div style="display:flex;align-items:center;gap:10px;margin-bottom:.75rem;"><span style="width:12px;height:12px;border-radius:2px;background:#63b3ed;display:inline-block;"></span><span data-i18n="leg_comuni">Municipalities — 162 (89.5%)</span></div>
-      <div style="display:flex;align-items:center;gap:10px;margin-bottom:.75rem;"><span style="width:12px;height:12px;border-radius:2px;background:#68d391;display:inline-block;"></span><span data-i18n="leg_province">Provinces — 5 (2.8%)</span></div>
-      <div style="display:flex;align-items:center;gap:10px;margin-bottom:.75rem;"><span style="width:12px;height:12px;border-radius:2px;background:#f6ad55;display:inline-block;"></span><span data-i18n="leg_metro">Metro Cities — 1 (0.6%)</span></div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:.75rem;"><span style="width:12px;height:12px;border-radius:2px;background:#7AA7FF;display:inline-block;"></span><span data-i18n="leg_comuni">Municipalities — 162 (89.5%)</span></div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:.75rem;"><span style="width:12px;height:12px;border-radius:2px;background:#32D583;display:inline-block;"></span><span data-i18n="leg_province">Provinces — 5 (2.8%)</span></div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:.75rem;"><span style="width:12px;height:12px;border-radius:2px;background:#FDB022;display:inline-block;"></span><span data-i18n="leg_metro">Metro Cities — 1 (0.6%)</span></div>
       <div style="display:flex;align-items:center;gap:10px;"><span style="width:12px;height:12px;border-radius:2px;background:#b794f4;display:inline-block;"></span><span data-i18n="leg_altro">Other — 13 (7.2%)</span></div>
     </div>
   </div>
@@ -973,9 +974,9 @@ footer {
   </div>
 
   <!-- CHART CONFRONTO GRAVITÀ -->
-  <div style="display:flex;flex-wrap:wrap;gap:16px;margin-bottom:8px;font-size:12px;color:var(--color-text-secondary, #718096);">
-    <span style="display:flex;align-items:center;gap:4px;"><span style="width:10px;height:10px;border-radius:2px;background:#f6ad55;display:inline-block;"></span>Con feriti</span>
-    <span style="display:flex;align-items:center;gap:4px;"><span style="width:10px;height:10px;border-radius:2px;background:#63b3ed;display:inline-block;"></span>Senza feriti</span>
+  <div style="display:flex;flex-wrap:wrap;gap:16px;margin-bottom:8px;font-size:12px;color:var(--color-text-secondary, #98A2B3);">
+    <span style="display:flex;align-items:center;gap:4px;"><span style="width:10px;height:10px;border-radius:2px;background:#FDB022;display:inline-block;"></span>Con feriti</span>
+    <span style="display:flex;align-items:center;gap:4px;"><span style="width:10px;height:10px;border-radius:2px;background:#7AA7FF;display:inline-block;"></span>Senza feriti</span>
     <span style="display:flex;align-items:center;gap:4px;"><span style="width:10px;height:10px;border-radius:2px;background:#fc8181;display:inline-block;"></span>Mortali</span>
   </div>
   <div class="chart-wrap" style="height:260px;margin-bottom:2.5rem;">
@@ -1282,7 +1283,7 @@ new Chart(document.getElementById('chartTop20'), {
     datasets: [{
       label: 'Dataset',
       data: top20.map(o => o.count),
-      backgroundColor: top20.map(o => o.type === 'provincia' ? '#68d391' : o.type === 'citta' ? '#f6ad55' : '#63b3ed'),
+      backgroundColor: top20.map(o => o.type === 'provincia' ? '#32D583' : o.type === 'citta' ? '#FDB022' : '#7AA7FF'),
       borderRadius: 3,
       borderSkipped: false
     }]
@@ -1293,7 +1294,7 @@ new Chart(document.getElementById('chartTop20'), {
     maintainAspectRatio: false,
     plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => ' ' + c.parsed.x + ' dataset' } } },
     scales: {
-      x: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#718096', font: { size: 11, family: 'IBM Plex Mono' } } },
+      x: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#98A2B3', font: { size: 11, family: 'IBM Plex Mono' } } },
       y: { grid: { display: false }, ticks: { color: '#a0aec0', font: { size: 11 } } }
     }
   }
@@ -1307,7 +1308,7 @@ new Chart(document.getElementById('chartTipo'), {
     labels: ['Comuni', 'Province', 'Città Metropolitane', 'Altri enti'],
     datasets: [{
       data: [typeCounts.comune, typeCounts.provincia, typeCounts.citta, typeCounts.altro],
-      backgroundColor: ['#63b3ed', '#68d391', '#f6ad55', '#b794f4'],
+      backgroundColor: ['#7AA7FF', '#32D583', '#FDB022', '#b794f4'],
       borderWidth: 0,
       hoverOffset: 6
     }]
@@ -1330,7 +1331,7 @@ new Chart(document.getElementById('chartGeo'), {
     datasets: [{
       label: 'Dataset totali',
       data: [geoCounts.nord || 0, geoCounts.centro || 0, geoCounts.sud || 0, geoCounts.isole || 0],
-      backgroundColor: ['#63b3ed', '#68d391', '#f6ad55', '#b794f4'],
+      backgroundColor: ['#7AA7FF', '#32D583', '#FDB022', '#b794f4'],
       borderRadius: 4
     }]
   },
@@ -1340,7 +1341,7 @@ new Chart(document.getElementById('chartGeo'), {
     plugins: { legend: { display: false } },
     scales: {
       x: { grid: { display: false }, ticks: { color: '#a0aec0', font: { size: 12 } } },
-      y: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#718096', font: { size: 11, family: 'IBM Plex Mono' } } }
+      y: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#98A2B3', font: { size: 11, family: 'IBM Plex Mono' } } }
     }
   }
 });
@@ -1430,8 +1431,8 @@ new Chart(document.getElementById('chartGravita'), {
   data: {
     labels: ['Sassuolo', 'Formigine', 'Fiorano M.', 'Maranello'],
     datasets: [
-      { label: 'Con feriti', data: [117, 59, 50, 39], backgroundColor: '#f6ad55', borderRadius: 3 },
-      { label: 'Senza feriti', data: [268, 103, 68, 42], backgroundColor: '#63b3ed', borderRadius: 3 },
+      { label: 'Con feriti', data: [117, 59, 50, 39], backgroundColor: '#FDB022', borderRadius: 3 },
+      { label: 'Senza feriti', data: [268, 103, 68, 42], backgroundColor: '#7AA7FF', borderRadius: 3 },
       { label: 'Mortali', data: [0, 2, 0, 0], backgroundColor: '#fc8181', borderRadius: 3 }
     ]
   },
@@ -1440,7 +1441,7 @@ new Chart(document.getElementById('chartGravita'), {
     plugins: { legend: { display: false } },
     scales: {
       x: { stacked: false, grid: { display: false }, ticks: { color: '#a0aec0', font: { size: 12 } } },
-      y: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#718096', font: { size: 11, family: 'IBM Plex Mono' } } }
+      y: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#98A2B3', font: { size: 11, family: 'IBM Plex Mono' } } }
     }
   }
 });
@@ -1452,8 +1453,8 @@ new Chart(document.getElementById('chartMensile'), {
     labels: ['Gen','Feb','Mar','Apr','Mag','Giu','Lug','Ago','Set','Ott','Nov','Dic'],
     datasets: [{
       label: 'Incidenti', data: [7,4,6,4,8,10,9,0,11,7,9,6],
-      borderColor: '#63b3ed', backgroundColor: 'rgba(99,179,237,0.08)',
-      borderWidth: 2, pointBackgroundColor: '#63b3ed', pointRadius: 4, fill: true, tension: 0.3
+      borderColor: '#7AA7FF', backgroundColor: 'rgba(122,167,255,0.08)',
+      borderWidth: 2, pointBackgroundColor: '#7AA7FF', pointRadius: 4, fill: true, tension: 0.3
     }]
   },
   options: {
@@ -1461,7 +1462,7 @@ new Chart(document.getElementById('chartMensile'), {
     plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => ' ' + c.parsed.y + ' incidenti' } } },
     scales: {
       x: { grid: { display: false }, ticks: { color: '#a0aec0', font: { size: 11 } } },
-      y: { beginAtZero: true, grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#718096', font: { size: 11, family: 'IBM Plex Mono' } } }
+      y: { beginAtZero: true, grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#98A2B3', font: { size: 11, family: 'IBM Plex Mono' } } }
     }
   }
 });
@@ -1473,7 +1474,7 @@ new Chart(document.getElementById('chartPiacenza'), {
     labels: ['2022','2023','2024'],
     datasets: [{
       label: 'Incidenti', data: [1048, 1123, 1251],
-      backgroundColor: ['#63b3ed','#63b3ed','#68d391'], borderRadius: 4
+      backgroundColor: ['#7AA7FF','#7AA7FF','#32D583'], borderRadius: 4
     }]
   },
   options: {
@@ -1484,7 +1485,7 @@ new Chart(document.getElementById('chartPiacenza'), {
     },
     scales: {
       x: { grid: { display: false }, ticks: { color: '#a0aec0', font: { size: 13 } } },
-      y: { beginAtZero: false, min: 900, grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#718096', font: { size: 11, family: 'IBM Plex Mono' } } }
+      y: { beginAtZero: false, min: 900, grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#98A2B3', font: { size: 11, family: 'IBM Plex Mono' } } }
     }
   }
 });
@@ -1497,7 +1498,7 @@ new Chart(document.getElementById('chartSeriate'), {
     datasets: [{
       label: 'Incidenti stimati per anno',
       data: [224,251,263,278,282,275,260,248,235,228,215,198,185,159],
-      backgroundColor: 'rgba(104,211,145,0.5)', borderColor: '#68d391', borderWidth: 1, borderRadius: 3
+      backgroundColor: 'rgba(104,211,145,0.5)', borderColor: '#32D583', borderWidth: 1, borderRadius: 3
     }]
   },
   options: {
@@ -1513,7 +1514,7 @@ new Chart(document.getElementById('chartSeriate'), {
     },
     scales: {
       x: { grid: { display: false }, ticks: { color: '#a0aec0', font: { size: 11 }, autoSkip: false, maxRotation: 0 } },
-      y: { beginAtZero: true, grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#718096', font: { size: 11, family: 'IBM Plex Mono' } } }
+      y: { beginAtZero: true, grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#98A2B3', font: { size: 11, family: 'IBM Plex Mono' } } }
     }
   }
 });// ── I18N ─────────────────────────────────────────────────────
@@ -1729,5 +1730,6 @@ function setLang(lang) {
 // initialise with english
 setLang('en');
 </script>
+<script src="../../assets/frame.js" defer></script>
 </body>
 </html>

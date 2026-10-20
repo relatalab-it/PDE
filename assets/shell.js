@@ -23,7 +23,7 @@ function _renderShell(cfg) {
   var titleHtml  = t(cfg.title_en  || cfg.title,  cfg.title);
   var introHtml  = t(cfg.intro_en  || cfg.intro,  cfg.intro);
   var dateHtml   = t(cfg.date_en   || cfg.date,   cfg.date);
-  var eyebrow    = 'JournAI · ' + t('AI-generated report', 'Report generato da AI') + ' · ' + dateHtml + ' · opensdmx CLI';
+  var eyebrow    = 'PDE · ' + t('AI-generated report', 'Report generato da AI') + ' · ' + dateHtml + ' · opensdmx CLI';
 
   var shellTop = $('shell-top');
   var navEl = document.getElementById('shell-nav') || document.createElement('nav');

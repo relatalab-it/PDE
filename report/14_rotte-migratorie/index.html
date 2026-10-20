@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rotte migratorie verso l'Europa: Ceuta e i dati Eurostat — JournAI</title>
+  <title>Rotte migratorie verso l'Europa: Ceuta e i dati Eurostat — PDE</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../assets/style.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
@@ -229,6 +229,7 @@
 </div>
 
 <script src="../../assets/shell.js"></script>
+<script src="../../assets/frame.js" defer></script>
 <script src="../../assets/lang.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
@@ -456,7 +457,7 @@ new Chart(document.getElementById('chart-terra'), {
     datasets: [{
       label: 'MAROCCO → SPAGNA (FRONTIERA TERRA)',
       data: LAND_MA_ES,
-      borderColor: '#b02020',
+      borderColor: '#155EEF',
       backgroundColor: 'transparent',
       pointRadius: 4,
       pointHoverRadius: 6,
@@ -483,9 +484,9 @@ new Chart(document.getElementById('chart-mare'), {
   data: {
     labels: YEARS_RE,
     datasets: [
-      { label: 'SPAGNA', data: SEA_TOTAL_ES, borderColor: '#b02020', backgroundColor: 'transparent', pointRadius: 3, borderWidth: 2 },
-      { label: 'ITALIA', data: SEA_TOTAL_IT, borderColor: '#1a6fa8', backgroundColor: 'transparent', pointRadius: 3, borderWidth: 2 },
-      { label: 'GRECIA', data: SEA_TOTAL_EL, borderColor: '#27ae60', backgroundColor: 'transparent', pointRadius: 3, borderWidth: 2 }
+      { label: 'SPAGNA', data: SEA_TOTAL_ES, borderColor: '#155EEF', backgroundColor: 'transparent', pointRadius: 3, borderWidth: 2 },
+      { label: 'ITALIA', data: SEA_TOTAL_IT, borderColor: '#6941C6', backgroundColor: 'transparent', pointRadius: 3, borderWidth: 2 },
+      { label: 'GRECIA', data: SEA_TOTAL_EL, borderColor: '#12B76A', backgroundColor: 'transparent', pointRadius: 3, borderWidth: 2 }
     ]
   },
   options: {
@@ -508,9 +509,9 @@ new Chart(document.getElementById('chart-asilo-marocco'), {
   data: {
     labels: MONTHS,
     datasets: [
-      { label: 'MAROCCO → SPAGNA', data: MA_ES, borderColor: '#b02020', backgroundColor: 'transparent', pointRadius: 0, borderWidth: 2, spanGaps: true },
-      { label: 'MAROCCO → ITALIA', data: MA_IT, borderColor: '#1a6fa8', backgroundColor: 'transparent', pointRadius: 0, borderWidth: 2, spanGaps: true },
-      { label: 'MAROCCO → GRECIA', data: MA_EL, borderColor: '#27ae60', backgroundColor: 'transparent', pointRadius: 0, borderWidth: 2, spanGaps: true }
+      { label: 'MAROCCO → SPAGNA', data: MA_ES, borderColor: '#155EEF', backgroundColor: 'transparent', pointRadius: 0, borderWidth: 2, spanGaps: true },
+      { label: 'MAROCCO → ITALIA', data: MA_IT, borderColor: '#6941C6', backgroundColor: 'transparent', pointRadius: 0, borderWidth: 2, spanGaps: true },
+      { label: 'MAROCCO → GRECIA', data: MA_EL, borderColor: '#12B76A', backgroundColor: 'transparent', pointRadius: 0, borderWidth: 2, spanGaps: true }
     ]
   },
   options: {
@@ -538,9 +539,9 @@ new Chart(document.getElementById('chart-confronto'), {
   data: {
     labels: YEARS_ASY,
     datasets: [
-      { label: 'SPAGNA', data: ASY_TOTAL_ES, borderColor: '#b02020', backgroundColor: 'transparent', pointRadius: 4, borderWidth: 2 },
-      { label: 'ITALIA', data: ASY_TOTAL_IT, borderColor: '#1a6fa8', backgroundColor: 'transparent', pointRadius: 4, borderWidth: 2 },
-      { label: 'GRECIA', data: ASY_TOTAL_EL, borderColor: '#27ae60', backgroundColor: 'transparent', pointRadius: 4, borderWidth: 2 }
+      { label: 'SPAGNA', data: ASY_TOTAL_ES, borderColor: '#155EEF', backgroundColor: 'transparent', pointRadius: 4, borderWidth: 2 },
+      { label: 'ITALIA', data: ASY_TOTAL_IT, borderColor: '#6941C6', backgroundColor: 'transparent', pointRadius: 4, borderWidth: 2 },
+      { label: 'GRECIA', data: ASY_TOTAL_EL, borderColor: '#12B76A', backgroundColor: 'transparent', pointRadius: 4, borderWidth: 2 }
     ]
   },
   options: {
@@ -563,8 +564,8 @@ new Chart(document.getElementById('chart-oecd'), {
   data: {
     labels: OECD_YEARS,
     datasets: [
-      { label: 'SPAGNA', data: OECD_ESP, borderColor: '#b02020', backgroundColor: 'transparent', pointRadius: 3, borderWidth: 2, spanGaps: true },
-      { label: 'ITALIA', data: OECD_ITA, borderColor: '#1a6fa8', backgroundColor: 'transparent', pointRadius: 3, borderWidth: 2, spanGaps: true }
+      { label: 'SPAGNA', data: OECD_ESP, borderColor: '#155EEF', backgroundColor: 'transparent', pointRadius: 3, borderWidth: 2, spanGaps: true },
+      { label: 'ITALIA', data: OECD_ITA, borderColor: '#6941C6', backgroundColor: 'transparent', pointRadius: 3, borderWidth: 2, spanGaps: true }
     ]
   },
   options: {

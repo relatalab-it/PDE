@@ -6,24 +6,25 @@
 <title>Appalti pubblici (ANAC) — PDE</title>
 <meta name="description" content="Gli appalti pubblici italiani in linguaggio naturale: un assistente AI collegato alla Piattaforma di Pubblicità a Valore Legale di ANAC risponde a domande in italiano, con la fonte indicata. Cosa fa, come lo fa, dove sbaglia.">
 <meta name="robots" content="noindex">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231a3a5c'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='16' font-weight='700' text-anchor='middle' fill='%23fff'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23155EEF'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='16' font-weight='700' text-anchor='middle' fill='%23fff'%3EP%3C/text%3E%3C/svg%3E">
 <style>
   :root {
-    --bg: #f5f3ee; --surface: #ffffff; --text: #1d2430; --muted: #5b6573; --line: #dcd8cf;
-    --accent: #1a3a5c; --accent-soft: #e8eef5; --focus: #1a6fd1;
-    --c1: #1a3a5c; --c2: #d9822b; --warn-bg: #fbf1e1; --warn-line: #d9822b;
+    --bg: #F7F9FC; --surface: #ffffff; --text: #0B1437; --muted: #667085; --line: #E4E7EC;
+    --accent: #155EEF; --accent-soft: #EEF2FF; --focus: #155EEF;
+    --c1: #155EEF; --c2: #F79009; --warn-bg: #FEF6E7; --warn-line: #F79009;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --bg: #14181f; --surface: #1b212b; --text: #e8ebf0; --muted: #a0a9b6; --line: #2e3745;
-      --accent: #8fb4de; --accent-soft: #232d3b; --focus: #7db3ff;
-      --c1: #8fb4de; --c2: #f0a254; --warn-bg: #2c2418; --warn-line: #f0a254;
+      --bg: #0B1020; --surface: #131C3F; --text: #E8ECF8; --muted: #A3ADC8; --line: #263056;
+      --accent: #7AA7FF; --accent-soft: #1B2650; --focus: #8CB4FF;
+      --c1: #7AA7FF; --c2: #FDB022; --warn-bg: #2C2418; --warn-line: #FDB022;
     }
   }
   * { box-sizing: border-box; }
+  h1, h2, h3, .stat b { font-family: 'Sora', 'Inter', system-ui, sans-serif; letter-spacing: -.02em; }
   html { -webkit-text-size-adjust: 100%; }
   body { margin: 0; background: var(--bg); color: var(--text);
-    font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    font: 17px/1.55 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; }
   .wrap { max-width: 52rem; margin: 0 auto; padding: 0 16px; }
   header { padding: 56px 0 20px; }
   .eyebrow { margin: 0 0 12px; font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
@@ -307,5 +308,6 @@ anac-pl-pp-cli affidamenti -q "divulgazione scientifica" --mode esatta -t affida
     document.getElementById('sintesi-testo').textContent = 'Non riesco a caricare i dati: apri la pagina da un server web (per esempio python3 -m http.server) e non direttamente dal disco.';
   });
 </script>
+<script src="../../assets/frame.js" defer></script>
 </body>
 </html>

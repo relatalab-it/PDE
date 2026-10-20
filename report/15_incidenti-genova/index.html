@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Incidenti stradali a Genova: dati aperti per via, non per punto — JournAI</title>
+  <title>Incidenti stradali a Genova: dati aperti per via, non per punto — PDE</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../assets/style.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
@@ -299,6 +299,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="../../assets/shell.js"></script>
+<script src="../../assets/frame.js" defer></script>
 <script src="../../assets/lang.js"></script>
 <script>
 Chart.defaults.font.family = "'IBM Plex Mono', monospace";
@@ -345,8 +346,8 @@ function buildCharts() {
   charts.push(new Chart(document.getElementById('chart-incidenti'), {
     type: 'line',
     data: { labels: A_YEARS, datasets: [
-      line(T('ACCIDENTS WITH INJURIES', 'INCIDENTI CON LESIONI'), A_INCIDENTI, '#b02020'),
-      line(T('PERSONS INJURED', 'PERSONE FERITE'), A_FERITI, '#1a6fa8')
+      line(T('ACCIDENTS WITH INJURIES', 'INCIDENTI CON LESIONI'), A_INCIDENTI, '#155EEF'),
+      line(T('PERSONS INJURED', 'PERSONE FERITE'), A_FERITI, '#6941C6')
     ]},
     options: { responsive: true, maintainAspectRatio: false,
       plugins: { legend: { position: 'bottom' }, tooltip: tip(T('', '')) },
@@ -359,7 +360,7 @@ function buildCharts() {
     type: 'bar',
     data: { labels: A_YEARS, datasets: [{
       label: T('PERSONS KILLED', 'PERSONE DECEDUTE'), data: A_MORTI,
-      backgroundColor: A_YEARS.map(y => y === 2018 ? '#8e44ad' : '#b02020') }] },
+      backgroundColor: A_YEARS.map(y => y === 2018 ? '#7A5AF8' : '#155EEF') }] },
     options: { responsive: true, maintainAspectRatio: false,
       plugins: { legend: { display: false }, tooltip: tip(T('PERSONS', 'PERSONE')) },
       scales: { x: { title: { display: true, text: T('YEAR', 'ANNO') } },
@@ -370,10 +371,10 @@ function buildCharts() {
   charts.push(new Chart(document.getElementById('chart-vie'), {
     type: 'bar',
     data: { labels: B_VIE, datasets: [
-      { label: T('NO INJURIES', 'SENZA FERITI'),        data: B_SENZA,    backgroundColor: '#16a085' },
-      { label: T('INJURED', 'CON FERITI'),              data: B_FERITI,   backgroundColor: '#e67e22' },
-      { label: T('SERIOUS (RESERVED PROGNOSIS)', 'PROGNOSI RISERVATA'), data: B_PROGNOSI, backgroundColor: '#b02020' },
-      { label: T('FATAL', 'MORTALI'),                   data: B_MORTALI,  backgroundColor: '#8e44ad' }
+      { label: T('NO INJURIES', 'SENZA FERITI'),        data: B_SENZA,    backgroundColor: '#06AED4' },
+      { label: T('INJURED', 'CON FERITI'),              data: B_FERITI,   backgroundColor: '#F79009' },
+      { label: T('SERIOUS (RESERVED PROGNOSIS)', 'PROGNOSI RISERVATA'), data: B_PROGNOSI, backgroundColor: '#155EEF' },
+      { label: T('FATAL', 'MORTALI'),                   data: B_MORTALI,  backgroundColor: '#7A5AF8' }
     ]},
     options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false,
       plugins: { legend: { position: 'bottom' },
@@ -388,7 +389,7 @@ function buildCharts() {
   // B2 — vie con più mortali
   charts.push(new Chart(document.getElementById('chart-mortali-vie'), {
     type: 'bar',
-    data: { labels: BM_VIE, datasets: [{ label: T('FATAL ACCIDENTS', 'SINISTRI MORTALI'), data: BM_MORTALI, backgroundColor: '#8e44ad' }] },
+    data: { labels: BM_VIE, datasets: [{ label: T('FATAL ACCIDENTS', 'SINISTRI MORTALI'), data: BM_MORTALI, backgroundColor: '#7A5AF8' }] },
     options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false,
       plugins: { legend: { display: false }, tooltip: tip(T('FATAL ACCIDENTS', 'SINISTRI MORTALI')) },
       scales: { x: { min: 0, title: { display: true, text: T('FATAL ACCIDENTS 2010–2016', 'SINISTRI MORTALI 2010–2016') }, grid: { color: '#eee' } },
@@ -399,8 +400,8 @@ function buildCharts() {
   charts.push(new Chart(document.getElementById('chart-confronto'), {
     type: 'line',
     data: { labels: X_YEARS, datasets: [
-      line('ISTAT', X_ISTAT, '#b02020'),
-      line(T('MUNICIPALITY OF GENOA', 'COMUNE DI GENOVA'), X_COMUNE, '#1a6fa8')
+      line('ISTAT', X_ISTAT, '#155EEF'),
+      line(T('MUNICIPALITY OF GENOA', 'COMUNE DI GENOVA'), X_COMUNE, '#6941C6')
     ]},
     options: { responsive: true, maintainAspectRatio: false,
       plugins: { legend: { position: 'bottom' }, tooltip: tip(T('ACCIDENTS WITH INJURIES', 'INCIDENTI CON LESIONI')) },
@@ -411,7 +412,7 @@ function buildCharts() {
   // D — MIT, strade della provincia, 2018
   charts.push(new Chart(document.getElementById('chart-strade'), {
     type: 'bar',
-    data: { labels: C_STRADE, datasets: [{ label: T('ACCIDENTS 2018', 'INCIDENTI 2018'), data: C_2018, backgroundColor: '#1a6fa8' }] },
+    data: { labels: C_STRADE, datasets: [{ label: T('ACCIDENTS 2018', 'INCIDENTI 2018'), data: C_2018, backgroundColor: '#6941C6' }] },
     options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false,
       plugins: { legend: { display: false }, tooltip: tip(T('ACCIDENTS', 'INCIDENTI')) },
       scales: { x: { min: 0, title: { display: true, text: T('ACCIDENTS 2018', 'INCIDENTI 2018') }, grid: { color: '#eee' } },

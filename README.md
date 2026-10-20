@@ -30,7 +30,7 @@ open-data/        demo sui portali CKAN
 territorio/       demo geografiche e SITUAS
 appalti/          demo sugli appalti pubblici
 parlamento/       demo parlamentare
-assets/           stile e script condivisi dai report
+assets/           stile e script condivisi dai report; frame.js/frame.css (barra e piè di pagina comuni a tutte le demo), territorio.css, landing/ (tema della pagina iniziale)
 spec/             metodologia con cui si producono i report
 reports.json      elenco dei report, letto dal catalogo e dalla pagina iniziale
 ```

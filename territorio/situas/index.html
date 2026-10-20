@@ -31,13 +31,14 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
   <style>
     :root {
-      --ondata-orange: #FF6719;
-      --ondata-orange-light: #fff3ed;
+      --ondata-orange: #155EEF;
+      --ondata-orange-light: #EEF2FF;
       --terminal-bg: #1a1d23;
       --terminal-border: #2d3139;
     }
 
-    body { font-family: 'Segoe UI', system-ui, sans-serif; }
+    body { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif; color: #0B1437; background: #F7F9FC; }
+    h1, h2, h3, h4, h5 { font-family: 'Sora', 'Inter', system-ui, sans-serif; letter-spacing: -.02em; }
 
     .navbar-brand .badge-ondata {
       background: var(--ondata-orange);
@@ -47,7 +48,7 @@
 
     /* Hero */
     .hero {
-      background: linear-gradient(135deg, #0d6efd 0%, #0a4db5 60%, #083d8c 100%);
+      background: linear-gradient(135deg, #0B1437 0%, #1A2456 60%, #155EEF 140%);
       color: white;
       padding: 4rem 0 3rem;
     }
@@ -98,7 +99,7 @@
 
     /* Demo cards */
     .demo-card .card-subject {
-      background: #0d6efd; color: white;
+      background: #155EEF; color: white;
       padding: .75rem 1.25rem;
       display: flex; align-items: center; gap: .6rem;
       border-radius: calc(.375rem - 1px) calc(.375rem - 1px) 0 0;
@@ -112,9 +113,9 @@
       .demo-card .card-subject { flex-wrap: wrap; }
       .demo-card .card-subject .pfun-badge { margin-left: 0; white-space: normal; word-break: break-word; }
     }
-    .demo-card .card-subject.subject-green  { background: #198754; }
-    .demo-card .card-subject.subject-purple { background: #6f42c1; }
-    .demo-card .card-subject.subject-orange { background: var(--ondata-orange); }
+    .demo-card .card-subject.subject-green  { background: #12B76A; }
+    .demo-card .card-subject.subject-purple { background: #6941C6; }
+    .demo-card .card-subject.subject-orange { background: #0E3FB0; }
 
     /* Terminal — collapsible */
     .cmd-toggle {
@@ -1044,5 +1045,6 @@
     });
   }
 </script>
+<script src="../../assets/frame.js" defer></script>
 </body>
 </html>

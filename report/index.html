@@ -3,19 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JournAI — Statistical data analysis with SDMX</title>
+  <title>PDE — Report statistici su dati pubblici</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <style>
     :root {
-      --ink:        #1a1a1a;
-      --ink-light:  #333;
-      --ink-faint:  #666;
-      --paper:      #fafaf7;
-      --paper-warm: #f5f3ee;
-      --rule:       #999;
-      --accent:     #b02020;
-      --accent2:    #1a6fa8;
-      --serif:      'Georgia', 'Times New Roman', serif;
+      --ink:        #0B1437;
+      --ink-light:  #344054;
+      --ink-faint:  #667085;
+      --paper:      #F7F9FC;
+      --paper-warm: #EEF2FF;
+      --rule:       #D0D5DD;
+      --accent:     #155EEF;
+      --accent2:    #6941C6;
+      --serif:      'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+      --label:      'Sora', 'Inter', system-ui, sans-serif;
       --mono:       'Courier New', Courier, monospace;
       --bs-body-font-family:   var(--serif);
       --bs-body-color:         var(--ink);
@@ -26,17 +27,17 @@
     .container { max-width: 1060px; }
 
     .site-header {
-      background: #1a1a1a;
-      border-bottom: 2px solid #000;
+      background: linear-gradient(135deg, #0B1437 0%, #1A2456 60%, #155EEF 150%);
+      border-bottom: 0;
     }
     .eyebrow {
-      font-family: var(--mono);
+      font-family: var(--label);
       font-size: 1rem;
       letter-spacing: 0.12em;
       text-transform: uppercase;
       color: #888;
     }
-    .site-header h1 { font-size: 2.2rem; font-weight: normal; line-height: 1.2; color: #fff; }
+    .site-header h1 { font-family: var(--label); letter-spacing: -.02em; font-size: 2.2rem; font-weight: 700; line-height: 1.2; color: #fff; }
     .lead-text { color: #333; line-height: 1.7; font-size: 1rem; max-width: 720px; }
     .site-header .lead-text { color: #ccc; }
 
@@ -46,7 +47,7 @@
       background: var(--paper);
     }
     .method-step {
-      font-family: var(--mono);
+      font-family: var(--label);
       font-size: 1rem;
       color: var(--ink-faint);
       display: flex;
@@ -77,7 +78,7 @@
       color: var(--ink);
       transition: background 0.1s;
     }
-    .report-row:first-child { border-top: 2px solid var(--ink); }
+    .report-row:first-child { border-top: 1px solid var(--rule); }
     .report-row:hover { background: var(--paper-warm); }
     .report-row:hover .report-row-cta { color: var(--accent); }
 
@@ -90,7 +91,7 @@
     }
 
     .report-row-date {
-      font-family: var(--mono);
+      font-family: var(--label);
       font-size: 1rem;
       color: var(--ink-faint);
       display: block;
@@ -98,6 +99,7 @@
     }
 
     .report-row-title {
+      font-family: var(--label); letter-spacing: -.02em;
       font-size: 1.5rem;
       line-height: 1.35;
       color: var(--ink);
@@ -118,25 +120,27 @@
     }
 
     .report-row-cta {
-      font-family: var(--mono);
+      font-family: var(--label);
       font-size: 1rem;
       color: var(--ink-faint);
       flex-shrink: 0;
       transition: color 0.1s;
     }
     .badge-sm {
-      font-family: var(--mono);
+      font-family: var(--label);
       font-size: 1rem;
       background: var(--paper-warm);
       border: 1px solid var(--rule);
       padding: 1px 6px;
       color: var(--ink-faint);
-      white-space: nowrap;
+      border-radius: 6px;
+      max-width: 100%;
+      overflow-wrap: anywhere;
     }
     .badge-sm strong { color: var(--ink); }
 
     .cta-link {
-      font-family: var(--mono);
+      font-family: var(--label);
       font-size: 1rem;
       color: var(--accent2);
       text-decoration: none;
@@ -163,12 +167,12 @@
       border-top: 2px solid var(--ink);
       font-size: 1rem;
       color: var(--ink-faint);
-      font-family: var(--mono);
+      font-family: var(--label);
     }
     .site-footer a { color: var(--ink-faint); }
 
     .section-label {
-      font-family: var(--mono);
+      font-family: var(--label);
       font-size: 1rem;
       letter-spacing: 0.1em;
       text-transform: uppercase;
@@ -192,7 +196,7 @@
     .step-v:last-child { border-bottom: none; }
 
     .step-v-num {
-      font-family: var(--mono);
+      font-family: var(--label);
       font-size: 1rem;
       color: var(--accent);
       min-width: 2.2rem;
@@ -201,7 +205,7 @@
     }
     .step-v-body { flex: 1; min-width: 0; }
     .step-v-title {
-      font-family: var(--mono);
+      font-family: var(--label);
       font-size: 1rem;
       font-weight: bold;
       color: var(--ink);
@@ -220,7 +224,7 @@
       background: #fff;
       border: 1px solid var(--rule);
       border-left: 3px solid var(--accent2);
-      font-family: var(--mono);
+      font-family: var(--label);
       font-size: 1rem;
       padding: 0.6rem 0.9rem;
       line-height: 1.7;
@@ -229,8 +233,8 @@
     }
     .cli-block .cp { color: var(--ink-faint); }
     .cli-block .cc { color: var(--accent2); }
-    .cli-block .cv { color: #27ae60; }
-    .cli-block .cf { color: #8e44ad; }
+    .cli-block .cv { color: #12B76A; }
+    .cli-block .cf { color: #7A5AF8; }
     .cli-block .cm { color: var(--ink-faint); font-style: italic; }
 
     .result-rows { display: flex; flex-direction: column; gap: 0.3rem; margin-bottom: 0.5rem; }
@@ -238,21 +242,21 @@
       display: flex;
       align-items: baseline;
       gap: 0.7rem;
-      font-family: var(--mono);
+      font-family: var(--label);
       font-size: 1rem;
       background: #fff;
       border: 1px solid var(--rule);
       padding: 0.4rem 0.8rem;
     }
-    .result-row.sel { border-color: var(--accent); background: #fff9f8; }
+    .result-row.sel { border-color: var(--accent); background: #EEF2FF; }
     .r-id { color: var(--accent2); min-width: 9rem; flex-shrink: 0; }
     .r-verdict { color: var(--accent); flex-shrink: 0; }
-    .r-verdict.ok { color: #27ae60; }
+    .r-verdict.ok { color: #12B76A; }
     .r-verdict.skip { color: var(--ink-faint); }
     .r-verdict.no { color: var(--accent); }
     .r-note { color: var(--ink-faint); font-size: 1rem; }
 
-    .ct-mini { width: 100%; border-collapse: collapse; font-family: var(--mono); font-size: 1rem; }
+    .ct-mini { width: 100%; border-collapse: collapse; font-family: var(--label); font-size: 1rem; }
     .ct-mini th {
       color: var(--ink-faint); font-weight: normal;
       padding: 0.3rem 0.7rem; text-align: left;
@@ -260,13 +264,13 @@
       background: var(--paper-warm);
     }
     .ct-mini td { padding: 0.25rem 0.7rem; color: var(--ink-light); border-bottom: 1px dashed var(--rule); }
-    .ct-mini td:first-child { color: #8e44ad; }
+    .ct-mini td:first-child { color: #7A5AF8; }
     .ct-mini td:nth-child(2) { color: var(--accent2); text-align: center; }
 
     .proc-rows { display: flex; flex-direction: column; gap: 0.3rem; }
     .proc-row-v {
       display: flex; align-items: center; gap: 0.6rem;
-      font-family: var(--mono); font-size: 1rem;
+      font-family: var(--label); font-size: 1rem;
       color: var(--ink-light); background: #fff;
       border: 1px solid var(--rule); padding: 0.4rem 0.8rem;
     }
@@ -276,14 +280,14 @@
     .providers-section { border-top: 1px solid var(--rule); }
     .providers-section h2 { font-size: 1.5rem; font-weight: bold; }
     .prov-note {
-      font-family: var(--mono);
+      font-family: var(--label);
       font-size: 1rem;
       color: var(--ink-faint);
       line-height: 1.6;
     }
     .prov-table { width: 100%; border-collapse: collapse; font-size: 1rem; }
     .prov-table thead th {
-      font-family: var(--mono);
+      font-family: var(--label);
       font-size: 1rem;
       font-weight: normal;
       color: var(--ink-faint);
@@ -303,25 +307,25 @@
     }
     .prov-table tbody tr:nth-child(even) td { background: var(--paper-warm); }
     .prov-table .p-alias {
-      font-family: var(--mono);
+      font-family: var(--label);
       font-size: 1rem;
       color: var(--accent2);
       white-space: nowrap;
     }
     .prov-table .p-name { color: var(--ink); font-size: 1rem; }
     .prov-table .p-agency {
-      font-family: var(--mono);
+      font-family: var(--label);
       font-size: 1rem;
       color: var(--ink-faint);
       white-space: nowrap;
     }
-    .prov-table .p-check { text-align: center; font-family: var(--mono); font-size: 1rem; }
-    .prov-table .yes { color: #27ae60; }
+    .prov-table .p-check { text-align: center; font-family: var(--label); font-size: 1rem; }
+    .prov-table .yes { color: #12B76A; }
     .prov-table .no  { color: var(--rule); }
 
     /* ── LANGUAGE TOGGLE ── */
-    #lang-toggle { position: fixed; top: 0.9rem; right: 1.2rem; z-index: 1050; font-family: var(--mono); font-size: 0.8rem; background: rgba(20,20,20,0.92); border: 1px solid #444; padding: 3px 10px; display: flex; align-items: center; gap: 4px; }
-    .lang-btn { background: none; border: none; color: #888; font-family: var(--mono); font-size: 0.8rem; cursor: pointer; padding: 0; letter-spacing: 0.06em; }
+    #lang-toggle { position: fixed; top: 0.9rem; right: 1.2rem; z-index: 1050; font-family: var(--label); font-size: 0.8rem; background: rgba(20,20,20,0.92); border: 1px solid #444; padding: 3px 10px; display: flex; align-items: center; gap: 4px; }
+    .lang-btn { background: none; border: none; color: #888; font-family: var(--label); font-size: 0.8rem; cursor: pointer; padding: 0; letter-spacing: 0.06em; }
     .lang-btn.lang-active { color: #fff; font-weight: bold; }
     .lang-sep { color: #444; }
 
@@ -329,14 +333,16 @@
     .it { display: none }
     body.lang-it .it { display: revert }
     body.lang-it .en { display: none }
-  </style>
+  /* ── MOBILE: i codici dataset lunghi vanno a capo ── */
+@media (max-width: 575px) { .result-row { flex-wrap: wrap; } .r-id { min-width: 0 !important; } body { overflow-wrap: anywhere; } .r-note, .r-verdict, .badge-sm { white-space: normal !important; } }
+</style>
 </head>
 <body>
 
 <!-- ═══ HEADER ═══ -->
 <header class="site-header py-5">
   <div class="container">
-    <p class="eyebrow mb-2"><a href="../" style="color:inherit">← PDE</a> · JournAI · <span class="en">Experimental · AI orchestrator + opensdmx CLI</span><span class="it">Sperimentale · AI orchestratore + opensdmx CLI</span></p>
+    <p class="eyebrow mb-2"><a href="../" style="color:inherit">← PDE</a> · <span class="en">Experimental · AI orchestrator + opensdmx CLI</span><span class="it">Sperimentale · AI orchestratore + opensdmx CLI</span></p>
     <h1 class="mb-3">
       <span class="en">Statistical reports<br>generated by AI from open data</span>
       <span class="it">Report statistici<br>generati dall'AI su dati aperti</span>
@@ -359,7 +365,7 @@
 <!-- ═══ METODO ═══ -->
 <div class="method-strip py-4">
   <div class="container">
-    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3">
+    <div class="row row-cols-2 row-cols-md-3 row-cols-xl-6 g-3">
       <div class="col">
         <div class="method-step">
           <span class="num">01</span>
@@ -845,5 +851,6 @@ fetch('../reports.json')
   });
 </script>
 <script src="../assets/lang.js"></script>
+<script src="../assets/frame.js" defer></script>
 </body>
 </html>

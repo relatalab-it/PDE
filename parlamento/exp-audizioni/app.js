@@ -1,4 +1,4 @@
-const PALETTE = ['#c1272d','#e08e45','#4a7c8c','#8f1c21','#d9a441','#6b8f71','#a35d6a','#3f6b8f'];
+const PALETTE = ['#155EEF','#6941C6','#12B76A','#F79009','#0E3FB0','#7A5AF8','#667085','#0BA5EC'];
 
 let DATA, SUBJECTS;
 

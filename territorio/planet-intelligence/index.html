@@ -641,3 +641,4 @@ fetch('strati.json').then(r => r.json()).then(m => {
   window.addEventListener('hashchange', route); route();
 }).catch(e => { $('view').innerHTML = `<p class="err">Impossibile leggere strati.json: ${esc(e.message)}. Serve un server locale (python3 -m http.server).</p>`; });
 </script>
+<script src="../../assets/frame.js" data-css="territorio" defer></script>

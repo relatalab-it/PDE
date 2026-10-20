@@ -1,0 +1,16 @@
+/* Adattamento delle demo territorio alla grafica PDE: ridefinisce i token della pagina (tema chiaro e scuro)
+   senza toccare il file della pagina, che per milano-evoluzione resta allineato alla sorgente openrndt.
+   Palette e tipografia dal tema Nexora v1.0.0 (MIT, Harshad Mahadik, ThemeWagon). */
+:root {
+  --bg: #F7F9FC; --surface: #ffffff; --sunk: #EEF2FF; --fg: #0B1437; --muted: #667085; --line: #E4E7EC; --accent: #155EEF; --film: #0B1437;
+  --display: "Sora", "Inter", system-ui, sans-serif; --body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --fs-h1: clamp(28px, 3.2vw, 42px); --fs-h2: 26px; --fs-lede: 20px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg: #0B1020; --surface: #131C3F; --sunk: #1B2650; --fg: #E8ECF8; --muted: #A3ADC8; --line: #263056; --accent: #7AA7FF; --film: #070B1A; }
+}
+:root[data-theme="dark"] { --bg: #0B1020; --surface: #131C3F; --sunk: #1B2650; --fg: #E8ECF8; --muted: #A3ADC8; --line: #263056; --accent: #7AA7FF; --film: #070B1A; }
+h1, h2, h3 { letter-spacing: -.02em; }
+.brand { font-size: 22px; letter-spacing: -.02em; }
+.side { padding-top: 22px !important; }
+.nav button { border-radius: 8px; }
