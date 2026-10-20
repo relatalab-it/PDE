@@ -2,8 +2,6 @@
 
 Demo di **PDE**, il progetto di RELATA Lab che traduce una domanda in linguaggio naturale in interrogazioni ai dati pubblici e restituisce risposte verificabili, tracciabili fino alla fonte.
 
-Sito: <https://relatalab-it.github.io/PDE/>
-
 I report sono **brief giornalistici cross fonte** e usano più connettori open source. Le altre demo sono dimostrazioni su una sola fonte ciascuna. L'orchestrazione tra fonti diverse è l'obiettivo del progetto in corso.
 
 ## Cosa c'è
