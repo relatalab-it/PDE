@@ -1,0 +1,39 @@
+id,name,in_dataflow
+TOTAL,Total,true
+0,No persons employed,false
+0_1,From 0 to 1 person employed,true
+0-9,From 0 to 9 persons employed,false
+0-49,From 0 to 49 persons employed,false
+1,1 person employed,false
+1-4,From 1 to 4 persons employed,false
+1-9,From 1 to 9 persons employed,false
+1-19,From 1 to 19 persons employed,false
+1-49,From 1 to 49 persons employed,false
+1-249,From 1 to 249 persons employed,false
+2-4,From 2 to 4 persons employed,false
+2-9,From 2 to 9 persons employed,true
+5-9,From 5 to 9 persons employed,false
+GE5,5 persons employed or more,false
+LT10,Fewer than 10 persons employed,false
+10-19,From 10 to 19 persons employed,true
+10-49,From 10 to 49 persons employed,false
+10-249,From 10 to 249 persons employed,false
+GE10,10 persons employed or more,false
+GE10_UNK,Unknown but 10 persons employed or more,false
+20-49,From 20 to 49 persons employed,true
+GE20,20 persons employed or more,false
+LT49,Fewer than 49 persons employed,false
+50-99,From 50 to 99 persons employed,false
+50-249,From 50 to 249 persons employed,true
+GE50,50 persons employed or more,false
+100-249,From 100 to 249 persons employed,false
+250-499,From 250 to 499 persons employed,false
+250-749,From 250 to 749 persons employed,false
+250-999,From 250 to 999 persons employed,false
+GE250,250 persons employed or more,true
+500-999,From 500 to 999 persons employed,false
+GE500,500 persons employed or more,false
+GE750,750 persons employed or more,false
+GE1000,1 000 persons employed or more,false
+UNK,Unknown,false
+NRP,No response,false

@@ -1,0 +1,24 @@
+provider: eurostat
+provider_url: https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1
+agency_id: ESTAT
+dataset: SBS_NA_1A_SE_R2
+description: Annual detailed enterprise statistics for services (NACE Rev. 2 H-N and
+  S95) (2005-2020)
+filters:
+  freq:
+    value: A
+    description: ''
+  nace_r2:
+    value: J5813+J5814+J6391+M7022+M7320
+    description: ''
+  indic_sb:
+    value: V11110
+    description: ''
+  geo:
+    value: EU27_2020+IT+DE+FR+ES
+    description: ''
+start_period: null
+end_period: null
+last_n: 1
+first_n: null
+labels: false

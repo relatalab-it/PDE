@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quante imprese sono il mercato di un servizio di dati pubblici — PDE</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+<div id="shell-top"></div>
+
+<div class="container">
+<div id="shell-intro"></div>
+</div>
+
+<main class="container py-2">
+
+  <!-- ═══ SEZIONE 1 — UE-27 PER SETTORE (Eurostat B) ═══ -->
+  <section class="section py-5" id="ue">
+    <p class="section-label mb-1">
+      <span class="en">Eurostat SBS_NA_1A_SE_R2 · EU27 · 2020</span>
+      <span class="it">Eurostat SBS_NA_1A_SE_R2 · UE-27 · 2020</span>
+    </p>
+    <h2 class="mb-2">
+      <span class="en">In the EU27, management consultancy is 94% of the enterprises in the four sectors with a published value</span>
+      <span class="it">Nell'UE-27 la consulenza gestionale è il 94% delle imprese nei quattro settori con un valore pubblicato</span>
+    </h2>
+    <p class="subtitle mb-4">
+      <span class="en">Number of enterprises · EU27 · reference year 2020 · four of five sector codes with a published value</span>
+      <span class="it">Numero di imprese · UE-27 · anno di riferimento 2020 · quattro codici su cinque con valore pubblicato</span>
+    </p>
+
+    <div class="callout mb-4">
+      <p>
+        <span class="en"><strong>Key finding</strong> — Business and management consultancy (70.22) counts 844,034 enterprises in the EU27 in 2020. The three other sectors with a value add up to 56,820 (market research 30,000, journals and periodicals 20,000, news agencies 6,820), of which two figures are flagged low reliability and one is an estimate.</span>
+        <span class="it"><strong>Dato chiave</strong> — La consulenza imprenditoriale e gestionale (70.22) conta 844.034 imprese nell'UE-27 nel 2020. Gli altri tre settori con un valore sommano 56.820 (ricerche di mercato 30.000, riviste e periodici 20.000, agenzie di stampa 6.820), di cui due cifre con bandiera di bassa affidabilità e una stima.</span>
+      </p>
+    </div>
+
+    <div class="chart-wrap mb-4" style="height:260px">
+      <canvas id="chart-ue"></canvas>
+    </div>
+
+    <h3 class="subsection-title mt-5 mb-2">
+      <span class="en">The three smaller sectors, on their own scale</span>
+      <span class="it">I tre settori più piccoli, sulla loro scala</span>
+    </h3>
+    <div class="chart-wrap mb-4" style="height:220px">
+      <canvas id="chart-ue-small"></canvas>
+    </div>
+
+    <p class="note mb-2">
+      <span class="en"><strong>How to read the data.</strong> The EU27 value for newspaper publishing (58.13) is confidential at the source; the Italian, German, French and Spanish values are in the next section. Journals and periodicals (58.14) and market research (73.20) carry the flag u (low reliability); news agencies (63.91) carry the flag e (estimate). The second chart is the same data as the first, on a scale where the smaller sectors can be read.</span>
+      <span class="it"><strong>Come leggere i dati.</strong> Il valore UE-27 dell'edizione di quotidiani (58.13) è riservato dalla fonte; i valori di Italia, Germania, Francia e Spagna sono nella sezione successiva. Riviste e periodici (58.14) e ricerche di mercato (73.20) hanno la bandiera u (bassa affidabilità); le agenzie di stampa (63.91) hanno la bandiera e (stima). Il secondo grafico mostra gli stessi dati del primo, su una scala in cui i settori più piccoli si leggono.</span>
+    </p>
+
+    <div class="transform p-3 mb-4">
+      <strong><span class="en">Data transformations</span><span class="it">Trasformazioni</span></strong><br>
+      <span class="en">Raw: 25 rows (5 codes × 5 geographies, year 2020) · values read as published · sum of the four codes with a value = 20,000 + 6,820 + 844,034 + 30,000 = 900,854 · share of management consultancy = 844,034 / 900,854 = 93.7%, rounded to 94% · script: <code>queries/transform.py</code></span>
+      <span class="it">Grezzo: 25 righe (5 codici × 5 aree, anno 2020) · valori letti come pubblicati · somma dei quattro codici con un valore = 20.000 + 6.820 + 844.034 + 30.000 = 900.854 · quota della consulenza = 844.034 / 900.854 = 93,7%, arrotondata a 94% · script: <code>queries/transform.py</code></span>
+    </div>
+    <p class="note mb-2">
+      <span class="en">Source: <a href="https://ec.europa.eu/eurostat/databrowser/view/SBS_NA_1A_SE_R2/default/table" target="_blank">Eurostat, SBS_NA_1A_SE_R2</a> · Chart: <a href="https://www.chartjs.org/">Chart.js</a> · The X axis starts at zero (absolute counts).</span>
+      <span class="it">Fonte: <a href="https://ec.europa.eu/eurostat/databrowser/view/SBS_NA_1A_SE_R2/default/table" target="_blank">Eurostat, SBS_NA_1A_SE_R2</a> · Grafico: <a href="https://www.chartjs.org/">Chart.js</a> · L'asse X parte da zero (conteggi assoluti).</span>
+    </p>
+  </section>
+
+  <!-- ═══ SEZIONE 2 — PESO DEI PAESI (Eurostat B) ═══ -->
+  <section class="section py-5" id="paesi">
+    <p class="section-label mb-1">
+      <span class="en">Eurostat SBS_NA_1A_SE_R2 · Italy, Germany, France, Spain · 2020</span>
+      <span class="it">Eurostat SBS_NA_1A_SE_R2 · Italia, Germania, Francia, Spagna · 2020</span>
+    </p>
+    <h2 class="mb-2">
+      <span class="en">France has the largest share of EU27 enterprises in three of the four sectors; Italy in market research</span>
+      <span class="it">La Francia ha la quota più alta di imprese UE-27 in tre settori su quattro; l'Italia nelle ricerche di mercato</span>
+    </h2>
+    <p class="subtitle mb-4">
+      <span class="en">Share of the EU27 total (%) · four sectors with an EU27 value · 2020</span>
+      <span class="it">Quota sul totale UE-27 (%) · quattro settori con un valore UE-27 · 2020</span>
+    </p>
+
+    <div class="callout mb-4">
+      <p>
+        <span class="en"><strong>Key finding</strong> — In management consultancy Italy has 7.7% of EU27 enterprises (64,999), Germany 9.0% (76,193), France 19.8% (167,460), Spain 2.6% (22,178). In market research Italy has the highest share of the four countries (12.3%, 3,685 enterprises); in journals and periodicals France has 32.6% (6,521).</span>
+        <span class="it"><strong>Dato chiave</strong> — Nella consulenza gestionale l'Italia ha il 7,7% delle imprese UE-27 (64.999), la Germania il 9,0% (76.193), la Francia il 19,8% (167.460), la Spagna il 2,6% (22.178). Nelle ricerche di mercato l'Italia ha la quota più alta dei quattro Paesi (12,3%, 3.685 imprese); nelle riviste e periodici la Francia ha il 32,6% (6.521).</span>
+      </p>
+    </div>
+
+    <div class="chart-wrap mb-4" style="height:420px">
+      <canvas id="chart-paesi"></canvas>
+    </div>
+
+    <p class="note mb-2">
+      <span class="en"><strong>How to read the data.</strong> The shares use the EU27 value of the same sector as denominator; for newspaper publishing (58.13) the data give the counts of the four countries (Italy 282, Germany 550, France 1,441, Spain 761); the share of the EU27 total is computed for the four codes that have an EU27 value. Several EU27 denominators are flagged low reliability or estimate (see the previous section), so the shares have the same reliability as the denominators. A share counts enterprises; market size in money is a different measure.</span>
+      <span class="it"><strong>Come leggere i dati.</strong> Le quote usano come denominatore il valore UE-27 dello stesso settore; per l'edizione di quotidiani (58.13) i dati riportano i conteggi dei quattro Paesi (Italia 282, Germania 550, Francia 1.441, Spagna 761); la quota sul totale UE-27 è calcolata per i quattro codici che hanno il valore UE-27. Più denominatori UE-27 hanno bandiera di bassa affidabilità o stima (vedi sezione precedente), quindi le quote hanno la stessa affidabilità dei denominatori. Una quota conta imprese; la dimensione in denaro è un'altra misura.</span>
+    </p>
+
+    <div class="transform p-3 mb-4">
+      <strong><span class="en">Data transformations</span><span class="it">Trasformazioni</span></strong><br>
+      <span class="en">Raw: same file as the previous section · share = country value / EU27 value × 100, one decimal, only where the EU27 value exists · values as published by the source · script: <code>queries/transform.py</code></span>
+      <span class="it">Grezzo: stesso file della sezione precedente · quota = valore del Paese / valore UE-27 × 100, un decimale, solo dove esiste il valore UE-27 · valori come pubblicati dalla fonte · script: <code>queries/transform.py</code></span>
+    </div>
+    <p class="note mb-2">
+      <span class="en">Source: <a href="https://ec.europa.eu/eurostat/databrowser/view/SBS_NA_1A_SE_R2/default/table" target="_blank">Eurostat, SBS_NA_1A_SE_R2</a> · Chart: <a href="https://www.chartjs.org/">Chart.js</a> · The X axis starts at zero.</span>
+      <span class="it">Fonte: <a href="https://ec.europa.eu/eurostat/databrowser/view/SBS_NA_1A_SE_R2/default/table" target="_blank">Eurostat, SBS_NA_1A_SE_R2</a> · Grafico: <a href="https://www.chartjs.org/">Chart.js</a> · L'asse X parte da zero.</span>
+    </p>
+  </section>
+
+  <!-- ═══ SEZIONE 3 — ITALIA, DUE FONTI (ISTAT A + Eurostat B) ═══ -->
+  <section class="section py-5" id="fonti">
+    <p class="section-label mb-1">
+      <span class="en">ISTAT 183_277_DF_DICA_ASIAUE1P_3 (2024) vs Eurostat SBS_NA_1A_SE_R2 (2020) · Italy</span>
+      <span class="it">ISTAT 183_277_DF_DICA_ASIAUE1P_3 (2024) contro Eurostat SBS_NA_1A_SE_R2 (2020) · Italia</span>
+    </p>
+    <h2 class="mb-2">
+      <span class="en">Here is what ISTAT and Eurostat data say for Italy: 113,751 enterprises for ISTAT (2024), 70,954 for Eurostat (2020)</span>
+      <span class="it">Ecco cosa dicono i dati di ISTAT ed Eurostat per l'Italia: 113.751 imprese per ISTAT (2024), 70.954 per Eurostat (2020)</span>
+    </h2>
+    <p class="subtitle mb-4">
+      <span class="en">Number of enterprises · Italy · five sector codes · ISTAT 2024, Eurostat 2020</span>
+      <span class="it">Numero di imprese · Italia · cinque codici di settore · ISTAT 2024, Eurostat 2020</span>
+    </p>
+
+    <div class="callout mb-4">
+      <p>
+        <span class="en"><strong>Key finding</strong> — Summed over the five codes, ISTAT counts 113,751 active enterprises (2024) and Eurostat 70,954 (2020), 62% of the ISTAT figure. The ratio changes from sector to sector: Eurostat is at 61% of ISTAT in management consultancy (64,999 against 106,054), at 69% in market research (3,685 against 5,364) and above ISTAT in journals and periodicals (1,507 against 1,423).</span>
+        <span class="it"><strong>Dato chiave</strong> — Sommando i cinque codici, ISTAT conta 113.751 imprese attive (2024) ed Eurostat 70.954 (2020), il 62% del dato ISTAT. Il rapporto cambia da settore a settore: Eurostat è al 61% di ISTAT nella consulenza gestionale (64.999 contro 106.054), al 69% nelle ricerche di mercato (3.685 contro 5.364) e sopra ISTAT nelle riviste e periodici (1.507 contro 1.423).</span>
+      </p>
+    </div>
+
+    <div class="chart-wrap mb-4" style="height:240px">
+      <canvas id="chart-fonti-main"></canvas>
+    </div>
+
+    <h3 class="subsection-title mt-5 mb-2">
+      <span class="en">The four smaller sectors, on their own scale</span>
+      <span class="it">I quattro settori più piccoli, sulla loro scala</span>
+    </h3>
+    <div class="chart-wrap mb-4" style="height:360px">
+      <canvas id="chart-fonti-small"></canvas>
+    </div>
+
+    <p class="note mb-2">
+      <span class="en"><strong>How to read the data.</strong> The official data have different reference years (2024 and 2020). The methodological notes of the two sources are the next step to explain the ratio between the two figures. The two series are shown side by side, each with its own year, and the choice of source is up to whoever uses the figure.</span>
+      <span class="it"><strong>Come leggere i dati.</strong> I dati ufficiali hanno anni di riferimento diversi (2024 e 2020). Le note metodologiche delle due fonti sono il passo successivo per spiegare il rapporto tra le due cifre. Le due serie sono mostrate affiancate, ciascuna con il suo anno, e la scelta della fonte spetta a chi usa la cifra.</span>
+    </p>
+
+    <div class="transform p-3 mb-4">
+      <strong><span class="en">Data transformations</span><span class="it">Trasformazioni</span></strong><br>
+      <span class="en">Raw: ISTAT 15 rows (5 codes × 3 values of the employer breakdown, 2024), Eurostat 25 rows (see above) · ISTAT total = value with Y_ENTER_WITH_EMPLOYEES = 9 · sums: ISTAT 401 + 1,423 + 509 + 106,054 + 5,364 = 113,751; Eurostat 282 + 1,507 + 481 + 64,999 + 3,685 = 70,954 · ratio 70,954 / 113,751 = 62.4%, rounded to 62% · script: <code>queries/transform.py</code></span>
+      <span class="it">Grezzo: ISTAT 15 righe (5 codici × 3 valori della ripartizione per dipendenti, 2024), Eurostat 25 righe (vedi sopra) · totale ISTAT = valore con Y_ENTER_WITH_EMPLOYEES = 9 · somme: ISTAT 401 + 1.423 + 509 + 106.054 + 5.364 = 113.751; Eurostat 282 + 1.507 + 481 + 64.999 + 3.685 = 70.954 · rapporto 70.954 / 113.751 = 62,4%, arrotondato a 62% · script: <code>queries/transform.py</code></span>
+    </div>
+    <p class="note mb-2">
+      <span class="en">Sources: <a href="https://esploradati.istat.it/SDMXWS/rest/data/IT1,183_277_DF_DICA_ASIAUE1P_3,1.0/A.IT.AENTN.5813+5814+6391+7022+7320.TOTAL.TOT../?lastNObservations=1&amp;format=csv" target="_blank">ISTAT, Enterprises and persons employed (ASIA), SDMX query</a> · <a href="https://ec.europa.eu/eurostat/databrowser/view/SBS_NA_1A_SE_R2/default/table" target="_blank">Eurostat, SBS_NA_1A_SE_R2</a> · Chart: <a href="https://www.chartjs.org/">Chart.js</a> · The X axis starts at zero.</span>
+      <span class="it">Fonti: <a href="https://esploradati.istat.it/SDMXWS/rest/data/IT1,183_277_DF_DICA_ASIAUE1P_3,1.0/A.IT.AENTN.5813+5814+6391+7022+7320.TOTAL.TOT../?lastNObservations=1&amp;format=csv" target="_blank">ISTAT, Imprese e addetti (ASIA), query SDMX</a> · <a href="https://ec.europa.eu/eurostat/databrowser/view/SBS_NA_1A_SE_R2/default/table" target="_blank">Eurostat, SBS_NA_1A_SE_R2</a> · Grafico: <a href="https://www.chartjs.org/">Chart.js</a> · L'asse X parte da zero.</span>
+    </p>
+  </section>
+
+  <!-- ═══ SEZIONE 4 — IMPRESE CON DIPENDENTI, ITALIA (ISTAT A) ═══ -->
+  <section class="section py-5" id="dipendenti">
+    <p class="section-label mb-1">
+      <span class="en">ISTAT 183_277_DF_DICA_ASIAUE1P_3 · Italy · 2024</span>
+      <span class="it">ISTAT 183_277_DF_DICA_ASIAUE1P_3 · Italia · 2024</span>
+    </p>
+    <h2 class="mb-2">
+      <span class="en">In Italy 13.8% of the enterprises in these sectors have employees: 57.6% in newspaper publishing, 9.0% in market research</span>
+      <span class="it">In Italia il 13,8% delle imprese di questi settori ha dipendenti: il 57,6% nell'edizione di quotidiani, il 9,0% nelle ricerche di mercato</span>
+    </h2>
+    <p class="subtitle mb-4">
+      <span class="en">Share of enterprises with and without employees (%) · Italy · five sector codes · 2024</span>
+      <span class="it">Quota di imprese con e senza dipendenti (%) · Italia · cinque codici di settore · 2024</span>
+    </p>
+
+    <div class="callout mb-4">
+      <p>
+        <span class="en"><strong>Key finding</strong> — Of the 113,751 Italian enterprises in the five codes, 15,698 have employees. In management consultancy, the largest sector, 14,144 of 106,054 do (13.3%); in news agencies 105 of 509 (20.6%); in journals and periodicals 737 of 1,423 (51.8%).</span>
+        <span class="it"><strong>Dato chiave</strong> — Delle 113.751 imprese italiane nei cinque codici, 15.698 hanno dipendenti. Nella consulenza gestionale, il settore più grande, ne hanno 14.144 su 106.054 (13,3%); nelle agenzie di stampa 105 su 509 (20,6%); nelle riviste e periodici 737 su 1.423 (51,8%).</span>
+      </p>
+    </div>
+
+    <div class="chart-wrap mb-4" style="height:340px">
+      <canvas id="chart-dipendenti"></canvas>
+    </div>
+
+    <p class="note mb-2">
+      <span class="en"><strong>How to read the data.</strong> The ISTAT dataflow for the four-digit codes publishes the split between enterprises with and without employees; the employment size classes are published at coarser levels of the classification. The count says how many organisations have staff; how many would buy a data service is a different question, which needs other data.</span>
+      <span class="it"><strong>Come leggere i dati.</strong> Il dataflow ISTAT per i codici a quattro cifre pubblica la ripartizione tra imprese con e senza dipendenti; le classi di addetti sono pubblicate a livelli più aggregati della classificazione. Il conteggio dice quante organizzazioni hanno personale; quante comprerebbero un servizio di dati è un'altra domanda, che richiede altri dati.</span>
+    </p>
+
+    <div class="transform p-3 mb-4">
+      <strong><span class="en">Data transformations</span><span class="it">Trasformazioni</span></strong><br>
+      <span class="en">Raw: 15 rows (5 codes × values of Y_ENTER_WITH_EMPLOYEES: 0 without, 1 with, 9 total; 170 + 231 = 401 for code 58.13 confirms the coding) · share with employees = value 1 / value 9 × 100, one decimal · overall: 15,698 / 113,751 = 13.8% · script: <code>queries/transform.py</code></span>
+      <span class="it">Grezzo: 15 righe (5 codici × valori di Y_ENTER_WITH_EMPLOYEES: 0 senza, 1 con, 9 totale; 170 + 231 = 401 per il codice 58.13 conferma la codifica) · quota con dipendenti = valore 1 / valore 9 × 100, un decimale · complessivo: 15.698 / 113.751 = 13,8% · script: <code>queries/transform.py</code></span>
+    </div>
+    <p class="note mb-2">
+      <span class="en">Source: <a href="https://esploradati.istat.it/SDMXWS/rest/data/IT1,183_277_DF_DICA_ASIAUE1P_3,1.0/A.IT.AENTN.5813+5814+6391+7022+7320.TOTAL.TOT../?lastNObservations=1&amp;format=csv" target="_blank">ISTAT, ASIA, SDMX query</a> · Chart: <a href="https://www.chartjs.org/">Chart.js</a> · Shares of a total, axis from 0 to 100%.</span>
+      <span class="it">Fonte: <a href="https://esploradati.istat.it/SDMXWS/rest/data/IT1,183_277_DF_DICA_ASIAUE1P_3,1.0/A.IT.AENTN.5813+5814+6391+7022+7320.TOTAL.TOT../?lastNObservations=1&amp;format=csv" target="_blank">ISTAT, ASIA, query SDMX</a> · Grafico: <a href="https://www.chartjs.org/">Chart.js</a> · Quote di un totale, asse da 0 a 100%.</span>
+    </p>
+  </section>
+
+  <!-- ═══ SEZIONE 5 — CLASSI DIMENSIONALI (Eurostat C) ═══ -->
+  <section class="section py-5" id="classi">
+    <p class="section-label mb-1">
+      <span class="en">Eurostat SBS_SC_1B_SE_R2 · EU27 and Italy · 2020</span>
+      <span class="it">Eurostat SBS_SC_1B_SE_R2 · UE-27 e Italia · 2020</span>
+    </p>
+    <h2 class="mb-2">
+      <span class="en">By size class, 85% of EU27 consultancy enterprises have at most one person employed</span>
+      <span class="it">Per classe di addetti, l'85% delle imprese di consulenza dell'UE-27 ha al massimo una persona occupata</span>
+    </h2>
+    <p class="subtitle mb-4">
+      <span class="en">Share of enterprises by number of persons employed (%) · four NACE groups · EU27 and Italy · 2020</span>
+      <span class="it">Quota di imprese per numero di persone occupate (%) · quattro gruppi NACE · UE-27 e Italia · 2020</span>
+    </p>
+
+    <div class="callout mb-4">
+      <p>
+        <span class="en"><strong>Key finding</strong> — In management consultancy (group 70.2) 776,883 of 915,834 EU27 enterprises have 0–1 persons employed (84.8%); in Italy 62,813 of 72,003 (87.2%). Enterprises with 50 persons or more are 2,260 in the EU27 (0.2%) and 179 in Italy (0.2%) in this group.</span>
+        <span class="it"><strong>Dato chiave</strong> — Nella consulenza gestionale (gruppo 70.2) 776.883 imprese su 915.834 nell'UE-27 hanno 0–1 persone occupate (84,8%); in Italia 62.813 su 72.003 (87,2%). Le imprese con 50 persone o più sono 2.260 nell'UE-27 (0,2%) e 179 in Italia (0,2%) in questo gruppo.</span>
+      </p>
+    </div>
+
+    <div class="chart-wrap mb-4" style="height:520px">
+      <canvas id="chart-classi"></canvas>
+    </div>
+
+    <p class="note mb-2">
+      <span class="en"><strong>How to read the data.</strong> These are three-digit NACE groups, wider than the four-digit codes of the other sections: 58.1 includes books and other publishing besides newspapers and periodicals; 63.9 includes other information services besides news agencies; 70.2 includes public relations and communication consultancy besides 70.22; only 73.2 coincides with 73.20. The class "0–1 persons" includes the self-employed. Some cells are confidential (left empty in the chart) and some carry flags e or u; for 73.2 the EU27 total (30,000, flag u) is lower than the sum of its classes (30,847), so the shares use the sum of the published classes as denominator. These figures are shown separately from the Italian split by employees of the previous section.</span>
+      <span class="it"><strong>Come leggere i dati.</strong> Sono gruppi NACE a tre cifre, più ampi dei codici a quattro cifre delle altre sezioni: il 58.1 comprende libri e altre attività editoriali oltre a quotidiani e periodici; il 63.9 altri servizi d'informazione oltre alle agenzie di stampa; il 70.2 le pubbliche relazioni e la consulenza di comunicazione oltre al 70.22; solo il 73.2 coincide con il 73.20. La classe «0–1 persone» include i lavoratori indipendenti. Alcune celle sono riservate (lasciate vuote nel grafico) e alcune hanno bandiere e o u; per il 73.2 il totale UE-27 (30.000, bandiera u) è inferiore alla somma delle sue classi (30.847), quindi le quote usano come denominatore la somma delle classi pubblicate. Questi dati sono mostrati separati dalla ripartizione italiana per dipendenti della sezione precedente.</span>
+    </p>
+
+    <div class="transform p-3 mb-4">
+      <strong><span class="en">Data transformations</span><span class="it">Trasformazioni</span></strong><br>
+      <span class="en">Raw: 140 rows (4 groups × 7 classes × 5 geographies, 2020; only EU27 and Italy are shown) · share of a class = class value / sum of the published classes × 100, one decimal · cells without a value stay empty · 50 persons or more = classes 50–249 + 250 or more: 1,908 + 352 = 2,260 (EU27), 146 + 33 = 179 (Italy) · script: <code>queries/transform.py</code></span>
+      <span class="it">Grezzo: 140 righe (4 gruppi × 7 classi × 5 aree, 2020; sono mostrate solo UE-27 e Italia) · quota di una classe = valore della classe / somma delle classi pubblicate × 100, un decimale · le celle senza valore restano vuote · 50 persone o più = classi 50–249 + 250 o più: 1.908 + 352 = 2.260 (UE-27), 146 + 33 = 179 (Italia) · script: <code>queries/transform.py</code></span>
+    </div>
+    <p class="note mb-2">
+      <span class="en">Source: <a href="https://ec.europa.eu/eurostat/databrowser/view/SBS_SC_1B_SE_R2/default/table" target="_blank">Eurostat, SBS_SC_1B_SE_R2</a> · Chart: <a href="https://www.chartjs.org/">Chart.js</a> · Shares of a total, axis from 0 to 100%.</span>
+      <span class="it">Fonte: <a href="https://ec.europa.eu/eurostat/databrowser/view/SBS_SC_1B_SE_R2/default/table" target="_blank">Eurostat, SBS_SC_1B_SE_R2</a> · Grafico: <a href="https://www.chartjs.org/">Chart.js</a> · Quote di un totale, asse da 0 a 100%.</span>
+    </p>
+  </section>
+
+</main>
+
+<div id="shell-bottom"></div>
+<div class="container"><div id="shell-footer"></div></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../../assets/shell.js"></script>
+<script src="../../assets/frame.js" defer></script>
+<script src="../../assets/lang.js"></script>
+<script>
+Chart.defaults.font.family = "'IBM Plex Mono', monospace";
+Chart.defaults.font.size   = 14;
+Chart.defaults.color       = '#333';
+
+// ── DATI (da output/*.csv tramite queries/transform.py) ───────────────────────
+const CODE_LABELS = {
+  en: ['58.13 NEWSPAPERS', '58.14 JOURNALS AND PERIODICALS', '63.91 NEWS AGENCIES', '70.22 MANAGEMENT CONSULTANCY', '73.20 MARKET RESEARCH'],
+  it: ['58.13 QUOTIDIANI', '58.14 RIVISTE E PERIODICI', '63.91 AGENZIE DI STAMPA', '70.22 CONSULENZA GESTIONALE', '73.20 RICERCHE DI MERCATO']
+};
+// A: ISTAT, Italia, 2024 — ordine 58.13, 58.14, 63.91, 70.22, 73.20
+const A_TOTAL   = [401, 1423, 509, 106054, 5364];
+const A_WITH    = [231, 737, 105, 14144, 481];
+const A_WITHOUT = [170, 686, 404, 91910, 4883];
+const A_SHARE_WITH = [57.6, 51.8, 20.6, 13.3, 9.0];
+// B: Eurostat, 2020 — ordine 58.13, 58.14, 63.91, 70.22, 73.20 (null = riservato)
+const B_EU = [null, 20000, 6820, 844034, 30000];
+const B_IT = [282, 1507, 481, 64999, 3685];
+const B_SHARE = {
+  IT: [null, 7.5, 7.1, 7.7, 12.3],
+  DE: [null, 9.2, 6.8, 9.0, 3.9],
+  FR: [null, 32.6, 19.9, 19.8, 7.5],
+  ES: [null, 6.5, 1.1, 2.6, 9.1]
+};
+// C: Eurostat, 2020 — quote per classe sulla somma delle classi pubblicate
+const C_CLASSES = ['0–1', '2–9', '10–19', '20–49', '50–249', '250+'];
+const C_ROWS = [
+  { en: '58.1 · EU27', it: '58.1 · UE-27', v: [69.8, 23.7, 3.0, 1.9, 1.2, 0.5] },
+  { en: '58.1 · ITALY', it: '58.1 · ITALIA', v: [60.2, 31.2, 4.6, 2.3, 1.3, 0.4] },
+  { en: '63.9 · EU27', it: '63.9 · UE-27', v: [79.0, 19.1, null, 1.0, 0.7, 0.1] },
+  { en: '63.9 · ITALY', it: '63.9 · ITALIA', v: [77.8, 20.5, 1.4, null, 0.3, null] },
+  { en: '70.2 · EU27', it: '70.2 · UE-27', v: [84.8, 13.5, 1.0, 0.5, 0.2, 0.0] },
+  { en: '70.2 · ITALY', it: '70.2 · ITALIA', v: [87.2, 11.2, 0.9, 0.4, 0.2, 0.0] },
+  { en: '73.2 · EU27', it: '73.2 · UE-27', v: [78.3, 16.6, 2.1, 1.7, 1.0, 0.2] },
+  { en: '73.2 · ITALY', it: '73.2 · ITALIA', v: [89.1, 8.7, 1.0, 0.6, 0.5, 0.1] }
+];
+
+// ── LINGUA E GRAFICI ──────────────────────────────────────────────────────────
+const isIt = () => document.body.classList.contains('lang-it');
+const T    = (en, it) => isIt() ? it : en;
+const fmt  = v => v == null ? T('N/A', 'N/D') : v.toLocaleString(isIt() ? 'it-IT' : 'en-GB');
+const labels = () => CODE_LABELS[isIt() ? 'it' : 'en'];
+const charts = [];
+const COLORS = ['#155EEF', '#6941C6', '#7A5AF8', '#06AED4', '#F79009', '#D92D20'];
+
+function buildCharts() {
+  charts.splice(0).forEach(c => c.destroy());
+  const L = labels();
+  const tipN = unit => ({ callbacks: { label: ctx => `${ctx.dataset.label}: ${fmt(ctx.chart.options.indexAxis === 'y' ? ctx.parsed.x : ctx.parsed.y)} ${unit}`.trim() } });
+  const tipP = { callbacks: { label: ctx => `${ctx.dataset.label}: ${fmt(ctx.parsed.x)} %` } };
+  const xTitle = text => ({ min: 0, title: { display: true, text }, grid: { color: '#eee' } });
+
+  // 1 — UE-27, quattro codici con un valore, ordinati per valore
+  const idx = [3, 4, 1, 2];
+  charts.push(new Chart(document.getElementById('chart-ue'), {
+    type: 'bar',
+    data: { labels: idx.map(i => L[i]), datasets: [{ label: T('ENTERPRISES, EU27, 2020', 'IMPRESE, UE-27, 2020'), data: idx.map(i => B_EU[i]), backgroundColor: '#155EEF' }] },
+    options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false }, tooltip: tipN(T('ENTERPRISES', 'IMPRESE')) },
+      scales: { x: xTitle(T('NUMBER OF ENTERPRISES', 'NUMERO DI IMPRESE')), y: { title: { display: true, text: T('SECTOR', 'SETTORE') } } } }
+  }));
+
+  // 1b — i tre settori più piccoli
+  const idx2 = [4, 1, 2];
+  charts.push(new Chart(document.getElementById('chart-ue-small'), {
+    type: 'bar',
+    data: { labels: idx2.map(i => L[i]), datasets: [{ label: T('ENTERPRISES, EU27, 2020', 'IMPRESE, UE-27, 2020'), data: idx2.map(i => B_EU[i]), backgroundColor: '#6941C6' }] },
+    options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false }, tooltip: tipN(T('ENTERPRISES', 'IMPRESE')) },
+      scales: { x: xTitle(T('NUMBER OF ENTERPRISES', 'NUMERO DI IMPRESE')), y: { title: { display: true, text: T('SECTOR', 'SETTORE') } } } }
+  }));
+
+  // 2 — peso dei Paesi sul totale UE-27
+  const idxP = [1, 2, 3, 4];
+  const countries = [
+    ['IT', T('ITALY', 'ITALIA'), '#155EEF'], ['DE', T('GERMANY', 'GERMANIA'), '#6941C6'],
+    ['FR', T('FRANCE', 'FRANCIA'), '#06AED4'], ['ES', T('SPAIN', 'SPAGNA'), '#F79009']
+  ];
+  charts.push(new Chart(document.getElementById('chart-paesi'), {
+    type: 'bar',
+    data: { labels: idxP.map(i => L[i]), datasets: countries.map(([k, name, col]) => ({ label: name, data: idxP.map(i => B_SHARE[k][i]), backgroundColor: col })) },
+    options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { position: 'bottom' }, tooltip: tipP },
+      scales: { x: xTitle(T('% OF EU27 ENTERPRISES, 2020', '% DELLE IMPRESE UE-27, 2020')), y: { title: { display: true, text: T('SECTOR', 'SETTORE') } } } }
+  }));
+
+  // 3 — Italia, ISTAT 2024 contro Eurostat 2020: consulenza gestionale e quattro settori minori
+  const srcDatasets = idxs => ([
+    { label: T('ISTAT (2024)', 'ISTAT (2024)'), data: idxs.map(i => A_TOTAL[i]), backgroundColor: '#155EEF' },
+    { label: T('EUROSTAT (2020)', 'EUROSTAT (2020)'), data: idxs.map(i => B_IT[i]), backgroundColor: '#6941C6' }
+  ]);
+  charts.push(new Chart(document.getElementById('chart-fonti-main'), {
+    type: 'bar',
+    data: { labels: [L[3]], datasets: srcDatasets([3]) },
+    options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { position: 'bottom' }, tooltip: tipN(T('ENTERPRISES', 'IMPRESE')) },
+      scales: { x: xTitle(T('NUMBER OF ENTERPRISES, ITALY', 'NUMERO DI IMPRESE, ITALIA')), y: { title: { display: true, text: T('SECTOR', 'SETTORE') } } } }
+  }));
+  const idx3 = [4, 1, 2, 0];
+  charts.push(new Chart(document.getElementById('chart-fonti-small'), {
+    type: 'bar',
+    data: { labels: idx3.map(i => L[i]), datasets: srcDatasets(idx3) },
+    options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { position: 'bottom' }, tooltip: tipN(T('ENTERPRISES', 'IMPRESE')) },
+      scales: { x: xTitle(T('NUMBER OF ENTERPRISES, ITALY', 'NUMERO DI IMPRESE, ITALIA')), y: { title: { display: true, text: T('SECTOR', 'SETTORE') } } } }
+  }));
+
+  // 4 — Italia, imprese con e senza dipendenti (quote)
+  charts.push(new Chart(document.getElementById('chart-dipendenti'), {
+    type: 'bar',
+    data: { labels: L, datasets: [
+      { label: T('WITH EMPLOYEES', 'CON DIPENDENTI'), data: A_SHARE_WITH, backgroundColor: '#155EEF' },
+      { label: T('WITHOUT EMPLOYEES', 'SENZA DIPENDENTI'), data: A_SHARE_WITH.map(v => Math.round((100 - v) * 10) / 10), backgroundColor: '#D0D5DD' }
+    ]},
+    options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { position: 'bottom' }, tooltip: tipP },
+      scales: { x: { stacked: true, min: 0, max: 100, title: { display: true, text: T('% OF ENTERPRISES, ITALY, 2024', '% DELLE IMPRESE, ITALIA, 2024') }, grid: { color: '#eee' } },
+                y: { stacked: true, title: { display: true, text: T('SECTOR', 'SETTORE') } } } }
+  }));
+
+  // 5 — classi dimensionali, UE-27 e Italia (quote sulle classi pubblicate)
+  charts.push(new Chart(document.getElementById('chart-classi'), {
+    type: 'bar',
+    data: { labels: C_ROWS.map(r => isIt() ? r.it : r.en), datasets: C_CLASSES.map((cl, k) => ({
+      label: T(cl + ' PERSONS', cl + ' PERSONE'), data: C_ROWS.map(r => r.v[k]), backgroundColor: COLORS[k] })) },
+    options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { position: 'bottom' }, tooltip: tipP },
+      scales: { x: { stacked: true, min: 0, max: 100, title: { display: true, text: T('% OF ENTERPRISES, 2020', '% DELLE IMPRESE, 2020') }, grid: { color: '#eee' } },
+                y: { stacked: true, title: { display: true, text: T('NACE GROUP · AREA', 'GRUPPO NACE · AREA') } } } }
+  }));
+}
+
+// lang.js richiama _reRenderReports a ogni cambio lingua: etichette e tooltip dei grafici seguono la lingua
+window._reRenderReports = buildCharts;
+
+// ── SHELL CONFIG ──────────────────────────────────────────────────────────────
+initShell({
+  researchQuestion:    "Quante imprese operano nei settori che potrebbero usare un servizio di dati pubblici in linguaggio naturale, in Italia e in Europa, per settore e per classe dimensionale, e quali limiti di anno e di copertura hanno i dati ufficiali?",
+  researchQuestion_en: "How many enterprises operate in the sectors that could use a natural-language public-data service, in Italy and in Europe, by sector and by size class, and what are the limits of year and coverage of the official figures?",
+  statisticalProxy:    "Numero di imprese in cinque codici di settore (edizione di quotidiani 58.13, di riviste e periodici 58.14, agenzie di stampa 63.91, consulenza gestionale 70.22, ricerche di mercato 73.20): ISTAT, registro ASIA, Italia, 2024 (ATECO 2007, quattro cifre); Eurostat, statistiche strutturali sulle imprese dei servizi, 2020 (NACE Rev. 2). Misura la popolazione di imprese: il numero di organizzazioni presenti in ciascun settore.",
+  statisticalProxy_en: "Number of enterprises in five sector codes (publishing of newspapers 58.13, of journals and periodicals 58.14, news agencies 63.91, management consultancy 70.22, market research 73.20): ISTAT, ASIA register, Italy, 2024 (NACE 2007, four digits); Eurostat, structural business statistics for services, 2020 (NACE Rev. 2). It measures the population of enterprises: the number of organisations in each sector.",
+
+  title:    "Quante imprese sono il mercato di un servizio di dati pubblici: ecco l'analisi di mercato per Italia ed Europa, con i dati ISTAT ed Eurostat",
+  title_en: "How Many Enterprises Are the Market for a Public-Data Service: the Market Analysis for Italy and Europe, with ISTAT and Eurostat Data",
+  date:     "22 ottobre 2026",
+  date_en:  "22 October 2026",
+  intro:    "Quante imprese operano nei settori che potrebbero usare un servizio di dati pubblici in linguaggio naturale, in Italia e in Europa? Il report conta le imprese in cinque settori (editoria periodica, agenzie di stampa, consulenza gestionale, ricerche di mercato) con dati ISTAT ed Eurostat, confronta le due fonti per l'Italia e indica i limiti di anno e di copertura dei dati. È l'analisi di un caso d'uso di PDE (livello 2, due fonti).",
+  intro_en: "How many enterprises operate in the sectors that could use a natural-language public-data service, in Italy and in Europe? The report counts the enterprises in five sectors (periodical publishing, news agencies, management consultancy, market research) with ISTAT and Eurostat data, compares the two sources for Italy and states the limits of year and coverage of the data. It is the analysis of a PDE use case (level 2, two sources).",
+
+  badges: [
+    { label: "ISTAT",    value: "183_277 (ASIA)" },
+    { label: "Eurostat", value: "SBS_NA_1A_SE_R2 · SBS_SC_1B_SE_R2" },
+    { label: "Anno", value: "ISTAT 2024 · Eurostat 2020", label_en: "Year", value_en: "ISTAT 2024 · Eurostat 2020" },
+    { label: "Aree", value: "Italia, DE, FR, ES, UE-27", label_en: "Areas", value_en: "Italy, DE, FR, ES, EU27" }
+  ],
+
+  nav: [
+    { id: "ue",         label: "UE-27",               label_en: "EU27" },
+    { id: "paesi",      label: "Paesi",               label_en: "Countries" },
+    { id: "fonti",      label: "Due fonti",           label_en: "Two sources" },
+    { id: "dipendenti", label: "Con dipendenti",      label_en: "With employees" },
+    { id: "classi",     label: "Classi di addetti",   label_en: "Size classes" }
+  ],
+
+  introTitle:       "Contesto e risultati",
+  introTitle_en:    "Context and findings",
+  introSubtitle:    "Dimensione di un mercato in Italia e in Europa: due fonti ufficiali, anni diversi, popolazioni diverse",
+  introSubtitle_en: "Size of a market in Italy and in Europe: two official sources, different years, different populations",
+
+  scopeLimit:    "Il report conta le imprese per settore e per anno di riferimento: ISTAT 2024, Eurostat 2020 (ultimo anno disponibile in queste serie Eurostat). Fatturato, spesa e domanda sono altri indicatori; quante di queste organizzazioni comprerebbero un servizio è un\'altra domanda. Per l\'UE-27 quattro codici su cinque hanno un valore pubblicato; il quinto, l\'edizione di quotidiani (58.13), è riservato dalla fonte. Riviste e periodici (58.14) e ricerche di mercato (73.20) portano la bandiera di bassa affidabilità, le agenzie di stampa (63.91) quella di stima. Per le classi di addetti Eurostat pubblica gruppi NACE a tre cifre, più ampi dei codici; per l\'Italia ISTAT pubblica a quattro cifre la ripartizione tra imprese con e senza dipendenti. Le due fonti sono mostrate affiancate, ciascuna con il suo anno.",
+  scopeLimit_en: "The report counts the enterprises by sector and by reference year: ISTAT 2024, Eurostat 2020 (the latest year available in these Eurostat series). Turnover, spending and demand are other indicators; how many of these organisations would buy a service is a different question. For the EU27 four codes out of five have a published value; the fifth, newspaper publishing (58.13), is confidential at the source. Journals and periodicals (58.14) and market research (73.20) carry the low-reliability flag, news agencies (63.91) the estimate flag. For size classes Eurostat publishes three-digit NACE groups, wider than the codes; for Italy ISTAT publishes at four digits the split between enterprises with and without employees. The two sources are shown side by side, each with its own year.",
+
+  introExtra: `
+    <div class="summary mb-5">
+      <h3 class="mb-3">
+        <span class="en">What the data says</span>
+        <span class="it">Cosa dicono i dati</span>
+      </h3>
+      <p>
+        <span class="en"><strong>How large the population is.</strong> In the EU27 in 2020, four of the five sector codes have a published value and add up to 900,854 enterprises; management consultancy is 844,034 of them, 94%. The fifth code, newspaper publishing, has its EU27 value confidential at the source. The population that could use a public-data service is therefore concentrated in one sector, and the figure says how many enterprises there are; demand is a different measure. → <a href="#ue">EU27</a></span>
+        <span class="it"><strong>Quanto è grande la popolazione.</strong> Nell'UE-27 nel 2020 quattro dei cinque codici di settore hanno un valore pubblicato e sommano 900.854 imprese; la consulenza gestionale ne è 844.034, il 94%. Il quinto codice, l'edizione di quotidiani, ha il valore UE-27 riservato dalla fonte. La popolazione che potrebbe usare un servizio di dati pubblici è quindi concentrata in un settore, e il dato dice quante imprese ci sono; la domanda è un'altra misura. → <a href="#ue">UE-27</a></span>
+      </p>
+      <p>
+        <span class="en"><strong>Italy against Europe.</strong> Italy has 64,999 management consultancy enterprises in the Eurostat series, 7.7% of the EU27, against 76,193 in Germany (9.0%) and 167,460 in France (19.8%). France has the largest share in three of the four sectors with an EU27 value; Italy has the largest share of the four countries in market research (12.3%). → <a href="#paesi">countries</a></span>
+        <span class="it"><strong>L'Italia rispetto all'Europa.</strong> L'Italia ha 64.999 imprese di consulenza gestionale nella serie Eurostat, il 7,7% dell'UE-27, contro 76.193 in Germania (9,0%) e 167.460 in Francia (19,8%). La Francia ha la quota più alta in tre settori su quattro con un valore UE-27; l'Italia ha la quota più alta dei quattro Paesi nelle ricerche di mercato (12,3%). → <a href="#paesi">Paesi</a></span>
+      </p>
+      <p>
+        <span class="en"><strong>What ISTAT and Eurostat say.</strong> For Italy, ISTAT gives 106,054 management consultancy enterprises (2024) and Eurostat 64,999 (2020): the Eurostat figure is 61% of the ISTAT one in consultancy and 106% in journals and periodicals (1,507 against 1,423). The market size that results therefore depends on the source chosen. → <a href="#fonti">two sources</a></span>
+        <span class="it"><strong>Cosa dicono ISTAT ed Eurostat.</strong> Per l'Italia ISTAT dà 106.054 imprese di consulenza gestionale (2024) ed Eurostat 64.999 (2020): il dato Eurostat è il 61% di quello ISTAT nella consulenza e il 106% nelle riviste e periodici (1.507 contro 1.423). La dimensione del mercato che ne risulta dipende quindi dalla fonte scelta. → <a href="#fonti">due fonti</a></span>
+      </p>
+      <p>
+        <span class="en"><strong>How many could be buyers.</strong> Employees change the picture: in Italy 14,144 of the 106,054 consultancy enterprises have employees, and 481 of 5,364 in market research (9.0%), against 231 of 401 in newspaper publishing (57.6%). In the EU27, enterprises with 50 persons or more are 2,260 in group 70.2. The pre-registered condition was a published count for at least three of five sector codes: the data satisfy it (four codes for the EU27, five for Italy), so the null hypothesis is rejected, within the year and coverage limits stated above. → <a href="#dipendenti">with employees</a>, <a href="#classi">size classes</a></span>
+        <span class="it"><strong>Quanti potrebbero essere acquirenti.</strong> I dipendenti cambiano il quadro: in Italia 14.144 delle 106.054 imprese di consulenza hanno dipendenti, e 481 su 5.364 nelle ricerche di mercato (9,0%), contro 231 su 401 nell'edizione di quotidiani (57,6%). Nell'UE-27 le imprese con 50 persone o più sono 2.260 nel gruppo 70.2. La condizione pre-registrata era un conteggio pubblicato per almeno tre codici su cinque: i dati la soddisfano (quattro codici per l'UE-27, cinque per l'Italia), quindi l'ipotesi nulla è respinta, entro i limiti di anno e di copertura dichiarati sopra. → <a href="#dipendenti">con dipendenti</a>, <a href="#classi">classi di addetti</a></span>
+      </p>
+    </div>
+  `,
+
+  findingCards: [
+    { value: "113.751 vs 70.954", label: "imprese italiane nei cinque codici: ISTAT 2024 contro Eurostat 2020", label_en: "Italian enterprises in the five codes: ISTAT 2024 against Eurostat 2020", color: "accent" },
+    { value: "13,8%", label: "delle imprese italiane in questi settori ha dipendenti (15.698 su 113.751, ISTAT 2024)", label_en: "of Italian enterprises in these sectors have employees (15,698 of 113,751, ISTAT 2024)", color: "blue" },
+    { value: "84,8%", label: "delle imprese UE-27 di consulenza (gruppo 70.2) ha 0–1 persone occupate, 2020", label_en: "of EU27 consultancy enterprises (group 70.2) have 0–1 persons employed, 2020", color: "default" },
+    { value: "4 su 5", label: "codici con un valore UE-27 pubblicato (58.13 riservato)", label_en: "codes with a published EU27 value (58.13 is confidential)", color: "green" }
+  ],
+
+  rawData: {
+    license:           "ISTAT ed Eurostat: i termini di riuso vanno consultati sulle pagine dei dataset prima di riutilizzare i dati",
+    license_en:        "ISTAT and Eurostat: the reuse terms are to be consulted on the dataset pages before reusing the data",
+    extractionDate:    "22 ottobre 2026",
+    extractionDate_en: "22 October 2026",
+    files: [
+      {
+        provider:  "ISTAT",
+        datasetId: "183_277_DF_DICA_ASIAUE1P_3",
+        desc:      "Imprese per codice ATECO 2007 a quattro cifre, con e senza dipendenti — Italia — 2024",
+        desc_en:   "Enterprises by four-digit NACE 2007 code, with and without employees — Italy — 2024",
+        rows:      15,
+        period:    "2024",
+        file:      "output/A_istat_asia.csv"
+      },
+      {
+        provider:  "Eurostat",
+        datasetId: "SBS_NA_1A_SE_R2",
+        desc:      "Numero di imprese per codice NACE Rev. 2 — UE-27, Italia, Germania, Francia, Spagna — 2020",
+        desc_en:   "Number of enterprises by NACE Rev. 2 code — EU27, Italy, Germany, France, Spain — 2020",
+        rows:      25,
+        period:    "2020",
+        file:      "output/B_eurostat_sbs_sectors.csv"
+      },
+      {
+        provider:  "Eurostat",
+        datasetId: "SBS_SC_1B_SE_R2",
+        desc:      "Numero di imprese per gruppo NACE a tre cifre e classe di addetti — UE-27, Italia, Germania, Francia, Spagna — 2020",
+        desc_en:   "Number of enterprises by three-digit NACE group and employment size class — EU27, Italy, Germany, France, Spain — 2020",
+        rows:      140,
+        period:    "2020",
+        file:      "output/C_eurostat_sbs_sizeclass.csv"
+      }
+    ]
+  },
+
+  methodology: {
+    githubUrl: "https://github.com/relatalab-it/PDE/tree/main/report/16_dimensione-mercato",
+    classifications: [
+      { code: "58.13 / J5813", system: "NACE", meaning: "Edizione di quotidiani", meaning_en: "Publishing of newspapers" },
+      { code: "58.14 / J5814", system: "NACE", meaning: "Edizione di riviste e periodici", meaning_en: "Publishing of journals and periodicals" },
+      { code: "63.91 / J6391", system: "NACE", meaning: "Attività delle agenzie di stampa", meaning_en: "News agency activities" },
+      { code: "70.22 / M7022", system: "NACE", meaning: "Consulenza imprenditoriale e altra consulenza amministrativo-gestionale", meaning_en: "Business and other management consultancy activities" },
+      { code: "73.20 / M7320", system: "NACE", meaning: "Ricerche di mercato e sondaggi di opinione", meaning_en: "Market research and public opinion polling" },
+      { code: "V11110", system: "INDIC_SB (Eurostat)", meaning: "Imprese: numero", meaning_en: "Enterprises: number" },
+      { code: "AENTN", system: "DATA_TYPE (ISTAT)", meaning: "Numero di imprese attive", meaning_en: "Number of active enterprises" },
+      { code: "0 / 1 / 9", system: "Y_ENTER_WITH_EMPLOYEES (ISTAT)", meaning: "Senza dipendenti / con dipendenti / totale", meaning_en: "Without employees / with employees / total" }
+    ],
+    extra: `
+      <p class="note pt-2 mb-2">
+        <strong>Percorso metodologico</strong><br>
+        Percorso approfondito: brief, chiarimenti, ipotesi nulla e piano dei dati sono nei file <code>story-brief.md</code> e <code>data-design.md</code>, scritti prima di scaricare i dati. Il piano è stato modificato una volta dopo il download (v1.1): per l'Italia a quattro cifre ISTAT pubblica la ripartizione per dipendenti, usata al posto delle classi di addetti. L'ipotesi nulla e alcune risposte ai chiarimenti sono state formulate dall'assistente per delega dell'utente.
+      </p>
+      <p class="note pt-2 mb-2">
+        <strong>Double check</strong><br>
+        I tre dataset sono stati estratti due volte in modo indipendente (opensdmx CLI e URL diretto dell'API) con risultati identici: ISTAT 15 righe, Eurostat 25 e 140 righe. Aggiornamento dei dati Eurostat: 01/03/24. Per ISTAT l'identificativo dell'edizione è da recuperare dalla fonte prima della pubblicazione.
+      </p>
+    `,
+    extra_en: `
+      <p class="note pt-2 mb-2">
+        <strong>Methodological path</strong><br>
+        In-depth path: brief, clarifications, null hypothesis and data design are in <code>story-brief.md</code> and <code>data-design.md</code>, written before the data were downloaded. The plan was changed once after the download (v1.1): for Italy at four digits ISTAT publishes the split by employees, used in place of the employment size classes. The null hypothesis and some answers to the clarifications were formulated by the assistant on the user's delegation.
+      </p>
+      <p class="note pt-2 mb-2">
+        <strong>Double check</strong><br>
+        The three datasets were extracted twice independently (opensdmx CLI and direct API URL) with identical results: ISTAT 15 rows, Eurostat 25 and 140 rows. Eurostat data update: 01/03/24. For ISTAT the edition identifier is to be retrieved from the source before publication.
+      </p>
+    `,
+    apiUrls: [
+      {
+        datasetId: "183_277_DF_DICA_ASIAUE1P_3",
+        provider:  "ISTAT",
+        desc:      "Italia, cinque codici, ultimo anno — richiesta unica (formato CSV)",
+        desc_en:   "Italy, five codes, latest year — single request (CSV format)",
+        url:       "https://esploradati.istat.it/SDMXWS/rest/data/IT1,183_277_DF_DICA_ASIAUE1P_3,1.0/A.IT.AENTN.5813+5814+6391+7022+7320.TOTAL.TOT../?lastNObservations=1&format=csv"
+      },
+      {
+        datasetId: "SBS_NA_1A_SE_R2",
+        provider:  "Eurostat",
+        desc:      "Cinque codici, UE-27 e quattro Paesi, ultimo anno",
+        desc_en:   "Five codes, EU27 and four countries, latest year",
+        url:       "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/SBS_NA_1A_SE_R2/A.J5813+J5814+J6391+M7022+M7320.V11110.EU27_2020+IT+DE+FR+ES?lastNObservations=1&format=SDMX-CSV"
+      },
+      {
+        datasetId: "SBS_SC_1B_SE_R2",
+        provider:  "Eurostat",
+        desc:      "Quattro gruppi NACE, sette classi di addetti, UE-27 e quattro Paesi, ultimo anno",
+        desc_en:   "Four NACE groups, seven size classes, EU27 and four countries, latest year",
+        url:       "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/SBS_SC_1B_SE_R2/A.J581+J639+M702+M732.V11110.0_1+2-9+10-19+20-49+50-249+GE250+TOTAL.EU27_2020+IT+DE+FR+ES?lastNObservations=1&format=SDMX-CSV"
+      }
+    ],
+    cliHdr:      "Dataset",
+    cliCommands: [
+      { dataset: "183_277_DF_DICA_ASIAUE1P_3", command: "opensdmx run queries/A_istat_asia.yaml --out output/A_istat_asia.csv" },
+      { dataset: "SBS_NA_1A_SE_R2",            command: "opensdmx run queries/B_eurostat_sbs_sectors.yaml --out output/B_eurostat_sbs_sectors.csv" },
+      { dataset: "SBS_SC_1B_SE_R2",            command: "opensdmx run queries/C_eurostat_sbs_sizeclass.yaml --out output/C_eurostat_sbs_sizeclass.csv" }
+    ],
+    files: [
+      { file: "output/A_istat_asia.csv",             desc: "15 righe · Italia · 2024" },
+      { file: "output/B_eurostat_sbs_sectors.csv",   desc: "25 righe · UE-27 e 4 Paesi · 2020" },
+      { file: "output/C_eurostat_sbs_sizeclass.csv", desc: "140 righe · UE-27 e 4 Paesi · 2020" },
+      { file: "queries/transform.py",                desc: "Trasformazioni incorporate nella pagina" },
+      { file: "story-brief.md",                      desc: "Brief" },
+      { file: "data-design.md",                      desc: "Piano dei dati" },
+      { file: "notes.md",                            desc: "Registro delle operazioni" }
+    ]
+  },
+
+  providers: "ISTAT, Eurostat",
+  github:    "https://github.com/relatalab-it/PDE"
+});
+
+buildCharts();
+</script>
+</body>
+</html>

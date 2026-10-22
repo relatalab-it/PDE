@@ -1,0 +1,2064 @@
+id,name,in_dataflow
+NAP,non applicabile,false
+0010,TOTALE,true
+C-F-45-47-0017,"manifatturiere, costruzioni, servizi, commercio al dettaglio",false
+0040,beni intermedi,false
+0050,beni strumentali,false
+0060,beni di consumo durevoli,false
+0070,beni di consumo - non durevoli,false
+0080,beni di consumo,false
+0090,energia,false
+0043,attività agricole manifatturiere,false
+00170,"coltivazioni agricole e produzione di prodotti animali,, caccia, silvicoltura, pesca e acquacoltura, industria alimentare  delle bevande e del tabacco (01-03, 10-12)",false
+A,"agricoltura, silvicoltura e pesca",false
+01,"coltivazioni agricole e produzione di prodotti animali, caccia e servizi connessi",false
+011,coltivazione di colture agricole non permanenti,false
+0111,"coltivazione di cereali (escluso il riso), legumi da granella e semi oleosi",false
+01111,coltivazione di cereali (escluso il riso),false
+012,coltivazione di colture permanenti,false
+0112,coltivazione di riso,false
+01112,coltivazione di semi oleosi,false
+02,silvicoltura ed utilizzo di aree forestali,false
+013,riproduzione delle piante,false
+0113,"coltivazione di ortaggi e meloni, radici e tuberi",false
+01113,coltivazione di legumi da granella,false
+03,pesca e acquacoltura,false
+014,allevamento di animali,false
+0114,coltivazione di canna da zucchero,false
+01114,"coltivazioni miste di cereali, legumi da granella e semi oleosi",false
+015,coltivazioni agricole associate all'allevamento di animali: attività mista,false
+0115,coltivazione di tabacco,false
+01120,coltivazione di riso,false
+016,attività di supporto all'agricoltura e attività successive alla raccolta,false
+0116,coltivazione di piante tessili,false
+01131,"coltivazione di ortaggi (inclusi i meloni) in foglia, a fusto, a frutto, in radici, bulbi e tuberi in piena aria (escluse patate e barbabietola da zucchero)",false
+017,"caccia, cattura di animali e servizi connessi",false
+0119,floricoltura e coltivazione di altre colture non permanenti,false
+01132,"coltivazione di ortaggi (inclusi i meloni) in foglia, a fusto, a frutto, in radici, bulbi e tuberi in colture protette (escluse patate e barbabietola da zucchero)",false
+01133,coltivazione di barbabietola da zucchero,false
+0121,coltivazione di uva,false
+021,silvicoltura ed altre attività forestali,false
+0037,"industria e servizi (b-s, escluso o)",false
+B-13_19-22_25-27-31_33-D-E,altri settori manifatturieri ed estrattive,false
+B_S_NO-O-P,"industria e servizi (B-S, esclusi O e P)",false
+0015,TOTALE INDUSTRIA E SERVIZI  (b-n),false
+01134,coltivazione di patate,false
+0122,coltivazione di frutta di origine tropicale e subtropicale,false
+022,utilizzo di aree forestali,false
+00100,"totale industria e servizi (b-f, g, h, k, 58  ,61-63, 70-74)",false
+0011,TOTALE INDUSTRIA (b-f),false
+01140,coltivazione di canna da zucchero,false
+0123,coltivazione di agrumi,false
+023,raccolta di prodotti selvatici non legnosi,false
+0020,TOTALE INDUSTRIA ESCLUSE COSTRUZIONI (b-e),false
+01150,coltivazione di tabacco,false
+0124,coltivazione di pomacee e frutta a nocciolo,false
+024,servizi di supporto per la silvicoltura,false
+B-C,"totale industria escluse costruzioni, energia e acqua (b-c)",false
+0021,totale industria escluse costruzioni (b-e) ed escluso il raggruppamento energia,false
+01160,coltivazione di piante per la preparazione di fibre tessili,false
+0125,"coltivazione di altri alberi da frutta, frutti di bosco e in guscio",false
+031,pesca,false
+0022,totale estrazione di minerali e attività manifatturiere (b-c),false
+01191,coltivazione di fiori in piena aria,false
+0126,coltivazione di frutti oleosi,false
+032,acquacoltura,false
+0023,totale estrazione di minerali e attività manifatturiere (b-c) escluso il raggruppamento energia,false
+01192,coltivazione di fiori in colture protette,false
+0127,coltivazione di piante per la produzione di bevande,false
+00140,"attività estrattive, fornitura di energia elettrica, gas e acqua, trattamento e smaltimento rifiuti (b, d, e)",false
+00180,"estrazione di carbone, prodotti petroliferi, minerali, servizi di supporto all'estrazione e fabbricazione di coke e prodotti derivanti dalla raffinazione del petrolio (05-09, 19)",false
+01199,coltivazione di piante da foraggio e di altre colture non permanenti,false
+0128,"coltivazione di spezie, piante aromatiche e farmaceutiche",false
+B,estrazione di minerali da cave e miniere,true
+05,estrazione di carbone (esclusa torba),false
+06,estrazione di petrolio greggio e di gas naturale,false
+07,estrazione di minerali metalliferi,false
+08,altre attività di estrazione di minerali da cave e miniere,false
+09,attività dei servizi di supporto all'estrazione,false
+051,estrazione di antracite,false
+052,estrazione di lignite,false
+0129,coltivazione di altre colture permanenti (inclusi alberi di natale),false
+01210,coltivazione di uva,false
+061,estrazione di petrolio greggio,false
+C,attività manifatturiere,true
+CA-CB,"produzione alimentare, tessile e abbigliamento (ca, cb)",false
+CA,"industrie alimentari, delle bevande e del tabacco",false
+CB,"industrie tessili, dell'abbigliamento, articoli in pelle e simili",false
+CC,"industria dei prodotti in legno e carta, stampa",false
+CD-CE-CF,"fabbricazione di prodotti chimici, petrolchimici e farmaceutici (cd-cf)",false
+CD,fabbricazione di coke e prodotti derivanti dalla raffinazione del petrolio,false
+CE,fabbricazione di prodotti chimici,false
+CF,fabbricazione di prodotti farmaceutici di base e di preparati farmaceutici,false
+CG,fabbricazione di articoli in gomma e materie plastiche e di altri prodotti della lavorazione di minerali non metalliferi,false
+CD-CG,"fabbricazione di coke e di prodotti derivanti dalla raffinazione del petrolio, di prodotti chimici,  di prodotti farmaceutici, di articoli in gomma e materie plastiche e di prodotti della lavorazione di minerali non metalliferi",false
+CH,metallurgia  e fabbricazione di prodotti in metallo esclusi macchinari e attrezzature,false
+10,industrie alimentari,false
+CI,"fabbricazione di computer e prodotti di elettronica  e ottica; apparecchi elettromedicali, apparecchi di misurazione e di orologi",false
+11,industria delle bevande,false
+CJ,fabbricazione di apparecchiature elettriche ed apparecchiature per uso domestico non elettriche,false
+12,industria del tabacco,false
+CI-CJ,"fabbricazione di apparecchiature elettriche, elettroniche e ottiche (ci, cj escluse apparecchiature non elettriche)",false
+CK,fabbricazione di macchinari ed apparecchiature nca,false
+13,industrie tessili,false
+CJ-CK,fabbricazione di apparecchiature elettriche ed apparecchiature per uso domestico non elettriche e di macchinari ed apparecchiature nca,false
+14_15,"confezione di articoli di abbigliamento, articoli in pelle e pelliccia e fabbricazione di articoli in pelle e simili (14-15)",false
+CL,fabbricazione di mezzi di trasporto,false
+14,"confezione di articoli di abbigliamento, confezione di articoli in pelle e pelliccia",false
+CM,"altre industrie manifatturiere, riparazione e installazione di macchine e apparecchiature",false
+15,fabbricazione di articoli in pelle e simili,false
+16,"industria del legno e dei prodotti in legno e sughero (esclusi i mobili), fabbricazione di articoli in paglia e materiali da intreccio",false
+17,fabbricazione di carta e di prodotti di carta,false
+00190,"fabbricazione di mobili e altre attività manifatturiere, fornitura di energia,  trattamento e fornitura di acqua e gestione reti fognarie, trattamento e smaltimento dei rifiuti, costruzioni (31-43, eccetto 325)",false
+01220,coltivazione di frutta di origine tropicale e subtropicale,false
+0130,riproduzione delle piante,false
+062,estrazione di gas naturale,false
+18,stampa e riproduzione di supporti registrati,false
+D,"fornitura di energia elettrica, gas, vapore e aria condizionata",true
+0036,"fornitura di energia elettrica, gas, vapore e aria condizionata, acqua, reti fognarie, attività di gestione dei rifiuti e risanamento (d-e)",false
+D-E,energia e acqua,false
+01230,coltivazione di agrumi,false
+0141,allevamento di bovini da latte,false
+071,estrazione di minerali metalliferi ferrosi,false
+19,fabbricazione di coke e prodotti derivanti dalla raffinazione del petrolio,false
+E,"fornitura di acqua reti fognarie, attività di gestione dei rifiuti e risanamento",true
+00215,"altre attività manifatturiere (cc,cg,ch, apparecchiature non elettriche di cj, cm)",false
+20_21,chimica e farmaceutica,false
+01240,coltivazione di pomacee e frutta a nocciolo,false
+0142,allevamento di altri bovini e di bufalini,false
+072,estrazione di minerali metalliferi non ferrosi,false
+20,fabbricazione di prodotti chimici,false
+F,costruzioni,true
+0012,TOTALE SERVIZI (g-u),false
+01250,"coltivazione di altri alberi da frutta, frutti di bosco e frutta in guscio",false
+0143,allevamento di cavalli e altri equini,false
+081,"estrazione di pietra, sabbia e argilla",false
+21,fabbricazione di prodotti farmaceutici di base e di preparati farmaceutici,false
+0016,TOTALE SERVIZI (g-s),false
+01260,coltivazione di frutti oleosi,false
+0144,allevamento di cammelli e camelidi,false
+089,estrazione di minerali da cave e miniere nca,false
+22,fabbricazione di articoli in gomma e materie plastiche,false
+0038,"servizi  (g-s, escluso o)",false
+G_H,commercio trasporti e logistica,false
+G_S_NO-O-P,"servizi  (G-S, esclusi O e P)",false
+0039,"istruzione, sanità e assistenza sociale, attività artistiche e altre attività di servizi (P-S)",false
+Q_S,"sanità e assistenza sociale, attività artistiche e altre attività di servizi (Q-S)",false
+0013,TOTALE SERVIZI DI MERCATO (g-n),false
+01270,coltivazione di piante per la produzione di bevande,false
+0145,allevamento di ovini e caprini,false
+091,attività di supporto all'estrazione di petrolio e di gas naturale,false
+23,fabbricazione di altri prodotti della lavorazione di minerali non metalliferi,false
+0041,"commercio, trasporto e magazzinaggio, alloggio e ristorazione (g-i)",false
+24_25,"metallurgia e fabbricazione di prodotti in metallo, esclusi macchinari e attrezzature (24-25)",false
+0026,"commercio, alberghi e ristoranti (g,i)",false
+01280,"coltivazione di spezie, piante aromatiche e farmaceutiche",false
+0146,allevamento di suini,false
+099,attività di supporto per l'estrazione da cave e miniere di altri minerali,false
+24,metallurgia,false
+G_J_X_47,servizi (g-j escluso commercio al dettaglio),false
+0014,servizi (g-n escluso commercio al dettaglio ed altre attività - vedasi metadati),false
+00110,"totale servizi (g, h, k, 58 , 61-63, 70-74)",false
+00216,totale servizi (g-t),false
+01290,coltivazione di altre colture permanenti (inclusi alberi di natale),false
+0147,allevamento di pollame,false
+101,lavorazione e conservazione di carne e produzione di prodotti a base di carne,false
+25,fabbricazione di prodotti in metallo (esclusi macchinari e attrezzature),false
+G,"commercio all'ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",true
+26-28-29-30,"meccanica, elettronica, automotive",false
+0017,totale servizi (h-n escluso k),false
+01300,riproduzione delle piante,false
+0149,allevamento di altri animali,false
+102,"lavorazione e conservazione di pesce, crostacei e molluschi",false
+26,"fabbricazione di computer e prodotti di elettronica e ottica, apparecchi elettromedicali, apparecchi di misurazione e di orologi",false
+0029,totale servizi non commerciali (h-s escluso o e 94),false
+0030,"totale servizi non commerciali e non finanziari (h-s escluso k, o e 94)",false
+0049,"trasporto e magazzinaggio, esclusi servizi postali e corrieri (h escluso 53)",false
+00150,"trasporti e magazzinaggio, servizi di alloggio e ristorazione (h, i)",false
+01410,"allevamento di bovini e bufale da latte, produzione di latte crudo",false
+0150,coltivazioni agricole associate all'allevamento di animali: attività mista,false
+103,lavorazione e conservazione di frutta e ortaggi,false
+27,fabbricazione di apparecchiature elettriche ed apparecchiature per uso domestico non elettriche,false
+H,trasporto e magazzinaggio,true
+0091,"trasporto, magazzinaggio, servizi di informazione e comunicazione (h,j)",false
+0018,servizi turistici (i+ 79),false
+01420,allevamento di bovini e bufalini da carne,false
+0161,attività di supporto alla produzione vegetale,false
+104,produzione di oli e grassi vegetali e animali,false
+28,fabbricazione di macchinari ed apparecchiature nca,false
+I-J-K-L-N-P-Q-R-S,altri  servizi,false
+01430,allevamento di cavalli e altri equini,false
+0162,attività di supporto alla produzione animale,false
+105,industria lattiero-casearia,false
+29,"fabbricazione di autoveicoli, rimorchi e semirimorchi",false
+I,attività dei servizi di alloggio e di ristorazione,true
+0025,altre attività dei servizi (j-u),false
+01440,allevamento di cammelli e camelidi,false
+0163,attività successive alla raccolta,false
+106,"lavorazione delle granaglie, produzione di amidi e di prodotti amidacei",false
+30,fabbricazione di altri mezzi di trasporto,false
+0042,altri servizi (j-s escluso o),false
+0044,altri servizi alle imprese (j-n),false
+01450,allevamento di ovini e caprini,false
+0164,lavorazione delle sementi per la semina,false
+107,produzione di prodotti da forno e farinacei,false
+31,fabbricazione di mobili,false
+J,servizi di informazione e comunicazione,true
+JA,"attività editoriali, audiovisivi e attività di trasmissione",false
+JA_X_58,"attività di produzione cinematografica, di video e di programmi televisivi, di registrazioni musicali e sonore",false
+JB,telecomunicazioni,false
+JC,informatica ed altri servizi d'informazione,false
+58-61_63,"servizi di informazione e comunicazione (58, 61-63)",false
+00171,attività di ricerca svolta da ente pubblico,false
+01460,allevamento di suini,false
+0170,"caccia, cattura di animali e servizi connessi",false
+108,produzione di altri prodotti alimentari,false
+32,altre industrie manifatturiere,false
+K,attività finanziarie e assicurative,true
+00172,attività di ricerca svolta da ente/azienda privata,false
+0024,servizi alle imprese (l-n),false
+01470,allevamento di pollame,false
+0210,silvicoltura ed altre attività forestali,false
+109,produzione di prodotti per l'alimentazione degli animali,false
+33,"riparazione, manutenzione ed installazione di macchine ed apparecchiature",false
+L_M_N_X71-72,"attività immobiliari, attività professionali e servizi di supporto alle imprese (l, m, n, esclusi 71 e 72)",false
+01491,allevamento di conigli,false
+0220,utilizzo di aree forestali,false
+110,industria delle bevande,false
+35,"fornitura di energia elettrica, gas, vapore e aria condizionata",false
+L,attività immobiliari,true
+01492,allevamento di animali da pelliccia,false
+0230,raccolta di prodotti selvatici non legnosi,false
+120,industria del tabacco,false
+36,"raccolta, trattamento e fornitura di acqua",false
+M_N,"attività professionali, scientifiche e tecniche e noleggio, agenzie di viaggio, servizi di supporto alle imprese",false
+M,"attività professionali, scientifiche e tecniche",true
+70_74,"attività professionali, scientifiche e tecniche (70-74)",false
+MA,"attività legali, di contabilità, di direzione aziendale, di architettura, di ingegneria, di collaudo e di analisi tecniche",false
+MB,ricerca scientifica e sviluppo,false
+MC,"altre attività professionali, scientifiche e tecniche",false
+0031,"attività professionali, scientifiche e tecniche escluso servizi veterinari (m escluso 75)",false
+69_71_73-74_702,"attività professionali, scientifiche e tecniche richieste dal regolamento STS  (69, 71,73-74, 702)",false
+37_39,"gestione delle reti fognarie, attività di raccolta, trattamento e smaltimento dei rifiuti recupero dei materiali, risanamento e altri servizi di gestione dei rifiuti (37-39)",false
+0032,"noleggio, agenzie di viaggio, servizi di supporto alle imprese escluso attività dei servizi delle agenzie di viaggio, dei tour operator e servizi di prenotazione e attività connesse (N escluso 79)",false
+01493,apicoltura,false
+0240,servizi di supporto per la silvicoltura,false
+131,preparazione e filatura di fibre tessili,false
+37,gestione delle reti fognarie,false
+N,"noleggio, agenzie di viaggio, servizi di supporto alle imprese",true
+78-80_82_812,"noleggio, agenzie di viaggio, servizi di supporto alle imprese richiesti dal regolamento STS (78-80, 82, 812)",false
+0092,"attività finanziarie e assicurative, attività immobiliari, attività professionali, scientifiche e tecniche, noleggio, agenzie di viaggio, servizi di supporto alle imprese (k-n)",false
+0033,settore ict,false
+01494,bachicoltura,false
+0311,pesca marina,false
+132,tessitura,false
+38,"attività di raccolta, trattamento e smaltimento dei rifiuti recupero dei materiali",false
+O,"amministrazione pubblica e difesa, assicurazione sociale obbligatoria",false
+0034,"totale servizi non finanziari (g-n, incluso 951, escluso 75 e k)",false
+0027,istruzione e sanità (p-q),false
+0035,"totale attività economiche (c-n, inclusa la 951, escluse 75 e k)",false
+01499,allevamento di altri animali nca,false
+0312,pesca in acque dolci,false
+133,finissaggio dei tessili,false
+39,attività di risanamento e altri servizi di gestione dei rifiuti,false
+01500,coltivazioni agricole associate all'allevamento di animali: attività mista,false
+0321,acquacoltura marina,false
+139,altre industrie tessili,false
+41,costruzione di edifici,false
+P,istruzione,true
+00160,"sanità e altri servizi alle famiglie e alle imprese (q, s)",false
+01610,attività di supporto alla produzione vegetale,false
+0322,acquacoltura in acque dolci,false
+141,"confezione di articoli di abbigliamento, escluso abbigliamento in pelliccia",false
+42,ingegneria civile,false
+Q,sanità e assistenza sociale,true
+QA,assistenza sanitaria,false
+QB,assistenza sociale residenziale e non,false
+00217,"altri servizi (l,n,r,s,t)",false
+0028,altri servizi collettivi e personali (r-u),false
+01620,attività di supporto alla produzione animale (esclusi i servizi veterinari),false
+0510,estrazione di antracite,false
+142,confezione di articoli in pelliccia,false
+43,lavori di costruzione specializzati,false
+00200,"commercio e servizi di trasporto, magazzinaggio, postali, alloggio, ristorazione, comunicazine, bancari, assicurativi e di intermediazione finanziaria (45-47, 49-53, 55-56, 58-60, 61, 64-66, 68)",false
+45_47_X46,commercio al dettaglio (incluso commercio e riparazione di autoveicoli e motocicli),false
+45_46,"commercio all'ingrosso, commercio e riparazione di autoveicoli e motocicli",false
+01630,attività che seguono la raccolta,false
+0520,estrazione di lignite,false
+143,fabbricazione di articoli di maglieria,false
+45,commercio all'ingrosso e al dettaglio e riparazione di autoveicoli e motocicli,false
+R,"attività artistiche, sportive, di intrattenimento e divertimento",true
+01640,lavorazione delle sementi per la semina,false
+0610,estrazione di petrolio greggio,false
+151,"preparazione e concia del cuoio, fabbricazione di articoli da viaggio, borse, pelletteria e selleria, preparazione e tintura di pellicce",false
+46,commercio all'ingrosso (escluso quello di autoveicoli e di motocicli),false
+S,altre attività di servizi,true
+S_T_U,"altre attività di servizi, attività di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze, attività di organizzazioni e organismi extraterritoriali",false
+01700,"caccia, cattura di animali e servizi connessi",false
+0620,estrazione di gas naturale,false
+152,fabbricazione di calzature,false
+47,commercio al dettaglio (escluso quello di autoveicoli e di motocicli),false
+T,"attività di famiglie e convivenze come datori di lavoro per personale domestico, produzione di beni e servizi indifferenziati per uso proprio  da parte di famiglie e convivenze",false
+02100,silvicoltura e altre attività forestali,false
+0710,estrazione di minerali metalliferi ferrosi,false
+161,taglio e piallatura del legno,false
+47_X473,commercio al dettaglio (escluso carburante per autotrazione ed escluso quello di autoveicoli e di motocicli),false
+U,organizzazioni ed organismi extraterritoriali,false
+0093,altre attività (o-u),false
+49_51,"trasporto terrestre, mediante condotte, marittimo e per vie d'acqua, aereo (49-51)",false
+02200,utilizzo di aree forestali,false
+0721,estrazione di minerali di uranio e di torio,false
+162,"fabbricazione di prodotti in legno, sughero, paglia e materiali da intreccio",false
+49,trasporto terrestre e trasporto mediante condotte,false
+02300,raccolta di prodotti selvatici non legnosi,false
+0729,estrazione di altri minerali metalliferi non ferrosi,false
+171,"fabbricazione di pasta-carta, carta e cartone",false
+50,trasporto marittimo e per vie d'acqua,false
+02400,servizi di supporto per la silvicoltura,false
+0811,"estrazione di pietre ornamentali e da costruzione, calcare, pietra da gesso, creta e ardesia",false
+172,fabbricazione di articoli di carta e cartone,false
+51,trasporto aereo,false
+52_53,"magazzinaggio e attività di supporto ai trasporti, servizi postali e attività di corriere (52, 53)",false
+03110,pesca in acque marine e lagunari e servizi connessi,false
+0812,"estrazione di ghiaia e sabbia, estrazione di argille e caolino",false
+181,stampa e servizi connessi alla stampa,false
+52,magazzinaggio e attività di supporto ai trasporti,false
+03120,pesca in acque dolci e servizi connessi,false
+0891,estrazione di minerali per l'industria chimica e per la produzione di fertilizzanti,false
+182,riproduzione di supporti registrati,false
+53,servizi postali e attività di corriere,false
+03210,"acquacoltura in acqua di mare, salmastra o lagunare e servizi connessi",false
+0892,estrazione di torba,false
+191,fabbricazione di prodotti di cokeria,false
+55,alloggio,false
+03220,acquacoltura in acque dolci e servizi connessi,false
+0893,estrazione di sale,false
+192,fabbricazione di prodotti derivanti dalla raffinazione del petrolio,false
+56,attività dei servizi di ristorazione,false
+58_63,servizi di informazione e comunicazione (58-63),false
+58_60,"attività editoriali, di produzione cinematografica, di video e programmi televisivi, di registrazioni musicali e sonore, di programmazione e trasmissione (58-60)",false
+05100,estrazione di antracite e litantrace,false
+0899,estrazione di altri minerali da cave e miniere nca,false
+201,"fabbricazione di prodotti chimici di base, di fertilizzanti e composti azotati, di materie plastiche e gomma sintetica in forme primarie",false
+58,attività editoriali,false
+05200,estrazione di lignite,false
+0910,attività di supporto all'estrazione di petrolio e di gas naturale,false
+202,fabbricazione di agrofarmaci e di altri prodotti chimici per l'agricoltura,false
+59,"attività di produzione cinematografica, di video e di programmi televisivi, di registrazioni musicali e sonore",false
+06100,estrazione di petrolio greggio,false
+0990,attività di supporto per l'estrazione da cave e miniere di altri minerali,false
+203,"fabbricazione di pitture, vernici e smalti, inchiostri da stampa e adesivi sintetici",false
+60,attività di programmazione e trasmissione,false
+06200,estrazione di gas naturale,false
+1011,"lavorazione e conservazione di carne, escluso volatili",false
+204,"fabbricazione di saponi e detergenti, di prodotti per la pulizia e la lucidatura, di profumi e cosmetici",false
+61,telecomunicazioni,false
+00210,"produzione di software, e servizi informatici, attività legali e di contabilità, attività di supporto per le funzioni d'ufficio e altri servizi di supporto alle imprese (62, 63, 69, 82)",false
+07100,estrazione di minerali metalliferi ferrosi,false
+1012,lavorazione e conservazione di carne di volatili,false
+205,fabbricazione di altri prodotti chimici,false
+62,"produzione di software, consulenza informatica e attività connesse",false
+07210,estrazione di minerali di uranio e di torio,false
+1013,"produzione di prodotti a base di carne, inclusa la carne di volatili",false
+206,fabbricazione di fibre sintetiche e artificiali,false
+63,attività dei servizi d'informazione e altri servizi informatici,false
+07290,estrazione di altri minerali metalliferi non ferrosi,false
+1020,"lavorazione e conservazione di pesce, crostacei e molluschi",false
+211,fabbricazione di prodotti farmaceutici di base,false
+64,attività di servizi finanziari (escluse le assicurazioni e i fondi pensione),false
+08110,"estrazione di pietre ornamentali e da costruzione, calcare, pietra da gesso, creta e ardesia",false
+1031,lavorazione e conservazione delle patate,false
+212,fabbricazione di medicinali e preparati farmaceutici,false
+65,"assicurazioni, riassicurazioni e fondi pensione (escluse le assicurazioni sociali obbligatorie)",false
+08120,"estrazione di ghiaia, sabbia, estrazione di argille e caolino",false
+1032,produzione di succhi di frutta e di ortaggi,false
+221,fabbricazione di articoli in gomma,false
+66,attività ausiliarie dei servizi finanziari e delle attività assicurative,false
+08910,estrazione di minerali per l'industria chimica e per la produzione di fertilizzanti,false
+1039,altra lavorazione e conservazione di frutta e di ortaggi,false
+222,fabbricazione di articoli in materie plastiche,false
+68,attività immobiliari,false
+691_692-702,"Attività legali, contabilità, consulenza gestionale (691, 692, 702)",false
+08920,estrazione di torba,false
+1041,produzione di oli e grassi,false
+231,fabbricazione di vetro e di prodotti in vetro,false
+69,attività legali e contabilità,false
+08930,estrazione di sale,false
+1042,produzione di margarina e di grassi commestibili simili,false
+232,fabbricazione di prodotti refrattari,false
+70,attività di direzione aziendale e di consulenza gestionale,false
+08990,estrazione di altri minerali nca,false
+1051,"industria lattiero-casearia, trattamento igienico, conservazione del latte",false
+233,fabbricazione di materiali da costruzione in terracotta,false
+71,"attività degli studi di architettura e d'ingegneria, collaudi ed analisi tecniche",false
+09100,attività di supporto all'estrazione di petrolio e di gas naturale,false
+1052,produzione di gelati,false
+234,fabbricazione di altri prodotti in porcellana e in ceramica,false
+72,ricerca scientifica e sviluppo,false
+09900,attività di supporto per l'estrazione da cave e miniere di altri minerali,false
+1061,lavorazione delle granaglie,false
+235,"produzione di cemento, calce e gesso",false
+73,pubblicità e ricerche di mercato,false
+10110,produzione di carne non di volatili e di prodotti della macellazione (attività dei mattatoi),false
+1062,produzione di amidi e di prodotti amidacei,false
+236,"fabbricazione di prodotti in calcestruzzo, cemento e gesso",false
+74,"altre attività professionali, scientifiche e tecniche",false
+10120,produzione di carne di volatili e prodotti della loro macellazione (attività dei mattatoi),false
+1071,"produzione di pane, prodotti di pasticceria freschi",false
+237,"taglio, modellatura e finitura di pietre",false
+75,servizi veterinari,false
+10130,produzione di prodotti a base di carne (compresa la carne di volatili),false
+1072,"produzione di fette biscottate e di biscotti, produzione di prodotti di pasticceria conservati",false
+239,fabbricazione di prodotti abrasivi e di prodotti in minerali non metalliferi nca,false
+77,attività di noleggio e leasing operativo,false
+10200,"lavorazione e conservazione di pesce, crostacei e molluschi mediante surgelamento, salatura eccetera",false
+1073,"produzione di paste alimentari, di cuscus e di prodotti farinacei simili",false
+241,siderurgia,false
+78,"attività di ricerca, selezione, fornitura di personale",false
+10310,lavorazione e conservazione delle patate,false
+1081,produzione di zucchero,false
+242,"fabbricazione di tubi, condotti, profilati cavi e relativi accessori in acciaio esclusi quelli in acciaio colato",false
+79,"attività dei servizi delle agenzie di viaggio, dei tour operator e servizi di prenotazione e attività connesse",false
+10320,produzione di succhi di frutta e di ortaggi,false
+1082,"produzione di cacao, cioccolato, caramelle e confetterie",false
+243,fabbricazione di altri prodotti della prima trasformazione dell'acciaio,false
+80,servizi di vigilanza e investigazione,false
+10390,lavorazione e conservazione di frutta e di ortaggi (esclusi i succhi di frutta e di ortaggi),false
+1083,lavorazione del tè e del caffè,false
+244,"produzione di metalli di base preziosi e altri metalli non ferrosi, trattamento dei combustibili nucleari",false
+81,attività di servizi per edifici e paesaggio,false
+10411,produzione di olio di oliva da olive prevalentemente non di produzione propria,false
+1084,produzione di condimenti e spezie,false
+245,fonderie,false
+82,attività di supporto per le funzioni d'ufficio e altri servizi di supporto alle imprese,false
+84_99,"amministrazione pubblica e difesa, assicurazione sociale obbligatoria, istruzione, assistenza sanitaria, altri servizi (84-99)",false
+10412,produzione di olio raffinato o grezzo da semi oleosi o frutti oleosi prevalentemente non di produzione propria,false
+1085,produzione di pasti e piatti preparati,false
+251,fabbricazione di elementi da costruzione in metallo,false
+84,"amministrazione pubblica e difesa, assicurazione sociale obbligatoria",false
+10413,produzione di oli e grassi animali grezzi o raffinati,false
+1086,produzione di preparati omogeneizzati e di alimenti dietetici,false
+252,"fabbricazione di cisterne, serbatoi, radiatori e contenitori in metallo",false
+85,istruzione,false
+10420,produzione di margarina e di grassi commestibili simili,false
+1089,produzione di altri prodotti alimentari nca,false
+253,"fabbricazione di generatori di vapore, esclusi i contenitori in metallo per caldaie per il riscaldamento centrale ad acqua calda",false
+86,assistenza sanitaria,false
+10511,trattamento igienico del latte,false
+1091,produzione di mangimi per l'alimentazione degli animali da allevamento,false
+254,fabbricazione di armi e munizioni,false
+87,servizi di assistenza sociale residenziale,false
+10512,produzione dei derivati del latte,false
+1092,produzione di prodotti per l'alimentazione degli animali da compagnia,false
+255,"fucinatura, imbutitura, stampaggio e profilatura dei metalli, metallurgia delle polveri",false
+88,assistenza sociale non residenziale,false
+10520,produzione di gelati senza vendita diretta al pubblico,false
+1101,"distillazione, rettifica e miscelatura degli alcolici",false
+256,"trattamento e rivestimento dei metalli, lavori di meccanica generale",false
+90,"attività creative, artistiche e di intrattenimento",false
+10611,molitura del frumento,false
+1102,produzione di vini da uve,false
+257,"fabbricazione di articoli di coltelleria, utensili e oggetti di ferramenta",false
+91,"attività di biblioteche, archivi, musei ed altre attività culturali",false
+10612,molitura di altri cereali,false
+1103,produzione di sidro e di altri vini a base di frutta,false
+259,fabbricazione di altri prodotti in metallo,false
+92,"attività riguardanti le lotterie, le scommesse, le case da gioco",false
+10613,lavorazione del riso,false
+1104,produzione di altre bevande fermentate non distillate,false
+261,fabbricazione di componenti elettronici e schede elettroniche,false
+93,"attività sportive, di intrattenimento e di divertimento",false
+10614,altre lavorazioni di semi e granaglie,false
+1105,produzione di birra,false
+262,fabbricazione di computer e unità periferiche,false
+94,attività di organizzazioni associative,false
+263_264,fabbricazione di apparecchiature per le telecomunicazioni e di prodotti di elettronica di consumo audio e video (263-264),false
+10620,produzione di amidi e di prodotti amidacei (compresa produzione di olio di mais),false
+1106,produzione di malto,false
+263,fabbricazione di apparecchiature per le telecomunicazioni,false
+95,riparazione di computer e di beni per uso personale e per la casa,false
+10711,produzione di prodotti di panetteria freschi,false
+1107,"industria delle bibite analcoliche, delle acque minerali e di altre acque in bottiglia",false
+264,fabbricazione di prodotti di elettronica di consumo audio e video,false
+96,altre attività di servizi per la persona,false
+265_268-325,"fabbricazione di strumenti e apparecchi di misurazione, prova e navigazione, orologi, supporti magnetici ed ottici, e di strumenti e forniture mediche e dentistiche (265-268, 325)",false
+10712,produzione di pasticceria fresca,false
+1200,industria del tabacco,false
+265,"fabbricazione di strumenti e apparecchi di misurazione, prova e navigazione, orologi",false
+97,attività di famiglie e convivenze come datori di lavoro per personale domestico,false
+10720,"produzione di fette biscottate, biscotti, prodotti di pasticceria conservati",false
+1310,preparazione e filatura di fibre tessili,false
+266,"fabbricazione di strumenti per irradiazione, apparecchiature elettromedicali ed elettroterapeutiche",false
+98,produzione di beni e servizi indifferenziati per uso proprio da parte di famiglie e convivenze,false
+10730,"produzione di paste alimentari, di cuscus e di prodotti farinacei simili",false
+1320,tessitura,false
+267,fabbricazione di strumenti ottici e attrezzature fotografiche,false
+99,organizzazioni ed organismi extraterritoriali,false
+10810,produzione di zucchero,false
+1330,finissaggio dei tessili,false
+268,fabbricazione di supporti magnetici ed ottici,false
+10820,"produzione di cacao in polvere, cioccolato, caramelle e confetterie",false
+1391,fabbricazione di tessuti a maglia,false
+271,"fabbricazione di motori, generatori e trasformatori elettrici e di apparecchiature per la distribuzione e il controllo dell'elettricità",false
+10830,lavorazione del tè e del caffè,false
+1392,"confezionamento di articoli tessili, esclusi gli articoli di abbigliamento",false
+272,fabbricazione di batterie di pile ed accumulatori elettrici,false
+10840,produzione di condimenti e spezie,false
+1393,fabbricazione di tappeti e moquette,false
+273,fabbricazione di cablaggi e apparecchiature di cablaggio,false
+10850,"produzione di pasti e piatti pronti (preparati, conditi, cucinati e confezionati)",false
+1394,"fabbricazione di spago, corde, funi e reti",false
+274,fabbricazione di apparecchiature per illuminazione,false
+10860,produzione di preparati omogeneizzati e di alimenti dietetici,false
+1395,"fabbricazione di tessuti non tessuti e di articoli in tali materie, esclusi gli articoli di abbigliamento",false
+275,fabbricazione di apparecchi per uso domestico,false
+10890,produzione di altri prodotti alimentari nca,false
+1396,fabbricazione di articoli tessili tecnici ed industriali,false
+279,fabbricazione di altre apparecchiature elettriche,false
+10910,produzione di mangimi per l'alimentazione degli animali da allevamento,false
+1399,fabbricazione di altri prodotti tessili nca,false
+281,fabbricazione di macchine di impiego generale,false
+10920,produzione di prodotti per l'alimentazione degli animali da compagnia,false
+1411,confezione di abbigliamento in pelle,false
+282,fabbricazione di altre macchine di impiego generale,false
+11010,"distillazione, rettifica e miscelatura degli alcolici",false
+1412,confezione di indumenti da lavoro,false
+283,fabbricazione di macchine per l'agricoltura e la silvicoltura,false
+11021,produzione di vini da tavola e v.p.q.r.d.,false
+1413,confezione di altro abbigliamento esterno,false
+284,fabbricazione di macchine per la formatura dei metalli e di altre macchine utensili,false
+11022,produzione di vino spumante e altri vini speciali,false
+1414,confezione di biancheria intima,false
+289,fabbricazione di altre macchine per impieghi speciali,false
+11030,produzione di sidro e di altri vini a base di frutta,false
+1419,confezione di altri articoli di abbigliamento ed accessori,false
+291,fabbricazione di autoveicoli,false
+11040,produzione di altre bevande fermentate non distillate,false
+1420,confezione di articoli in pelliccia,false
+292,"fabbricazione di carrozzerie per autoveicoli, rimorchi e semirimorchi",false
+11050,produzione di birra,false
+1431,fabbricazione di articoli di calzetteria in maglia,false
+293,fabbricazione di parti ed accessori per autoveicoli e loro motori,false
+11060,produzione di malto,false
+1439,fabbricazione di altri articoli di maglieria,false
+301,costruzione di navi e imbarcazioni,false
+11070,"industria delle bibite analcoliche, delle acque minerali e di altre acque in bottiglia",false
+1511,"preparazione e concia del cuoio, preparazione e tintura di pellicce",false
+302,costruzione di locomotive e di materiale rotabile ferro-tranviario,false
+12000,industria del tabacco,false
+1512,"fabbricazione di articoli da viaggio, borse e simili, pelletteria e selleria",false
+303,"fabbricazione di aeromobili, di veicoli spaziali e dei relativi dispositivi",false
+13100,preparazione e filatura di fibre tessili,false
+1520,fabbricazione di calzature,false
+304,fabbricazione di veicoli militari da combattimento,false
+13200,tessitura,false
+1610,taglio e piallatura del legno,false
+309,fabbricazione di mezzi di trasporto nca,false
+13300,finissaggio dei tessili,false
+1621,fabbricazione di fogli da impiallacciatura e di pannelli a base di legno,false
+310,fabbricazione di mobili,false
+13910,fabbricazione di tessuti a maglia,false
+1622,fabbricazione di pavimenti in parquet assemblato,false
+321,"fabbricazione di gioielleria, bigiotteria e articoli connessi, lavorazione delle pietre preziose",false
+13921,"confezionamento di biancheria da letto, da tavola e per l'arredamento",false
+1623,fabbricazione di altri prodotti di carpenteria in legno e falegnameria per l'edilizia,false
+322,fabbricazione di strumenti musicali,false
+13922,fabbricazione di articoli in materie tessili nca,false
+1624,fabbricazione di imballaggi in legno,false
+323,fabbricazione di articoli sportivi,false
+13930,fabbricazione di tappeti e moquette,false
+1629,"fabbricazione di altri prodotti in legno, sughero, paglia e materiali da intreccio",false
+324,fabbricazione di giochi e giocattoli,false
+13940,"fabbricazione di spago, corde, funi e reti",false
+1711,fabbricazione di pasta-carta,false
+325,fabbricazione di strumenti e forniture mediche e dentistiche,false
+13950,"fabbricazione di tessuti non tessuti e di articoli in tali materie, esclusi gli articoli di abbigliamento",false
+1712,fabbricazione di carta e cartone,false
+329,industrie manifatturiere nca,false
+13961,"fabbricazione di nastri, etichette e passamanerie di fibre tessili",false
+1721,fabbricazione di carta e cartone ondulato e di imballaggi di carta e cartone,false
+331,"riparazione e manutenzione di prodotti in metallo, macchine ed apparecchiature",false
+13962,fabbricazione di articoli tessili tecnici ed industriali,false
+1722,fabbricazione di prodotti igienico-sanitari e per uso domestico in carta e ovatta di cellulosa,false
+332,installazione di macchine ed apparecchiature industriali,false
+13991,fabbricazione di ricami,false
+1723,fabbricazione di prodotti cartotecnici,false
+351,"produzione, trasmissione e distribuzione di energia elettrica",false
+13992,"fabbricazione di tulle, pizzi e merletti",false
+1724,fabbricazione di carta da parati,false
+352,"produzione di gas, distribuzione di combustibili gassosi mediante condotte",false
+13999,fabbricazione di feltro e articoli tessili diversi,false
+1729,fabbricazione di altri articoli di carta e cartone,false
+353,fornitura di vapore e aria condizionata,false
+14110,confezione di abbigliamento in pelle e similpelle,false
+1811,stampa di giornali,false
+360,"raccolta, trattamento e fornitura di acqua",false
+14120,"confezione di camici, divise ed altri indumenti da lavoro",false
+1812,altra stampa,false
+370,gestione delle reti fognarie,false
+14131,confezione in serie di abbigliamento esterno,false
+1813,lavorazioni preliminari alla stampa e ai media,false
+381,raccolta dei rifiuti,false
+14132,sartoria e confezione su misura di abbigliamento esterno,false
+1814,legatoria e servizi connessi,false
+382,trattamento e smaltimento dei rifiuti,false
+14140,"confezione di camice, t-shirt, corsetteria e altra biancheria intima",false
+1820,riproduzione di supporti registrati,false
+383,recupero dei materiali,false
+14191,confezioni varie e accessori per l'abbigliamento,false
+1910,fabbricazione di prodotti di cokeria,false
+390,attività di risanamento e altri servizi di gestione dei rifiuti,false
+14192,confezioni di abbigliamento sportivo o indumenti particolari,false
+1920,fabbricazione di prodotti derivanti dalla raffinazione del petrolio,false
+411,sviluppo di progetti immobiliari,false
+14200,confezione di articoli in pelliccia,false
+2011,fabbricazione di gas industriali,false
+412,costruzione di edifici residenziali e non residenziali,false
+14310,fabbricazione di articoli di calzetteria in maglia,false
+2012,fabbricazione di coloranti e pigmenti,false
+421,costruzione di strade e ferrovie,false
+14390,"fabbricazione di pullover, cardigan ed altri articoli simili a maglia",false
+2013,fabbricazione di altri prodotti chimici di base inorganici,false
+422,costruzione di opere di pubblica utilità,false
+15110,"preparazione e concia del cuoio e pelle, preparazione e tintura di pellicce",false
+2014,fabbricazione di altri prodotti chimici di base organici,false
+429,costruzione di altre opere di ingegneria civile,false
+15120,"fabbricazione di articoli da viaggio, borse e simili, pelletteria e selleria",false
+2015,fabbricazione di fertilizzanti e composti azotati,false
+431,demolizione e preparazione del cantiere edile,false
+15201,fabbricazione di calzature,false
+2016,fabbricazione di materie plastiche in forme primarie,false
+432,"installazione di impianti elettrici, idraulici ed altri lavori di costruzione e installazione",false
+15202,fabbricazione di parti in cuoio per calzature,false
+2017,fabbricazione di gomma sintetica in forme primarie,false
+433,completamento e finitura di edifici,false
+16100,taglio e piallatura del legno,false
+2020,fabbricazione di agrofarmaci e di altri prodotti chimici per l'agricoltura,false
+439,altri lavori specializzati di costruzione,false
+16210,fabbricazione di fogli da impiallacciatura e di pannelli a base di legno,false
+2030,"fabbricazione di pitture, vernici e smalti, inchiostri da stampa e adesivi sintetici",false
+451,commercio di autoveicoli,false
+16220,fabbricazione di pavimenti in parquet assemblato,false
+2041,"fabbricazione di saponi e detergenti, di prodotti per la pulizia e la lucidatura",false
+452,manutenzione e riparazione di autoveicoli,false
+16231,fabbricazione di porte e finestre in legno (escluse porte blindate),false
+2042,fabbricazione di profumi e cosmetici,false
+453,commercio di parti e accessori di autoveicoli,false
+16232,fabbricazione di altri elementi in legno e di falegnameria per l'edilizia,false
+2051,fabbricazione di esplosivi,false
+454,"commercio, manutenzione e riparazione di motocicli e relative parti ed accessori",false
+16240,fabbricazione di imballaggi in legno,false
+2052,fabbricazione di colle,false
+461,intermediari del commercio,false
+16291,fabbricazione di prodotti vari in legno (esclusi i mobili),false
+2053,fabbricazione di oli essenziali,false
+462,commercio all'ingrosso di materie prime agricole e di animali vivi,false
+16292,fabbricazione dei prodotti della lavorazione del sughero,false
+2059,fabbricazione di altri prodotti chimici nca,false
+463,"commercio all'ingrosso di prodotti alimentari, bevande e prodotti del tabacco",false
+16293,fabbricazione di articoli in paglia e materiali da intreccio,false
+2060,fabbricazione di fibre sintetiche e artificiali,false
+464,commercio all'ingrosso di beni di consumo finale,false
+16294,laboratori di corniciai,false
+2110,fabbricazione di prodotti farmaceutici di base,false
+465,commercio all'ingrosso di apparecchiature ict,false
+17110,fabbricazione di pasta-carta,false
+2120,fabbricazione di medicinali e preparati farmaceutici,false
+466,"commercio all'ingrosso di altri macchinari, attrezzature e forniture",false
+17120,fabbricazione di carta e cartone,false
+2211,"fabbricazione di pneumatici e camere d'aria, rigenerazione e ricostruzione di pneumatici",false
+467,commercio all'ingrosso specializzato di altri prodotti,false
+17210,fabbricazione di carta e cartone ondulato e di imballaggi di carta e cartone (esclusi quelli in carta pressata),false
+2219,fabbricazione di altri prodotti in gomma,false
+469,commercio all'ingrosso non specializzato,false
+17220,fabbricazione di prodotti igienico-sanitario e per uso domestico in carta e ovatta di cellullosa,false
+2221,"fabbricazione di lastre, fogli, tubi e profilati in materie plastiche",false
+471,commercio al dettaglio in esercizi non specializzati,false
+17230,fabbricazione di prodotti cartotecnici,false
+2222,fabbricazione di imballaggi in materie plastiche,false
+472,"commercio al dettaglio di prodotti alimentari, bevande e tabacco in esercizi specializzati",false
+17240,fabbricazione di carta da parati,false
+2223,fabbricazione di articoli in plastica per l'edilizia,false
+473,commercio al dettaglio di carburante per autotrazione in esercizi specializzati,false
+17290,fabbricazione di altri articoli di carta e cartone,false
+2229,fabbricazione di altri articoli in materie plastiche,false
+474,commercio al dettaglio di apparecchiature informatiche e per le telecomunicazioni (ict) in esercizi specializzati,false
+18110,stampa di giornali,false
+2311,fabbricazione di vetro piano,false
+475,commercio al dettaglio di altri prodotti per uso domestico in esercizi specializzati,false
+18120,altra stampa,false
+2312,lavorazione e trasformazione del vetro piano,false
+476,commercio al dettaglio di articoli culturali e ricreativi in esercizi specializzati,false
+18130,lavorazioni preliminari alla stampa e ai media,false
+2313,fabbricazione di vetro cavo,false
+477,commercio al dettaglio di altri prodotti in esercizi specializzati,false
+18140,legatoria e servizi connessi,false
+2314,fabbricazione di fibre di vetro,false
+478,commercio al dettaglio ambulante,false
+18200,riproduzione di supporti registrati,false
+2319,"fabbricazione e lavorazione di altro vetro, incluso vetro per usi tecnici, lavorazione di vetro cavo",false
+479,"commercio al dettaglio al di fuori di negozi, banchi e mercati",false
+19100,fabbricazione di prodotti di cokeria,false
+2320,fabbricazione di prodotti refrattari,false
+491,trasporto ferroviario di passeggeri (interurbano),false
+19201,raffinerie di petrolio,false
+2331,fabbricazione di piastrelle in ceramica per pavimenti e rivestimenti,false
+492,trasporto ferroviario di merci,false
+19202,preparazione o miscelazione di derivati del petrolio (esclusa la petrolchimica),false
+2332,"fabbricazione di mattoni, tegole ed altri prodotti per l'edilizia in terracotta",false
+493,altri trasporti terrestri di passeggeri,false
+19203,miscelazione di gas petroliferi liquefatti (gpl) e loro imbottigliamento,false
+2341,fabbricazione di prodotti in ceramica per usi domestici e ornamentali,false
+494,trasporto di merci su strada e servizi di trasloco,false
+19204,"fabbricazione di emulsioni di bitume, di catrame e di leganti per uso stradale",false
+2342,fabbricazione di articoli sanitari in ceramica,false
+495,trasporto mediante condotte,false
+19209,fabbricazione di altri prodotti petroliferi raffinati,false
+2343,fabbricazione di isolatori e di pezzi isolanti in ceramica,false
+501,trasporto marittimo e costiero di passeggeri,false
+20110,fabbricazione di gas industriali,false
+2344,fabbricazione di altri prodotti in ceramica per uso tecnico e industriale,false
+502,trasporto marittimo e costiero di merci,false
+20120,fabbricazione di coloranti e pigmenti,false
+2349,fabbricazione di altri prodotti in ceramica,false
+503,trasporto di passeggeri per vie d'acqua interne,false
+20130,fabbricazione di altri prodotti chimici di base inorganici,false
+2351,produzione di cemento,false
+504,trasporto di merci per vie d'acqua interne,false
+20140,fabbricazione di altri prodotti chimici di base organici,false
+2352,produzione di calce e gesso,false
+511,trasporto aereo di passeggeri,false
+20150,"fabbricazione di fertilizzanti e composti azotati, esclusa la fabbricazione di compost",false
+2361,fabbricazione di prodotti in calcestruzzo per l'edilizia,false
+512,trasporto aereo di merci e trasporto spaziale,false
+20160,fabbricazione di materie plastiche in forme primarie,false
+2362,fabbricazione di prodotti in gesso per l'edilizia,false
+521,magazzinaggio e custodia,false
+20170,fabbricazione di gomma sintetica in forme primarie,false
+2363,produzione di calcestruzzo pronto per l'uso,false
+522,attività di supporto ai trasporti,false
+20200,"fabbricazione di agrofarmaci e di altri prodotti chimici per l'agricoltura, esclusi i concimi",false
+2364,produzione di malta,false
+531,attività postali con obbligo di servizio universale,false
+20300,"fabbricazione di pitture, vernici e smalti, inchiostri da stampa e adesivi sintetici",false
+2365,fabbricazione di prodotti in fibrocemento,false
+532,altre attività postali e di corriere,false
+551_553,"alberghi e strutture simili, alloggi per vacanze e altre strutture per brevi soggiorni, aree di campeggio e aree attrezzate per camper e roulotte",false
+20411,"fabbricazione di saponi, detergenti e di agenti organici tensioattivi, esclusi i prodotti per toletta",false
+2369,"fabbricazione di altri prodotti in calcestruzzo, gesso e cemento",false
+551,alberghi e strutture simili,false
+552_553,"alloggi per vacanze e altre strutture per brevi soggiorni, aree di campeggio e aree attrezzate per camper e roulotte",false
+20412,fabbricazione di specialità chimiche per uso domestico e per manutenzione,false
+2370,"taglio, modellatura e finitura di pietre",false
+552,alloggi per vacanze e altre strutture per brevi soggiorni,false
+20420,"fabbricazione di prodotti per toletta: profumi, cosmetici, saponi e simili",false
+2391,produzione di prodotti abrasivi,false
+553,aree di campeggio e aree attrezzate per camper e roulotte,false
+20510,fabbricazione di esplosivi,false
+2399,fabbricazione di altri prodotti in minerali non metalliferi nca,false
+559,altri alloggi,false
+20520,fabbricazione di colle,false
+2410,siderurgia,false
+561,ristoranti e attività di ristorazione mobile,false
+20530,fabbricazione di oli essenziali,false
+2420,"fabbricazione di tubi, condotti, profilati cavi e relativi accessori in acciaio, esclusi quelli in acciaio colato",false
+562,fornitura di pasti preparati (catering) e altri servizi di ristorazione,false
+20591,fabbricazione di prodotti chimici per uso fotografico,false
+2431,stiratura a freddo di barre,false
+563,bar e altri esercizi simili senza cucina,false
+20592,fabbricazione di prodotti chimici organici ottenuti da prodotti di base derivati da processi di fermentazione o da materie prime vegetali,false
+2432,laminazione a freddo di nastri,false
+581,"edizione di libri, periodici ed altre attività editoriali",false
+20593,trattamento chimico degli acidi grassi,false
+2433,profilatura mediante formatura o piegatura a freddo,false
+582,edizione di software,false
+20594,fabbricazione di prodotti chimici vari per uso industriale (compresi i preparati antidetonanti e antigelo),false
+2434,trafilatura a freddo,false
+591,"attività di produzione cinematografica, di video e di programmi televisivi",false
+20595,fabbricazione di prodotti chimici impiegati per ufficio e per il consumo non industriale,false
+2441,produzione di metalli preziosi,false
+592,attività di registrazione sonora e di editoria musicale,false
+20596,fabbricazione di prodotti ausiliari per le industrie tessili e del cuoio,false
+2442,produzione di alluminio,false
+601,trasmissioni radiofoniche,false
+20597,"fabbricazione di prodotti elettrochimici (esclusa produzione di cloro, soda e potassa) ed elettrotermici",false
+2443,"produzione di piombo, zinco e stagno e semilavorati",false
+602,attività di programmazione e trasmissioni televisive,false
+20599,fabbricazione di altri prodotti chimici nca,false
+2444,produzione di rame,false
+611,telecomunicazioni fisse,false
+20600,fabbricazione di fibre sintetiche e artificiali,false
+2445,produzione di altri metalli non ferrosi,false
+612,telecomunicazioni mobili,false
+21100,fabbricazione di prodotti farmaceutici di base,false
+2446,trattamento dei combustibili nucleari,false
+613,telecomunicazioni satellitari,false
+21200,fabbricazione di medicinali e preparati farmaceutici,false
+2451,fusione di ghisa,false
+619,altre attività di telecomunicazione,false
+22111,fabbricazione di pneumatici e di camere d'aria,false
+2452,fusione di acciaio,false
+620,"produzione di software, consulenza informatica e attività connesse",false
+22112,rigenerazione e ricostruzione di pneumatici,false
+2453,fusione di metalli leggeri,false
+631,"elaborazione dei dati, hosting e attività connesse, portali web",false
+22190,fabbricazione di altri prodotti in gomma,false
+2454,fusione di altri metalli non ferrosi,false
+639,altre attività dei servizi d'informazione,false
+22210,"fabbricazione di lastre, fogli, tubi e profilati in materie plastiche",false
+2511,fabbricazione di strutture metalliche e di parti di strutture,false
+641,intermediazione monetaria,false
+22220,fabbricazione di imballaggi in materie plastiche,false
+2512,fabbricazione di porte e finestre in metallo,false
+642,attività delle società di partecipazione (holding),false
+22230,fabbricazione di articoli in plastica per l'edilizia,false
+2521,fabbricazione di radiatori e contenitori in metallo per caldaie per il riscaldamento centrale,false
+643,"società fiduciarie, fondi e altre società simili",false
+22290,fabbricazione di altri articoli in materie plastiche,false
+2529,"fabbricazione di altre cisterne, serbatoi e contenitori in metallo",false
+649,altre attività di servizi finanziari (escluse le assicurazioni e i fondi pensione),false
+23110,fabbricazione di vetro piano,false
+2530,"fabbricazione di generatori di vapore, esclusi i contenitori in metallo per caldaie per il riscaldamento centrale ad acqua calda",false
+651,assicurazioni,false
+23120,lavorazione e trasformazione del vetro piano,false
+2540,fabbricazione di armi e munizioni,false
+652,riassicurazioni,false
+23130,fabbricazione di vetro cavo,false
+2550,"fucinatura, imbutitura, stampaggio e profilatura dei metalli, metallurgia delle polveri",false
+653,fondi pensione,false
+23140,fabbricazione di fibre di vetro,false
+2561,trattamento e rivestimento dei metalli,false
+661,"attività ausiliarie dei servizi finanziari, (escluse le assicurazioni e i fondi pensione)",false
+23191,"fabbricazione di vetrerie per laboratori, per uso igienico, per farmacia",false
+2562,lavori di meccanica generale,false
+662,attività ausiliarie delle assicurazioni e dei fondi pensione,false
+23192,lavorazione di vetro a mano e a soffio artistico,false
+2571,fabbricazione di articoli di coltelleria e posateria,false
+663,attività di gestione dei fondi,false
+23199,fabbricazione di altri prodotti in vetro compresa la vetreria tecnica,false
+2572,fabbricazione di serrature e cerniere,false
+681,compravendita di beni immobili effettuata su beni propri,false
+23200,fabbricazione di prodotti refrattari,false
+2573,fabbricazione di utensileria,false
+682,affitto e gestione di immobili di proprietà o in leasing,false
+23310,fabbricazione di piastrelle in ceramica per pavimenti e rivestimenti,false
+2591,fabbricazione di bidoni in acciaio e di contenitori analoghi,false
+683,attività immobiliari per conto terzi,false
+23320,"fabbricazione di mattoni, tegole ed altri prodotti per l'edilizia in terracotta",false
+2592,fabbricazione di imballaggi leggeri in metallo,false
+691,attività degli studi legali,false
+23410,fabbricazione di prodotti in ceramica per usi domestici e ornamentali,false
+2593,"fabbricazione di prodotti fabbricati con fili metallici, catene e molle",false
+692,"contabilità, controllo e revisione contabile, consulenza in materia fiscale e del lavoro",false
+23420,fabbricazione di articoli sanitari in ceramica,false
+2594,fabbricazione di articoli di bulloneria,false
+701,attività di direzione aziendale,false
+23430,fabbricazione di isolatori e di pezzi isolanti in ceramica,false
+2599,fabbricazione di altri prodotti in metallo nca,false
+702,attività di consulenza gestionale,false
+23440,fabbricazione di altri prodotti in ceramica per uso tecnico e industriale,false
+2611,fabbricazione di componenti elettronici,false
+711,"attività degli studi di architettura, ingegneria ed altri studi tecnici",false
+23490,fabbricazione di altri prodotti in ceramica,false
+2612,fabbricazione di schede elettroniche assemblate,false
+712,collaudi ed analisi tecniche,false
+23510,produzione di cemento,false
+2620,fabbricazione di computer e unità periferiche,false
+721,ricerca e sviluppo sperimentale nel campo delle scienze naturali e dell'ingegneria,false
+23521,produzione di calce,false
+2630,fabbricazione di apparecchiature per le telecomunicazioni,false
+722,ricerca e sviluppo sperimentale nel campo delle scienze sociali e umanistiche,false
+23522,produzione di gesso,false
+2640,fabbricazione di prodotti di elettronica di consumo audio e video,false
+731,pubblicità,false
+23610,fabbricazione di prodotti in calcestruzzo per l'edilizia,false
+2651,"fabbricazione di strumenti e apparecchi di misurazione, prova e navigazione (esclusi quelli ottici)",false
+732,ricerche di mercato e sondaggi di opinione,false
+23620,fabbricazione di prodotti in gesso per l'edilizia,false
+2652,fabbricazione di orologi,false
+741,attività di design specializzate,false
+23630,produzione di calcestruzzo pronto per l'uso,false
+2660,"fabbricazione di strumenti per irradiazione, apparecchiature elettromedicali ed elettroterapeutiche",false
+742,attività fotografiche,false
+23640,produzione di malta,false
+2670,fabbricazione di strumenti ottici e attrezzature fotografiche,false
+743,traduzione e interpretariato,false
+23650,fabbricazione di prodotti in fibrocemento,false
+2680,fabbricazione di supporti magnetici ed ottici,false
+749,"altre attività professionali, scientifiche e tecniche nca",false
+23690,"fabbricazione di altri prodotti in calcestruzzo, gesso e cemento",false
+2711,"fabbricazione di motori, generatori e trasformatori elettrici",false
+750,servizi veterinari,false
+23701,segagione e lavorazione delle pietre e del marmo,false
+2712,fabbricazione di apparecchiature per le reti di distribuzione e il controllo dell'elettricità,false
+771,noleggio di autoveicoli,false
+23702,"lavorazione artistica del marmo e di altre pietre affini, lavori in mosaico",false
+2720,fabbricazione di batterie di pile ed accumulatori elettrici,false
+772,noleggio di beni per uso personale e per la casa,false
+23703,frantumazione di pietre e minerali vari fuori della cava,false
+2731,fabbricazione di cavi a fibra ottica,false
+773,"noleggio di altre macchine, attrezzature e beni materiali",false
+23910,produzione di prodotti abrasivi,false
+2732,fabbricazione di altri fili e cavi elettrici ed elettronici,false
+774,concessione dei diritti di sfruttamento di proprietà intellettuale e prodotti simili (escluse le opere protette dal copyright),false
+23990,fabbricazione di altri prodotti in minerali non metalliferi nca,false
+2733,fabbricazione di attrezzature per cablaggio,false
+781,attività di agenzie di collocamento,false
+24100,"siderurgia - fabbricazione di ferro, acciaio e ferroleghe",false
+2740,fabbricazione di apparecchiature per illuminazione,false
+782,attività delle agenzie di lavoro temporaneo (interinale),false
+24201,fabbricazione di tubi e condotti senza saldatura,false
+2751,fabbricazione di elettrodomestici,false
+783,altre attività di fornitura e gestione di risorse umane,false
+24202,fabbricazione di tubi e condotti saldati e simili,false
+2752,fabbricazione di apparecchi per uso domestico non elettrici,false
+791,attività delle agenzie di viaggio e dei tour operator,false
+24310,stiratura a freddo di barre,false
+2790,fabbricazione di altre apparecchiature elettriche,false
+799,altri servizi di prenotazione e attività connesse,false
+24320,laminazione a freddo di nastri,false
+2811,"fabbricazione di motori e turbine (esclusi i motori per aeromobili, veicoli e motocicli)",false
+801,servizi di vigilanza privata,false
+24330,profilatura mediante formatura o piegatura a freddo,false
+2812,fabbricazione di apparecchiature fluidodinamiche,false
+802,servizi connessi ai sistemi di vigilanza,false
+24340,trafilatura a freddo,false
+2813,fabbricazione di altre pompe e compressori,false
+803,servizi investigativi privati,false
+24410,produzione di metalli preziosi e semilavorati,false
+2814,fabbricazione di altri rubinetti e valvole,false
+811,servizi integrati di gestione agli edifici,false
+24420,produzione di alluminio e semilavorati,false
+2815,"fabbricazione di cuscinetti, ingranaggi e organi di trasmissione, (esclusi quelli idraulici)",false
+812,attività di pulizia e disinfestazione,false
+24430,"produzione di piombo, zinco e stagno e semilavorati",false
+2821,"fabbricazione di forni, bruciatori e sistemi di riscaldamento",false
+813,cura e manutenzione del paesaggio,false
+24440,produzione di rame e semilavorati,false
+2822,fabbricazione di macchine e apparecchi di sollevamento e movimentazione,false
+821,attività di supporto per le funzioni d'ufficio,false
+24450,produzione di altri metalli non ferrosi e semilavorati,false
+2823,fabbricazione di macchine ed attrezzature per ufficio (esclusi computer e unità periferiche),false
+822,attività dei call center,false
+24460,"trattamento dei combustibili nucleari, escluso l'arricchimento di uranio e torio",false
+2824,fabbricazione di utensili portatili a motore,false
+823,organizzazione di convegni e fiere,false
+24510,fusione di ghisa e produzione di tubi e raccordi in ghisa,false
+2825,fabbricazione di attrezzature di uso non domestico per la refrigerazione e la ventilazione,false
+829,servizi di supporto alle imprese nca,false
+84_X843,pubblica amministrazione e difesa (escluso assicurazione sociale obbligatoria),false
+24520,fusione di acciaio,false
+2829,fabbricazione di altre macchine di impiego generale nca,false
+841,"amministrazione pubblica: amministrazione generale, economica e sociale",false
+24530,fusione di metalli leggeri,false
+2830,fabbricazione di macchine per l'agricoltura e la silvicoltura,false
+842,servizi collettivi delle amministrazioni pubbliche,false
+24540,fusione di altri metalli non ferrosi,false
+2841,fabbricazione di macchine utensili per la formatura dei metalli,false
+843,assicurazione sociale obbligatoria,false
+25110,fabbricazione di strutture metalliche e parti assemblate di strutture,false
+2849,fabbricazione di altre macchine utensili,false
+851,istruzione prescolastica,false
+25121,"fabbricazione di porte, finestre e loro telai, imposte e cancelli metallici",false
+2891,fabbricazione di macchine per la metallurgia,false
+852,istruzione primaria,false
+25122,"fabbricazione di strutture metalliche per tende da sole, tende alla veneziana e simili",false
+2892,"fabbricazione di macchine da miniera, cava e cantiere",false
+853,istruzione secondaria,false
+25210,fabbricazione di radiatori e contenitori in metallo per caldaie per il riscaldamento centrale,false
+2893,"fabbricazione di macchine per l'industria alimentare, delle bevande e del tabacco",false
+854,istruzione post-secondaria universitaria e non universitaria,false
+25290,"fabbricazione di cisterne, serbatoi e contenitori in metallo per impieghi di stoccaggio o di produzione",false
+2894,"fabbricazione di macchine per le industrie tessili, dell'abbigliamento e del cuoio (incluse parti e accessori)",false
+855,altri servizi di istruzione,false
+25300,"fabbricazione di generatori di vapore, esclusi i contenitori in metallo per caldaie per il riscaldamento centrale ad acqua calda",false
+2895,fabbricazione di macchine per l'industria della carta e del cartone (incluse parti e accessori),false
+856,attività di supporto all'istruzione,false
+25400,fabbricazione di armi e munizioni,false
+2896,fabbricazione di macchine per l'industria delle materie plastiche e della gomma (incluse parti e accessori),false
+861,servizi ospedalieri,false
+25500,"fucinatura, imbutitura, stampaggio e profilatura dei metalli, metallurgia delle polveri",false
+2899,fabbricazione di altre macchine per impieghi speciali nca (incluse parti e accessori),false
+862,servizi degli studi medici e odontoiatrici,false
+25610,trattamento e rivestimento dei metalli,false
+2910,fabbricazione di autoveicoli,false
+869,altri servizi di assistenza sanitaria,false
+25620,lavori di meccanica generale,false
+2920,"fabbricazione di carrozzerie per autoveicoli, rimorchi e semirimorchi",false
+871,strutture di assistenza infermieristica residenziale,false
+25710,"fabbricazione di articoli di coltelleria, posateria ed armi bianche",false
+2931,fabbricazione di apparecchiature elettriche ed elettroniche per autoveicoli e loro motori,false
+872,"strutture di assistenza residenziale per persone affette da ritardi mentali, disturbi mentali o che abusano di sostanze stupefacenti",false
+25720,fabbricazione di serrature e cerniere e ferramenta simili,false
+2932,fabbricazione di altre parti ed accessori per autoveicoli e loro motori,false
+873,strutture di assistenza residenziale per anziani e disabili,false
+25731,"fabbricazione di utensileria ad azionamento manuale, parti intercambiabili per macchine utensili",false
+3011,costruzione di navi e di strutture galleggianti,false
+879,altre strutture di assistenza sociale residenziale,false
+25732,"fabbricazione di stampi, portastampi, sagome, forme per macchine",false
+3012,costruzione di imbarcazioni da diporto e sportive,false
+881,assistenza sociale non residenziale per anziani e disabili,false
+25910,fabbricazione di bidoni in acciaio e contenitori analoghi per il trasporto e l'imballaggio,false
+3020,costruzione di locomotive e di materiale rotabile ferro-tranviario,false
+889,altre attività di assistenza sociale non residenziale,false
+25920,fabbricazione di imballaggi leggeri in metallo,false
+3030,"fabbricazione di aeromobili, di veicoli spaziali e dei relativi dispositivi",false
+900,"attività creative, artistiche e di intrattenimento",false
+25931,fabbricazione di prodotti fabbricati con fili metallici,false
+3040,fabbricazione di veicoli militari da combattimento,false
+910,"attività di biblioteche, archivi, musei ed altre attività culturali",false
+25932,fabbricazione di molle,false
+3091,fabbricazione di motocicli (inclusi i motori),false
+920,"attività riguardanti le lotterie, le scommesse, le case da gioco",false
+25933,fabbricazione di catene fucinate senza saldatura e stampate,false
+3092,fabbricazione di biciclette e veicoli per invalidi,false
+931,attività sportive,false
+25940,fabbricazione di articoli di bulloneria,false
+3099,fabbricazione di altri mezzi di trasporto nca,false
+932,attività ricreative e di divertimento,false
+25991,"fabbricazione di stoviglie, pentolame, vasellame, attrezzi da cucina e accessori casalinghi non elettrici, articoli metallici per l'arredamento di stanze da bagno",false
+3101,fabbricazione di mobili per ufficio e negozi,false
+941,"attività di organizzazioni economiche, di datori di lavoro e professionali",false
+25992,"fabbricazione di casseforti, forzieri porte metalliche blindate",false
+3102,fabbricazione di mobili per cucina,false
+942,attività dei sindacati di lavoratori dipendenti,false
+25993,"fabbricazione di oggetti in ferro, in rame ed altri metalli",false
+3103,fabbricazione di materassi,false
+949,attività di altre organizzazioni associative,false
+25999,fabbricazione di altri articoli metallici e minuteria metallica,false
+3109,fabbricazione di altri mobili,false
+951,riparazione di computer e di apparecchiature per le comunicazioni,false
+26110,fabbricazione di componenti elettronici,false
+3211,coniazione di monete,false
+952,riparazione di beni per uso personale e per la casa,false
+26120,fabbricazione di schede elettroniche assemblate,false
+3212,fabbricazione di oggetti di gioielleria e oreficeria e articoli connessi,false
+960,altre attività di servizi per la persona,false
+26200,fabbricazione di computer e unità periferiche,false
+3213,fabbricazione di bigiotteria e articoli simili,false
+970,attività di famiglie e convivenze come datori di lavoro per personale domestico,false
+26301,"fabbricazione di apparecchi trasmittenti radiotelevisivi, comprese le telecamere",false
+3220,fabbricazione di strumenti musicali,false
+981,produzione di beni indifferenziati per uso proprio da parte di famiglie e convivenze,false
+26302,fabbricazione di apparecchi elettrici ed elettronici per telecomunicazioni,false
+3230,fabbricazione di articoli sportivi,false
+982,produzione di servizi indifferenziati per uso proprio da parte di famiglie e convivenze,false
+26400,fabbricazione di apparecchi per la riproduzione e registrazione del suono e delle immagini,false
+3240,fabbricazione di giochi e giocattoli,false
+990,organizzazioni ed organismi extraterritoriali,false
+26511,"fabbricazione di strumenti per navigazione, idrologia, geofisica e meteorologia",false
+3250,fabbricazione di strumenti e forniture mediche e dentistiche,false
+26512,"fabbricazione di contatori di elettricità, gas, acqua ed altri liquidi, di bilance analitiche di precisione, di apparecchi di misura e regolazione (compreso parti staccate e accessori)",false
+3291,fabbricazione di scope e spazzole,false
+26520,fabbricazione di orologi,false
+3299,altre industrie manifatturiere nca,false
+26600,"fabbricazione di strumenti per irradiazione, apparecchiature elettromedicali ed elettroterapeutiche",false
+3311,riparazione e manutenzione di prodotti in metallo,false
+26701,"fabbricazione di elementi ottici e strumenti ottici di misura, controllo e precisione",false
+3312,riparazione e manutenzione di macchinari,false
+26702,fabbricazione di apparecchiature fotografiche e cinematografiche,false
+3313,riparazione e manutenzione di apparecchiature elettroniche ed ottiche,false
+26800,fabbricazione di supporti magnetici ed ottici,false
+3314,riparazione e manutenzione di apparecchiature elettriche,false
+27110,"fabbricazione di motori, generatori e trasformatori elettrici",false
+3315,riparazione e manutenzione di navi e imbarcazioni (esclusi i loro motori),false
+27120,fabbricazione di apparecchiature per le reti di distribuzione e il controllo dell'elettricità,false
+3316,riparazione e manutenzione di aeromobili e di veicoli spaziali,false
+27200,fabbricazione di batterie di pile ed accumulatori elettrici,false
+3317,riparazione e manutenzione di locomotive e di materiale rotabile ferro-tranviario (esclusi i loro motori),false
+27310,fabbricazione di cavi a fibra ottica,false
+3319,riparazione di altre apparecchiature,false
+27320,fabbricazione di altri fili e cavi elettrici ed elettronici,false
+3320,installazione di macchine ed apparecchiature industriali,false
+27330,fabbricazione di attrezzature per cablaggio,false
+3511,produzione di energia elettrica,false
+27400,fabbricazione di apparecchiature per illuminazione,false
+3512,trasmissione di energia elettrica,false
+27510,fabbricazione di elettrodomestici,false
+3513,distribuzione di energia elettrica,false
+27520,fabbricazione di apparecchi per uso domestico non elettrici,false
+3514,commercio di energia elettrica,false
+27900,fabbricazione di altre apparecchiature elettriche,false
+3521,produzione di gas,false
+28111,"fabbricazione di motori a combustione interna, compresi parti e accessori (esclusi i motori destinati ai mezzi di trasporto su strada e ad aeromobili)",false
+3522,distribuzione di combustibili gassosi mediante condotte,false
+28112,fabbricazione di turbine e turboalternatori (compresi parti e accessori),false
+3523,commercio di gas distribuito mediante condotte,false
+28120,fabbricazione di apparecchiature fluidodinamiche,false
+3530,fornitura di vapore e aria condizionata,false
+28130,fabbricazione di altre pompe e compressori,false
+3600,"raccolta, trattamento e fornitura di acqua",false
+28140,fabbricazione di altri rubinetti e valvole,false
+3700,gestione delle reti fognarie,false
+28151,"fabbricazione di organi di trasmissione, (esclusi quelli idraulici e quelli per autoveicoli, aeromobili e motocicli)",false
+3811,raccolta di rifiuti non pericolosi,false
+28152,fabbricazione di cuscinetti a sfere,false
+3812,raccolta di rifiuti pericolosi,false
+28211,"fabbricazione di forni, fornaci e bruciatori",false
+3821,trattamento e smaltimento di rifiuti non pericolosi,false
+28212,fabbricazione di caldaie per riscaldamento,false
+3822,trattamento e smaltimento di rifiuti pericolosi,false
+28220,fabbricazione di macchine e apparecchi di sollevamento e movimentazione,false
+3831,demolizione di carcasse e cantieri di demolizione navali,false
+28230,fabbricazione di macchine ed attrezzature per ufficio (esclusi computer e unità periferiche),false
+3832,recupero e cernita di materiali,false
+28240,fabbricazione di utensili portatili a motore,false
+3900,attività di risanamento e altri servizi di gestione dei rifiuti,false
+28250,"fabbricazione di attrezzature di uso non domestico per la refrigerazione e la ventilazione, fabbricazione di condizionatori domestici fissi",false
+4110,sviluppo di progetti immobiliari,false
+28291,fabbricazione di bilance e di macchine automatiche per la vendita e la distribuzione (compresi parti staccate e accessori),false
+4120,costruzione di edifici residenziali e non residenziali,false
+412000_A,costruzione di edifici residenziali,false
+412000_B,costruzione di edifici non residenziali,false
+28292,"fabbricazione di macchine e apparecchi per le industrie chimiche, petrolchimiche e petrolifere (compresi parti e accessori)",false
+4211,costruzione di strade e autostrade,false
+28293,"fabbricazione di macchine automatiche per la dosatura, la confezione e per l'imballaggio (compresi parti e accessori)",false
+4212,costruzione di linee ferroviarie e metropolitane,false
+28299,fabbricazione di macchine di impiego generale ed altro materiale meccanico nca,false
+4213,costruzione di ponti e gallerie,false
+28301,fabbricazione di trattori agricoli,false
+4221,costruzione di opere di pubblica utilità per il trasporto di fluidi,false
+28309,"fabbricazione di altre macchine per l'agricoltura, la silvicoltura e la zootecnia",false
+4222,costruzione di opere di pubblica utilità per l'energia elettrica e le telecomunicazioni,false
+28410,fabbricazione di macchine utensili per la formatura dei metalli (compresi parti e accessori ed escluse le parti intercambiabili),false
+4291,costruzione di opere idrauliche,false
+28490,fabbricazione di altre macchine utensili (compresi parti e accessori),false
+4299,costruzione di altre opere di ingegneria civile nca,false
+28910,fabbricazione di macchine per la metallurgia (compresi parti e accessori),false
+4311,demolizione,false
+28920,"fabbricazione di macchine da miniera, cava e cantiere (compresi parti e accessori)",false
+4312,preparazione del cantiere edile,false
+28930,"fabbricazione di macchine per l'industria alimentare, delle bevande e del tabacco (compresi parti accessori)",false
+4313,trivellazioni e perforazioni,false
+28941,"fabbricazione di macchine tessili, di macchine e di impianti per il trattamento ausiliario dei tessili, di macchine per cucire e per maglieria (compresi parti e accessori)",false
+4321,installazione di impianti elettrici,false
+28942,"fabbricazione di macchine e apparecchi per l'industria delle pelli, del cuoio e delle calzature (compresi parti e accessori)",false
+4322,"installazione di impianti idraulici, di riscaldamento e di condizionamento dell'aria",false
+28943,fabbricazione di apparecchiature e di macchine per lavanderie e stirerie (compresi parti e accessori),false
+4329,altri lavori di costruzione e installazione,false
+28950,fabbricazione di macchine per l'industria della carta e del cartone (compresi parti e accessori),false
+4331,intonacatura,false
+28960,fabbricazione di macchine per l'industria delle materie plastiche e della gomma (compresi parti e accessori),false
+4332,posa in opera di infissi,false
+28991,fabbricazione di macchine per la stampa e la legatoria (compresi parti e accessori),false
+4333,rivestimento di pavimenti e di muri,false
+28992,fabbricazione di robot industriali per usi molteplici (compresi parti e accessori),false
+4334,tinteggiatura e posa in opera di vetri,false
+28993,fabbricazione di apparecchi per istituti di bellezza e centri di benessere,false
+4339,altri lavori di completamento e di finitura degli edifici,false
+28999,fabbricazione di altre macchine per impieghi speciali nca (compresi parti e accessori),false
+4391,realizzazione di coperture,false
+29100,fabbricazione di autoveicoli,false
+4399,altri lavori specializzati di costruzione nca,false
+29200,"fabbricazione di carrozzerie per autoveicoli, rimorchi e semirimorchi",false
+4511,commercio di autovetture e di autoveicoli leggeri,false
+29310,fabbricazione di apparecchiature elettriche ed elettroniche per autoveicoli e loro motori,false
+4519,commercio di altri autoveicoli,false
+29320,fabbricazione di altre parti ed accessori per autoveicoli e loro motori,false
+4520,manutenzione e riparazione di autoveicoli,false
+30110,cantieri navali per costruzioni metalliche e non metalliche,false
+4531,commercio all'ingrosso ed intermediazione di parti e accessori di autoveicoli,false
+30120,costruzione di imbarcazioni da diporto e sportive,false
+4532,commercio al dettaglio di parti e accessori di autoveicoli,false
+30200,"costruzione di materiale rotabile ferroviario, tranviario, filoviario, per metropolitane e per miniere",false
+4540,"commercio, manutenzione e riparazione di motocicli e relative parti ed accessori",false
+30300,"fabbricazione di aeromobili, di veicoli spaziali e dei relativi dispositivi",false
+4611,"intermediari del commercio di materie prime agricole, di animali vivi, di materie prime tessili e di semilavorati",false
+30400,fabbricazione di veicoli militari da combattimento,false
+4612,"intermediari del commercio di combustibili, minerali, metalli e prodotti chimici",false
+30911,fabbricazione di motocicli e motoveicoli (compresi i motori),false
+4613,intermediari del commercio di legname e materiali da costruzione,false
+30912,fabbricazione di accessori e pezzi staccati per motocicli e ciclomotori,false
+4614,"intermediari del commercio di macchinari, impianti industriali, navi e aeromobili",false
+30921,fabbricazione e montaggio di biciclette (compresi parti e accessori),false
+4615,"intermediari del commercio di mobili, articoli per la casa e ferramenta",false
+30922,fabbricazione di parti ed accessori per biciclette,false
+4616,"intermediari del commercio di prodotti tessili, abbigliamento, pellicce, calzature e articoli in pelle",false
+30923,fabbricazione di veicoli per invalidi (compresi parti e accessori),false
+4617,"intermediari del commercio di prodotti alimentari, bevande e tabacco",false
+30924,fabbricazione di carrozzine e passeggini per neonati,false
+4618,intermediari del commercio specializzato in altri prodotti,false
+30990,fabbricazione di veicoli a trazione manuale o animale,false
+4619,intermediari del commercio di vari prodotti senza prevalenza di alcuno,false
+31011,fabbricazione di sedie e poltrone per uffici e negozi,false
+4621,"commercio all'ingrosso di cereali, tabacco grezzo, sementi e alimenti per il bestiame (mangimi)",false
+31012,fabbricazione di mobili per uffici e negozi,false
+4622,commercio all'ingrosso di fiori e piante,false
+31020,fabbricazione di mobili per cucina,false
+4623,commercio all'ingrosso di animali vivi,false
+31030,fabbricazione di materassi,false
+4624,commercio all'ingrosso di pelli e cuoio,false
+31091,fabbricazione di mobili per arredo domestico,false
+4631,commercio all'ingrosso di frutta e ortaggi freschi o conservati,false
+31092,"fabbricazione di sedie e sedili (esclusi quelli per aeromobili, autoveicoli, navi, treni, uffici e negozi)",false
+4632,commercio all'ingrosso di carne e di prodotti a base di carne,false
+31093,fabbricazione di poltrone e divani,false
+4633,"commercio all'ingrosso di prodotti lattiero-caseari, uova, oli e grassi commestibili",false
+31094,fabbricazione di parti e accessori di mobili,false
+4634,commercio all'ingrosso di bevande,false
+31095,finitura di mobili,false
+4635,commercio all'ingrosso di prodotti del tabacco,false
+31099,fabbricazione di altri mobili compresi quelli per arredo esterno,false
+4636,"commercio all'ingrosso di zucchero, cioccolato, dolciumi e prodotti da forno",false
+32110,coniazione di monete,false
+4637,"commercio all'ingrosso di caffè, tè, cacao e spezie",false
+32121,fabbricazione di oggetti di gioielleria ed oreficeria di metalli preziosi o rivestiti di metalli preziosi,false
+4638,"commercio all'ingrosso di altri prodotti alimentari, inclusi pesci, crostacei e molluschi",false
+32122,lavorazione di pietre preziose e semipreziose per gioielleria e per uso industriale,false
+4639,"commercio all'ingrosso non specializzato di prodotti alimentari, bevande e tabacco",false
+32130,fabbricazione di bigiotteria e articoli simili,false
+4641,commercio all'ingrosso di prodotti tessili,false
+32200,"fabbricazione di strumenti musicali, compresi parti e accessori",false
+4642,commercio all'ingrosso di abbigliamento e di calzature,false
+32300,fabbricazione di articoli sportivi,false
+4643,"commercio all'ingrosso di elettrodomestici, elettronica di consumo audio e video, articoli per fotografia, cinematografia e ottica",false
+32401,"fabbricazione di giochi, compresi i giochi elettronici",false
+4644,"commercio all'ingrosso di articoli di porcellana, di vetro e di prodotti per la pulizia",false
+32402,"fabbricazione di giocattoli, compresi i tricicli e gli strumenti musicali giocattolo",false
+4645,commercio all'ingrosso di profumi e cosmetici,false
+32501,"fabbricazione di mobili per uso medico, apparecchi medicali per diagnosi, di materiale medico-chirurgico e veterinario, di apparecchi e strumenti per odontoiatria (compresi parti staccate e accessori)",false
+4646,commercio all'ingrosso di prodotti farmaceutici,false
+32502,fabbricazione di protesi dentarie (compresa riparazione),false
+4647,"commercio all'ingrosso di mobili, tappeti e articoli per l'illuminazione",false
+32503,"fabbricazione di protesi ortopediche, altre protesi ed ausili (compresa riparazione)",false
+4648,commercio all'ingrosso di orologi e di gioielleria,false
+32504,fabbricazione di lenti oftalmiche,false
+4649,commercio all'ingrosso di altri beni di consumo,false
+32505,"fabbricazione di armature per occhiali di qualsiasi tipo, montatura in serie di occhiali comuni",false
+4651,"commercio all'ingrosso di computer, apparecchiature informatiche periferiche e di software",false
+32910,fabbricazione di scope e spazzole,false
+4652,commercio all'ingrosso di apparecchiature elettroniche per telecomunicazioni e componenti elettronici,false
+32991,fabbricazione di attrezzature ed articoli di vestiario protettivi di sicurezza,false
+4661,"commercio all'ingrosso di macchinari, attrezzature e forniture agricole",false
+32992,"fabbricazione di ombrelli, bottoni, chiusure lampo, parrucche e affini",false
+4662,commercio all'ingrosso di macchine utensili,false
+32993,fabbricazione di oggetti di cancelleria,false
+4663,"commercio all'ingrosso di macchinari per l'estrazione, l'edilizia e l'ingegneria civile",false
+32994,fabbricazione di casse funebri,false
+4664,"commercio all'ingrosso di macchinari per l'industria tessile, di macchine per cucire e per maglieria",false
+32999,fabbricazione di altri articoli nca,false
+4665,commercio all'ingrosso di mobili per ufficio e negozi,false
+33110,riparazione e manutenzione di prodotti in metallo,false
+4666,commercio all'ingrosso di altre macchine e attrezzature per ufficio,false
+33121,riparazione e manutenzione di macchine di impiego generale,false
+4669,commercio all'ingrosso di altri macchinari e attrezzature,false
+33122,"riparazione e manutenzione di forni, fornaci e bruciatori",false
+4671,"commercio all'ingrosso di combustibili solidi, liquidi, gassosi e di prodotti derivati",false
+33123,"riparazione e manutenzione di macchine e apparecchi di sollevamento e movimentazione, esclusi ascensori",false
+4672,commercio all'ingrosso di metalli e di minerali metalliferi,false
+33124,riparazione e manutenzione di attrezzature di uso non domestico per la refrigerazione e la ventilazione,false
+4673,"commercio all'ingrosso di legname e di materiali da costruzione, apparecchi igienico-sanitari, vetro piano, vernici e colori",false
+33125,riparazione e manutenzione di altre macchine di impiego generale,false
+4674,"commercio all'ingrosso di ferramenta, di apparecchi e accessori per impianti idraulici e di riscaldamento",false
+33126,riparazione e manutenzione di trattori agricoli,false
+4675,commercio all'ingrosso di prodotti chimici,false
+33127,"riparazione e manutenzione di altre macchine per l'agricoltura, la silvicoltura e la zootecnia",false
+4676,commercio all'ingrosso di altri prodotti intermedi,false
+33129,riparazione e manutenzione di altre macchine per impieghi speciali (comprese le macchine utensili),false
+4677,commercio all'ingrosso di rottami e cascami,false
+33130,riparazione e manutenzione di apparecchiature elettroniche ed ottiche (escluse quelle per le telecomunicazioni ed i computer),false
+4690,commercio all'ingrosso non specializzato,false
+33140,riparazione e manutenzione di apparecchiature elettriche (esclusi gli elettrodomestici),false
+4711,commercio al dettaglio in esercizi non specializzati con prevalenza di prodotti alimentari e bevande,false
+33150,"riparazione e manutenzione di navi commerciali e imbarcazioni da diporto, (esclusi i loro motori)",false
+4719,commercio al dettaglio in altri esercizi non specializzati,false
+33160,riparazione e manutenzione di aeromobili e di veicoli spaziali,false
+4721,commercio al dettaglio di frutta e verdura in esercizi specializzati,false
+33170,"riparazione e manutenzione di materiale rotabile ferroviario, tranviario, filoviario e per metropolitane (esclusi i loro motori)",false
+4722,commercio al dettaglio di carni e di prodotti a base di carne in esercizi specializzati,false
+33190,riparazione di altre apparecchiature,false
+4723,"commercio al dettaglio di pesci, crostacei e molluschi in esercizi specializzati",false
+33200,installazione di macchine ed apparecchiature industriali,false
+4724,"commercio al dettaglio di pane, torte, dolciumi e confetteria in esercizi specializzati",false
+35110,produzione di energia elettrica,false
+4725,commercio al dettaglio di bevande in esercizi specializzati,false
+35120,trasmissione di energia elettrica,false
+4726,commercio al dettaglio di prodotti del tabacco in esercizi specializzati,false
+35130,distribuzione di energia elettrica,false
+4729,commercio al dettaglio di altri prodotti alimentari in esercizi specializzati,false
+35140,commercio di energia elettrica,false
+4730,commercio al dettaglio di carburante per autotrazione in esercizi specializzati,false
+35210,produzione di gas,false
+4741,"commercio al dettaglio di computer, unità periferiche, software e attrezzature per ufficio in esercizi specializzati",false
+35220,distribuzione di combustibili gassosi mediante condotte,false
+4742,commercio al dettaglio di apparecchiature per le telecomunicazioni e la telefonia in esercizi specializzati,false
+35230,commercio di gas distribuito mediante condotte,false
+4743,commercio al dettaglio di apparecchiature audio e video in esercizi specializzati,false
+35300,fornitura di vapore e aria condizionata,false
+4751,commercio al dettaglio di prodotti tessili in esercizi specializzati,false
+36000,"raccolta, trattamento e fornitura di acqua",false
+4752,"commercio al dettaglio di ferramenta, vernici, vetro piano e materiali da costruzione in esercizi specializzati",false
+37000,raccolta e depurazione delle acque di scarico,false
+4753,"commercio al dettaglio di tappeti, scendiletto e rivestimenti per pavimenti e pareti (moquette, linoleum) in esercizi specializzati",false
+38110,raccolta dei rifiuti solidi non pericolosi,false
+4754,commercio al dettaglio di elettrodomestici in esercizi specializzati,false
+38120,raccolta di rifiuti pericolosi solidi e non solidi,false
+4759,"commercio al dettaglio di mobili, di articoli per l'illuminazione e altri articoli per la casa in esercizi specializzati",false
+38210,"trattamento e smaltimento di rifiuti non pericolosi, produzione di compost",false
+4761,commercio al dettaglio di libri in esercizi specializzati,false
+38220,trattamento e smaltimento di rifiuti pericolosi,false
+4762,commercio al dettaglio di giornali e articoli di cartoleria in esercizi specializzati,false
+38311,demolizione di carcasse,false
+4763,commercio al dettaglio di registrazioni musicali e video in esercizi specializzati,false
+38312,cantieri di demolizione navali,false
+4764,commercio al dettaglio di articoli sportivi in esercizi specializzati,false
+38321,recupero e preparazione per il riciclaggio di cascami e rottami metallici,false
+4765,commercio al dettaglio di giochi e giocattoli in esercizi specializzati,false
+38322,"recupero e preparazione per il riciclaggio di materiale plastico per produzione di materie prime plastiche, resine sintetiche",false
+4771,commercio al dettaglio di articoli di abbigliamento in esercizi specializzati,false
+38323,"recupero e preparazione per il riciclaggio dei rifiuti solidi urbani, industriali e biomasse",false
+4772,commercio al dettaglio di calzature e articoli in pelle in esercizi specializzati,false
+39000,attività di risanamento e altri servizi di gestione dei rifiuti,false
+4773,commercio al dettaglio di medicinali in esercizi specializzati,false
+41100,sviluppo di progetti immobiliari senza costruzione con mezzi tecnici propri,false
+4774,commercio al dettaglio di articoli medicali e ortopedici in esercizi specializzati,false
+41200,costruzione di edifici residenziali e non residenziali,false
+4775,"commercio al dettaglio di cosmetici, di articoli di profumeria e di erboristeria in esercizi specializzati",false
+42110,"costruzione di strade, autostrade e piste aeroportuali",false
+4776,"commercio al dettaglio di fiori, piante, semi, fertilizzanti, animali domestici e alimenti per animali domestici in esercizi specializzati",false
+42120,costruzione di linee ferroviarie e metropolitane,false
+4777,commercio al dettaglio di orologi e articoli di gioielleria in esercizi specializzati,false
+42130,costruzione di ponti e gallerie,false
+4778,commercio al dettaglio di altri prodotti (esclusi quelli di seconda mano) in esercizi specializzati,false
+42210,costruzione di opere di pubblica utilità per il trasporto dei fluidi,false
+4779,commercio al dettaglio di articoli di seconda mano in negozi,false
+42220,costruzione di opere di pubblica utilità per l'energia elettrica e le telecomunicazioni,false
+4781,commercio al dettaglio ambulante di prodotti alimentari e bevande,false
+42910,costruzione di opere idrauliche,false
+4782,"commercio al dettaglio ambulante di prodotti tessili, abbigliamento e calzature",false
+42990,costruzione di altre opere di ingegneria civile nca,false
+4789,commercio al dettaglio ambulante di altri prodotti,false
+43110,demolizione,false
+4791,commercio al dettaglio per corrispondenza o attraverso internet,false
+43120,preparazione del cantiere edile e sistemazione del terreno,false
+4799,"altro commercio al dettaglio al di fuori di negozi, banchi o mercati",false
+43130,trivellazioni e perforazioni,false
+4910,trasporto ferroviario di passeggeri (interurbano),false
+43210,installazione di impianti elettrici ed elettronici,false
+4920,trasporto ferroviario di merci,false
+43220,"installazione di impianti idraulici, di riscaldamento e di condizionamento dell'aria (compresa manutenzione e riparazione)",false
+4931,trasporto terrestre di passeggeri in aree urbane e suburbane,false
+43290,altri lavori di costruzione e installazione,false
+4932,"trasporto con taxi, noleggio di autovetture con conducente",false
+43310,intonacatura e stuccatura,false
+4939,altri trasporti terrestri di passeggeri nca,false
+43320,"posa in opera di infissi, arredi, controsoffitti, pareti mobili e simili",false
+4941,trasporto di merci su strada,false
+43330,rivestimento di pavimenti e di muri,false
+4942,servizi di trasloco,false
+43340,tinteggiatura e posa in opera di vetri,false
+4950,trasporto mediante condotte,false
+43390,altri lavori di completamento e di finitura degli edifici,false
+5010,trasporto marittimo e costiero di passeggeri,false
+43910,realizzazione di coperture,false
+5020,trasporto marittimo e costiero di merci,false
+43990,altri lavori specializzati di costruzione nca,false
+5030,trasporto di passeggeri per vie d'acqua interne,false
+45110,commercio di autovetture e di autoveicoli leggeri,false
+5040,trasporto di merci per vie d'acqua interne,false
+45190,commercio di altri autoveicoli,false
+5110,trasporto aereo di passeggeri,false
+45201,riparazioni meccaniche di autoveicoli,false
+5121,trasporto aereo di merci,false
+45202,riparazione di carrozzerie di autoveicoli,false
+5122,trasporto spaziale,false
+45203,riparazione di impianti elettrici e di alimentazione per autoveicoli,false
+5210,magazzinaggio e custodia,false
+45204,riparazione e sostituzione di pneumatici per autoveicoli,false
+5221,attività dei servizi connessi ai trasporti terrestri,false
+45209,autolavaggio e altre attività di manutenzione,false
+5222,attività dei servizi connessi al trasporto marittimo e per vie d'acqua,false
+45310,commercio all'ingrosso di parti e accessori di autoveicoli,false
+5223,attività dei servizi connessi al trasporto aereo,false
+45320,commercio al dettaglio di parti e accessori di autoveicoli,false
+5224,movimentazione merci,false
+45401,commercio all'ingrosso e al dettaglio di motocicli e ciclomotori,false
+5229,altre attività di supporto connesse ai trasporti,false
+45402,commercio all'ingrosso e al dettaglio di parti e accessori per motocicli e ciclomotori,false
+5310,attività postali con obbligo di servizio universale,false
+45403,manutenzione e riparazione di motocicli e ciclomotori compresi i pneumatici,false
+5320,altre attività postali e di corriere senza obbligo di servizio universale,false
+46110,"intermediari del commercio di materie prime agricole, di animali vivi, di materie prime tessili e di semilavorati, pelli grezze",false
+5510,alberghi e strutture simili,false
+46120,"intermediari del commercio di combustibili, minerali, metalli e prodotti chimici",false
+5520,alloggi per vacanze e altre strutture per brevi soggiorni,false
+46130,intermediari del commercio di legname e materiali da costruzione,false
+5530,aree di campeggio e aree attrezzate per camper e roulotte,false
+46140,"intermediari del commercio di macchinari, impianti industriali, navi e aeromobili, macchine agricole, macchine per ufficio e computer",false
+5590,altri alloggi,false
+46150,"intermediari del commercio di mobili, articoli per la casa e ferramenta",false
+5610,ristoranti e attività di ristorazione mobile,false
+46160,"intermediari del commercio di prodotti tessili, abbigliamento, pellicce, calzature e articoli in pelle",false
+5621,fornitura di pasti preparati (catering per eventi),false
+46170,"intermediari del commercio di prodotti alimentari, bevande e tabacco",false
+5629,mense e catering continuativo su base contrattuale,false
+46181,"intermediari del commercio di prodotti di carta, cancelleria, libri",false
+5630,bar e altri esercizi simili senza cucina,false
+46182,intermediari del commercio di prodotti di elettronica,false
+5811,edizione di libri,false
+46183,intermediari del commercio di prodotti farmaceutici e di cosmetici,false
+5812,pubblicazione di elenchi e mailing list,false
+46189,"intermediari del commercio di attrezzature sportive, biciclette e altri prodotti nca",false
+5813,edizione di quotidiani,false
+46190,intermediari del commercio di vari prodotti senza prevalenza di alcuno,false
+5814,edizione di riviste e periodici,false
+46211,commercio all'ingrosso di cereali e legumi secchi,false
+5819,altre attività editoriali,false
+46212,"commercio all'ingrosso di sementi e alimenti per il bestiame (mangimi), piante officinali, semi oleosi, patate da semina, tabacco grezzo",false
+5821,edizione di giochi per computer,false
+46220,commercio all'ingrosso di fiori e piante,false
+5829,edizione di altri software,false
+46230,commercio all'ingrosso di animali vivi,false
+5911,"attività di produzione cinematografica, di video e di programmi televisivi",false
+46241,commercio all'ingrosso di cuoio e pelli gregge e lavorate (escluse le pelli per pellicceria),false
+5912,"attività di post-produzione cinematografica, di video e di programmi televisivi",false
+46242,commercio all'ingrosso di pelli gregge e lavorate per pellicceria,false
+5913,"attività di distribuzione cinematografica, di video e di programmi televisivi",false
+46311,commercio all'ingrosso di frutta e ortaggi freschi,false
+5914,attività di proiezione cinematografica,false
+46312,commercio all'ingrosso di frutta e ortaggi conservati,false
+5920,attività di registrazione sonora e di editoria musicale,false
+46321,"commercio all'ingrosso di carne fresca, congelata e surgelata",false
+6010,trasmissioni radiofoniche,false
+46322,commercio all'ingrosso di prodotti di salumeria,false
+6020,attività di programmazione e trasmissioni televisive,false
+46331,commercio all'ingrosso di prodotti lattiero-caseari e di uova,false
+6110,telecomunicazioni fisse,false
+46332,commercio all'ingrosso di oli e grassi alimentari di origine vegetale o animale,false
+6120,telecomunicazioni mobili,false
+46341,commercio all'ingrosso di bevande alcoliche,false
+6130,telecomunicazioni satellitari,false
+46342,commercio all'ingrosso di bevande non alcoliche,false
+6190,altre attività di telecomunicazione,false
+46350,commercio all'ingrosso di prodotti del tabacco,false
+6201,produzione di software non connesso all'edizione,false
+46360,"commercio all'ingrosso di zucchero, cioccolato, dolciumi e prodotti da forno",false
+6202,consulenza nel settore delle tecnologie dell'informatica,false
+46370,"commercio all'ingrosso di caffè, tè, cacao e spezie",false
+6203,gestione di strutture informatizzate,false
+46381,commercio all'ingrosso di prodotti della pesca freschi,false
+6209,altre attività dei servizi connessi alle tecnologie dell'informatica,false
+46382,"commercio all'ingrosso di prodotti della pesca congelati, surgelati, conservati, secchi",false
+6311,"elaborazione dei dati, hosting e attività connesse",false
+46383,commercio all'ingrosso di pasti e piatti pronti,false
+6312,portali web,false
+46389,commercio all'ingrosso di altri prodotti alimentari,false
+6391,attività delle agenzie di stampa,false
+46391,commercio all'ingrosso non specializzato di prodotti surgelati,false
+6399,altre attività dei servizi di informazione nca,false
+46392,"commercio all'ingrosso non specializzato di prodotti alimentari, bevande e tabacco",false
+6411,attività delle banche centrali,false
+46411,commercio all'ingrosso di tessuti,false
+6419,altre intermediazioni monetarie,false
+46412,"commercio all'ingrosso di articoli di merceria, filati e passamaneria",false
+6420,attività delle società di partecipazione (holding),false
+46419,commercio all'ingrosso di altri articoli tessili,false
+6430,"società fiduciarie, fondi e altre società simili",false
+46421,commercio all'ingrosso di abbigliamento e accessori,false
+6491,leasing finanziario,false
+46422,commercio all'ingrosso di articoli in pelliccia,false
+6492,altre attività creditizie,false
+46423,"commercio all'ingrosso di camicie, biancheria intima, maglieria e simili",false
+6499,altre attività di servizi finanziari nca (escluse le assicurazioni e i fondi pensione),false
+46424,commercio all'ingrosso di calzature e accessori,false
+6511,assicurazioni sulla vita,false
+46431,"commercio all'ingrosso di elettrodomestici, di elettronica di consumo audio e video",false
+6512,assicurazioni diverse da quelle sulla vita,false
+46432,"commercio all'ingrosso di supporti registrati, audio, video (cd, dvd e altri supporti)",false
+6520,riassicurazioni,false
+46433,"commercio all'ingrosso di articoli per fotografia, cinematografia e ottica",false
+6530,fondi pensione,false
+46441,commercio all'ingrosso di vetreria e cristalleria,false
+6611,amministrazione di mercati finanziari,false
+46442,commercio all'ingrosso di ceramiche e porcellana,false
+6612,attività di negoziazione di contratti relativi a titoli e merci,false
+46443,"commercio all'ingrosso di saponi, detersivi e altri prodotti per la pulizia",false
+6619,altre attività ausiliarie dei servizi finanziari (escluse le assicurazioni e i fondi pensione),false
+46444,"commercio all'ingrosso di coltelleria, posateria e pentolame",false
+6621,valutazione dei rischi e dei danni,false
+46450,commercio all'ingrosso di profumi e cosmetici,false
+6622,attività di agenti e mediatori di assicurazioni,false
+46461,commercio all'ingrosso di medicinali,false
+6629,altre attività ausiliarie delle assicurazioni e dei fondi pensione,false
+46462,commercio all'ingrosso di prodotti botanici per uso farmaceutico,false
+6630,attività di gestione dei fondi,false
+46463,commercio all'ingrosso di articoli medicali ed ortopedici,false
+6810,compravendita di beni immobili effettuata su beni propri,false
+46471,commercio all'ingrosso di mobili di qualsiasi materiale,false
+6820,affitto e gestione di immobili di proprietà o in leasing,false
+46472,commercio all'ingrosso di tappeti,false
+6831,attività di mediazione immobiliare,false
+46473,"commercio all'ingrosso di articoli per l'illuminazione, materiale elettrico vario per uso domestico",false
+6832,gestione di immobili per conto terzi,false
+46480,commercio all'ingrosso di orologi e di gioielleria,false
+6910,attività degli studi legali e notarili,false
+46491,"commercio all'ingrosso di carta, cartone e articoli di cartoleria",false
+6920,"contabilità, controllo e revisione contabile, consulenza in materia fiscale e del lavoro",false
+46492,"commercio all'ingrosso di libri, riviste e giornali",false
+7010,attività delle holding impegnate nelle attività gestionali (holding operative),false
+46493,commercio all'ingrosso di giochi e giocattoli,false
+7021,pubbliche relazioni e comunicazione,false
+46494,commercio all'ingrosso di articoli sportivi ( comprese le biciclette),false
+7022,consulenza imprenditoriale e altra consulenza amministrativo-gestionale,false
+46495,"commercio all'ingrosso di articoli in pelle, articoli da viaggio in qualsiasi materiale",false
+7111,attività degli studi di architettura,false
+46499,commercio all'ingrosso di vari prodotti di consumo non alimentare nca,false
+7112,attività degli studi d'ingegneria ed altri studi tecnici,false
+46510,"commercio all'ingrosso di computer, apparecchiature informatiche periferiche e di software",false
+7120,collaudi ed analisi tecniche,false
+46520,commercio all'ingrosso apparecchiature elettroniche per telecomunicazioni e componenti elettronici,false
+7211,ricerca e sviluppo sperimentale nel campo delle biotecnologie,false
+46610,"commercio all'ingrosso di macchine, accessori e utensili agricoli, inclusi i trattori",false
+7219,altre attività di ricerca e sviluppo sperimentale nel campo delle scienze naturali e dell'ingegneria,false
+46620,"commercio all'ingrosso di macchine utensili, comprese le relative parti intercambiabili",false
+7220,ricerca e sviluppo sperimentale nel campo delle scienze sociali e umanistiche,false
+46630,"commercio all'ingrosso di macchine per le miniere, l'edilizia e l'ingegneria civile",false
+7311,agenzie pubblicitarie,false
+46640,"commercio all'ingrosso di macchine per l'industria tessile, di macchine per cucire e per maglieria",false
+7312,attività delle concessionarie e degli altri intermediari di servizi pubblicitari,false
+46650,commercio all'ingrosso di mobili per ufficio e negozi,false
+7320,ricerche di mercato e sondaggi di opinione,false
+46660,commercio all'ingrosso di altre macchine e attrezzature per ufficio,false
+7410,attività di design specializzate,false
+46691,commercio all'ingrosso di mezzi ed attrezzature di trasporto,false
+7420,attività fotografiche,false
+46692,commercio all'ingrosso di materiale elettrico per impianti di uso industriale,false
+7430,traduzione e interpretariato,false
+46693,"commercio all'ingrosso di apparecchiature per parrucchieri, palestre, solarium e centri estetici",false
+7490,"altre attività professionali, scientifiche e tecniche nca",false
+46699,"commercio all'ingrosso di altre macchine e attrezzature per l'industria, il commercio e la navigazione",false
+7500,servizi veterinari,false
+46710,"commercio all'ingrosso di prodotti petroliferi e lubrificati per autotrazione, di combustibili per riscaldamento",false
+7711,noleggio di autovetture ed autoveicoli leggeri,false
+46721,"commercio all'ingrosso di minerali metalliferi, di metalli ferrosi e prodotti semilavorati",false
+7712,noleggio di autocarri e di altri veicoli pesanti,false
+46722,commercio all'ingrosso di metalli non ferrosi e prodotti semilavorati,false
+7721,noleggio di attrezzature sportive e ricreative,false
+46731,"commercio all'ingrosso di legname, semilavorati in legno e legno artificiale",false
+7722,noleggio di videocassette e dischi,false
+46732,commercio all'ingrosso di materiali da costruzione (inclusi gli apparecchi igienico-sanitari),false
+7729,noleggio di altri beni per uso personale e domestico (escluse le attrezzature sportive e ricreative),false
+46733,commercio all'ingrosso di vetro piano,false
+7731,noleggio di macchine e attrezzature agricole,false
+46734,"commercio all'ingrosso di carta da parati, colori e vernici",false
+7732,noleggio di macchine e attrezzature per lavori edili e di genio civile,false
+46741,commercio all'ingrosso di articoli in ferro e in altri metalli (ferramenta),false
+7733,noleggio di macchine e attrezzature per ufficio (inclusi i computer),false
+46742,"commercio all'ingrosso di apparecchi e accessori per impianti idraulici, di riscaldamento e di condizionamento",false
+7734,noleggio di mezzi di trasporto marittimo e fluviale,false
+46750,commercio all'ingrosso di prodotti chimici,false
+7735,noleggio di mezzi di trasporto aereo,false
+46761,commercio all'ingrosso di fibre tessili gregge e semilavorate,false
+7739,"noleggio di altre macchine, attrezzature e beni materiali nca",false
+46762,"commercio all'ingrosso di gomma greggia, materie plastiche in forme primarie e semilavorati",false
+7740,concessione dei diritti di sfruttamento di proprietà intellettuale e prodotti simili (escluse le opere protette dal copyright),false
+46763,commercio all'ingrosso di imballaggi,false
+7810,attività di agenzie di collocamento,false
+46769,commercio all'ingrosso di altri prodotti intermedi,false
+7820,attività delle agenzie di lavoro temporaneo (interinale),false
+46771,commercio all'ingrosso di rottami e sottoprodotti della lavorazione industriale metallici,false
+7830,altre attività di fornitura e gestione di risorse umane,false
+46772,"commercio all'ingrosso di altri materiali di recupero non metallici (vetro, carta, cartoni eccetera)",false
+7911,attività delle agenzie di viaggio,false
+46900,commercio all'ingrosso non specializzato,false
+7912,attività dei tour operator,false
+47111,ipermercati,false
+7990,altri servizi di prenotazione e altre attività di assistenza turistica non svolte dalle agenzie di viaggio,false
+47112,supermercati,false
+8010,servizi di vigilanza privata,false
+47113,discount di alimentari,false
+8020,servizi connessi ai sistemi di vigilanza,false
+47114,minimercati ed altri esercizi non specializzati di alimentari vari,false
+8030,servizi investigativi privati,false
+47115,commercio al dettaglio di prodotti surgelati,false
+8110,servizi integrati di gestione agli edifici,false
+47191,grandi magazzini,false
+8121,pulizia generale (non specializzata) di edifici,false
+47192,"commercio al dettaglio in esercizi non specializzati di computer, periferiche, attrezzature per le telecomunicazioni, elettronica di consumo audio e video, elettrodomestici",false
+8122,attività di pulizia specializzata di edifici e di impianti e macchinari industriali,false
+47199,empori ed altri negozi non specializzati di vari prodotti non alimentari,false
+8129,altre attività di pulizia,false
+47210,commercio al dettaglio di frutta e verdura,false
+8130,cura e manutenzione del paesaggio,false
+47220,commercio al dettaglio di carni e di prodotti a base di carne,false
+8211,servizi integrati di supporto per le funzioni d'ufficio,false
+47230,"commercio al dettaglio di pesci, crostacei e molluschi",false
+8219,"servizi di fotocopiatura, preparazione di documenti e altre attività di supporto specializzate per le funzioni d'ufficio",false
+47241,commercio al dettaglio di pane,false
+8220,attività dei call center,false
+47242,"commercio al dettaglio di torte, dolciumi, confetteria",false
+8230,organizzazione di convegni e fiere,false
+47250,commercio al dettaglio di bevande,false
+8291,"attività di agenzie di recupero crediti, agenzie di informazioni commerciali",false
+47260,commercio al dettaglio di generi di monopolio (tabaccherie),false
+8292,attività di imballaggio e confezionamento per conto terzi,false
+47291,commercio al dettaglio di latte e di prodotti lattiero-caseari,false
+8299,altri servizi di supporto alle imprese nca,false
+47292,commercio al dettaglio di caffè torrefatto,false
+8411,attività generali di amministrazione pubblica,false
+47293,commercio al dettaglio di prodotti macrobiotici e dietetici,false
+8412,"regolamentazione delle attività relative alla fornitura di servizi di assistenza sanitaria, dell'istruzione, di servizi culturali e ad altri servizi sociali (esclusa l'assicurazione sociale obbligatoria)",false
+47299,commercio al dettaglio di altri prodotti alimentari in esercizi specializzati nca,false
+8413,regolamentazione delle attività che contribuiscono ad una più efficiente gestione delle attività economiche,false
+47300,commercio al dettaglio di carburante per autotrazione,false
+8421,affari esteri,false
+47410,"commercio al dettaglio di computer, unità periferiche, software e attrezzature per ufficio in esercizi specializzati",false
+8422,difesa nazionale,false
+47420,commercio al dettaglio di apparecchiature per le telecomunicazioni e la telefonia in esercizi specializzati,false
+8423,giustizia ed attività giudiziarie,false
+47430,commercio al dettaglio di apparecchi audio e video,false
+8424,ordine pubblico e sicurezza nazionale,false
+47511,"commercio al dettaglio di tessuti per l'abbigliamento, l'arredamento e di biancheria per la casa",false
+8425,attività dei vigili del fuoco e della protezione civile,false
+47512,commercio al dettaglio di filati per maglieria e merceria,false
+8430,assicurazione sociale obbligatoria,false
+47521,"commercio al dettaglio di ferramenta, vernici, vetro piano e materiale elettrico e termoidraulico",false
+8510,istruzione prescolastica,false
+47522,commercio al dettaglio di articoli igienico-sanitari,false
+8520,istruzione primaria,false
+47523,"commercio al dettaglio di materiali da costruzione, ceramiche e piastrelle",false
+8531,istruzione secondaria di formazione generale,false
+47524,"commercio al dettaglio di macchine, attrezzature e prodotti per l'agricoltura, macchine e attrezzature per il giardinaggio",false
+8532,istruzione secondaria tecnica e professionale,false
+47531,commercio al dettaglio di tappeti,false
+8541,istruzione post-secondaria non universitaria,false
+47532,commercio al dettaglio di carta da parati e rivestimenti per pavimenti (moquette e linoleum),false
+8542,"istruzione universitaria e post-universitaria, accademie e conservatori",false
+47540,commercio al dettaglio di elettrodomestici,false
+8551,corsi sportivi e ricreativi,false
+47591,commercio al dettaglio di mobili per la casa,false
+8552,formazione culturale,false
+47592,"commercio al dettaglio di utensili per la casa, di cristallerie e vasellame",false
+8553,attività delle scuole guida,false
+47593,commercio al dettaglio di articoli per l'illuminazione,false
+8559,servizi di istruzione nca,false
+47594,commercio al dettaglio di macchine per cucire e per maglieria per uso domestico,false
+8560,attività di supporto all'istruzione,false
+47595,commercio al dettaglio di sistemi di sicurezza,false
+8610,servizi ospedalieri,false
+47596,commercio al dettaglio di strumenti musicali e spartiti,false
+8621,servizi degli studi medici di medicina generale,false
+47599,commercio al dettaglio di altri articoli diversi per uso domestico nca,false
+8622,servizi degli studi medici specialistici,false
+47610,commercio al dettaglio di libri nuovi,false
+8623,attività degli studi odontoiatrici,false
+47621,"commercio al dettaglio di giornali, riviste e periodici",false
+8690,altri servizi di assistenza sanitaria,false
+47622,commercio al dettaglio di articoli di cartoleria e forniture per ufficio,false
+8710,strutture di assistenza infermieristica residenziale,false
+47630,commercio al dettaglio di registrazioni musicali e video,false
+8720,"strutture di assistenza residenziale per persone affette da ritardi mentali, disturbi mentali o che abusano di sostanze stupefacenti",false
+47641,"commercio al dettaglio di articoli sportivi, biciclette e articoli per il tempo libero",false
+8730,strutture di assistenza residenziale per anziani e disabili,false
+47642,commercio al dettaglio di natanti e accessori,false
+8790,altre strutture di assistenza sociale residenziale,false
+47650,"commercio al dettaglio di giochi e giocattoli, compresi quelli elettronici",false
+8810,assistenza sociale non residenziale per anziani e disabili,false
+47711,commercio al dettaglio di confezioni per adulti,false
+8891,"servizi di asili nido, assistenza diurna per minori disabili",false
+47712,commercio al dettaglio di confezioni per bambini e neonati,false
+8899,altre attività di assistenza sociale non residenziale nca,false
+47713,"commercio al dettaglio di biancheria personale, maglieria, camicie",false
+9001,rappresentazioni artistiche,false
+47714,commercio al dettaglio di pellicce e di abbigliamento in pelle,false
+9002,attività di supporto alle rappresentazioni artistiche,false
+47715,"commercio al dettaglio di cappelli, ombrelli, guanti e cravatte",false
+9003,creazioni artistiche e letterarie,false
+47721,commercio al dettaglio di calzature e accessori,false
+9004,gestione di strutture artistiche,false
+47722,commercio al dettaglio di articoli di pelletteria e da viaggio,false
+9101,attività di biblioteche ed archivi,false
+47731,farmacie,false
+9102,attività di musei,false
+47732,commercio al dettaglio in altri esercizi specializzati di medicinali non soggetti a prescrizione medica,false
+9103,gestione di luoghi e monumenti storici e attrazioni simili,false
+47740,commercio al dettaglio di articoli medicali e ortopedici,false
+9104,"attività degli orti botanici, dei giardini zoologici e delle riserve naturali",false
+47751,"commercio al dettaglio di articoli di profumeria, prodotti per toletta e per l'igiene personale",false
+9200,"attività riguardanti le lotterie, le scommesse, le case da gioco",false
+47752,erboristerie,false
+9311,gestione di impianti sportivi,false
+47761,commercio al dettaglio di fiori e piante,false
+9312,attività di club sportivi,false
+47762,commercio al dettaglio di piccoli animali domestici,false
+9313,palestre,false
+47770,"commercio al dettaglio di orologi, articoli di gioielleria e argenteria",false
+9319,altre attività sportive,false
+47781,commercio al dettaglio di mobili per ufficio,false
+9321,parchi di divertimento e parchi tematici,false
+47782,commercio al dettaglio di materiale per ottica e fotografia,false
+9329,altre attività ricreative e di divertimento,false
+47783,"commercio al dettaglio di oggetti d'arte di culto e di decorazione,  chincaglieria e bigiotteria",false
+9411,attività di organizzazioni economiche e di datori di lavoro,false
+47784,commercio al dettaglio di combustibile per uso domestico e per riscaldamento,false
+9412,attività di organizzazioni associative professionali,false
+47785,"commercio al dettaglio di armi e munizioni, articoli militari",false
+9420,attività dei sindacati di lavoratori dipendenti,false
+47786,"commercio al dettaglio di saponi, detersivi, prodotti per la lucidatura e affini",false
+9491,attività delle organizzazioni religiose nell'esercizio del culto,false
+47789,commercio al dettaglio di altri prodotti non alimentari nca,false
+9492,attività dei partiti e delle associazioni politiche,false
+47791,commercio al dettaglio di libri di seconda mano,false
+9499,attività di altre organizzazioni associative nca,false
+47792,commercio al dettaglio di mobili usati e oggetti di antiquariato,false
+9511,riparazione di computer e periferiche,false
+47793,commercio al dettaglio di indumenti e altri oggetti usati,false
+9512,riparazione di apparecchiature per le comunicazioni,false
+47794,case d'asta al dettaglio (escluse aste via internet),false
+9521,riparazione di prodotti elettronici di consumo audio e video,false
+47810,"commercio al dettaglio ambulante di prodotti alimentari, bevande e prodotti del tabacco",false
+9522,riparazione di elettrodomestici e di articoli per la casa e il giardinaggio,false
+47820,"commercio al dettaglio ambulante di prodotti tessili, abbigliamento, calzature e pelletterie",false
+9523,riparazione di calzature e articoli da viaggio,false
+47890,commercio al dettaglio ambulante di altri prodotti,false
+9524,"riparazione di mobili e di oggetti di arredamento, laboratori di tappezzeria",false
+47911,commercio al dettaglio di qualsiasi tipo di prodotto effettuato via internet,false
+9525,riparazione di orologi e di gioielli,false
+47912,commercio al dettaglio di qualsiasi tipo di prodotto effettuato per televisione,false
+9529,riparazione di altri beni per uso personale e per la casa,false
+47913,"commercio al dettaglio di qualsiasi tipo di prodotto per corrispondenza, radio, telefono",false
+9601,lavanderia e pulitura di articoli tessili e pelliccia,false
+47991,"commercio al dettaglio di prodotti vari, mediante l'intervento di un dimostratore o di un incaricato alla vendita (porta a porta)",false
+9602,servizi dei parrucchieri e di altri trattamenti estetici,false
+47992,commercio effettuato per mezzo di distributori automatici,false
+9603,servizi di pompe funebri e attività connesse,false
+49100,trasporto ferroviario di passeggeri (interurbano),false
+9604,servizi dei centri per il benessere fisico,false
+49200,trasporto ferroviario di merci,false
+9609,attività di servizi per la persona nca,false
+49310,trasporto terrestre di passeggeri in aree urbane e suburbane,false
+9700,attività di famiglie e convivenze come datori di lavoro per personale domestico,false
+49321,trasporto con taxi,false
+9810,produzione di beni indifferenziati per uso proprio da parte di famiglie e convivenze,false
+49322,trasporto mediante noleggio di autovetture da rimessa con conducente,false
+9820,produzione di servizi indifferenziati per uso proprio da parte di famiglie e convivenze,false
+49390,altri trasporti terrestri di passeggeri nca,false
+9900,organizzazioni ed organismi extraterritoriali,false
+49410,trasporto di merci su strada,false
+49420,servizi di trascloco,false
+49501,trasporto mediante condotte di gas,false
+49502,trasporto mediante condotte di liquidi,false
+50100,trasporto marittimo e costiero di passeggeri,false
+50200,trasporto marittimo e costiero di merci,false
+50300,trasporto di passeggeri per vie d'acqua interne (compresi i trasporti lagunari),false
+50400,trasporto di merci per vie d'acqua interne,false
+51101,trasporto aereo di linea di passeggeri,false
+51102,"trasporto aereo non di linea di passeggeri, voli charter",false
+51210,trasporto aereo di merci,false
+51220,trasporto spaziale,false
+52101,magazzini di custodia e deposito per conto terzi,false
+52102,magazzini frigoriferi per conto terzi,false
+52211,gestione di infrastrutture ferroviarie,false
+52212,"gestione di strade, ponti, gallerie",false
+52213,gestione di stazioni per autobus,false
+52214,gestione di centri di movimentazione merci (interporti),false
+52215,gestione di parcheggi e autorimesse,false
+52216,attività di traino e soccorso stradale,false
+52219,altre attività connesse ai trasporti terrestri nca,false
+52220,attività dei servizi connessi al trasporto marittimo e per vie d'acqua,false
+52230,attività dei servizi connessi al trasporto aereo,false
+52241,movimento merci relativo a trasporti aerei,false
+52242,movimento merci relativo a trasporti marittimi e fluviali,false
+52243,movimento merci relativo a trasporti ferroviari,false
+52244,movimento merci relativo ad altri trasporti terrestri,false
+52291,spedizionieri e agenzie di operazioni doganali,false
+52292,intermediari dei trasporti,false
+53100,attività postali con obbligo di servizio universale,false
+53200,altre attività postali e di corriere senza obbligo di servizio universale,false
+55100,alberghi,false
+55201,villaggi turistici,false
+55202,ostelli della gioventù,false
+55203,rifugi di montagna,false
+55204,colonie marine e montane,false
+55205,"affittacamere per brevi soggiorni, case ed appartamenti per vacanze, bed and breakfast, residence",false
+55300,aree di campeggio e aree attrezzate per camper e roulotte,false
+55901,gestione di vagoni letto,false
+55902,alloggi per studenti e lavoratori con servizi accessori di tipo alberghiero,false
+56101,ristorazione con somministrazione,false
+56102,ristorazione senza somministrazione con preparazione di cibi da asporto,false
+56103,gelaterie e pasticcerie,false
+56104,ristorazione ambulante e gelaterie ambulanti,false
+56105,ristorazione su treni e navi,false
+56210,"catering per eventi, banqueting",false
+56291,mense,false
+56292,catering continuativo su base contrattuale,false
+56300,bar e altri esercizi simili senza cucina,false
+58110,edizione di libri,false
+58120,pubblicazione di elenchi e mailing list,false
+58130,edizione di quotidiani,false
+58140,edizione di riviste e periodici,false
+58190,altre attività editoriali,false
+58210,edizione di giochi per computer,false
+58290,edizione di altri software a pacchetto (esclusi giochi per computer),false
+59110,"attività di produzione cinematografica, di video e di programmi televisivi",false
+59120,"attività di post-produzione cinematografica, di video e di programmi televisivi",false
+59130,"attività di distribuzione cinematografica, di video e di programmi televisivi",false
+59140,attività di proiezione cinematografica,false
+59201,edizione di registrazioni sonore,false
+59202,edizione di musica stampata,false
+59203,studi di registrazione sonora,false
+60100,trasmissioni radiofoniche,false
+60200,programmazione e trasmissioni televisive,false
+61100,telecomunicazioni fisse,false
+61200,telecomunicazioni mobili,false
+61300,telecomunicazioni satellitari,false
+61901,erogazione di servizi di accesso ad internet (isp),false
+61902,posto telefonico pubblico ed internet point,false
+61909,altre attività connesse alle telecomunicazioni,false
+62010,produzione di software non connesso all'edizione,false
+62020,consulenza nel settore delle tecnologie dell'informatica,false
+62030,"gestione di strutture e apparecchiature informatiche hardware (housing), esclusa la riparazione",false
+62090,altre attività dei servizi connessi alle tecnologie dell'informatica,false
+63111,elaborazione dati,false
+63112,gestione database (attività delle banche dati),false
+63113,hosting e fornitura di servizi applicativi (asp),false
+63120,portali web,false
+63910,attività delle agenzie di stampa,false
+63990,altre attività dei servizi di informazione nca,false
+64110,attività della banca centrale,false
+64191,intermediazione monetaria di istituti monetari diverse dalle banche centrali,false
+64192,fondi comuni di investimento monetario,false
+64193,istituti di moneta elettronica (imel),false
+64194,cassa depositi e prestiti,false
+64200,attività delle società di partecipazione (holding),false
+64301,"fondi comuni di investimento (aperti e chiusi, immobiliari, di mercato mobiliare)",false
+64302,sicav (società di investimento a capitale variabile),false
+64910,leasing finanziario,false
+64920,altre attività creditizie,false
+64991,attività di intermediazione mobiliare,false
+64992,attività di factoring,false
+64993,attività di merchant bank,false
+64994,attività delle società veicolo,false
+64995,attività di intermediazione in cambi,false
+64996,altre intermediazioni finanziarie nca,false
+65110,assicurazioni sulla vita,false
+65120,assicurazioni diverse da quelle sulla vita,false
+65200,attività di riassicurazione,false
+65301,attività dei fondi pensione aperti,false
+65302,attività dei fondi pensione negoziali,false
+65303,attività dei fondi pensione preesistenti,false
+66110,amministrazione di mercati finanziari,false
+66120,attività di negoziazione di contratti relativi a titoli e merci,false
+66191,attività di gestione ed elaborazione di pagamenti tramite carta di credito,false
+66192,attività di promotori e mediatori finanziari,false
+66193,attività delle società fiduciarie di amministrazione,false
+66194,attività di bancoposta,false
+66195,servizi di trasferimento di denaro (money transfer),false
+66210,attività dei periti e liquidatori indipendenti delle assicurazioni,false
+66220,attività degli agenti e broker delle assicurazioni,false
+66290,altre attività ausiliarie delle assicurazioni e dei fondi pensione,false
+66300,gestione di fondi comuni di investimento e dei fondi pensione,false
+68100,compravendita di beni immobili effettuata su beni propri,false
+68200,affitto e gestione di immobili di proprietà o in leasing,false
+68310,attività di mediazione immobiliare,false
+68320,amministrazione di condomini e gestione di beni immobili per conto terzi,false
+69101,attività degli studi legali,false
+69102,attività degli studi notarili,false
+69201,"attività degli studi commerciali, tributari e revisione contabile",false
+69202,attività delle società di revisione e certificazione di bilanci,false
+69203,attività dei consulenti del lavoro,false
+70100,attività delle holding impegnate nelle attività gestionali (holding operative),false
+70210,pubbliche relazioni e comunicazione,false
+70220,consulenza imprenditoriale e altra consulenza amministrativo-gestionale e pianificazione aziendale,false
+71110,attività degli studi di architettura,false
+71121,attività degli studi di ingegneria,false
+71122,servizi di progettazione di ingegneria integrata,false
+71123,attività tecniche svolte da geometri,false
+71124,attività di cartografia e aerofotogrammetria,false
+71125,attività di studio geologico e di prospezione geognostica e mineraria,false
+71201,collaudi e analisi tecniche di prodotti,false
+71202,"controllo di qualità e certificazione di prodotti, processi e sistemi",false
+72110,ricerca e sviluppo sperimentale nel campo delle biotecnologie,false
+72190,ricerca e sviluppo sperimentale nel campo delle scienze naturali e dell'ingegneria,false
+72200,ricerca e sviluppo sperimentale nel campo delle scienze sociali e umanistiche,false
+73110,agenzie pubblicitarie,false
+73120,attività delle concessionarie pubblicitarie,false
+73200,ricerche di mercato e sondaggi di opinione,false
+74101,attività di design di moda e design industriale,false
+74102,attività dei disegnatori grafici,false
+74103,*** attività dei disegnatori tecnici,false
+74109,altre attività di design,false
+74201,attività di riprese fotografiche,false
+74202,laboratori fotografici per lo sviluppo e la stampa,false
+74300,traduzione e interpretariato,false
+74901,consulenza agraria,false
+74902,consulenza in materia di sicurezza,false
+74909,"altre attività professionali, scientifiche e tecniche nca",false
+75000,servizi veterinari,false
+77110,noleggio di autovetture ed autoveicoli leggeri,false
+77120,noleggio di autocarri ed altri veicoli pesanti,false
+77210,noleggio di attrezzature sportive e ricreative,false
+77220,"noleggio di videocassette, cd, dvd e dischi contenenti audiovisivi o videogame",false
+77291,"noleggio di biancheria da tavola, da letto, da bagno e di articoli di vestiario",false
+77299,noleggio di altri beni per uso personale e domestico nca (escluse le attrezzature sportive e ricreative),false
+77310,noleggio di macchine e attrezzature agricole,false
+77320,noleggio di macchine e attrezzature per lavori edili e di genio civile,false
+77330,noleggio di macchine e attrezzature per ufficio (inclusi i computer),false
+77340,noleggio di mezzi di trasporto marittimo e fluviale,false
+77350,noleggio di mezzi di trasporto aereo,false
+77391,noleggio di altri mezzi di trasporto terrestri,false
+77399,noleggio di altre macchine e attrezzature,false
+77400,concessione dei diritti di sfruttamento di proprietà intellettuale e prodotti simili (escluse le opere protette dal copyright),false
+78100,"servizi di ricerca, selezione, collocamento e supporto per il ricollocamento di personale",false
+78200,attività delle agenzie di fornitura di lavoro temporaneo (interinale),false
+78300,altre attività di fornitura e gestione di risorse umane (staff leasing),false
+79110,attività delle agenzie di viaggio,false
+79120,attività dei tour operator,false
+79901,altri servizi di prenotazione e altre attività di assistenza turistica non svolte dalle agenzie di viaggio,false
+79902,attività delle guide e degli accompagnatori turistici,false
+80100,servizi di vigilanza privata,false
+80200,servizi connessi ai sistemi di vigilanza,false
+80300,servizi di investigazione privata,false
+81100,servizi integrati di gestione agli edifici,false
+81210,pulizia generale (non specializzata) di edifici,false
+81220,attività di pulizia specializzata di edifici e di impianti e macchinari industriali,false
+81291,servizi di disinfestazione,false
+81299,altre attività di pulizia,false
+81300,"cura e manutenzione del paesaggio compresi parchi, giardini e aiuole",false
+82110,"servizi integrati di supporto per le funzioni d'ufficio, uffici-residence",false
+82190,"servizi di fotocopiatura, preparazione di documenti e altre attività di supporto specializzate per le funzioni d'ufficio",false
+82200,attività dei call center,false
+82300,organizzazione di convegni e fiere,false
+82911,attività di agenzie di recupero crediti,false
+82912,agenzie di informazioni commerciali,false
+82921,imballaggio e confezionamento di generi alimentari,false
+82922,confezionamento di generi non alimentari,false
+82991,imprese di gestione esattoriale,false
+82992,"agenzie di distribuzione di libri, giornali e riviste",false
+82993,servizi di gestione di pubblici mercati e pese pubbliche,false
+82994,richiesta certificati e disbrigo pratiche,false
+82999,altri servizi di supporto alle imprese nca,false
+84111,"attività degli organi legislativi ed esecutivi, centrali e locali, amministrazione finanziaria, amministrazioni regionali, provinciali e comunali",false
+84112,attività di pianificazione generale e servizi statistici generali,false
+84121,regolamentazione dell'attività degli organismi preposti alla sanità,false
+84122,regolamentazione dell'attività degli organismi preposti all'istruzione,false
+84123,regolamentazione dell'attività degli organismi preposti alla gestione di progetti per l'edilizia abitativa e l'assetto del territorio e per la tutela dell'ambiente,false
+84124,"regolamentazione dell'attività degli organismi preposti ai servizi ricreativi, culturali e sociali vari",false
+84131,regolamentazione degli affari concernenti i combustibili e l'energia,false
+84132,"regolamentazione degli affari e servizi concernenti l'agricoltura, silvicoltura, caccia e pesca",false
+84133,"regolamentazione degli affari e dei servizi concernenti le industrie estrattive e le risorse minerarie (eccetto i combustibili) le industrie manifatturiere, le costruzioni e le opere pubbliche ad ecce",false
+84134,regolamentazione degli affari e servizi concernenti la costruzione di strade,false
+84135,regolamentazione degli affari e servizi concernenti la costruzione di opere per la navigazione interna e marittima,false
+84136,regolamentazione degli affari e servizi concernenti i trasporti e le comunicazioni,false
+84137,regolamentazione degli affari e servizi concernenti il commercio interno,false
+84138,regolamentazione degli affari e servizi concernenti il turismo,false
+84139,regolamentazione di altri affari e servizi economici,false
+84210,affari esteri,false
+84220,difesa nazionale,false
+84230,giustizia ed attività giudiziarie,false
+84240,ordine pubblico e sicurezza nazionale,false
+84251,attività dei vigili del fuoco,false
+84252,attività di protezione civile,false
+84300,assicurazione sociale obbligatoria,false
+85100,"istruzione di grado preparatorio: scuole dell'infanzia, scuole speciali collegate a quelle primarie",false
+85200,istruzione primaria: scuole elementari,false
+85311,istruzione secondaria di primo grado: scuole medie,false
+85312,istruzione secondaria di secondo grado di formazione generale: licei,false
+85320,"istruzione secondaria di secondo grado di formazione tecnica, professionale e artistica (istituti tecnici, professionali, artistici eccetera)",false
+85410,istruzione e formazione tecnica superiore (ifts),false
+85420,"istruzione universitaria e post-universitaria, accademie e conservatori",false
+85510,corsi sportivi e ricreativi,false
+85520,formazione culturale,false
+85530,"autoscuole, scuole di pilotaggio e nautiche",false
+85591,università popolare,false
+85592,corsi di formazione e aggiornamento professionale,false
+85593,scuole e corsi di lingua,false
+85599,altri servizi di istruzione,false
+85600,attività di supporto all'istruzione,false
+86101,ospedali e case di cura generici,false
+86102,ospedali e case di cura specialistici,false
+86103,"istituti, cliniche e policlinici universitari",false
+86104,ospedali e case di cura per lunga degenza,false
+86210,servizi degli studi medici di medicina generale,false
+86220,studi medici specialistici e poliambulatori,false
+86230,attività degli studi odontoiatrici,false
+86901,"laboratori di analisi cliniche, laboratori radiografici ed altri centri di diagnostica per immagini",false
+86902,attività paramediche indipendenti,false
+86903,* attività svolta da psicologi,false
+86904,"servizi di ambulanza, delle banche del sangue e altri servizi sanitari nca",false
+87100,strutture di assistenza per anziani,false
+87200,"strutture di assistenza residenziale per persone affette da ritardi mentali, disturbi mentali o che abusano di sostanze stupefacenti",false
+87300,strutture di assistenza residenziale per disabili,false
+87900,altre strutture di assistenza sociale residenziale,false
+88100,assistenza sociale non residenziale per anziani e disabili,false
+88910,servizi di asili nido e assistenza diurna per minori disabili,false
+88990,altre attività di assistenza sociale non residenziale nca,false
+90010,rappresentazioni artistiche,false
+90020,attività di supporto alle rappresentazioni artistiche,false
+90030,creazioni artistiche e letterarie,false
+90040,"gestione di teatri, sale da concerto e altre strutture artistiche",false
+91010,attività di biblioteche ed archivi,false
+91020,attività di musei,false
+91030,gestione di luoghi e monumenti storici e attrazioni simili,false
+91040,"attività degli orti botanici, dei giardini zoologici e delle riserve naturali",false
+92000,"attività riguardanti le lotterie, le scomesse, le case da gioco",false
+93111,gestione di stadi,false
+93112,gestione di piscine,false
+93113,gestione di impianti sportivi polivalenti,false
+93119,gestione di altri impianti sportivi nca,false
+93120,attività di club sportivi,false
+93130,gestione di palestre sportive,false
+93191,"enti e organizzazioni sportive, promozione di eventi sportivi",false
+93199,altre attività sportive nca,false
+93210,parchi di divertimento e parchi tematici,false
+93291,"discoteche, sale da ballo night-club e simili",false
+93292,"gestione di stabilimenti balneari: marittimi, lacuali e fluviali",false
+93293,sale giochi e biliardi,false
+93299,altre attività di intrattenimento e di divertimento nca,false
+94110,"attività di organizzazione di datori di lavoro, federazioni di industria, commercio, artigianato e servizi, associazioni, unioni, federazioni fra istituzioni",false
+94121,attività di federazioni e consigli di ordini e collegi professionali,false
+94122,attività di associazioni professionali,false
+94200,attività dei sindacati di lavoratori dipendenti,false
+94910,attività delle organizzazioni religiose nell'esercizio del culto,false
+94920,attività dei partiti e delle associazioni politiche,false
+94991,attività di organizzazioni per la tutela degli interessi e dei diritti dei cittadini,false
+94992,"attività di organizzazioni che perseguono fini culturali, ricreativi e la coltivazione di hobby",false
+94993,attività di organizzazioni patriottiche e associazioni combattentistiche,false
+94994,attività di organizzazioni per la cooperazione e la solidarietà internazionale,false
+94995,attività di organizzazioni per la filantropia,false
+94996,attività di organizzazioni per la promozione e la difesa degli animali e dell'ambiente,false
+94999,attività di altre organizzazioni associative nca,false
+95110,riparazione e manutenzione di computer e periferiche,false
+95120,riparazione e manutenzione di apparecchiature per le comunicazioni,false
+95210,riparazione di prodotti elettronici di consumo audio e video,false
+95220,riparazione di elettrodomestici e di articoli per la casa e il giardinaggio,false
+95230,"riparazione di calzature e articoli da viaggio in pelle, cuoio o in altri materiali simili",false
+95240,riparazione di mobili e di oggetti di arredamento,false
+95250,riparazione di orologi e di gioielli,false
+95290,riparazione di altri beni per uso personale e per la casa,false
+96011,attività delle lavanderie industriali,false
+96012,"altre lavanderie, tintorie",false
+96020,"servizi degli acconciatori, manicure, pedicure e trattamenti estetici",false
+96030,servizi di pompe funebri e attività connesse,false
+96041,servizi di centri per il benessere fisico (esclusi gli stabilimenti termali),false
+96042,stabilimenti termali,false
+96090,altre attività di servizi per la persona nca,false
+97000,attività di famiglie e convivenze come datori di lavoro per personale domestico,false
+98100,produzione di beni indifferenziati per uso proprio da parte di famiglie e convivenze,false
+98200,produzione di servizi indifferenziati per uso proprio da parte di famiglie e convivenze,false
+99000,organizzazioni ed organismi extraterritoriali,false
+TWUP,totale senza condizione non professionale,false
+0034_B,"totale servizi non finanziari (g-n, incluso 951, escluso k)",false
+0035_B,"totale attività economiche (c-n, inclusa la 951, escluso k)",false
+74903,consulenza ambientale e di risparmio energetico,false
+96013,attività di lavanderie self-service,false
+H_N_XK,servizi (H-N) escluso attività finanziarie ed assicurative (sezione K),false
+H-J-K-L,"trasporto e magazzinaggio, servizi di informazione e comunicazione, attività finanziarie, assicurative e immobiliari (H, J, K, L)",false
+H_J_K_L,"trasporto e magazzinaggio, servizi di informazione e comunicazione, attività finanziarie, assicurative e immobiliari (H, J, K, L)",false
+69_74,"attività professionali, scientifiche e tecniche (69-74)",false
+10_11_12,"Industrie alimentari, delle bevande e del tabacco",false
+13_14_15,"Industrie tessili, confezione di articoli di abbigliamento e di articoli in pelle e simili",false
+16_17_18,Industria del legno; fabbricazione di carta e di prodotti di carta; stampa,false
+22_23,Fabbricazione di articoli in gomma e materie plastiche e di altri prodotti della lavorazione di minerali non metalliferi,false
+26_27,Fabbricazione di computer e prodotti di elettronica e ottica e apparecchiature elettriche,false
+29_30,Fabbricazione di mezzi di trasporto,false
+31_32_33,Fabbricazione di mobili; altre industrie manifatturiere; riparazione e installazione di macchine e apparecchiature,false
+35_36_37_38_39,"Fornitura di energia elettrica, gas, vapore e aria condizionata; fornitura di acqua, reti fognarie, attività di trattamento dei rifiuti e di risanamento",false
+58_59_60,Attività editoriali; audiovisivi; attività di trasmissione,false
+62_63,"Programmazione, consulenza informatica e attività connesse; attività dei servizi d’informazione",false
+69_70_71,Attività legali e contabilità; attività di sedi centrali; consulenza gestionale; attività degli studi di architettura e d’ingegneria; collaudi e analisi tecniche,false
+73_74_75,"Pubblicità e ricerche di mercato; altre attività professionali, scientifiche e tecniche; servizi veterinari",false
+87_88,Assistenza sociale,false
+R-S-T,Altre attività di servizi,false
+B-S,totale (B-S),false
+O-S,altri servizi (o-s),false

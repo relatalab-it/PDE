@@ -1,0 +1,30 @@
+provider: istat
+provider_url: https://esploradati.istat.it/SDMXWS/rest
+agency_id: IT1
+dataset: 183_277_DF_DICA_ASIAUE1P_3
+description: Imprese e addetti - Forma giuridica, settori economici (Ateco 4 cifre)
+  - ripartizioni
+filters:
+  FREQ:
+    value: A
+    description: ''
+  REF_AREA:
+    value: IT
+    description: ''
+  DATA_TYPE:
+    value: AENTN
+    description: ''
+  ECON_ACTIVITY_NACE_2007:
+    value: 5813+5814+6391+7022+7320
+    description: ''
+  PERS_EMPL_SIZE_CLASS:
+    value: TOTAL+W0_9+W10_49+W50_249+W_GE250
+    description: ''
+  LEGAL_FORM:
+    value: TOT
+    description: ''
+start_period: null
+end_period: null
+last_n: 1
+first_n: null
+labels: false

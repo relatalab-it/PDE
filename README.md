@@ -8,7 +8,7 @@ I report sono **brief giornalistici cross fonte** e usano più connettori open s
 
 | Percorso | Demo | Fonte |
 |---|---|---|
-| `report/` | 15 brief giornalistici cross fonte generati da un'AI su dati pubblici, con query riproducibili e log delle operazioni (italiano e inglese) | SDMX: Eurostat, ISTAT, BCE, OCSE, Banca mondiale · CKAN: Comune di Genova, MIT |
+| `report/` | 16 report cross fonte generati da un'AI su dati pubblici (15 brief giornalistici e un'analisi di mercato, il n. 16), con query riproducibili e log delle operazioni (italiano e inglese) | SDMX: Eurostat, ISTAT, BCE, OCSE, Banca mondiale · CKAN: Comune di Genova, MIT |
 | `open-data/maggioli/` | Estrazione e confronto di dati sugli incidenti stradali da portali open data in produzione di sei comuni (italiano e inglese) | CKAN |
 | `open-data/comune-di-milano/` | Sei domande in italiano al portale Dati Milano del Comune di Milano: domande, passaggi dell'AI, query e risultati | CKAN |
 | `territorio/planet-intelligence/` | Dati geografici di Milano trovati nel catalogo nazionale: caldo, verde, aria, mobilità | RNDT |

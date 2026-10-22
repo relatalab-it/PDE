@@ -1,0 +1,26 @@
+provider: eurostat
+provider_url: https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1
+agency_id: ESTAT
+dataset: SBS_SC_1B_SE_R2
+description: Services by employment size class (NACE Rev. 2, H-N, S95) (2005-2020)
+filters:
+  freq:
+    value: A
+    description: ''
+  nace_r2:
+    value: J581+J639+M702+M732
+    description: ''
+  indic_sb:
+    value: V11110
+    description: ''
+  size_emp:
+    value: 0_1+2-9+10-19+20-49+50-249+GE250+TOTAL
+    description: ''
+  geo:
+    value: EU27_2020+IT+DE+FR+ES
+    description: ''
+start_period: null
+end_period: null
+last_n: 1
+first_n: null
+labels: false

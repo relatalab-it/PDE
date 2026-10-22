@@ -1,5 +1,20 @@
 [
   {
+    "order": 16,
+    "path":  "report/16_dimensione-mercato/",
+    "date":  "22 ottobre 2026",
+    "title": "Quante imprese sono il mercato di un servizio di dati pubblici: ecco l'analisi di mercato per Italia ed Europa, con i dati ISTAT ed Eurostat",
+    "title_en": "How Many Enterprises Are the Market for a Public-Data Service: the Market Analysis for Italy and Europe, with ISTAT and Eurostat Data",
+    "desc": "Imprese in cinque settori (periodici, agenzie di stampa, consulenza gestionale, ricerche di mercato): nell'UE-27 quattro codici con un valore sommano 900.854 imprese nel 2020, il 94% nella consulenza gestionale. Per l'Italia ISTAT dà 113.751 imprese (2024) ed Eurostat 70.954 (2020), mostrate affiancate. Il 13,8% delle imprese italiane ha dipendenti. Caso d'uso di PDE a due fonti (SDMX ISTAT + Eurostat); l'ipotesi nulla è respinta entro i limiti di anno e di copertura dichiarati.",
+    "desc_en": "Enterprises in five sectors (periodicals, news agencies, management consultancy, market research): in the EU27 four codes with a value add up to 900,854 enterprises in 2020, 94% in management consultancy. For Italy ISTAT counts 113,751 enterprises (2024) and Eurostat 70,954 (2020): the two series are shown side by side. 13.8% of Italian enterprises have employees. A two-source PDE use case (SDMX ISTAT + Eurostat); the null hypothesis is rejected within the stated limits of year and coverage.",
+    "badges": [
+      { "label": "ISTAT",    "value": "183_277" },
+      { "label": "Eurostat", "value": "SBS_NA_1A_SE_R2" },
+      { "label": "Period",   "value": "2020 · 2024", "label_it": "Anno" },
+      { "label": "Area",     "value": "Italia · UE-27", "label_it": "Area" }
+    ]
+  },
+  {
     "order": 15,
     "path":  "report/15_incidenti-genova/",
     "date":  "19 ottobre 2026",
