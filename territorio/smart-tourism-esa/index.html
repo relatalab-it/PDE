@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Space for Smart Tourism — catalogue-based prototype</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+<style>
+  :root { --bg:#fafaf7; --fg:#1d2327; --muted:#5b6670; --line:#d8dad4; --accent:#1b5e8a; --panel:#ffffff; --warn:#8a5a00; --warnbg:#fff4d6; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#14181b; --fg:#e6e8ea; --muted:#9aa5ae; --line:#2b3238; --accent:#6bb3e0; --panel:#1c2125; --warn:#f0c36b; --warnbg:#3a2f12; } }
+  * { box-sizing:border-box; }
+  body { margin:0; font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; background:var(--bg); color:var(--fg); }
+  header { padding:14px 16px 8px; max-width:1200px; margin:0 auto; }
+  h1 { font-size:20px; margin:0 0 4px; }
+  .sub { color:var(--muted); margin:0; }
+  .banner { margin:10px auto 0; max-width:1200px; padding:8px 16px; background:var(--warnbg); color:var(--warn); border-radius:6px; font-size:13.5px; }
+  nav { max-width:1200px; margin:10px auto 0; padding:0 16px; display:flex; gap:6px; flex-wrap:wrap; border-bottom:1px solid var(--line); }
+  nav button { background:none; border:0; padding:8px 12px; font:inherit; color:var(--muted); cursor:pointer; border-bottom:3px solid transparent; }
+  nav button[aria-selected="true"] { color:var(--fg); border-bottom-color:var(--accent); font-weight:600; }
+  main { max-width:1200px; margin:0 auto; padding:12px 16px 40px; }
+  .case { display:none; } .case.on { display:block; }
+  .grid { display:grid; grid-template-columns:320px 1fr; gap:14px; }
+  @media (max-width:860px) { .grid { grid-template-columns:1fr; } }
+  .panel { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:12px; }
+  .panel h2 { font-size:14px; margin:0 0 6px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); }
+  .map { height:620px; border:1px solid var(--line); border-radius:8px; background:#e8e8e8; position:relative; }
+  @media (max-width:860px) { .map { height:460px; } }
+  label.row { display:flex; gap:8px; align-items:flex-start; margin:4px 0; cursor:pointer; }
+  .sw { display:inline-block; width:22px; height:0; border-top:3px solid; margin-top:9px; flex:none; }
+  .dot { display:inline-block; width:10px; height:10px; border-radius:50%; background:#222; margin:5px 6px 0 6px; flex:none; }
+  .info { margin-left:auto; border:1px solid var(--line); background:none; color:var(--muted); border-radius:50%; width:20px; height:20px; font-size:12px; cursor:pointer; flex:none; }
+  .meta { font-size:12.5px; color:var(--muted); border-left:3px solid var(--line); padding:4px 8px; margin:2px 0 8px 30px; display:none; word-break:break-word; }
+  .meta.on { display:block; }
+  .meta a { color:var(--accent); }
+  .note { font-size:12.5px; color:var(--muted); }
+  table { border-collapse:collapse; width:100%; font-size:13px; }
+  th,td { text-align:left; padding:4px 6px; border-bottom:1px solid var(--line); vertical-align:top; }
+  .tablewrap { overflow-x:auto; }
+  select, input[type=range] { width:100%; font:inherit; }
+  .badge { display:inline-block; font-size:11.5px; padding:1px 6px; border-radius:10px; border:1px solid var(--line); color:var(--muted); }
+  .badge.cop { border-color:var(--accent); color:var(--accent); }
+  .divider { position:absolute; top:0; bottom:0; width:3px; background:#fff; box-shadow:0 0 4px #0008; z-index:900; pointer-events:none; display:none; }
+  .lab { position:absolute; z-index:901; top:8px; background:#000a; color:#fff; padding:2px 8px; border-radius:4px; font-size:12px; pointer-events:none; display:none; }
+  .helpbtn { margin-left:auto; background:none; border:1px solid var(--line); color:var(--fg); border-radius:16px; padding:4px 12px; font:inherit; font-size:13.5px; cursor:pointer; align-self:center; }
+  .helpbtn .i { display:inline-block; width:18px; height:18px; line-height:17px; text-align:center; border:1px solid var(--accent); color:var(--accent); border-radius:50%; font-size:12px; margin-right:4px; }
+  .modalback { position:fixed; inset:0; background:#000a; z-index:2000; display:flex; align-items:flex-start; justify-content:center; padding:24px 12px; overflow:auto; }
+  .modalback[hidden] { display:none; }
+  .modal { background:var(--panel); color:var(--fg); max-width:720px; width:100%; border-radius:10px; padding:18px 22px 22px; position:relative; outline:none; }
+  .modal h2 { margin:0 0 4px; font-size:19px; } .modal h3 { margin:18px 0 4px; font-size:15.5px; border-top:1px solid var(--line); padding-top:12px; }
+  .modal p { margin:6px 0 2px; } .modal ul { margin:4px 0 6px; padding-left:20px; } .modal li { margin:3px 0; }
+  .modal .close { position:absolute; top:8px; right:10px; border:0; background:none; font-size:26px; line-height:1; color:var(--muted); cursor:pointer; }
+  h3 { font-size:16px; margin:18px 0 6px; } p { margin:6px 0; } code { font-size:12.5px; }
+  footer { max-width:1200px; margin:0 auto; padding:0 16px 30px; color:var(--muted); font-size:12.5px; }
+</style>
+</head>
+<body>
+<style>/* spazio per la freccia di ritorno a PDE */ .side { padding-top: 68px !important; }</style>
+<a href="../../" class="pde-back" aria-label="Torna a PDE" title="Torna a PDE" style="position:fixed;top:20px;left:20px;z-index:1000;display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.94);color:#1a3a5c;border:1px solid rgba(0,0,0,.18);box-shadow:0 1px 4px rgba(0,0,0,.25);font:600 20px/1 system-ui,sans-serif;text-decoration:none">&larr;</a>
+<header>
+  <h1>Space for Smart Tourism — a catalogue-based prototype</h1>
+  <p class="sub">Two use cases built from the Italian national catalogue of geographic metadata (RNDT) with <code>openrndt</code>: beach tourism in Rimini and trails in two Piedmont parks.</p>
+</header>
+<div class="banner"><b>Prototype.</b> Built by RELATA Lab to explore the ESA Kick-Start call «Space for Smart Tourism». It is not a product and it is not a customer case. Every layer comes from a public record; limits are on the «Method &amp; limits» tab.</div>
+<nav role="tablist">
+  <button role="tab" aria-selected="true" data-tab="A">A · Coast and beach tourism, Rimini</button>
+  <button role="tab" aria-selected="false" data-tab="B">B · Parks and trails, Piedmont</button>
+  <button role="tab" aria-selected="false" data-tab="M">Method &amp; limits</button>
+  <button type="button" id="helpBtn" class="helpbtn" aria-haspopup="dialog" title="How to read the map"><span class="i">i</span> How to read the map</button>
+</nav>
+<div id="modalBack" class="modalback" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1">
+    <button type="button" class="close" id="modalClose" aria-label="Close">×</button>
+    <h2 id="modalTitle">How to read the map</h2>
+    <p class="note">A prototype to explore the ESA call «Space for Smart Tourism». It shows what public records say; it does not assess, rank or predict anything.</p>
+    <h3>The basics</h3>
+    <ul>
+      <li><b>Tabs:</b> A (Rimini coast), B (Piedmont parks), Method &amp; limits (sources, checks, caveats).</li>
+      <li><b>Move the map</b> by dragging; <b>zoom</b> with +/−, the mouse wheel or a pinch.</li>
+      <li><b>Layers:</b> tick a box to show a layer. The round <b>i</b> next to a layer opens its record: body, licence, date of the data, link to the national catalogue (RNDT), the service it was read from and the download date.</li>
+      <li><b>Hover</b> (or tap) a line or a dot to read its label.</li>
+    </ul>
+    <h3>Tab A — Coast and beach tourism, Rimini</h3>
+    <p><b>What you see</b></p>
+    <ul>
+      <li><b>Emerged beach 2023</b> (sand colour): the beach as mapped by Regione Emilia-Romagna.</li>
+      <li><b>Coastlines 2000, 2006, 2020:</b> three national ISPRA lines. The 2020 line is coloured by ISPRA's «coastal dynamics»: <span style="color:#d1495b">red = erosion</span>, <span style="color:#2a9d8f">green = advance</span>, <span style="color:#6c757d">grey = stability</span>, light grey = no information.</li>
+      <li><b>Susceptibility</b> (off by default): colours drawn by the Region's own service (link to its legend under the layers).</li>
+      <li><b>Yellow dots:</b> the 232 beach establishments listed by the Comune di Rimini.</li>
+    </ul>
+    <p><b>What to do</b></p>
+    <ul>
+      <li>Zoom into a stretch of coast and switch the 2000, 2006 and 2020 lines on together: where they separate, the shoreline moved.</li>
+      <li>Hover a 2020 segment to read its class; hover a dot to see the establishment and its zone.</li>
+      <li>Read the left panel: kilometres of coast per class, and how many establishments sit next to each class.</li>
+    </ul>
+    <p><b>What it means — and what it does not</b></p>
+    <ul>
+      <li>«Erosion» and «advance» describe the 2006–2020 change according to ISPRA's record. An advance can also come from nourishment or defence works.</li>
+      <li>The count of establishments per class uses the nearest 2020 segment within 250 m. It is indicative: not a risk assessment, not a forecast.</li>
+      <li>The lines come from aerial orthophotos, not satellites. <b>No satellite data is used in this tab</b>; adding Sentinel-2 is a to-do.</li>
+    </ul>
+    <h3>Tab B — Parks and trails, Piedmont</h3>
+    <p><b>What you see</b></p>
+    <ul>
+      <li><b>Colour mosaic:</b> Sentinel-2 satellite data processed by ARPA Piemonte. Each pixel mixes the vegetation index (NDVI) of three seasons: <b>red = autumn, green = spring, blue = summer</b>. Whitish or bright: vegetation active in all three seasons. Dark grey to black: little vegetation (rock, snow, water, built-up). A strong single colour: vegetation active mostly in one season.</li>
+      <li><b>White line:</b> the protected area. <b>Yellow:</b> the regional trail network of Piedmont (coarse, about 1:250,000). <b>Orange</b> (Gran Paradiso only): the trails of Valle d'Aosta (detailed, 1:10,000).</li>
+      <li>The mosaics exist only for Piedmont, so the Valle d'Aosta side of the Gran Paradiso is blank.</li>
+    </ul>
+    <p><b>What to do</b></p>
+    <ul>
+      <li>Choose a park in the menu. With <b>Compare two periods</b> on, drag the slider: left is 2020–21, right is 2022–23. Switch it off for a single view and use <b>Opacity</b> to see the base map underneath.</li>
+      <li>Follow a trail across the colours to see which kinds of ground it crosses.</li>
+    </ul>
+    <p><b>What it means — and what it does not</b></p>
+    <ul>
+      <li>It shows <b>vegetation cycles and land cover</b>. It is <b>not</b> a map of vegetation health, trampling or visitor pressure, and there are no visitor counts here.</li>
+      <li>The two mosaics can differ in tone because of which images were available or how each was processed, so differences are not proof of change on the ground.</li>
+      <li>The yellow and orange trail files have different detail and are not a complete survey.</li>
+    </ul>
+    <h3>If something looks wrong</h3>
+    <p>Open «Method &amp; limits»: it lists the checks made on projections and positions, and the known limits.</p>
+  </div>
+</div>
+<main>
+  <section id="caseA" class="case on">
+    <div class="grid">
+      <div>
+        <div class="panel">
+          <h2>Layers</h2>
+          <div id="layersA"></div>
+        </div>
+        <div class="panel" style="margin-top:12px">
+          <h2>What the catalogue data say</h2>
+          <div id="statsA" class="note">Loading…</div>
+        </div>
+      </div>
+      <div class="map" id="mapA"></div>
+    </div>
+    <p class="note">Case A uses catalogue data only. No satellite imagery is used here: the Sentinel-2 step is listed as a to-do on the «Method &amp; limits» tab.</p>
+  </section>
+
+  <section id="caseB" class="case">
+    <div class="grid">
+      <div>
+        <div class="panel">
+          <h2>Park</h2>
+          <select id="parkSel"><option value="monviso">Parco naturale Monviso</option><option value="gran_paradiso">Parco Nazionale del Gran Paradiso</option></select>
+          <p class="note" id="parkStats"></p>
+        </div>
+        <div class="panel" style="margin-top:12px">
+          <h2>Sentinel-2 seasonal NDVI mosaics <span class="badge cop">Copernicus</span></h2>
+          <label class="row"><input type="checkbox" id="swipeOn" checked> Compare two periods (swipe)</label>
+          <div id="swipeCtl">
+            <p class="note" style="margin:4px 0">Left: <b id="perL"></b> · Right: <b id="perR"></b></p>
+            <input type="range" id="swipe" min="0" max="100" value="50" aria-label="Swipe position">
+          </div>
+          <label class="row"><span>Opacity</span><input type="range" id="ndviOp" min="0" max="100" value="90"></label>
+          <p class="note"><b>How to read the colours.</b> Each pixel combines three seasons of the NDVI vegetation index: red = autumn, green = spring, blue = summer. Grey to black means little or no vegetation or permanent water; colours show vegetation cycles or land-cover change. It is not a map of vegetation health, and it does not measure trampling or visitor pressure.</p>
+        </div>
+        <div class="panel" style="margin-top:12px">
+          <h2>Other layers</h2>
+          <div id="layersB"></div>
+        </div>
+      </div>
+      <div class="map" id="mapB"><div class="divider" id="div"></div><div class="lab" id="labL" style="left:56px"></div><div class="lab" id="labR" style="right:8px"></div></div>
+    </div>
+    <p class="note">The trail layer is the regional landscape-plan network (main and secondary routes): it is not a complete trail survey, and no visitor counts were found for these parks.</p>
+  </section>
+
+  <section id="caseM" class="case">
+    <h3>What this is</h3>
+    <p>A small web map showing that an AI agent can compose queries to the official RNDT catalogue (through <code>openrndt</code>) and return real, checkable records, service URLs and licences, instead of inventing them. The layers below were downloaded read-only on the date shown. Rasters are snapshots of the services on that date; vectors are simplified copies (2–20 m) for display, not the original data.</p>
+    <h3>Sources</h3>
+    <div class="tablewrap"><table id="srcTable"><thead><tr><th>Layer</th><th>Body</th><th>Licence</th><th>Data date</th><th>Record</th><th>Service read</th><th>Downloaded</th></tr></thead><tbody></tbody></table></div>
+    <h3>Checks made on positions and projections (06/11/2026)</h3>
+    <ul>
+      <li><b>ISPRA coastlines and Rimini establishments:</b> the same service requested in WGS84 and in the native UTM 33N gives identical coordinates (difference 0.00 m).</li>
+      <li><b>Park outlines</b> (shapefile, UTM 32N) against the Regione Piemonte WFS service: Gran Paradiso overlap 99.9% (710.2 km² on both); Monviso 94.6% (the service lists adjacent areas and its outline is larger: 96.4 km² against 91.5 km²).</li>
+      <li><b>Piedmont trails</b> against OpenStreetMap paths: 86% of the length in Monviso and 77% in Gran Paradiso fall within 100 m of an OSM path. The file's own scale is 1:250,000, so offsets of tens of metres are expected.</li>
+      <li><b>Valle d'Aosta trails:</b> the file is in ED50 / UTM 32N, not WGS84. Read with the declared projection, 99% of the length falls within 50 m of an OSM path; read as if it were WGS84, only 34%. The projection was therefore applied from the file's own definition.</li>
+      <li><b>Sentinel-2 mosaics:</b> the tiles use the standard Web Mercator scheme (same origin and tile size as web maps). Moving OSM main roads east-west or north-south by up to 300 m, the image is darkest along the roads exactly at 0 m offset, for both parks and both periods (so there is no visible shift).</li>
+      <li><b>Regione Emilia-Romagna beach and susceptibility images:</b> 99% of the 232 establishments lie within about 23 m of a drawn pixel of the 2023 beach layer, and 87% of the 2020 coastline points within about 116 m (the rest are river mouths, ports and works with no beach).</li>
+      <li>These are consistency checks against independent sources, not a survey-grade accuracy assessment. Rasters are shown in Web Mercator, as the web map does.</li>
+    </ul>
+    <h3>Limits</h3>
+    <ul>
+      <li>Case A has no satellite data. The ISPRA coastlines come from orthophotos (2017–2020 for the 2020 version), not from satellites.</li>
+      <li>The ISPRA «coastal dynamics» class (2020 v2.0) describes the 2006–2020 evolution according to the dataset's own record. The classes of the 2000 and 2006 files are not comparable with it. The count of establishments near each class is indicative and is not a risk assessment.</li>
+      <li>Case B shows seasonal NDVI mosaics for two periods: they indicate vegetation cycles and land-cover change, not vegetation health, not trampling and not visitor pressure. There are no visitor counts in the catalogue data used here.</li>
+      <li>The two mosaics differ strongly in overall tone (in the Monviso area 2020–21 is much darker). This may reflect which seasonal images were available or how each mosaic was processed rather than change on the ground. No radiometric comparability check was made, so the swipe is a visual comparison only.</li>
+      <li>Older ARPA Piemonte mosaics (2016–2020) answered «Token required» when the tiles were requested on 06/11/2026, so only the 2020–21 and 2022–23 mosaics are shown.</li>
+      <li>The Piedmont trail file is the regional landscape-plan network (main and secondary routes, scale 1:250,000, files dated 2013–2016): coarse and not a complete survey. The Valle d'Aosta cadastre (1:10,000, published trails only) is far more detailed, so trail lengths of the two regions must not be compared.</li>
+      <li>The satellite mosaics are shown only inside the Piedmont footprint of the service (the province polygons published with it) and are transparent elsewhere, so both periods cover the same area. The Valle d'Aosta side of the Gran Paradiso therefore has no imagery.</li>
+      <li>Records and licences were read from the RNDT on the download date. For the two Regione Piemonte records, the normalised licence field is empty and the CC BY 4.0 condition was read from the record's use-conditions field.</li>
+      <li>The establishments file for Rimini was not reachable from the RNDT record (no link). It was found on the Comune's open-data page and read from its public service; only an identifier and the beach zone are kept.</li>
+    </ul>
+    <h3>To do — Sentinel data for case A</h3>
+    <ul>
+      <li>Extract the shoreline from Sentinel-2 to update the series after 2020, and compare it with the ISPRA 2020 and ARPAE 2018 lines.</li>
+      <li>Decide how to access Copernicus data (for example Copernicus Data Space) and what skills and tools the feasibility study needs.</li>
+    </ul>
+  </section>
+</main>
+<footer>Map data © OpenStreetMap contributors (ODbL). Sentinel mosaics: contains modified Copernicus Sentinel data, processed by ARPA Piemonte. Trails of Valle d'Aosta: data provided by the Struttura Forestazione e Sentieristica of the Regione Autonoma Valle d'Aosta (CC BY 4.0). Other layers and licences: see «Method &amp; limits».</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const DYN = {'Erosione':'#d1495b','Avanzamento':'#2a9d8f','Stabilità':'#6c757d','Nessuna informazione':'#b8b8b8'};
+const DYNEN = {'Erosione':'Erosion','Avanzamento':'Advance','Stabilità':'Stability','Nessuna informazione':'No information'};
+let L_, STATS;
+
+function osm(map) { L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom:19, attribution:'© OpenStreetMap contributors'}).addTo(map); }
+async function j(u) { const r = await fetch(u); if (!r.ok) throw new Error(u + ' ' + r.status); return r.json(); }
+
+function metaHtml(l) {
+  const lic = l.license ? esc(l.license) : 'not stated';
+  return `<b>${esc(l.title)}</b><br>Body: ${esc(l.org)}<br>Licence: ${lic}<br>Data date: ${esc(l.data_date)} · record updated ${esc(l.updated)}<br>
+  <a href="${esc(l.rndt_url)}" target="_blank" rel="noopener">RNDT record</a> (${esc(l.rndt_id)})<br>Service read: ${esc(l.service)}<br>Downloaded: ${esc(l.downloaded)}` + (l.note ? `<br><i>${esc(l.note)}</i>` : '');
+}
+function addRow(host, key, label, swatch, checked, onToggle) {
+  const l = L_[key];
+  const id = 'cb_' + key;
+  const wrap = document.createElement('div');
+  wrap.innerHTML = `<label class="row"><input type="checkbox" id="${id}" ${checked ? 'checked' : ''}>${swatch}<span>${label}</span><button class="info" aria-label="Layer details" type="button">i</button></label><div class="meta">${metaHtml(l)}</div>`;
+  host.appendChild(wrap);
+  wrap.querySelector('input').addEventListener('change', e => onToggle(e.target.checked));
+  wrap.querySelector('.info').addEventListener('click', e => { e.preventDefault(); wrap.querySelector('.meta').classList.toggle('on'); });
+  if (checked) onToggle(true);
+}
+const line = c => `<span class="sw" style="border-color:${c}"></span>`;
+
+/* ---------------- Case A ---------------- */
+async function caseA() {
+  const map = L.map('mapA', {zoomSnap:0.25, zoomDelta:0.5}).setView([44.07, 12.56], 12); osm(map);
+  const host = $('#layersA');
+  const gj = async (f, opts) => L.geoJSON(await j('data/' + f), opts);
+  const coast = (y, style) => gj(`rimini_coast_${y}.geojson`, {style});
+  const g2000 = await coast(2000, {color:'#3d5a80', weight:2, dashArray:'4 4'});
+  const g2006 = await coast(2006, {color:'#e08e0b', weight:2, dashArray:'2 4'});
+  const g2020 = await gj('rimini_coast_2020.geojson', {style: f => ({color: DYN[f.properties.dynamics] || '#888', weight:4}),
+    onEachFeature:(f,l)=>l.bindTooltip(`2020 · ${DYNEN[f.properties.dynamics]||f.properties.dynamics}` + (f.properties.defence_type ? ` · ${f.properties.defence_type}` : ''))});
+  const est = await gj('rimini_beach_establishments.geojson', {pointToLayer:(f,ll)=>L.circleMarker(ll,{radius:3,color:'#111',weight:1,fillColor:'#ffd166',fillOpacity:.95}), onEachFeature:(f,l)=>l.bindTooltip(`Establishment ${f.properties.id} · ${f.properties.zone}`)});
+  const ov = k => L.imageOverlay(L_[k].image, L_[k].bounds, {opacity:.75});
+  const beach = ov('a_beach_2023'), susc = ov('a_susceptibility');
+  const t = (layer) => on => on ? layer.addTo(map) : map.removeLayer(layer);
+  addRow(host, 'a_beach_2023', 'Emerged beach 2023', '<span class="dot" style="background:#f2d9a6;border:1px solid #888"></span>', true, t(beach));
+  addRow(host, 'a_susceptibility', 'Coastal susceptibility (combined)', '<span class="dot" style="background:#c66;"></span>', false, t(susc));
+  addRow(host, 'a_coast_2000', 'Coastline 2000', line('#3d5a80'), false, t(g2000));
+  addRow(host, 'a_coast_2006', 'Coastline 2006', line('#e08e0b'), false, t(g2006));
+  addRow(host, 'a_coast_2020', 'Coastline 2020 v2.0, coloured by coastal dynamics', line('#2a9d8f'), true, t(g2020));
+  addRow(host, 'a_establishments', 'Beach establishments (Comune di Rimini)', '<span class="dot" style="background:#ffd166;border:1px solid #111"></span>', true, t(est));
+  const lg = document.createElement('p'); lg.className = 'note';
+  lg.innerHTML = '2020 dynamics: ' + Object.keys(DYN).map(k => `<span style="color:${DYN[k]}">■</span> ${DYNEN[k]}`).join(' · ') +
+    '<br>Susceptibility colours are drawn by the Regione Emilia-Romagna service; its own legend: <a style="color:var(--accent)" target="_blank" rel="noopener" href="https://servizigis.regione.emilia-romagna.it/wms/costa?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image/png&layer=Suscettibilita_costa_combinata">legend</a>.';
+  host.appendChild(lg);
+  const a = STATS.A, km = a.coast_2020_km_by_dynamics, nr = a.establishments_by_nearest_2020_segment_dynamics_within_250m;
+  $('#statsA').innerHTML = `<p>Coastline 2020 v2.0 in the municipality: <b>${a.coast_2020_km_total.toFixed(1)} km</b> (digitised segments, including river mouths and ports).</p>
+    <table><tr><th>Class</th><th>km</th></tr>${Object.keys(km).map(k=>`<tr><td><span style="color:${DYN[k]}">■</span> ${DYNEN[k]||k}</td><td>${km[k].toFixed(1)}</td></tr>`).join('')}</table>
+    <p style="margin-top:8px">Of <b>${a.establishments_total}</b> beach establishments, the nearest 2020 segment (within 250 m) is classified:</p>
+    <table>${Object.keys(nr).map(k=>`<tr><td>${DYNEN[k]||k}</td><td>${nr[k]}</td></tr>`).join('')}</table>
+    <p class="note">Indicative only: the class is the ISPRA dynamics attribute of the nearest segment, not a risk assessment. See «Method &amp; limits».</p>`;
+  map.fitBounds([[44.02,12.485],[44.125,12.64]], {padding:[10,10]});
+}
+
+/* ---------------- Case B ---------------- */
+let mapB, ndviL, ndviR, parkLayer, trailLayer, vdaLayer, parksGJ, trailsGJ, vdaGJ, curPark = 'monviso', vdaOn = true, parkOn = true, trailOn = true;
+const PERIODS = ['2020-21', '2022-23'];
+function swipeUpdate() {
+  const on = $('#swipeOn').checked, ctl = $('#swipeCtl');
+  ctl.style.display = on ? '' : 'none';
+  const mapEl = $('#mapB'), r = mapEl.getBoundingClientRect(), x = r.width * $('#swipe').value / 100;
+  $('#div').style.display = on ? 'block' : 'none'; $('#labL').style.display = $('#labR').style.display = on ? 'block' : 'none';
+  $('#div').style.left = (x - 1) + 'px';
+  $('#perL').textContent = PERIODS[0]; $('#perR').textContent = PERIODS[1];
+  $('#labL').textContent = PERIODS[0]; $('#labR').textContent = PERIODS[1];
+  const clip = (ov, left) => {
+    const el = ov && ov.getElement(); if (!el) return;
+    if (!on) { el.style.clipPath = ''; return; }
+    const b = el.getBoundingClientRect(); const cx = r.left + x - b.left;
+    el.style.clipPath = left ? `inset(0 ${Math.max(0, b.width - cx)}px 0 0)` : `inset(0 0 0 ${Math.max(0, cx)}px)`;
+  };
+  clip(ndviL, true); clip(ndviR, false);
+}
+function setPark(key) {
+  curPark = key;
+  [ndviL, ndviR, parkLayer, trailLayer, vdaLayer].forEach(l => l && mapB.removeLayer(l));
+  const mk = p => L.imageOverlay(L_[`b_ndvi_${key}_${p}`].image, L_[`b_ndvi_${key}_${p}`].bounds, {opacity: $('#ndviOp').value / 100});
+  ndviL = mk(PERIODS[0]).addTo(mapB); ndviR = mk(PERIODS[1]).addTo(mapB);
+  const own = f => f.properties.key === key || f.properties.park === key;
+  parkLayer = L.geoJSON(parksGJ, {filter: own, style:{color:'#ffffff', weight:2, fill:false}}); if (parkOn) parkLayer.addTo(mapB);
+  trailLayer = L.geoJSON(trailsGJ, {filter: own, style: f => ({color:'#ffd400', weight:2.5}), onEachFeature:(f,l)=>l.bindTooltip((f.properties.name || f.properties.category || 'trail') + ' (Piedmont regional network)')}); if (trailOn) trailLayer.addTo(mapB);
+  vdaLayer = key === 'gran_paradiso' ? L.geoJSON(vdaGJ, {style:{color:'#ff7f11', weight:2.5}, onEachFeature:(f,l)=>l.bindTooltip(`${f.properties.name || f.properties.code} · difficulty ${f.properties.difficulty || 'n/a'}${f.properties.season ? ' · ' + f.properties.season : ''} (Valle d'Aosta cadastre)`)}) : null;
+  if (vdaLayer && vdaOn) vdaLayer.addTo(mapB);
+  $('#vdaRow').style.display = key === 'gran_paradiso' ? '' : 'none';
+  const s = STATS.B[key], b = s.bbox;
+  mapB.fitBounds([[b[1], b[0]], [b[3], b[2]]], {padding:[10,10]});
+  $('#parkStats').innerHTML = `${esc(s.name)}: ${s.area_km2} km² (outline from the Regione Piemonte file). Trails of the regional network inside the park: <b>${Object.values(s.trail_km_by_type).reduce((a,b)=>a+b,0).toFixed(1)} km</b> in ${s.segments} segments.` +
+    (Object.keys(s.named_routes_km).length ? `<br>Named routes: ${Object.entries(s.named_routes_km).map(([k,v])=>`${esc(k)} (${v} km)`).join(', ')}.` : '') +
+    (s.vda_trail_km ? `<br>Valle d'Aosta cadastre (orange, detailed 1:10,000): <b>${s.vda_trail_km} km</b> in ${s.vda_segments} segments (difficulty E ${s.vda_km_by_difficulty.E || 0} km, EE ${s.vda_km_by_difficulty.EE || 0} km, T ${s.vda_km_by_difficulty.T || 0} km). The two trail files differ in detail, so their lengths are not comparable.` : '');
+  if (key === 'gran_paradiso') $('#parkStats').innerHTML += '<br><i>The park spans Piedmont and Valle d\'Aosta. The satellite mosaics and the yellow network cover Piedmont only; the Valle d\'Aosta side shows no imagery (blank, not "no vegetation").</i>';
+  setTimeout(swipeUpdate, 50);
+}
+async function caseB() {
+  mapB = L.map('mapB', {zoomSnap:0.25, zoomDelta:0.5}).setView([44.65, 7.12], 11); osm(mapB);
+  parksGJ = await j('data/piedmont_parks.geojson'); trailsGJ = await j('data/piedmont_trails.geojson'); vdaGJ = await j('data/vda_trails.geojson');
+  const host = $('#layersB');
+  addRow(host, 'b_parks', 'Protected area outline', '<span class="sw" style="border-color:#888"></span>', true, on => { parkOn = on; if (parkLayer) on ? parkLayer.addTo(mapB) : mapB.removeLayer(parkLayer); });
+  addRow(host, 'b_trails', 'Regional trail network (yellow)', '<span class="sw" style="border-color:#ffd400"></span>', true, on => { trailOn = on; if (trailLayer) on ? trailLayer.addTo(mapB) : mapB.removeLayer(trailLayer); });
+  addRow(host, 'b_vda_trails', 'Valle d\'Aosta trail cadastre (orange, Gran Paradiso only)', '<span class="sw" style="border-color:#ff7f11"></span>', true, on => { vdaOn = on; if (vdaLayer) on ? vdaLayer.addTo(mapB) : mapB.removeLayer(vdaLayer); });
+  host.lastElementChild.id = 'vdaRow';
+  for (const p of PERIODS) { const l = L_[`b_ndvi_monviso_${p}`]; const m = document.createElement('div'); m.innerHTML = `<div class="meta on" style="margin-left:0"><b>NDVI ${p}</b> <span class="badge cop">Copernicus</span><br>${metaHtml(l)}</div>`; host.appendChild(m); }
+  $('#parkSel').addEventListener('change', e => setPark(e.target.value));
+  $('#swipe').addEventListener('input', swipeUpdate); $('#swipeOn').addEventListener('change', swipeUpdate);
+  $('#ndviOp').addEventListener('input', e => { ndviL.setOpacity(e.target.value / 100); ndviR.setOpacity(e.target.value / 100); });
+  mapB.on('move zoom resize', swipeUpdate); window.addEventListener('resize', swipeUpdate);
+  setPark(curPark);
+}
+
+function sources() {
+  const tb = $('#srcTable tbody');
+  tb.innerHTML = Object.entries(L_).map(([k, l]) => `<tr><td>${esc(l.title)} ${l.copernicus ? '<span class="badge cop">Copernicus</span>' : ''}<br><span class="note">case ${l.case}${l.period ? ' · ' + esc(l.park + ' ' + l.period) : ''}</span></td><td>${esc(l.org)}</td><td>${l.license ? esc(l.license) : 'not stated'}</td><td>${esc(l.data_date)}</td>
+    <td><a href="${esc(l.rndt_url)}" target="_blank" rel="noopener" style="color:var(--accent)">${esc(l.rndt_id)}</a></td><td>${esc(l.service)}</td><td>${esc(l.downloaded)}</td></tr>`).join('');
+}
+
+(function () {
+  const back = $('#modalBack'), dlg = back.querySelector('.modal'); let last = null;
+  const open = () => { last = document.activeElement; back.hidden = false; dlg.scrollTop = 0; back.scrollTop = 0; dlg.focus(); };
+  const close = () => { back.hidden = true; if (last) last.focus(); };
+  $('#helpBtn').addEventListener('click', open); $('#modalClose').addEventListener('click', close);
+  back.addEventListener('click', e => { if (e.target === back) close(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !back.hidden) close(); });
+})();
+
+document.querySelectorAll('nav button[data-tab]').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('nav button[data-tab]').forEach(x => x.setAttribute('aria-selected', x === b));
+  document.querySelectorAll('.case').forEach(c => c.classList.remove('on'));
+  $('#case' + b.dataset.tab).classList.add('on');
+  if (b.dataset.tab === 'B' && mapB) { mapB.invalidateSize(); setPark(curPark); }
+}));
+
+(async () => {
+  try {
+    L_ = await j('layers.json'); STATS = await j('data/stats.json');
+    sources(); await caseA(); await caseB();
+  } catch (e) { document.body.insertAdjacentHTML('afterbegin', `<p style="padding:16px;color:#b00">Could not load the data: ${esc(e.message)}. Serve the folder over HTTP (for example <code>python3 -m http.server</code>).</p>`); }
+})();
+</script>
+<script src="../../assets/frame.js" data-css="territorio" defer></script>
+</body>
+</html>

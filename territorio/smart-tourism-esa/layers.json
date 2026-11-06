@@ -1,0 +1,279 @@
+{
+ "a_coast_2000": {
+  "case": "A",
+  "rndt_id": "ispra_rm:01Lineacosta2000_DT",
+  "title": "Linea di costa 2000 - Dataset",
+  "org": "Istituto Superiore per la Protezione e la Ricerca Ambientale",
+  "license": "Dato concesso con licenza CC-BY-4.0 - nessuna limitazione al pubblico accesso.",
+  "open": true,
+  "data_date": "2012-11-29",
+  "updated": "2010-11-11",
+  "rndt_url": "https://geodati.gov.it/geoportal-catalog/rest/metadata/item/ispra_rm%3A01Lineacosta2000_DT/html",
+  "service": "https://sdi.isprambiente.it/geoserver/sr/coste_linea_di_costa_2000/wfs (WFS 1.1.0, GetFeature, bbox)",
+  "vector": "data/rimini_coast_2000.geojson",
+  "downloaded": "2026-11-06"
+ },
+ "a_coast_2006": {
+  "case": "A",
+  "rndt_id": "ispra_rm:01Lineacosta2006_DT",
+  "title": "Linea di costa 2006 - Dataset",
+  "org": "Istituto Superiore per la Protezione e la Ricerca Ambientale",
+  "license": "Dato concesso con licenza CC-BY-4.0 - nessuna limitazione al pubblico accesso.",
+  "open": true,
+  "data_date": "2012-11-29",
+  "updated": "2010-11-11",
+  "rndt_url": "https://geodati.gov.it/geoportal-catalog/rest/metadata/item/ispra_rm%3A01Lineacosta2006_DT/html",
+  "service": "https://sdi.isprambiente.it/geoserver/sr/coste_linea_di_costa_2006/wfs (WFS 1.1.0, GetFeature, bbox)",
+  "vector": "data/rimini_coast_2006.geojson",
+  "downloaded": "2026-11-06"
+ },
+ "a_coast_2020": {
+  "case": "A",
+  "rndt_id": "ispra_rm:01Lineacosta2020_v2.0_DT",
+  "title": "Linea di costa 2020 v2.0 - Dataset",
+  "org": "Istituto Superiore per la Protezione e la Ricerca Ambientale",
+  "license": "Dato concesso con licenza CC-BY-4.0 - nessuna limitazione al pubblico accesso.",
+  "open": true,
+  "data_date": "2021-12-31",
+  "updated": "2010-11-11",
+  "rndt_url": "https://geodati.gov.it/geoportal-catalog/rest/metadata/item/ispra_rm%3A01Lineacosta2020_v2.0_DT/html",
+  "service": "https://sdi.isprambiente.it/geoserver/sr/coste_linea_di_costa_2020/wfs (WFS 1.1.0, GetFeature, bbox)",
+  "vector": "data/rimini_coast_2020.geojson",
+  "downloaded": "2026-11-06"
+ },
+ "a_establishments": {
+  "case": "A",
+  "rndt_id": "c_h294:000025:20250430:141500",
+  "title": "Ubicazione degli stabilimenti balneari nel Comune di Rimini",
+  "org": "Comune di Rimini",
+  "license": "L’accesso e la fruibilità del dato sono pubblici. Licenza CC BY 4.0",
+  "open": true,
+  "data_date": "2024-02-13",
+  "updated": "2024-02-13",
+  "rndt_url": "https://geodati.gov.it/geoportal-catalog/rest/metadata/item/c_h294%3A000025%3A20250430%3A141500/html",
+  "service": "https://sit.comune.rimini.it/arcgis/rest/services/OpenData/OD_SUAP/MapServer/10 (ArcGIS REST MapServer, query)",
+  "vector": "data/rimini_beach_establishments.geojson",
+  "downloaded": "2026-11-06",
+  "note": "The RNDT record has no service or download link; the data were found on the Comune's open-data page (ArcGIS Hub) and read from its MapServer. Only the establishment number and zone are kept."
+ },
+ "a_beach_2023": {
+  "case": "A",
+  "rndt_id": "r_emiro:2025-05-26T085240",
+  "title": "Indicatori costa - Spiaggia Emersa 2023",
+  "org": "Regione Emilia-Romagna",
+  "license": "CC BY 4.0 (Creative Commons - Attribuzione) https://creativecommons.org/licenses/by/4.0/deed.it",
+  "open": true,
+  "data_date": "2025-05-01",
+  "updated": "2026-09-18",
+  "rndt_url": "https://geodati.gov.it/geoportal-catalog/rest/metadata/item/r_emiro%3A2025-05-26T085240/html",
+  "service": "https://servizigis.regione.emilia-romagna.it/wms/costa (WMS 1.3.0)",
+  "downloaded": "2026-11-06",
+  "image": "img/rimini_Spiaggia_emersa_2023.webp",
+  "bounds": [
+   [
+    44.02,
+    12.485
+   ],
+   [
+    44.125,
+    12.64
+   ]
+  ],
+  "pixel_pieni_pct": 1.5,
+  "metodo": "WMS 1.3.0 GetMap, layer Spiaggia_emersa_2023"
+ },
+ "a_susceptibility": {
+  "case": "A",
+  "rndt_id": "r_emiro:2020-05-29T150337",
+  "title": "Indicatori costa - Sintetici: Suscettibilità Combinata ai fenomeni di erosione e inondazione",
+  "org": "Regione Emilia-Romagna",
+  "license": "CC BY 4.0 (Creative Commons - Attribuzione) https://creativecommons.org/licenses/by/4.0/deed.it",
+  "open": true,
+  "data_date": "2019-03-11",
+  "updated": "2025-06-04",
+  "rndt_url": "https://geodati.gov.it/geoportal-catalog/rest/metadata/item/r_emiro%3A2020-05-29T150337/html",
+  "service": "https://servizigis.regione.emilia-romagna.it/wms/costa (WMS 1.3.0)",
+  "downloaded": "2026-11-06",
+  "image": "img/rimini_Suscettibilita_costa_combinata.webp",
+  "bounds": [
+   [
+    44.02,
+    12.485
+   ],
+   [
+    44.125,
+    12.64
+   ]
+  ],
+  "pixel_pieni_pct": 0.6,
+  "metodo": "WMS 1.3.0 GetMap, layer Suscettibilita_costa_combinata"
+ },
+ "b_parks": {
+  "case": "B",
+  "rndt_id": "r_piemon:4368c018-6b58-4834-b233-c45360cb1206",
+  "title": "Aree protette e altre aree tutelate",
+  "org": "Regione Piemonte",
+  "license": "https://creativecommons.org/licenses/by/4.0/deed.it (from the record's use-conditions field; the normalised licence field is empty)",
+  "open": true,
+  "data_date": "2024-05-27",
+  "updated": "2025-10-06",
+  "rndt_url": "https://geodati.gov.it/geoportal-catalog/rest/metadata/item/r_piemon%3A4368c018-6b58-4834-b233-c45360cb1206/html",
+  "service": "https://www.datigeo-piem-download.it/direct/Geoportale/RegionePiemonte/Aree_protette/parchi_wgs84.zip (download shapefile, UTM 32N)",
+  "vector": "data/piedmont_parks.geojson",
+  "downloaded": "2026-11-06"
+ },
+ "b_trails": {
+  "case": "B",
+  "rndt_id": "r_piemon:34a5904a-72cc-449f-a9f6-a05876a63abf",
+  "title": "Ppr - Rete sentieristica (tav. P5)",
+  "org": "Regione Piemonte",
+  "license": "https://creativecommons.org/licenses/by/4.0/deed.it (from the record's use-conditions field; the normalised licence field is empty)",
+  "open": true,
+  "data_date": "2017-10-20",
+  "updated": "2020-12-04",
+  "rndt_url": "https://geodati.gov.it/geoportal-catalog/rest/metadata/item/r_piemon%3A34a5904a-72cc-449f-a9f6-a05876a63abf/html",
+  "service": "https://www.datigeo-piem-download.it/direct/Geoportale/RegionePiemonte/PPR/rete_sentieristica.zip (download shapefile, UTM 32N)",
+  "vector": "data/piedmont_trails.geojson",
+  "downloaded": "2026-11-06",
+  "note": "Regional landscape-plan network (main and secondary routes), not a complete trail survey; the shapefile is dated 2013-2016."
+ },
+ "b_ndvi_gran_paradiso_2020-21": {
+  "case": "B",
+  "rndt_id": "arlpa_to:SENTINEL2_NDVI_2020_2021-2021-12-15:18:18",
+  "title": "Arpa Piemonte - Mosaico NDVI multitemporale da immagini Sentinel (2020-2021)",
+  "org": "Agenzia Regionale per la Protezione dell'Ambiente del Piemonte",
+  "license": "Copernicus Sentinel Data - This service contains modified Copernicus Sentinel data (years: 2019 - 2020)Ogni iniziativa di divulgazione delle informazioni contenute nel dataset o da esso derivate (cartogrammi, relazioni, servizi informativi), dovrà sempre citare la fonte del dato originale (autori, proprietario). Per eventuali aggregazioni o rielaborazioni dei dati forniti finalizzate alla realizzazione di prodotti diversi dall'originale, pur permanendo l'obbligo di citazione della fonte, si declina ogni responsabilità.",
+  "open": true,
+  "data_date": "2020-12-05",
+  "updated": "2021-10-01",
+  "rndt_url": "https://geodati.gov.it/geoportal-catalog/rest/metadata/item/arlpa_to%3ASENTINEL2_NDVI_2020_2021-2021-12-15%3A18%3A18/html",
+  "service": "https://webgis.arpa.piemonte.it/ags/rest/services/topografia_dati_di_base/Sentinel_2_2021_Multitemporale_NDVI/MapServer (ArcGIS REST MapServer, cache di tessere)",
+  "downloaded": "2026-11-06",
+  "park": "gran_paradiso",
+  "period": "2020-21",
+  "copernicus": true,
+  "image": "img/gran_paradiso_ndvi_2020-21.webp",
+  "bounds": [
+   [
+    45.36758436884979,
+    7.03125
+   ],
+   [
+    45.70617928533084,
+    7.6025390625
+   ]
+  ],
+  "pixel_pieni_pct": 39.7,
+  "metodo": "ArcGIS REST MapServer, cache di tessere z13 (256 px, Web Mercator)",
+  "tiles_missing": 0,
+  "zoom": 13
+ },
+ "b_ndvi_gran_paradiso_2022-23": {
+  "case": "B",
+  "rndt_id": "arlpa_to:SENTINEL2_NDVI_2022_2023",
+  "title": "Arpa Piemonte - Mosaico NDVI multitemporale da immagini Sentinel (2022-2023)",
+  "org": "Agenzia Regionale per la Protezione dell'Ambiente del Piemonte",
+  "license": "Copernicus Sentinel Data - This service contains modified Copernicus Sentinel data (years: 2019 - 2020)Ogni iniziativa di divulgazione delle informazioni contenute nel dataset o da esso derivate (cartogrammi, relazioni, servizi informativi), dovrà sempre citare la fonte del dato originale (autori, proprietario). Per eventuali aggregazioni o rielaborazioni dei dati forniti finalizzate alla realizzazione di prodotti diversi dall'originale, pur permanendo l'obbligo di citazione della fonte, si declina ogni responsabilità.",
+  "open": true,
+  "data_date": "2023-12-05",
+  "updated": "2023-10-01",
+  "rndt_url": "https://geodati.gov.it/geoportal-catalog/rest/metadata/item/arlpa_to%3ASENTINEL2_NDVI_2022_2023/html",
+  "service": "https://webgis.arpa.piemonte.it/server/rest/services/topografia_dati_di_base/Sentinel_2_2023_Multitemporale_NDVI/MapServer (ArcGIS REST MapServer, cache di tessere)",
+  "downloaded": "2026-11-06",
+  "park": "gran_paradiso",
+  "period": "2022-23",
+  "copernicus": true,
+  "image": "img/gran_paradiso_ndvi_2022-23.webp",
+  "bounds": [
+   [
+    45.36758436884979,
+    7.03125
+   ],
+   [
+    45.70617928533084,
+    7.6025390625
+   ]
+  ],
+  "pixel_pieni_pct": 39.8,
+  "metodo": "ArcGIS REST MapServer, cache di tessere z13 (256 px, Web Mercator)",
+  "tiles_missing": 0,
+  "zoom": 13
+ },
+ "b_ndvi_monviso_2020-21": {
+  "case": "B",
+  "rndt_id": "arlpa_to:SENTINEL2_NDVI_2020_2021-2021-12-15:18:18",
+  "title": "Arpa Piemonte - Mosaico NDVI multitemporale da immagini Sentinel (2020-2021)",
+  "org": "Agenzia Regionale per la Protezione dell'Ambiente del Piemonte",
+  "license": "Copernicus Sentinel Data - This service contains modified Copernicus Sentinel data (years: 2019 - 2020)Ogni iniziativa di divulgazione delle informazioni contenute nel dataset o da esso derivate (cartogrammi, relazioni, servizi informativi), dovrà sempre citare la fonte del dato originale (autori, proprietario). Per eventuali aggregazioni o rielaborazioni dei dati forniti finalizzate alla realizzazione di prodotti diversi dall'originale, pur permanendo l'obbligo di citazione della fonte, si declina ogni responsabilità.",
+  "open": true,
+  "data_date": "2020-12-05",
+  "updated": "2021-10-01",
+  "rndt_url": "https://geodati.gov.it/geoportal-catalog/rest/metadata/item/arlpa_to%3ASENTINEL2_NDVI_2020_2021-2021-12-15%3A18%3A18/html",
+  "service": "https://webgis.arpa.piemonte.it/ags/rest/services/topografia_dati_di_base/Sentinel_2_2021_Multitemporale_NDVI/MapServer (ArcGIS REST MapServer, cache di tessere)",
+  "downloaded": "2026-11-06",
+  "park": "monviso",
+  "period": "2020-21",
+  "copernicus": true,
+  "image": "img/monviso_ndvi_2020-21.webp",
+  "bounds": [
+   [
+    44.57481740467029,
+    7.03125
+   ],
+   [
+    44.73112559264326,
+    7.2509765625
+   ]
+  ],
+  "pixel_pieni_pct": 96.1,
+  "metodo": "ArcGIS REST MapServer, cache di tessere z14 (256 px, Web Mercator)",
+  "tiles_missing": 0,
+  "zoom": 14
+ },
+ "b_ndvi_monviso_2022-23": {
+  "case": "B",
+  "rndt_id": "arlpa_to:SENTINEL2_NDVI_2022_2023",
+  "title": "Arpa Piemonte - Mosaico NDVI multitemporale da immagini Sentinel (2022-2023)",
+  "org": "Agenzia Regionale per la Protezione dell'Ambiente del Piemonte",
+  "license": "Copernicus Sentinel Data - This service contains modified Copernicus Sentinel data (years: 2019 - 2020)Ogni iniziativa di divulgazione delle informazioni contenute nel dataset o da esso derivate (cartogrammi, relazioni, servizi informativi), dovrà sempre citare la fonte del dato originale (autori, proprietario). Per eventuali aggregazioni o rielaborazioni dei dati forniti finalizzate alla realizzazione di prodotti diversi dall'originale, pur permanendo l'obbligo di citazione della fonte, si declina ogni responsabilità.",
+  "open": true,
+  "data_date": "2023-12-05",
+  "updated": "2023-10-01",
+  "rndt_url": "https://geodati.gov.it/geoportal-catalog/rest/metadata/item/arlpa_to%3ASENTINEL2_NDVI_2022_2023/html",
+  "service": "https://webgis.arpa.piemonte.it/server/rest/services/topografia_dati_di_base/Sentinel_2_2023_Multitemporale_NDVI/MapServer (ArcGIS REST MapServer, cache di tessere)",
+  "downloaded": "2026-11-06",
+  "park": "monviso",
+  "period": "2022-23",
+  "copernicus": true,
+  "image": "img/monviso_ndvi_2022-23.webp",
+  "bounds": [
+   [
+    44.57481740467029,
+    7.03125
+   ],
+   [
+    44.73112559264326,
+    7.2509765625
+   ]
+  ],
+  "pixel_pieni_pct": 96.1,
+  "metodo": "ArcGIS REST MapServer, cache di tessere z14 (256 px, Web Mercator)",
+  "tiles_missing": 0,
+  "zoom": 14
+ },
+ "b_vda_trails": {
+  "case": "B",
+  "rndt_id": "r_vda:01420-META:20160908:170943",
+  "title": "Catasto sentieri: Rete sentieristica",
+  "org": "Regione Autonoma Valle d'Aosta",
+  "license": "CC BY 4.0 (licence document inside the download and linked from the record; attribution: «Dati forniti dalla Struttura Forestazione e Sentieristica della Regione Autonoma Valle d'Aosta»)",
+  "open": true,
+  "data_date": "2023-01-13",
+  "updated": "2023-01-13",
+  "rndt_url": "https://geodati.gov.it/geoportal-catalog/rest/metadata/item/r_vda%3A01420-META%3A20160908%3A170943/html",
+  "service": "https://geoprodotti.regione.vda.it/download/SENTIERI/sentieri.zip (download shapefile, ED50 / UTM 32N, reprojected)",
+  "vector": "data/vda_trails.geojson",
+  "downloaded": "2026-11-06",
+  "note": "Catasto sentieri, scale 1:10,000, published trails only. The file is in ED50 / UTM 32N, not WGS84; it was reprojected from the CRS declared in its .prj."
+ }
+}

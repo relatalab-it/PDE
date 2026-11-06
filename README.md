@@ -13,6 +13,7 @@ I report sono **brief giornalistici cross fonte** e usano più connettori open s
 | `open-data/comune-di-milano/` | Sei domande in italiano al portale Dati Milano del Comune di Milano: domande, passaggi dell'AI, query e risultati | CKAN |
 | `territorio/planet-intelligence/` | Dati geografici di Milano trovati nel catalogo nazionale: caldo, verde, aria, mobilità | RNDT |
 | `territorio/milano-evoluzione/` | Come è cresciuta Milano dal 1954 al 2024 | RNDT |
+| `territorio/smart-tourism-esa/` | Prototipo per la call ESA «Space for Smart Tourism»: costa di Rimini e parchi del Piemonte con dati del catalogo nazionale e mosaici Sentinel-2 (pagina in inglese, non elencata nella pagina iniziale) | RNDT · Copernicus Sentinel (ARPA Piemonte) |
 | `territorio/situas/` | Anagrafe dei comuni italiani dal 1861 a oggi: codici ISTAT, variazioni territoriali, dati demografici; caso d'uso sul Comune di Messina | SITUAS (ISTAT) |
 | `appalti/anac/` | Appalti pubblici in linguaggio naturale: quattro esempi (bandi aperti, controllo di un CIG, codici scheda, chi compra comunicazione scientifica) con comandi, risultati e limiti (campione 2026) | ANAC |
 | `parlamento/exp-audizioni/` | Audizioni della Camera dei deputati e soggetti auditi. Sperimentale: l'elaborazione contiene errori noti | Linked Open Data |
